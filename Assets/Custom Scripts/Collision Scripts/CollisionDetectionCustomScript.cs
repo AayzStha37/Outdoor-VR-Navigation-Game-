@@ -10,8 +10,6 @@ public class CollisionDetectionCustomScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Trigger Entered");
-
         //Get the two Objects involved in the collision
         GameObject col1 = this.gameObject;
         GameObject col2 = other.gameObject;
