@@ -29,6 +29,7 @@ public class TapSoundScript : MonoBehaviour
     {
         if(CanPlay())
         {
+            Debug.Log("TAP TAP TAP");
             float vel = collision.relativeVelocity.sqrMagnitude;
             if (vel > velocityThresold)
             {
@@ -40,7 +41,8 @@ public class TapSoundScript : MonoBehaviour
 
     private bool CanPlay()
     {
-        return Time.timeSinceLevelLoad - _lastPlayed > WAIT_TIME;
+        return true;
+       // return Time.timeSinceLevelLoad - _lastPlayed > WAIT_TIME;
     }
 }
 
