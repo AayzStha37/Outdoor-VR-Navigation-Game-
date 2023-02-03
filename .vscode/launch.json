@@ -7,7 +7,7 @@
         {
             "name": "Unity Editor",
             "type": "unity",
-            "path": "/C:/Users/canad/OneDrive/Desktop/GEM Lab/Outdoor-VR-Navigation-Game-/Library/EditorInstance.json",
+            "path": "/C:/Users/canad/OneDrive/Desktop/GEM Lab/GONVI/Outdoor-VR-Navigation-Game-/Library/EditorInstance.json",
             "request": "launch"
         },
         {
@@ -48,12 +48,6 @@
         {
             "name": "SwitchPlayer",
             "type": "unity",
-            "request": "launch"
-        },
-        {
-            "name": "Unity Editor",
-            "type": "unity",
-            "path": "/C:/Users/canad/OneDrive/Desktop/GEM Lab/Outdoor-VR-Navigation-Game-/Library/EditorInstance.json",
             "request": "launch"
         },
         {
