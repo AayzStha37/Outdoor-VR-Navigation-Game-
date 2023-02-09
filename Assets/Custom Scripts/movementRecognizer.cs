@@ -5,7 +5,6 @@ using UnityEngine.XR;
 using PDollarGestureRecognizer;
 using System.IO;
 using UnityEngine.Events;
-using Newtonsoft.Json;
 using System;
 
 public class movementRecognizer : MonoBehaviour
@@ -118,39 +117,39 @@ public class movementRecognizer : MonoBehaviour
             if(result.Score>=recognitionThreshold){
                 onRecognized.Invoke(result.GestureClass); 
                 Debug.Log("Gesture RECOGNIZED - "+ result.GestureClass + result.Score);
-                textureRecognizer(secondaryCollsionObject, result.GestureClass);
+               // textureRecognizer(secondaryCollsionObject, result.GestureClass);
             }
         }
     }
 
-    private void textureRecognizer(GameObject secondaryCollsionObject, string motionType)
-    {
-        string hapticInfo;
-        string soundInfo;
+    // private void textureRecognizer(GameObject secondaryCollsionObject, string motionType)
+    // {
+    //     string hapticInfo;
+    //     string soundInfo;
         
-        SFXManager sFXManager = new SFXManager();
+    //     SFXManager sFXManager = new SFXManager();
 
-        string[] jsonFileContent = Directory.GetFiles(palneInfoJsonPath,secondaryCollsionObject.tag+".json");
-        dynamic DynamicData = JsonConvert.DeserializeObject(System.IO.File.ReadAllText(jsonFileContent[0]));
+    //     string[] jsonFileContent = Directory.GetFiles(palneInfoJsonPath,secondaryCollsionObject.tag+".json");
+    //     dynamic DynamicData = JsonConvert.DeserializeObject(System.IO.File.ReadAllText(jsonFileContent[0]));
         
-        if(motionType.Equals("pointMotion")){
-            hapticInfo = DynamicData.pointMotion.haptic;
-            soundInfo = DynamicData.pointMotion.sound;
+    //     if(motionType.Equals("pointMotion")){
+    //         hapticInfo = DynamicData.pointMotion.haptic;
+    //         soundInfo = DynamicData.pointMotion.sound;
             
-            sFXManager.playGestureAudio(soundInfo+".mp3");
+    //         sFXManager.playGestureAudio(soundInfo+".mp3");
             
-            Debug.Log("<color=red>HAPTIC - </color>"+hapticInfo);
-            Debug.Log("<color=red>SOUND - </color>"+soundInfo);
-        }else if(motionType.Equals("sweepMotion")){
-            hapticInfo = DynamicData.sweepMotion.haptic;
-            soundInfo = DynamicData.sweepMotion.sound;
+    //         Debug.Log("<color=red>HAPTIC - </color>"+hapticInfo);
+    //         Debug.Log("<color=red>SOUND - </color>"+soundInfo);
+    //     }else if(motionType.Equals("sweepMotion")){
+    //         hapticInfo = DynamicData.sweepMotion.haptic;
+    //         soundInfo = DynamicData.sweepMotion.sound;
 
-            sFXManager.playGestureAudio(soundInfo+".mp3");
+    //         sFXManager.playGestureAudio(soundInfo+".mp3");
 
-            Debug.Log("<color=red>HAPTIC - </color>"+hapticInfo);
-            Debug.Log("<color=red>SOUND - </color>"+soundInfo);
-        }
+    //         Debug.Log("<color=red>HAPTIC - </color>"+hapticInfo);
+    //         Debug.Log("<color=red>SOUND - </color>"+soundInfo);
+    //     }
 
        
-    }
+    // }
 }
