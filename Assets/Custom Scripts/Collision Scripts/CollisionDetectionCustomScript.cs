@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionDetectionCustomScript : MonoBehaviour
 {
+    public SweepSoundAudioClipRandomizer clipRandomizer;
     public GameObject secondaryCollisionObject;
     static private List<KeyValuePair<GameObject, GameObject>> collisionList =
         new List<KeyValuePair<GameObject, GameObject>>();
@@ -14,7 +15,6 @@ public class CollisionDetectionCustomScript : MonoBehaviour
         GameObject col1 = this.gameObject;
         GameObject col2 = other.gameObject;
         secondaryCollisionObject = other.gameObject;
-
         //Add to the collison List
         RegisterTouchedItems(collisionList, col1, col2);
     }
@@ -82,5 +82,10 @@ public class CollisionDetectionCustomScript : MonoBehaviour
 
     public GameObject _secondaryCollsionObject(){
         return secondaryCollisionObject;
+    }
+
+    public AudioClip _secondaryCollsionObjectAudioClip(){
+        clipRandomizer.RandomAuidoClipPicker(out AudioClip clip);
+        return clip;
     }
 }

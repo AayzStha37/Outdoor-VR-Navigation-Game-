@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3639878382	Play_Traffic_Noise_Sound_Effect			\Default Work Unit\Play_Traffic_Noise_Sound_Effect	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	31568698	Traffic Noise Sound Effect	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Traffic Noise Sound Effect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traffic Noise Sound Effect		9703520
-

@@ -6,7 +6,7 @@ using UnityEngine;
 public class TapSoundScript : MonoBehaviour
 {
     [SerializeField]
-    private AudioClipRandomizer clip;
+    private TapSoundAudioClipRandomizer clip;
     public AudioSource _audioSource;
 
     [SerializeField]

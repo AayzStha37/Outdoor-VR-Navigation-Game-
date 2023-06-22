@@ -1,4 +1,7 @@
-﻿    using UnityEngine;
+ using UnityEngine;
+
+ using System.Collections;
+ using System.IO.Ports;
 
 [RequireComponent(typeof(AudioSource))]
 public class SweepSoundPlayer : MonoBehaviour
@@ -19,6 +22,9 @@ public class SweepSoundPlayer : MonoBehaviour
     private Vector3 _lastPosition;
     private bool isMoving = false;
     public GameObject secondaryCollisionGameObj;
+    //public SerialPort arduinoPort;
+    private AudioClip secondaryGameObjectAudioClip;
+    
     private void Awake()
     {
         _audioSource = this.GetComponent<AudioSource>();
@@ -31,16 +37,21 @@ public class SweepSoundPlayer : MonoBehaviour
         _audioSource.playOnAwake = false;
         _audioSource.Stop();
         _isPlaying = false;
+
+        // arduinoPort = new SerialPort("COM5", 9600); 
+        // arduinoPort.Open();
     }
 
     private void Update()
     {
+        
+        //Debug.Log("****Data from accelerometer =" + arduinoPort.ReadLine());
         secondaryCollisionGameObj = this.transform.parent.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         bool isColliding = CollisionDetectionCustomScript.IsTouching(this.transform.parent.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
         if(!isMoving && isColliding){
-            startMovement();
+            startMovement(secondaryCollisionGameObj.GetComponent<AudioSource>());
         }
         //Ending the movement
         else if(isMoving && !isColliding){
@@ -48,22 +59,28 @@ public class SweepSoundPlayer : MonoBehaviour
         }
         //Updating the movement
         else if(isMoving && isColliding){
-            updateMovement(secondaryCollisionGameObj.GetComponent<AudioSource>());
+            updateMovement();
         }
         
     }
 
-    void startMovement(){
+    void startMovement(AudioSource secondaryCollisionObjAudioSource){
         isMoving=true;
         Debug.Log("Movement has been initiated");
+        //TODO make a single generic implementation
+        if(secondaryCollisionGameObj.name.Equals("Sidewalk_1111")){        
+          secondaryGameObjectAudioClip = secondaryCollisionGameObj.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObjectAudioClip();
+         _audioSource.clip = secondaryGameObjectAudioClip;
+        }else{
+        _audioSource.clip =  secondaryCollisionObjAudioSource.clip;
+        }
     }
-    void updateMovement(AudioSource secondaryCollisionObjAudioSource)
+    void updateMovement()
     {
         Debug.Log("Movement being updated");
-        _audioSource.clip = secondaryCollisionObjAudioSource.clip;
         float velocity = (this.transform.position - _lastPosition).sqrMagnitude;
         _lastPosition = this.transform.position;
-
+        
         if (velocity > velocityThresold 
             && !_isPlaying)
         {

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208a458829e32c048928ddd813c9a602, type: 3}
+  m_Name: Sidewalk Sweep Sound Audio Clip Randomizer
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3283560dd63b5814b8faf360b8828f20, type: 3}
+  - {fileID: 8300000, guid: 4a6b98ef3d223cb4b8c6478917625bc2, type: 3}
+  - {fileID: 8300000, guid: 0383b365efbc3f84c9e46b618a7ebfd5, type: 3}
+  - {fileID: 8300000, guid: a51dc963770f16e43bb364c1a3d37d80, type: 3}
+  - {fileID: 8300000, guid: 9cf78b94d6f2a9849a5c79b6436547d2, type: 3}
+  - {fileID: 8300000, guid: bd2589ddd0a4975469b7d238228b7a15, type: 3}
+  - {fileID: 8300000, guid: f8e366abcfe9e6941ac22a768092c964, type: 3}
+  - {fileID: 8300000, guid: 0d3c21bf39369d84d9e61987b735e3fa, type: 3}
+  - {fileID: 8300000, guid: 06d851ee4bc90b343b944c573bbb568a, type: 3}
+  - {fileID: 8300000, guid: 298cfa491ebcd0742863056e8662d7fc, type: 3}
+  - {fileID: 8300000, guid: 3097cb152fcc35445842c1d2f568f67f, type: 3}
+  - {fileID: 8300000, guid: f048905a6f937a440b43da0b992f6e14, type: 3}
+  - {fileID: 8300000, guid: 15426f935f79c94408c44b50ae66fdf2, type: 3}

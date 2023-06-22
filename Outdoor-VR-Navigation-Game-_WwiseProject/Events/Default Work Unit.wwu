@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="GroundSweepEvent" ID="{CC0B10EE-F0AF-4EB8-84FC-C3F5B6E07122}">
+					<ChildrenList>
+						<Action Name="" ID="{519A39FA-7C66-4FA9-B233-3956610DD62F}" ShortID="421543857">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ground_Sweep" ID="{1E892C38-2974-4EA1-9BA1-395729ACC836}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
