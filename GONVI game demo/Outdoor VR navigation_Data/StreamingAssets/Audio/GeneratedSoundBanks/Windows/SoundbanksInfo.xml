@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{15AB47D7-3C18-45CE-4D33-7642B30644C1}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
+				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
+					<Switches>
+						<Switch Id="784127654" Name="Null"/>
+						<Switch Id="2110808655" Name="Road"/>
+						<Switch Id="3137249879" Name="Sidewalk"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{ACFC7B70-CCE3-DAE6-19B4-FE6DA9BAFF0B}">
+			<ShortName>Start_Scene_Traffic</ShortName>
+			<Path>Start_Scene_Traffic.bnk</Path>
+			<Media>
+				<File Id="407448612" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Traffic Noise Sound Effect.wav</ShortName>
+					<CachePath>SFX/Traffic Noise Sound Effect_ACE95052.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="275942671" Name="StartSceneTrafficSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="407448612"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{17C6737B-BBF8-7C72-7705-101650572680}">
+			<ShortName>WhiteCane_Interaction</ShortName>
+			<Path>WhiteCane_Interaction.bnk</Path>
+			<Media>
+				<File Id="711256120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 16.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 16_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="770144271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 8_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1005319630" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 3_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="174499234" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="711256120"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="197919893" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="770144271"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="276986352" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1005319630"/>
+						</MediaRefs>
+					</Plugin>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Unknown">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="174499234"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="4248645337"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="276986352"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="3137249879" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="197919893"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
+				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
+					<Switches>
+						<Switch Id="784127654" Name="Null"/>
+						<Switch Id="2110808655" Name="Road"/>
+						<Switch Id="3137249879" Name="Sidewalk"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{E83A3422-EF40-B309-C959-50FCF816FEFD}">
+			<ShortName>TrafficLight_Walk</ShortName>
+			<Path>TrafficLight_Walk.bnk</Path>
+			<Media>
+				<File Id="551432879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Walk Audio Clip.wav</ShortName>
+					<CachePath>SFX/Walk Audio Clip_0BA31AE6.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="551432879"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{AEA7C649-E453-C89B-308B-3184494E384C}">
+			<ShortName>TrafficLight_Wait</ShortName>
+			<Path>TrafficLight_Wait.bnk</Path>
+			<Media>
+				<File Id="265156255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wait Audio Clip.wav</ShortName>
+					<CachePath>SFX/Wait Audio Clip_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="265156255"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B699BA2E-5D98-6094-1BEC-6E5C8BBF693F}</FileHash>
+</SoundBanksInfo>

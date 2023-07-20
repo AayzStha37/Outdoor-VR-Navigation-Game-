@@ -3,6 +3,7 @@
 	<PluginLibs>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="SoundSeed Grain" LibId="11993090" Type="Source" DLL="AkSoundSeedGrain" StaticLib="AkSoundSeedGrainSource"/>
 	</PluginLibs>
-	<FileHash>{2DF3E370-A572-513D-8013-5B6E63623995}</FileHash>
+	<FileHash>{73AC4D8E-FC22-4A95-51EC-AAADDF26892D}</FileHash>
 </PluginInfo>

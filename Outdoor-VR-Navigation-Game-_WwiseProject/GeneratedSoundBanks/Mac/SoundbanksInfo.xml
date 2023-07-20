@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{64A6AC77-8D80-31D1-C645-5DB010A71C34}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D3021F69-2A77-FDA7-AE46-DC7D669AED7F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -28,7 +28,7 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
-						<Switch Id="54343794" Name="Grain"/>
+						<Switch Id="784127654" Name="Null"/>
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
@@ -36,7 +36,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{1A51E6FE-2FD7-EBC4-C3DC-46A10B2E569F}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{7D10CDC1-6732-B3FA-F53B-E63CA7BED32E}">
 			<ShortName>Start_Scene_Traffic</ShortName>
 			<Path>Start_Scene_Traffic.bnk</Path>
 			<Media>
@@ -53,233 +53,68 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{9453EF73-FE0C-587B-29B8-163B7E8F704E}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{C8096145-DCAA-9481-1AB3-50D7BCAF4803}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
-				<File Id="79822778" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 2.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 2_10C4C929.wem</CachePath>
+				<File Id="711256120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 16.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 16_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="93989815" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 6.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 6_10C4C929.wem</CachePath>
+				<File Id="770144271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 8_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="126137711" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 9.wav</ShortName>
-					<CachePath>SFX/Road/Road 9_10C4C929.wem</CachePath>
-				</File>
-				<File Id="189315032" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 9.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 9_10C4C929.wem</CachePath>
-				</File>
-				<File Id="192352294" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 12.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 12_10C4C929.wem</CachePath>
-				</File>
-				<File Id="226612952" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 11.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 11_10C4C929.wem</CachePath>
-				</File>
-				<File Id="230483312" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 16.wav</ShortName>
-					<CachePath>SFX/Road/Road 16_10C4C929.wem</CachePath>
-				</File>
-				<File Id="232748375" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 11.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 11_10C4C929.wem</CachePath>
-				</File>
-				<File Id="240233340" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 12.wav</ShortName>
-					<CachePath>SFX/Road/Road 12_10C4C929.wem</CachePath>
-				</File>
-				<File Id="241098373" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 6.wav</ShortName>
-					<CachePath>SFX/Road/Road 6_10C4C929.wem</CachePath>
-				</File>
-				<File Id="288722478" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 1.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 1_10C4C929.wem</CachePath>
-				</File>
-				<File Id="311394828" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 6.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 6_10C4C929.wem</CachePath>
-				</File>
-				<File Id="312032016" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 14.wav</ShortName>
-					<CachePath>SFX/Road/Road 14_10C4C929.wem</CachePath>
-				</File>
-				<File Id="313304522" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 11.wav</ShortName>
-					<CachePath>SFX/Road/Road 11_10C4C929.wem</CachePath>
-				</File>
-				<File Id="320668979" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 10.wav</ShortName>
-					<CachePath>SFX/Road/Road 10_10C4C929.wem</CachePath>
-				</File>
-				<File Id="360351147" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 7.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 7_10C4C929.wem</CachePath>
-				</File>
-				<File Id="372880695" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 4.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 4_10C4C929.wem</CachePath>
-				</File>
-				<File Id="408330859" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 12.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 12_10C4C929.wem</CachePath>
-				</File>
-				<File Id="517126904" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 2.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="529768456" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 8.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 8_10C4C929.wem</CachePath>
-				</File>
-				<File Id="532890501" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 5.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 5_10C4C929.wem</CachePath>
-				</File>
-				<File Id="538213202" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 1.wav</ShortName>
-					<CachePath>SFX/Road/Road 1_10C4C929.wem</CachePath>
-				</File>
-				<File Id="545016150" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 7.wav</ShortName>
-					<CachePath>SFX/Road/Road 7_10C4C929.wem</CachePath>
-				</File>
-				<File Id="573038476" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 2.wav</ShortName>
-					<CachePath>SFX/Road/Road 2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="579591607" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 15.wav</ShortName>
-					<CachePath>SFX/Road/Road 15_10C4C929.wem</CachePath>
-				</File>
-				<File Id="596640367" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 7.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 7_10C4C929.wem</CachePath>
-				</File>
-				<File Id="605623966" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 4.wav</ShortName>
-					<CachePath>SFX/Road/Road 4_10C4C929.wem</CachePath>
-				</File>
-				<File Id="642765629" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 3.wav</ShortName>
-					<CachePath>SFX/Road/Road 3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="667432578" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 1.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 1_10C4C929.wem</CachePath>
-				</File>
-				<File Id="738483585" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 8.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 8_10C4C929.wem</CachePath>
-				</File>
-				<File Id="745339300" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 10.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 10_10C4C929.wem</CachePath>
-				</File>
-				<File Id="833424561" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 5.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 5_10C4C929.wem</CachePath>
-				</File>
-				<File Id="838181400" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 9.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 9_10C4C929.wem</CachePath>
-				</File>
-				<File Id="905107178" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 4.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 4_10C4C929.wem</CachePath>
-				</File>
-				<File Id="911820166" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 13.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 13_10C4C929.wem</CachePath>
-				</File>
-				<File Id="976947909" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 8.wav</ShortName>
-					<CachePath>SFX/Road/Road 8_10C4C929.wem</CachePath>
-				</File>
-				<File Id="980112921" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 5.wav</ShortName>
-					<CachePath>SFX/Road/Road 5_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1008920592" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road\Road 13.wav</ShortName>
-					<CachePath>SFX/Road/Road 13_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1023213284" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk\Sidewalk 3.wav</ShortName>
-					<CachePath>SFX/Sidewalk/Sidewalk 3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1033545039" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 10.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 10_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1054914417" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass\Grass 3.wav</ShortName>
-					<CachePath>SFX/Grass/Grass 3_10C4C929.wem</CachePath>
+				<File Id="1005319630" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 3_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="174499234" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="711256120"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="197919893" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="770144271"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="276986352" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1005319630"/>
+						</MediaRefs>
+					</Plugin>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Mixed" DurationMin="0" DurationMax="Infinite">
+				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Unknown">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
-							<MediaRefs>
-								<MediaRef Id="126137711"/>
-								<MediaRef Id="230483312"/>
-								<MediaRef Id="240233340"/>
-								<MediaRef Id="241098373"/>
-								<MediaRef Id="312032016"/>
-								<MediaRef Id="313304522"/>
-								<MediaRef Id="320668979"/>
-								<MediaRef Id="538213202"/>
-								<MediaRef Id="545016150"/>
-								<MediaRef Id="573038476"/>
-								<MediaRef Id="579591607"/>
-								<MediaRef Id="605623966"/>
-								<MediaRef Id="642765629"/>
-								<MediaRef Id="976947909"/>
-								<MediaRef Id="980112921"/>
-								<MediaRef Id="1008920592"/>
-							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="174499234"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="4248645337"/>
-							<MediaRefs>
-								<MediaRef Id="192352294"/>
-								<MediaRef Id="226612952"/>
-								<MediaRef Id="311394828"/>
-								<MediaRef Id="360351147"/>
-								<MediaRef Id="372880695"/>
-								<MediaRef Id="517126904"/>
-								<MediaRef Id="667432578"/>
-								<MediaRef Id="738483585"/>
-								<MediaRef Id="833424561"/>
-								<MediaRef Id="838181400"/>
-								<MediaRef Id="911820166"/>
-								<MediaRef Id="1033545039"/>
-								<MediaRef Id="1054914417"/>
-							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="276986352"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="3137249879" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="79822778"/>
-								<MediaRef Id="93989815"/>
-								<MediaRef Id="189315032"/>
-								<MediaRef Id="232748375"/>
-								<MediaRef Id="288722478"/>
-								<MediaRef Id="408330859"/>
-								<MediaRef Id="529768456"/>
-								<MediaRef Id="532890501"/>
-								<MediaRef Id="596640367"/>
-								<MediaRef Id="745339300"/>
-								<MediaRef Id="905107178"/>
-								<MediaRef Id="1023213284"/>
-							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="197919893"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -291,7 +126,7 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
-						<Switch Id="54343794" Name="Grain"/>
+						<Switch Id="784127654" Name="Null"/>
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
@@ -299,7 +134,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{4CEAE829-2731-739D-2CC7-6F47F4E6A4CE}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{E83A3422-EF40-B309-C959-50FCF816FEFD}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -316,7 +151,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{47D8D55B-9D51-F289-F2EF-2025B7475464}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{AEA7C649-E453-C89B-308B-3184494E384C}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
@@ -334,5 +169,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{116C0CC9-B439-5305-90B0-A71F04771F01}</FileHash>
+	<FileHash>{8F1BF5BA-42E4-4C7B-AF0D-9CF659DF84C9}</FileHash>
 </SoundBanksInfo>
