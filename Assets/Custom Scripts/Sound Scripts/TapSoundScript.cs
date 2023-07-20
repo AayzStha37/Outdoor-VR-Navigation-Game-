@@ -6,7 +6,7 @@ using UnityEngine;
 public class TapSoundScript : MonoBehaviour
 {
     [SerializeField]
-    private TapSoundAudioClipRandomizer clip;
+    //private TapSoundAudioClipRandomizer clip;
     public AudioSource _audioSource;
 
     [SerializeField]
@@ -33,7 +33,7 @@ public class TapSoundScript : MonoBehaviour
             float vel = collision.relativeVelocity.sqrMagnitude;
             if (vel > velocityThresold)
             {
-                clip.PlayClip(_audioSource, out float lenght, vel * velocityFactor);
+                //clip.PlayClip(_audioSource, out float lenght, vel * velocityFactor);
                 _lastPlayed = Time.timeSinceLevelLoad;
             }
         }
