@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{64A6AC77-8D80-31D1-C645-5DB010A71C34}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,9 +21,14 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
+				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
+						<Switch Id="54343794" Name="Grain"/>
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
@@ -31,7 +36,24 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{876B51BF-52FD-BAB7-2A32-B254B6262144}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{1A51E6FE-2FD7-EBC4-C3DC-46A10B2E569F}">
+			<ShortName>Start_Scene_Traffic</ShortName>
+			<Path>Start_Scene_Traffic.bnk</Path>
+			<Media>
+				<File Id="407448612" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Traffic Noise Sound Effect.wav</ShortName>
+					<CachePath>SFX/Traffic Noise Sound Effect_ACE95052.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="275942671" Name="StartSceneTrafficSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="407448612"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{9453EF73-FE0C-587B-29B8-163B7E8F704E}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -201,7 +223,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="OneShot" DurationMin="0.45303854" DurationMax="41.60068">
+				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Mixed" DurationMin="0" DurationMax="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
@@ -262,9 +284,14 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
+				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
+						<Switch Id="54343794" Name="Grain"/>
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
@@ -272,6 +299,40 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{4CEAE829-2731-739D-2CC7-6F47F4E6A4CE}">
+			<ShortName>TrafficLight_Walk</ShortName>
+			<Path>TrafficLight_Walk.bnk</Path>
+			<Media>
+				<File Id="551432879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Walk Audio Clip.wav</ShortName>
+					<CachePath>SFX/Walk Audio Clip_0BA31AE6.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="551432879"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{47D8D55B-9D51-F289-F2EF-2025B7475464}">
+			<ShortName>TrafficLight_Wait</ShortName>
+			<Path>TrafficLight_Wait.bnk</Path>
+			<Media>
+				<File Id="265156255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wait Audio Clip.wav</ShortName>
+					<CachePath>SFX/Wait Audio Clip_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="265156255"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{99CFAF54-884F-339C-5F3B-96F9D285D75E}</FileHash>
+	<FileHash>{116C0CC9-B439-5305-90B0-A71F04771F01}</FileHash>
 </SoundBanksInfo>

@@ -14,6 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StartSceneTrafficSoundEvent" ID="{23AF9CFA-15CD-4809-AA7E-113417C09EB0}">
+					<ChildrenList>
+						<Action Name="" ID="{9A7802B2-9A5B-4114-9148-FB2498B5D280}" ShortID="793551010">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Initial Traffic Sound" ID="{444D04FD-4C65-48EA-A202-736FED330EB2}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TrafficLightWaitSoundEvent" ID="{80FC292A-7B0C-4EB3-B004-450A3F983D81}">
+					<ChildrenList>
+						<Action Name="" ID="{F184D409-48DA-4F99-87BB-937E03F108BB}" ShortID="576874900">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traffic Light Wait Sound" ID="{81AC21F2-CFA0-4184-A34A-3CA30AAAB4E2}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TrafficLightWalkSoundEvent" ID="{8313FE65-3974-4661-939C-CAF8D3EF86A5}">
+					<ChildrenList>
+						<Action Name="" ID="{EFE76FB4-5297-48D9-BCA1-9F761099823F}" ShortID="628693639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traffic Light Walk Sound" ID="{163087C5-332C-4965-8C95-2900FC2F72EA}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

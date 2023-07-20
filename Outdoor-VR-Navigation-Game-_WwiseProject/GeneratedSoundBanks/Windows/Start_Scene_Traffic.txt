@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	275942671	StartSceneTrafficSoundEvent			\Default Work Unit\StartSceneTrafficSoundEvent	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	407448612	Initial Traffic Sound	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Traffic Noise Sound Effect_ACE95052.wem		\Actor-Mixer Hierarchy\Default Work Unit\Initial Traffic Sound		9703520
+

@@ -66,8 +66,50 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8585141560805160367
+    m_lastTime: -8585119065242169001
     List:
+    - name: Start_Scene_Traffic
+      guid: 9a9d2f4ff7f27441bad94dd8f7fc3241
+      id: 1659826720
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Start_Scene_Traffic
+        ObjectType: 7
+        guid: 9a9d2f4ff7f27441bad94dd8f7fc3241
+      Path: SoundBanks\Default Work Unit\Start_Scene_Traffic
+    - name: TrafficLight_Wait
+      guid: f93fd9c1f5f0db48a877dddcf3d55082
+      id: 3736590696
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: TrafficLight_Wait
+        ObjectType: 7
+        guid: f93fd9c1f5f0db48a877dddcf3d55082
+      Path: SoundBanks\Default Work Unit\TrafficLight_Wait
+    - name: TrafficLight_Walk
+      guid: 318f4ac279fb964b82f630a96a1ee31a
+      id: 3686257672
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: TrafficLight_Walk
+        ObjectType: 7
+        guid: 318f4ac279fb964b82f630a96a1ee31a
+      Path: SoundBanks\Default Work Unit\TrafficLight_Walk
     - name: WhiteCane_Interaction
       guid: 3410af374aa49d4fa017d8c431b51b62
       id: 3669902090
@@ -94,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8585141562224279832
+    m_lastTime: -8585119068133055790
     List:
     - name: GroundSweepEvent
       guid: ee100bccaff0b84e84fcc3f5b6e07122
@@ -113,6 +155,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StartSceneTrafficSoundEvent
+      guid: fa9caf23cd150948aa7e113417c09eb0
+      id: 275942671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: StartSceneTrafficSoundEvent
+        ObjectType: 3
+        guid: fa9caf23cd150948aa7e113417c09eb0
+      Path: Events\Default Work Unit\StartSceneTrafficSoundEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TrafficLightWaitSoundEvent
+      guid: 2a29fc800c7bb34eb004450a3f983d81
+      id: 3187816352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: TrafficLightWaitSoundEvent
+        ObjectType: 3
+        guid: 2a29fc800c7bb34eb004450a3f983d81
+      Path: Events\Default Work Unit\TrafficLightWaitSoundEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TrafficLightWalkSoundEvent
+      guid: 65fe138374396146939ccaf8d3ef86a5
+      id: 3123712896
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: TrafficLightWalkSoundEvent
+        ObjectType: 3
+        guid: 65fe138374396146939ccaf8d3ef86a5
+      Path: Events\Default Work Unit\TrafficLightWalkSoundEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -125,8 +218,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2b83277ad0d621499ce01213cf39325c
     GuidInternal: 
-    m_lastTime: -8585141596741509906
-    List: []
+    m_lastTime: -8585129517105552350
+    List:
+    - name: CaneInteractionPitch
+      guid: cc6fe0a1bd92f140a34a76b6ae7b9173
+      id: 1410364352
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b83277ad0d621499ce01213cf39325c
+      - ElementName: CaneInteractionPitch
+        ObjectType: 13
+        guid: cc6fe0a1bd92f140a34a76b6ae7b9173
+      Path: Game Parameters\Default Work Unit\CaneInteractionPitch
+    - name: CaneInteractionVolume
+      guid: 8a5701ebd7ebde4e90aa66838b0fc7d0
+      id: 2349282220
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b83277ad0d621499ce01213cf39325c
+      - ElementName: CaneInteractionVolume
+        ObjectType: 13
+        guid: 8a5701ebd7ebde4e90aa66838b0fc7d0
+      Path: Game Parameters\Default Work Unit\CaneInteractionVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -153,7 +274,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8585141579386814914
+    m_lastTime: -8585117428953941881
     List:
     - name: GroundType_Sweep
       guid: c7d379fa6e331144814ff4a12fe1a8d8
@@ -186,6 +307,22 @@ MonoBehaviour:
         - ElementName: Grass
           ObjectType: 10
           guid: c5cd6189e9bef840b5024426156a4240
+      - name: Null
+        guid: e50ad940e706e747811ee91e85a775eb
+        id: 784127654
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: GroundType_Sweep
+          ObjectType: 11
+          guid: c7d379fa6e331144814ff4a12fe1a8d8
+        - ElementName: Null
+          ObjectType: 10
+          guid: e50ad940e706e747811ee91e85a775eb
       - name: Road
         guid: c444f33c44c2184f956d923b28ee77ab
         id: 2110808655
@@ -236,8 +373,8 @@ MonoBehaviour:
     m_lastTime: -8585141596741931785
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000a0000000b0000000d0000000e0000000f0000001300000014000000150000001600000018000000190000001a000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

@@ -2,8 +2,6 @@
 
  using System.Collections;
  using System.IO.Ports;
-
-[RequireComponent(typeof(AudioSource))]
 public class SweepSoundPlayer : MonoBehaviour
 {
     [SerializeField]
@@ -16,26 +14,22 @@ public class SweepSoundPlayer : MonoBehaviour
     private float velocityFactor = 0.1f;
     [SerializeField]
     private float dampness = 10f;
-
-    private AudioSource _audioSource;
     private bool _isPlaying = false;
     private Vector3 _lastPosition;
     private bool isMoving = false;
-    public GameObject secondaryCollisionGameObj;
+    private uint playingId;
+    private GameObject secondaryCollisionGameObj;
     //public SerialPort arduinoPort;
-    private AudioClip secondaryGameObjectAudioClip;
-    
+    private string RTPC_CaneInteractionPitch = "CaneInteractionPitch";
+    private string RTPC_CaneInteractionVolume = "CaneInteractionVolume";
     private void Awake()
     {
-        _audioSource = this.GetComponent<AudioSource>();
         _lastPosition = this.transform.position;
     }
 
     private void Start()
     {
-        _audioSource.loop = true;
-        _audioSource.playOnAwake = false;
-        _audioSource.Stop();
+        AkSoundEngine.RegisterGameObj(gameObject);
         _isPlaying = false;
 
         // arduinoPort = new SerialPort("COM5", 9600); 
@@ -46,12 +40,14 @@ public class SweepSoundPlayer : MonoBehaviour
     {
         
         //Debug.Log("****Data from accelerometer =" + arduinoPort.ReadLine());
-        secondaryCollisionGameObj = this.transform.parent.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
-        bool isColliding = CollisionDetectionCustomScript.IsTouching(this.transform.parent.gameObject,secondaryCollisionGameObj);
+        secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
+        Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
+
+        bool isColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
         if(!isMoving && isColliding){
-            startMovement(secondaryCollisionGameObj.GetComponent<AudioSource>());
+            startMovement();
         }
         //Ending the movement
         else if(isMoving && !isColliding){
@@ -64,53 +60,48 @@ public class SweepSoundPlayer : MonoBehaviour
         
     }
 
-    void startMovement(AudioSource secondaryCollisionObjAudioSource){
+    void startMovement(){
         isMoving=true;
         Debug.Log("Movement has been initiated");
-        //TODO make a single generic implementation
-        if(secondaryCollisionGameObj.name.Equals("Sidewalk_1111")){        
-          secondaryGameObjectAudioClip = secondaryCollisionGameObj.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObjectAudioClip();
-         _audioSource.clip = secondaryGameObjectAudioClip;
-        }else{
-        _audioSource.clip =  secondaryCollisionObjAudioSource.clip;
-        }
     }
     void updateMovement()
     {
         Debug.Log("Movement being updated");
         float velocity = (this.transform.position - _lastPosition).sqrMagnitude;
         _lastPosition = this.transform.position;
-        
-        if (velocity > velocityThresold 
+        try{
+            if (velocity > velocityThresold 
             && !_isPlaying)
         {
-            _audioSource.Play();
+            playingId = AkSoundEngine.PostEvent("GroundSweepEvent",gameObject);
+            Debug.Log("Audio play initiated");
             _isPlaying = true;
         }
-
+        
         if (_isPlaying)
         {
+            Debug.Log("Movement and audio play ongoing");
             velocity *= velocityFactor;
             float desiredVolume = volumeCurve.Evaluate(velocity);
-            _audioSource.volume = Mathf.Lerp(_audioSource.volume, desiredVolume, dampness * Time.deltaTime);
+            float caneinteractionVolume = Mathf.Lerp(100f, desiredVolume, dampness * Time.deltaTime);
+            AkSoundEngine.SetRTPCValue(RTPC_CaneInteractionVolume,caneinteractionVolume);
+            Debug.Log("RTPC Volume : " + caneinteractionVolume);
 
             float desiredPitch = pitchCurve.Evaluate(velocity);
-            _audioSource.pitch = Mathf.Lerp(_audioSource.pitch, desiredPitch, dampness * Time.deltaTime);
+            float caneinteractionPitch = Mathf.Lerp(150f, desiredPitch, dampness * Time.deltaTime);
+            AkSoundEngine.SetRTPCValue(RTPC_CaneInteractionPitch,caneinteractionPitch);         
+            Debug.Log("RTPC Pitch : " + caneinteractionPitch);
         }
-
-        // if(_isPlaying 
-        //     && _audioSource.volume == 0f)
-        // {
-        //     _audioSource.Pause();
-        //     _isPlaying = false;
-        // }
+        }catch(System.Exception e){
+            Debug.Log("Exception while playing audio :" + e);
+        }
 
     }
 
     void endMovement(){
         isMoving=false;
         _isPlaying = false;
-        _audioSource.Pause();
+        AkSoundEngine.StopPlayingID(playingId);
         Debug.Log("Movement has been terminated");
     }
 }

@@ -8,6 +8,7 @@
 						<Switch Name="Sidewalk" ID="{284291DE-A176-4D55-B9AD-37BB7AFA7C91}"/>
 						<Switch Name="Road" ID="{3CF344C4-C244-4F18-956D-923B28EE77AB}"/>
 						<Switch Name="Grass" ID="{8961CDC5-BEE9-40F8-B502-4426156A4240}"/>
+						<Switch Name="Null" ID="{40D90AE5-06E7-47E7-811E-E91E85A775EB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

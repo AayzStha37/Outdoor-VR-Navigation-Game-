@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CollisionDetectionCustomScript : MonoBehaviour
 {
-    public SweepSoundAudioClipRandomizer clipRandomizer;
     public GameObject secondaryCollisionObject;
     static private List<KeyValuePair<GameObject, GameObject>> collisionList =
         new List<KeyValuePair<GameObject, GameObject>>();
@@ -84,8 +83,4 @@ public class CollisionDetectionCustomScript : MonoBehaviour
         return secondaryCollisionObject;
     }
 
-    public AudioClip _secondaryCollsionObjectAudioClip(){
-        clipRandomizer.RandomAuidoClipPicker(out AudioClip clip);
-        return clip;
-    }
 }

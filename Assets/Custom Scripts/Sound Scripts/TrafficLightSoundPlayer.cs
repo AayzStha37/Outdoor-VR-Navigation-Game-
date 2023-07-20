@@ -7,10 +7,6 @@ public class TrafficLightSoundPlayer : MonoBehaviour
 {
     public GameObject frontTrafficLight;
     public GameObject rearTrafficLight;
-    public AudioClip waitSound;
-    public AudioClip walkSound;
-    private AudioSource frontTrafficLightAudioSource;
-    private AudioSource rearTrafficLightaudioSource; 
     private Renderer frontTrafficLightRenderer;
     private Renderer rearTrafficLightRenderer;
     private float timerValue;
@@ -18,16 +14,13 @@ public class TrafficLightSoundPlayer : MonoBehaviour
     private const string SPHERE_TIP = "sphere tip";
     public GameObject vehcileBlockGameObj;
     private void Awake() {
-        frontTrafficLightAudioSource = frontTrafficLight.GetComponent<AudioSource>();
-        rearTrafficLightaudioSource =  rearTrafficLight.GetComponent<AudioSource>();
-
         frontTrafficLightRenderer = frontTrafficLight.GetComponentInChildren<MeshRenderer>();
         rearTrafficLightRenderer = rearTrafficLight.GetComponentInChildren<MeshRenderer>();
     }
     void Start()
     {
         timerValue = 10.0f;
-        playTrafficLightAudio(waitSound);
+        playTrafficLightWaitAudio(true);
         switchTrafficLight(true);
         initFunc();
     }
@@ -35,18 +28,13 @@ public class TrafficLightSoundPlayer : MonoBehaviour
     private void initFunc()
     {
         vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(false);
-        frontTrafficLightAudioSource.loop = true;
-        frontTrafficLightAudioSource.playOnAwake = true;
-
-        rearTrafficLightaudioSource.loop = true;
-        rearTrafficLightaudioSource.playOnAwake = true;
     }
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name.Equals(SPHERE_TIP) && !lockResource){
             lockResource = true;
             vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(false);
-            playTrafficLightAudio(waitSound);
+            playTrafficLightWaitAudio(true);
             switchTrafficLight(true);
             StartCoroutine(PlayWalkSoundAfterTimer());
         }
@@ -66,13 +54,12 @@ public class TrafficLightSoundPlayer : MonoBehaviour
         }
     }
 
-    private void playTrafficLightAudio(AudioClip audioClip)
+    private void playTrafficLightWaitAudio(bool waitSound)
     {
-        frontTrafficLightAudioSource.clip = audioClip;
-        rearTrafficLightaudioSource.clip = audioClip;
-
-        frontTrafficLightAudioSource.Play();
-        rearTrafficLightaudioSource.Play();
+        if(waitSound)
+            AkSoundEngine.PostEvent("TrafficLightWaitSoundEvent",gameObject);
+        else
+            AkSoundEngine.PostEvent("TrafficLightWalkSoundEvent",gameObject);
     }
 
     public IEnumerator PlayWalkSoundAfterTimer()
@@ -87,7 +74,7 @@ public class TrafficLightSoundPlayer : MonoBehaviour
 
     private void exitFunc()
     { 
-        playTrafficLightAudio(walkSound);
+        playTrafficLightWaitAudio(false);
         switchTrafficLight(false);
         vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(true);
         timerValue = 10.0f;
