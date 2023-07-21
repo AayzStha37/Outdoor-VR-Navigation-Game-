@@ -19,6 +19,7 @@ public class SweepSoundPlayer : MonoBehaviour
     private bool isMoving = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
+    private GameObject registeredCollidingGameObject;
     //public SerialPort arduinoPort;
     private string RTPC_CaneInteractionPitch = "CaneInteractionPitch";
     private string RTPC_CaneInteractionVolume = "CaneInteractionVolume";
@@ -38,16 +39,15 @@ public class SweepSoundPlayer : MonoBehaviour
 
     private void Update()
     {
-        
         //Debug.Log("****Data from accelerometer =" + arduinoPort.ReadLine());
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
-        bool isColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
+        bool isColliding = CollisionDetectionCustomScript.IsTouching(this.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
         if(!isMoving && isColliding){
-            startMovement();
+            startMovement(secondaryCollisionGameObj);
         }
         //Ending the movement
         else if(isMoving && !isColliding){
@@ -60,7 +60,7 @@ public class SweepSoundPlayer : MonoBehaviour
         
     }
 
-    void startMovement(){
+    void startMovement(GameObject secondaryCollisionGameObj){
         isMoving=true;
         Debug.Log("Movement has been initiated");
     }

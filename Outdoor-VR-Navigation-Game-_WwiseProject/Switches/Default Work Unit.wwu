@@ -11,6 +11,15 @@
 						<Switch Name="Null" ID="{40D90AE5-06E7-47E7-811E-E91E85A775EB}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footsteps_Walk" ID="{327356EF-1FDB-4881-A13A-BB4B75A847F1}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{08F569F9-0E4E-4507-92DD-21E4331E997A}"/>
+						<Switch Name="Road" ID="{22AF46D5-00B9-447F-B8D0-3E5D493CBB55}"/>
+						<Switch Name="Sidewalk" ID="{B7006FDB-05E6-4A1C-A971-E13D725868B4}"/>
+						<Switch Name="Gravel" ID="{35901F06-4952-49BB-806C-E5F9B19DDE99}"/>
+						<Switch Name="Null" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

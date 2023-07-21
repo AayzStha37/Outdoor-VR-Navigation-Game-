@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8585119065242169001
+    m_lastTime: -8585116552357890664
     List:
+    - name: Character_Footsteps
+      guid: 4836bf47169d5747811eaeb23483e5fb
+      id: 2775932802
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Character_Footsteps
+        ObjectType: 7
+        guid: 4836bf47169d5747811eaeb23483e5fb
+      Path: SoundBanks\Default Work Unit\Character_Footsteps
     - name: Start_Scene_Traffic
       guid: 9a9d2f4ff7f27441bad94dd8f7fc3241
       id: 1659826720
@@ -136,8 +150,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8585119068133055790
+    m_lastTime: -8585116552357796711
     List:
+    - name: FootstepsPlayEvent
+      guid: 8fe9296dcca53a4fa801b47877d28c8d
+      id: 654585276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: FootstepsPlayEvent
+        ObjectType: 3
+        guid: 8fe9296dcca53a4fa801b47877d28c8d
+      Path: Events\Default Work Unit\FootstepsPlayEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: GroundSweepEvent
       guid: ee100bccaff0b84e84fcc3f5b6e07122
       id: 2424624112
@@ -218,7 +249,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2b83277ad0d621499ce01213cf39325c
     GuidInternal: 
-    m_lastTime: -8585129517105552350
+    m_lastTime: -8585116555351806629
     List:
     - name: CaneInteractionPitch
       guid: cc6fe0a1bd92f140a34a76b6ae7b9173
@@ -248,6 +279,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 8a5701ebd7ebde4e90aa66838b0fc7d0
       Path: Game Parameters\Default Work Unit\CaneInteractionVolume
+    - name: CharacterNavSpeed
+      guid: 15a3464612246a429aef1c4fdb6617d2
+      id: 3094130262
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b83277ad0d621499ce01213cf39325c
+      - ElementName: CharacterNavSpeed
+        ObjectType: 13
+        guid: 15a3464612246a429aef1c4fdb6617d2
+      Path: Game Parameters\Default Work Unit\CharacterNavSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -274,8 +319,106 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8585117428953941881
+    m_lastTime: -8585116548880930440
     List:
+    - name: Footsteps_Walk
+      guid: ef567332db1f8148a13abb4b75a847f1
+      id: 1780308710
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 556287a9bcc29046aae78388b5fecfa1
+      - ElementName: Footsteps_Walk
+        ObjectType: 11
+        guid: ef567332db1f8148a13abb4b75a847f1
+      Path: Switches\Default Work Unit\Footsteps_Walk
+      values:
+      - name: Grass
+        guid: f969f5084e0e074592dd21e4331e997a
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Footsteps_Walk
+          ObjectType: 11
+          guid: ef567332db1f8148a13abb4b75a847f1
+        - ElementName: Grass
+          ObjectType: 10
+          guid: f969f5084e0e074592dd21e4331e997a
+      - name: Gravel
+        guid: 061f90355249bb49806ce5f9b19dde99
+        id: 2185786256
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Footsteps_Walk
+          ObjectType: 11
+          guid: ef567332db1f8148a13abb4b75a847f1
+        - ElementName: Gravel
+          ObjectType: 10
+          guid: 061f90355249bb49806ce5f9b19dde99
+      - name: Null
+        guid: 133e39fa30b18248841ffe8b420f82cb
+        id: 784127654
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Footsteps_Walk
+          ObjectType: 11
+          guid: ef567332db1f8148a13abb4b75a847f1
+        - ElementName: Null
+          ObjectType: 10
+          guid: 133e39fa30b18248841ffe8b420f82cb
+      - name: Road
+        guid: d546af22b9007f44b8d03e5d493cbb55
+        id: 2110808655
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Footsteps_Walk
+          ObjectType: 11
+          guid: ef567332db1f8148a13abb4b75a847f1
+        - ElementName: Road
+          ObjectType: 10
+          guid: d546af22b9007f44b8d03e5d493cbb55
+      - name: Sidewalk
+        guid: db6f00b7e6051c4aa971e13d725868b4
+        id: 3137249879
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Footsteps_Walk
+          ObjectType: 11
+          guid: ef567332db1f8148a13abb4b75a847f1
+        - ElementName: Sidewalk
+          ObjectType: 10
+          guid: db6f00b7e6051c4aa971e13d725868b4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: GroundType_Sweep
       guid: c7d379fa6e331144814ff4a12fe1a8d8
       id: 1983642705
@@ -373,7 +516,7 @@ MonoBehaviour:
     m_lastTime: -8585141596741931785
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000a0000000b0000000d0000000e0000000f0000001300000014000000150000001600000018000000190000001a000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000d0000000e0000000f000000130000001400000015000000160000001700000018000000190000001a000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
