@@ -20,7 +20,6 @@ public class SweepSoundPlayer : MonoBehaviour
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
-    //public SerialPort arduinoPort;
     private string RTPC_CaneInteractionPitch = "CaneInteractionPitch";
     private string RTPC_CaneInteractionVolume = "CaneInteractionVolume";
     private void Awake()
@@ -32,9 +31,6 @@ public class SweepSoundPlayer : MonoBehaviour
     {
         AkSoundEngine.RegisterGameObj(gameObject);
         _isPlaying = false;
-
-        // arduinoPort = new SerialPort("COM5", 9600); 
-        // arduinoPort.Open();
     }
 
     private void Update()
@@ -43,25 +39,26 @@ public class SweepSoundPlayer : MonoBehaviour
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
-        bool isColliding = CollisionDetectionCustomScript.IsTouching(this.gameObject,secondaryCollisionGameObj);
+        bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!isMoving && isColliding){
-            startMovement(secondaryCollisionGameObj);
-        }
-        //Ending the movement
-        else if(isMoving && !isColliding){
-            endMovement();
+        if(!isMoving && startsColliding){
+            startMovement();
         }
         //Updating the movement
-        else if(isMoving && isColliding){
+        else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             updateMovement();
+        }
+        //Ending the movement
+        else if(isMoving && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+            endMovement();
         }
         
     }
 
-    void startMovement(GameObject secondaryCollisionGameObj){
-        isMoving=true;
+    void startMovement(){
+        isMoving=true;        
+        registeredCollidingGameObject = secondaryCollisionGameObj;
         Debug.Log("Movement has been initiated");
     }
     void updateMovement()

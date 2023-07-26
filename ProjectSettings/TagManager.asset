@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - grass_PlaneInfo
-  - lane_PlaneInfo
   - Nodes
+  - Road
+  - Sidewalk
+  - Grass
+  - Gravel
   layers:
   - Default
   - TransparentFX

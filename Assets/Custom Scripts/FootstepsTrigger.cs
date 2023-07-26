@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class FootstepsTrigger : MonoBehaviour
     //public SerialPort arduinoPort;
     private string RTPC_CharacterNavSpeed = "CharacterNavSpeed";
     private bool firstFrame = true;
+    private Vector3 previousPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +36,9 @@ public class FootstepsTrigger : MonoBehaviour
             startMovement();
         }
         //Updating the movement
-        else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        else if(isMoving 
+                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)
+                && GameObjectInMotion()){
             updateMovement();
         }
         //Ending the movement
@@ -43,18 +47,27 @@ public class FootstepsTrigger : MonoBehaviour
         }
     }
 
+    private bool GameObjectInMotion()
+    {
+        // Calculate the distance between the current position and the previous position
+        float distance = Vector3.Distance(transform.position, previousPosition);
+        previousPosition = transform.position;
+        return (distance > 0f);
+    }
+
     void startMovement(){
         isMoving=true;
         registeredCollidingGameObject = secondaryCollisionGameObj;
-        Debug.Log("Movement has been initiated");
+        previousPosition = transform.position;
+        Debug.Log("Character movement has been initiated");
     }
     void updateMovement()
     {
-        Debug.Log("Movement being updated");
+        Debug.Log("Character movement being updated");
         try{
             if(!_isPlaying){
                 playingId = AkSoundEngine.PostEvent("FootstepsPlayEvent",gameObject);
-                Debug.Log("Audio play initiated");          
+                Debug.Log("Footsteps audio play initiated");          
                 _isPlaying = true;
             }
             if(_isPlaying){     
@@ -72,6 +85,6 @@ public class FootstepsTrigger : MonoBehaviour
         isMoving=false;
         _isPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
-        Debug.Log("Movement has been terminated");
+        Debug.Log("Character movement has been terminated");
     }
 }
