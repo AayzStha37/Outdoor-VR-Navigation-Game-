@@ -39,19 +39,19 @@ public class SweepSoundPlayer : MonoBehaviour
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
-        bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
+        bool iscolliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!isMoving && startsColliding){
+        if(!isMoving && iscolliding){
             startMovement();
+        }
+        //Ending the movement
+        else if(isMoving && !iscolliding){
+            endMovement();
         }
         //Updating the movement
         else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             updateMovement();
-        }
-        //Ending the movement
-        else if(isMoving && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-            endMovement();
         }
         
     }

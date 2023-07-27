@@ -12,7 +12,6 @@ public class FootstepsTrigger : MonoBehaviour
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     //public SerialPort arduinoPort;
-    private string RTPC_CharacterNavSpeed = "CharacterNavSpeed";
     private bool firstFrame = true;
     private Vector3 previousPosition;
 
@@ -32,19 +31,26 @@ public class FootstepsTrigger : MonoBehaviour
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!isMoving && startsColliding){
+        if(!isMoving 
+            && startsColliding
+            && CheckForColliderTag(secondaryCollisionGameObj)){
             startMovement();
         }
         //Updating the movement
         else if(isMoving 
-                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)
-                && GameObjectInMotion()){
+                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             updateMovement();
         }
         //Ending the movement
-        else if(isMoving && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        else if(isMoving 
+                && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             endMovement();
         }
+    }
+
+    private bool CheckForColliderTag(GameObject secondaryCollisionGameObj)
+    {
+        return (Constants.colliderTagList.Contains(secondaryCollisionGameObj.tag));
     }
 
     private bool GameObjectInMotion()
@@ -59,24 +65,25 @@ public class FootstepsTrigger : MonoBehaviour
         isMoving=true;
         registeredCollidingGameObject = secondaryCollisionGameObj;
         previousPosition = transform.position;
-        Debug.Log("Character movement has been initiated");
+        Debug.Log("Character footsteps movement has been initiated");
     }
     void updateMovement()
     {
-        Debug.Log("Character movement being updated");
+        Debug.Log("Character footsteps movement being updated");
         try{
             if(!_isPlaying){
                 playingId = AkSoundEngine.PostEvent("FootstepsPlayEvent",gameObject);
                 Debug.Log("Footsteps audio play initiated");          
                 _isPlaying = true;
             }
+            //TODO fix this block of code
             if(_isPlaying){     
                 float characterNavSpeed = character.velocity.magnitude;
-                AkSoundEngine.SetRTPCValue(RTPC_CharacterNavSpeed,characterNavSpeed);         
+                AkSoundEngine.SetRTPCValue(Constants.RTPC_CharacterNavSpeed,characterNavSpeed);         
                 Debug.Log("RTPC footsteps Volume : " + characterNavSpeed);
             }
         }catch(System.Exception e){
-            Debug.Log("Exception while playing footsteps audio :" + e);
+            Debug.LogError("Exception while playing footsteps audio :" + e);
         }
 
     }
@@ -85,6 +92,6 @@ public class FootstepsTrigger : MonoBehaviour
         isMoving=false;
         _isPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
-        Debug.Log("Character movement has been terminated");
+        Debug.Log("Character footsteps movement has been terminated");
     }
 }

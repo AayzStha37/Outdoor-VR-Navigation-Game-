@@ -15,9 +15,7 @@ public class HapticsProfilePlayer : MonoBehaviour
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     public static SerialPort arduinoPort = new SerialPort("COM5",9600);
-    private string StartHapticsFlag = "startHaptics";
-    private string StopHapticsFlag = "stopHaptics";
-    private bool hapticsStarted = false;
+    private bool hapticsStarted = false;    
 
     private void Awake()
     {
@@ -56,9 +54,9 @@ public class HapticsProfilePlayer : MonoBehaviour
             startMovement(secondaryCollisionGameObj);
         }
         //Updating the movement
-        else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-            updateMovement();
-        }
+        // else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        //     updateMovement();
+        // }
         //Ending the movement
         else if(isMoving && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             endMovement();
@@ -68,13 +66,16 @@ public class HapticsProfilePlayer : MonoBehaviour
     void startMovement(GameObject secondaryCollisionGameObj){
         isMoving=true;
         registeredCollidingGameObject = secondaryCollisionGameObj;
-        if(!hapticsStarted){
-            //double[] dft321AccelerationMagnitudeArray = secondaryCollisionGameObj.GetComponent<HapticsProfileSelector>().RetunHapticsProfile();
-            sendDataToArduino(StartHapticsFlag);
-            //arduinoPort.Write(dft321AccelerationMagnitudeArray.ToString());
-            Debug.Log("Haptics initiation sent to Arduino");
-            hapticsStarted = true;
-        }
+        // if(!hapticsStarted){
+        //     //double[] dft321AccelerationMagnitudeArray = secondaryCollisionGameObj.GetComponent<HapticsProfileSelector>().RetunHapticsProfile();
+        //     sendDataToArduino(StartHapticsFlag);        
+        //     Debug.Log("Haptics initiation sent to Arduino")
+        //     //arduinoPort.Write(dft321AccelerationMagnitudeArray.ToString());
+        //     hapticsStarted = true;
+        // }
+
+        sendDataToArduino(Constants.StartHapticsFlag);        
+        Debug.Log("Haptics initiation sent to Arduino");
     }
     void updateMovement()
     {
@@ -83,10 +84,12 @@ public class HapticsProfilePlayer : MonoBehaviour
 
     void endMovement(){
         isMoving=false;
-        if(hapticsStarted){
-            sendDataToArduino(StopHapticsFlag);
-            Debug.Log("Haptics termination sent to Arduino");
-        }
+        // if(hapticsStarted){
+        //     sendDataToArduino(StopHapticsFlag);
+        //     Debug.Log("Haptics termination sent to Arduino");
+        // }
+        sendDataToArduino(Constants.StopHapticsFlag);
+        Debug.Log("Haptics termination sent to Arduino");
     }
 
     public void openArduinoPortConnection(){
