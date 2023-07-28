@@ -813,6 +813,8 @@ GameObject:
   - component: {fileID: 110267772}
   - component: {fileID: 110267775}
   - component: {fileID: 110267777}
+  - component: {fileID: 110267779}
+  - component: {fileID: 110267778}
   m_Layer: 0
   m_Name: Sidewalk collider
   m_TagString: Sidewalk
@@ -923,6 +925,31 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &110267778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110267771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &110267779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110267771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &114967546 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589919683574084, guid: 5a525eed3adce3248bcfd773cab5d126,
@@ -1308,14 +1335,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126913786}
-  m_LocalRotation: {x: -0.008427617, y: 0.0015412567, z: 0.0018186315, w: 0.9999616}
-  m_LocalPosition: {x: 0.107, y: 0.011, z: 0.287}
-  m_LocalScale: {x: 0.8197741, y: 1.0266, z: 1}
+  m_LocalRotation: {x: -0.008427619, y: 0.0015412563, z: 0.001818632, w: 0.9999616}
+  m_LocalPosition: {x: 0.10700016, y: 0.010999973, z: 0.28699994}
+  m_LocalScale: {x: 0.81977403, y: 1.0265998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817453716}
   m_Father: {fileID: 1415347428}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -0.966, y: 0.175, z: 0.207}
 --- !u!114 &126913788
 MonoBehaviour:
@@ -2209,6 +2236,8 @@ GameObject:
   - component: {fileID: 197437371}
   - component: {fileID: 197437370}
   - component: {fileID: 197437372}
+  - component: {fileID: 197437374}
+  - component: {fileID: 197437373}
   m_Layer: 0
   m_Name: Road collider (1)
   m_TagString: Road
@@ -2294,6 +2323,31 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &197437373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197437368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &197437374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197437368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &198229411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,14 +2620,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223004298}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.006, y: -0.02, z: 0.075}
+  m_LocalRotation: {x: -0, y: -0, z: 2.6648192e-10, w: 1}
+  m_LocalPosition: {x: -0.0060000354, y: -0.020000013, z: 0.075000055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 986058326}
   m_Father: {fileID: 1415347428}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &223004300
 MonoBehaviour:
@@ -3228,6 +3282,8 @@ GameObject:
   m_Component:
   - component: {fileID: 257748156}
   - component: {fileID: 257748157}
+  - component: {fileID: 257748159}
+  - component: {fileID: 257748158}
   m_Layer: 0
   m_Name: Plane Collider
   m_TagString: Untagged
@@ -3263,6 +3319,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6497413, y: 0.10495911, z: 10.000155}
   m_Center: {x: 0.31530908, y: -0.44752413, z: 2.0079558}
+--- !u!114 &257748158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257748155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &257748159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257748155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &291648362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5400,13 +5481,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462398775}
-  m_LocalRotation: {x: 0.00035887674, y: -0.034012284, z: 0.0105446875, w: 0.9993658}
-  m_LocalPosition: {x: 0.091, y: 0.349, z: 0.288}
+  m_LocalRotation: {x: 0.00035887628, y: -0.034012225, z: 0.010544688, w: 0.9993658}
+  m_LocalPosition: {x: 0.09100012, y: 0.34899995, z: 0.28800014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1415347428}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.082, y: -3.898, z: 1.206}
 --- !u!114 &462398777
 MonoBehaviour:
@@ -8677,7 +8758,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 150956, guid: 0c742447bd6d3ab4792475f2f0c96fcf, type: 3}
       propertyPath: m_Name
-      value: Arnis
+      value: Cane body
+      objectReference: {fileID: 0}
+    - target: {fileID: 150956, guid: 0c742447bd6d3ab4792475f2f0c96fcf, type: 3}
+      propertyPath: m_TagString
+      value: Cane
       objectReference: {fileID: 0}
     - target: {fileID: 408764, guid: 0c742447bd6d3ab4792475f2f0c96fcf, type: 3}
       propertyPath: m_RootOrder
@@ -9396,6 +9481,8 @@ GameObject:
   - component: {fileID: 859616831}
   - component: {fileID: 859616833}
   - component: {fileID: 859616834}
+  - component: {fileID: 859616836}
+  - component: {fileID: 859616835}
   m_Layer: 0
   m_Name: Road collider
   m_TagString: Road
@@ -9516,6 +9603,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23d17ebc8e5db904eb5691cbf932cbf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &859616835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859616826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &859616836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859616826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &867504136
@@ -10826,6 +10938,8 @@ GameObject:
   m_Component:
   - component: {fileID: 952224163}
   - component: {fileID: 952224164}
+  - component: {fileID: 952224166}
+  - component: {fileID: 952224165}
   m_Layer: 0
   m_Name: Plane Collider (1)
   m_TagString: Untagged
@@ -10861,6 +10975,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6862003, y: 0.10495911, z: 10.136854}
   m_Center: {x: 0.32985935, y: -0.44752413, z: 4.829843}
+--- !u!114 &952224165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952224162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &952224166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952224162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &954556401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11188,6 +11327,8 @@ GameObject:
   - component: {fileID: 960888984}
   - component: {fileID: 960888987}
   - component: {fileID: 960888989}
+  - component: {fileID: 960888991}
+  - component: {fileID: 960888990}
   m_Layer: 0
   m_Name: Grass collider (1)
   m_TagString: Grass
@@ -11298,6 +11439,31 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &960888990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960888983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &960888991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960888983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &970729959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4514217353711810, guid: 09c381fe7eb215142a85dbabe00ae5b6,
@@ -11678,6 +11844,8 @@ GameObject:
   - component: {fileID: 1017288245}
   - component: {fileID: 1017288248}
   - component: {fileID: 1017288250}
+  - component: {fileID: 1017288252}
+  - component: {fileID: 1017288251}
   m_Layer: 0
   m_Name: Grass collider
   m_TagString: Grass
@@ -11788,6 +11956,31 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &1017288251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017288244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &1017288252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017288244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028850204
 GameObject:
   m_ObjectHideFlags: 0
@@ -14537,10 +14730,9 @@ GameObject:
   - component: {fileID: 1310991057}
   - component: {fileID: 1310991054}
   - component: {fileID: 1310991059}
-  - component: {fileID: 1310991060}
   m_Layer: 0
-  m_Name: sphere tip
-  m_TagString: Untagged
+  m_Name: Cane tip
+  m_TagString: Cane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14809,18 +15001,6 @@ MonoBehaviour:
   velocityThresold: 0.000001
   velocityFactor: 350
   dampness: 10
---- !u!114 &1310991060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310991042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1321739653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4333627001259202, guid: 4752f864e3118e64482c22f7a8d21b01,
@@ -15543,9 +15723,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 462398776}
   - {fileID: 223004299}
   - {fileID: 126913787}
+  - {fileID: 462398776}
   m_Father: {fileID: 1067320988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18553,6 +18733,8 @@ GameObject:
   - component: {fileID: 1736551519}
   - component: {fileID: 1736551518}
   - component: {fileID: 1736551521}
+  - component: {fileID: 1736551523}
+  - component: {fileID: 1736551522}
   m_Layer: 0
   m_Name: Sidewalk collider (1)
   m_TagString: Sidewalk
@@ -18638,6 +18820,31 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &1736551522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736551517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152757f004220884da7dc6a60a071b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryCollisionObject: {fileID: 0}
+--- !u!114 &1736551523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736551517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2603accec7cb845860c81bd93a0c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1739821899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4739541837513720, guid: 883cf758fdbaad44fbf987329131dbfb,
@@ -21226,7 +21433,7 @@ GameObject:
   - component: {fileID: 2015795110}
   - component: {fileID: 2015795113}
   m_Layer: 0
-  m_Name: handle
+  m_Name: Cane handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

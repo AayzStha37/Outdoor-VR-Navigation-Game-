@@ -7,6 +7,7 @@ public static class Constants
     public const string GrassHapticsProfileTag = "Grass";
     public const string SidewalkHapticsProfileTag = "Sidewalk";
     public const string GravelHapticsProfileTag = "Gravel";
+    public const string WhiteCaneTipTag = "Cane";
     public const string StartHapticsFlag = "startHaptics";
     public const string StopHapticsFlag = "stopHaptics";
     public const string RTPC_CharacterNavSpeed = "CharacterNavSpeed";

@@ -13,7 +13,6 @@ public class HapticsProfilePlayer : MonoBehaviour
     private bool isMoving = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
-    private GameObject registeredCollidingGameObject;
     public static SerialPort arduinoPort = new SerialPort("COM5",9600);
     private bool hapticsStarted = false;    
 
@@ -50,22 +49,21 @@ public class HapticsProfilePlayer : MonoBehaviour
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!isMoving && startsColliding){
-            startMovement(secondaryCollisionGameObj);
+        if(!isMoving && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
+            startMovement();
+        }
+        //Ending the movement
+        else if(isMoving && !startsColliding){
+            endMovement();
         }
         //Updating the movement
         // else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
         //     updateMovement();
         // }
-        //Ending the movement
-        else if(isMoving && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-            endMovement();
-        }
     }
 
-    void startMovement(GameObject secondaryCollisionGameObj){
+    void startMovement(){
         isMoving=true;
-        registeredCollidingGameObject = secondaryCollisionGameObj;
         // if(!hapticsStarted){
         //     //double[] dft321AccelerationMagnitudeArray = secondaryCollisionGameObj.GetComponent<HapticsProfileSelector>().RetunHapticsProfile();
         //     sendDataToArduino(StartHapticsFlag);        
@@ -95,8 +93,7 @@ public class HapticsProfilePlayer : MonoBehaviour
     public void openArduinoPortConnection(){
         if(arduinoPort != null){
             if(arduinoPort.IsOpen){
-                arduinoPort.Close();
-                Debug.Log("Closing arduino port, because it was already open!");
+                Debug.Log("Arduino Port is arleady opened");
             }
             else{
                 arduinoPort.Open();
@@ -105,12 +102,7 @@ public class HapticsProfilePlayer : MonoBehaviour
             }
         }
         else{
-            if(arduinoPort.IsOpen){
-                Debug.Log("Arduino Port is arleady opened");
-            }
-            else{
                 Debug.Log("Arduino Port == null");
-            }
         }
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Sidewalk
   - Grass
   - Gravel
+  - Cane
   layers:
   - Default
   - TransparentFX

@@ -36,15 +36,15 @@ public class FootstepsTrigger : MonoBehaviour
             && CheckForColliderTag(secondaryCollisionGameObj)){
             startMovement();
         }
-        //Updating the movement
-        else if(isMoving 
-                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-            updateMovement();
-        }
         //Ending the movement
         else if(isMoving 
                 && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
             endMovement();
+        }
+        //Updating the movement
+        else if(isMoving 
+                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+            updateMovement();
         }
     }
 
