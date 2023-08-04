@@ -13,7 +13,7 @@ public class HapticsProfilePlayer : MonoBehaviour
     private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
-    public static SerialPort arduinoPort = new SerialPort("COM5");
+    public static SerialPort arduinoPort = new SerialPort("COM7");
     private bool hapticsStarted = false;    
     private Queue<string> sendQueue = new Queue<string>();
 
@@ -33,7 +33,7 @@ public class HapticsProfilePlayer : MonoBehaviour
 
     private void initArduinoSerialPort()
     {
-        arduinoPort.BaudRate = 2000000;
+        arduinoPort.BaudRate = 115200;
         arduinoPort.Parity = Parity.None;
         arduinoPort.StopBits = StopBits.One;
         arduinoPort.DataBits = 8;
@@ -44,8 +44,6 @@ public class HapticsProfilePlayer : MonoBehaviour
     private void sendDataToArduino()
     {
         String dataToSend = sendQueue.Dequeue();
-        // byte[] dataBytes = Encoding.ASCII.GetBytes(dataToSend); // Convert string to bytes
-        //arduinoPort.Write(dataBytes, 0, dataBytes.Length); // Send the bytes over the serial port
         arduinoPort.WriteLine(dataToSend+'\n');
         arduinoPort.BaseStream.Flush();
         Debug.Log("Data sent to Arduino - "+dataToSend);
