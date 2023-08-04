@@ -7,13 +7,14 @@ public class FootstepsTrigger : MonoBehaviour
 {
     public Rigidbody character;   
     private bool _isPlaying = false;
-    private bool isMoving = false;
+    private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     //public SerialPort arduinoPort;
     private bool firstFrame = true;
-    private Vector3 previousPosition;
+    private Vector3 lastPosition;
+    bool isStationary;
 
     // Start is called before the first frame update
     void Start()
@@ -29,47 +30,40 @@ public class FootstepsTrigger : MonoBehaviour
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
-
+        
+        Debug.Log("charatcer moving - "+character.velocity.magnitude);
         //Starting the movement
-        if(!isMoving 
-            && startsColliding
-            && CheckForColliderTag(secondaryCollisionGameObj)){
+        if(!startsInteraction && startsColliding && !Constants.DefaultPlaneTag.Equals(secondaryCollisionGameObj.tag)){
             startMovement();
         }
+        //Updating the movement
+        else if(startsInteraction 
+                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)
+                && !CheckIfStationary()){
+            updateMovement();
+        }   
         //Ending the movement
-        else if(isMoving 
-                && !registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        else if(startsInteraction 
+                && (!registeredCollidingGameObject.Equals(secondaryCollisionGameObj) || CheckIfStationary())){
             endMovement();
         }
-        //Updating the movement
-        else if(isMoving 
-                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-            updateMovement();
-        }
+
+        lastPosition = this.transform.position;
     }
 
-    private bool CheckForColliderTag(GameObject secondaryCollisionGameObj)
-    {
-        return (Constants.colliderTagList.Contains(secondaryCollisionGameObj.tag));
-    }
-
-    private bool GameObjectInMotion()
-    {
-        // Calculate the distance between the current position and the previous position
-        float distance = Vector3.Distance(transform.position, previousPosition);
-        previousPosition = transform.position;
-        return (distance > 0f);
+    bool CheckIfStationary() {
+        float travelSquared = (this.transform.position - lastPosition).sqrMagnitude;
+        return travelSquared < Math.Pow(Constants.stationaryTolerance,2);
     }
 
     void startMovement(){
-        isMoving=true;
+        startsInteraction=true;
         registeredCollidingGameObject = secondaryCollisionGameObj;
-        previousPosition = transform.position;
-        Debug.Log("Character footsteps movement has been initiated");
+        Debug.Log("Character movement has been initiated");
     }
     void updateMovement()
     {
-        Debug.Log("Character footsteps movement being updated");
+        Debug.Log("Character movement being updated");
         try{
             if(!_isPlaying){
                 playingId = AkSoundEngine.PostEvent("FootstepsPlayEvent",gameObject);
@@ -83,15 +77,15 @@ public class FootstepsTrigger : MonoBehaviour
                 Debug.Log("RTPC footsteps Volume : " + characterNavSpeed);
             }
         }catch(System.Exception e){
-            Debug.LogError("Exception while playing footsteps audio :" + e);
+            Debug.Log("Exception while playing footsteps audio :" + e);
         }
 
     }
 
     void endMovement(){
-        isMoving=false;
+        startsInteraction=false;
         _isPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
-        Debug.Log("Character footsteps movement has been terminated");
+        Debug.Log("Character movement has been terminated");
     }
 }

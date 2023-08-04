@@ -1335,9 +1335,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126913786}
-  m_LocalRotation: {x: -0.008427619, y: 0.0015412563, z: 0.001818632, w: 0.9999616}
+  m_LocalRotation: {x: -0.008427622, y: 0.0015412269, z: 0.0018186322, w: 0.9999616}
   m_LocalPosition: {x: 0.10700016, y: 0.010999973, z: 0.28699994}
-  m_LocalScale: {x: 0.81977403, y: 1.0265998, z: 1}
+  m_LocalScale: {x: 0.8197739, y: 1.0265998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817453716}
@@ -2627,7 +2627,7 @@ Transform:
   m_Children:
   - {fileID: 986058326}
   m_Father: {fileID: 1415347428}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &223004300
 MonoBehaviour:
@@ -3286,7 +3286,7 @@ GameObject:
   - component: {fileID: 257748158}
   m_Layer: 0
   m_Name: Plane Collider
-  m_TagString: Untagged
+  m_TagString: DefaultPlane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5481,13 +5481,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462398775}
-  m_LocalRotation: {x: 0.00035887628, y: -0.034012225, z: 0.010544688, w: 0.9993658}
+  m_LocalRotation: {x: 0.00035887395, y: -0.034012225, z: 0.010544688, w: 0.9993658}
   m_LocalPosition: {x: 0.09100012, y: 0.34899995, z: 0.28800014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1415347428}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.082, y: -3.898, z: 1.206}
 --- !u!114 &462398777
 MonoBehaviour:
@@ -8762,7 +8762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150956, guid: 0c742447bd6d3ab4792475f2f0c96fcf, type: 3}
       propertyPath: m_TagString
-      value: Cane
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 408764, guid: 0c742447bd6d3ab4792475f2f0c96fcf, type: 3}
       propertyPath: m_RootOrder
@@ -10799,19 +10799,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &939574957
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939574951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.07818177, y: 5.5468326, z: 0.07818177}
-  m_Center: {x: -0.00000019557774, y: 2.745549, z: 0.00000004656613}
 --- !u!1 &944385185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10942,7 +10929,7 @@ GameObject:
   - component: {fileID: 952224165}
   m_Layer: 0
   m_Name: Plane Collider (1)
-  m_TagString: Untagged
+  m_TagString: DefaultPlane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12416,7 +12403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067320985}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -2.8, y: 0.22, z: 3.2}
+  m_LocalPosition: {x: -2.932, y: 0.22, z: 2.876}
   m_LocalScale: {x: 1, y: 0.8377494, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12460,7 +12447,7 @@ MonoBehaviour:
   m_EnableFly: 0
   m_UseGravity: 0
   m_GravityApplicationMode: 1
-  m_ForwardSource: {fileID: 462398776}
+  m_ForwardSource: {fileID: 0}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
@@ -15723,9 +15710,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 223004299}
-  - {fileID: 126913787}
   - {fileID: 462398776}
+  - {fileID: 126913787}
+  - {fileID: 223004299}
   m_Father: {fileID: 1067320988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

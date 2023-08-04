@@ -2,6 +2,8 @@
 
  using System.Collections;
  using System.IO.Ports;
+using System;
+
 public class SweepSoundPlayer : MonoBehaviour
 {
     [SerializeField]
@@ -16,12 +18,11 @@ public class SweepSoundPlayer : MonoBehaviour
     private float dampness = 10f;
     private bool _isPlaying = false;
     private Vector3 _lastPosition;
-    private bool isMoving = false;
+    private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
-    private string RTPC_CaneInteractionPitch = "CaneInteractionPitch";
-    private string RTPC_CaneInteractionVolume = "CaneInteractionVolume";
+    private Vector3 lastPosition;
     private void Awake()
     {
         _lastPosition = this.transform.position;
@@ -39,25 +40,33 @@ public class SweepSoundPlayer : MonoBehaviour
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
-        bool iscolliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
+        bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!isMoving && iscolliding){
+        if(!startsInteraction && startsColliding && !Constants.DefaultPlaneTag.Equals(secondaryCollisionGameObj.tag)){
             startMovement();
         }
         //Ending the movement
-        else if(isMoving && !iscolliding){
+        else if(startsInteraction && (!startsColliding || CheckIfStationary() || !registeredCollidingGameObject.Equals(secondaryCollisionGameObj) )){
             endMovement();
         }
         //Updating the movement
-        else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        else if(startsInteraction 
+                && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)
+                && !CheckIfStationary()){
             updateMovement();
         }
-        
+
+        lastPosition = this.transform.position;
+    }
+
+     bool CheckIfStationary() {
+        float travelSquared = (this.transform.position - lastPosition).sqrMagnitude;
+        return travelSquared < Math.Pow(Constants.stationaryTolerance,2);
     }
 
     void startMovement(){
-        isMoving=true;        
+        startsInteraction=true;        
         registeredCollidingGameObject = secondaryCollisionGameObj;
         Debug.Log("Movement has been initiated");
     }
@@ -81,12 +90,12 @@ public class SweepSoundPlayer : MonoBehaviour
             velocity *= velocityFactor;
             float desiredVolume = volumeCurve.Evaluate(velocity);
             float caneinteractionVolume = Mathf.Lerp(100f, desiredVolume, dampness * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue(RTPC_CaneInteractionVolume,caneinteractionVolume);
+            AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionVolume,caneinteractionVolume);
             Debug.Log("RTPC Volume : " + caneinteractionVolume);
 
             float desiredPitch = pitchCurve.Evaluate(velocity);
             float caneinteractionPitch = Mathf.Lerp(150f, desiredPitch, dampness * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue(RTPC_CaneInteractionPitch,caneinteractionPitch);         
+            AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionPitch,caneinteractionPitch);         
             Debug.Log("RTPC Pitch : " + caneinteractionPitch);
         }
         }catch(System.Exception e){
@@ -96,7 +105,7 @@ public class SweepSoundPlayer : MonoBehaviour
     }
 
     void endMovement(){
-        isMoving=false;
+        startsInteraction=false;
         _isPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
         Debug.Log("Movement has been terminated");

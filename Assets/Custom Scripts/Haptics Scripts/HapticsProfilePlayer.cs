@@ -10,11 +10,13 @@ public class HapticsProfilePlayer : MonoBehaviour
   
     private bool _isPlaying = false;
     private Vector3 _lastPosition;
-    private bool isMoving = false;
+    private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
-    public static SerialPort arduinoPort = new SerialPort("COM5",9600);
+    public static SerialPort arduinoPort = new SerialPort("COM5");
     private bool hapticsStarted = false;    
+    private Queue<string> sendQueue = new Queue<string>();
+
 
     private void Awake()
     {
@@ -25,14 +27,28 @@ public class HapticsProfilePlayer : MonoBehaviour
     {
         AkSoundEngine.RegisterGameObj(gameObject);
         _isPlaying = false;
+        initArduinoSerialPort();
         openArduinoPortConnection();
     }
-    
-    private void sendDataToArduino(String flag)
+
+    private void initArduinoSerialPort()
     {
-        byte[] dataBytes = Encoding.ASCII.GetBytes(flag); // Convert string to bytes
-        arduinoPort.Write(dataBytes, 0, dataBytes.Length); // Send the bytes over the serial port
-        Debug.Log("Data sent to Arduino - "+flag);
+        arduinoPort.BaudRate = 2000000;
+        arduinoPort.Parity = Parity.None;
+        arduinoPort.StopBits = StopBits.One;
+        arduinoPort.DataBits = 8;
+        arduinoPort.Handshake = Handshake.None;
+        arduinoPort.RtsEnable = true;
+    }
+
+    private void sendDataToArduino()
+    {
+        String dataToSend = sendQueue.Dequeue();
+        // byte[] dataBytes = Encoding.ASCII.GetBytes(dataToSend); // Convert string to bytes
+        //arduinoPort.Write(dataBytes, 0, dataBytes.Length); // Send the bytes over the serial port
+        arduinoPort.WriteLine(dataToSend+'\n');
+        arduinoPort.BaseStream.Flush();
+        Debug.Log("Data sent to Arduino - "+dataToSend);
     }
 
     private void OnDestroy() {
@@ -47,23 +63,26 @@ public class HapticsProfilePlayer : MonoBehaviour
     {
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
-
+        try{
         //Starting the movement
-        if(!isMoving && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
+        if(!startsInteraction && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
             startMovement();
         }
         //Ending the movement
-        else if(isMoving && !startsColliding){
+        else if(startsInteraction && !startsColliding){
             endMovement();
         }
         //Updating the movement
-        // else if(isMoving && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        // else if(startsInteraction && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
         //     updateMovement();
         // }
+        }catch(System.Exception e){
+            Debug.LogError("Exception while sending data to Arduino - "+e.GetBaseException());
+        }
     }
 
     void startMovement(){
-        isMoving=true;
+        startsInteraction=true;
         // if(!hapticsStarted){
         //     //double[] dft321AccelerationMagnitudeArray = secondaryCollisionGameObj.GetComponent<HapticsProfileSelector>().RetunHapticsProfile();
         //     sendDataToArduino(StartHapticsFlag);        
@@ -71,8 +90,8 @@ public class HapticsProfilePlayer : MonoBehaviour
         //     //arduinoPort.Write(dft321AccelerationMagnitudeArray.ToString());
         //     hapticsStarted = true;
         // }
-
-        sendDataToArduino(Constants.StartHapticsFlag);        
+        sendQueue.Enqueue(Constants.StartHapticsFlag);
+        sendDataToArduino();        
         Debug.Log("Haptics initiation sent to Arduino");
     }
     void updateMovement()
@@ -81,12 +100,13 @@ public class HapticsProfilePlayer : MonoBehaviour
     }
 
     void endMovement(){
-        isMoving=false;
+        startsInteraction=false;
         // if(hapticsStarted){
         //     sendDataToArduino(StopHapticsFlag);
         //     Debug.Log("Haptics termination sent to Arduino");
         // }
-        sendDataToArduino(Constants.StopHapticsFlag);
+        sendQueue.Enqueue(Constants.StopHapticsFlag);
+        sendDataToArduino();
         Debug.Log("Haptics termination sent to Arduino");
     }
 

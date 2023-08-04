@@ -494,38 +494,380 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{E8FA3EC7-AE76-7327-27F3-5B1276D9C31E}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{01608DAD-6F8A-1D27-B1AC-3D766170A570}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
+				<File Id="751380" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 2_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="110321177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 12_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="123697944" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 8_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="191743235" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 11_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="209696362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 5_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="271188208" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 9_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="425386455" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 12_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="456465931" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 3_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="470569834" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 4_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="477364437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 4_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="480046505" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 4_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="493867684" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 7_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="524820297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 11_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="542866157" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 6_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="557740984" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 5_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="565167621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 7_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="570548265" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 6_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="585219055" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 5_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="611431665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 3_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="631529383" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 6_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="657691887" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 11_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="670977711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 9_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="711256119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 1_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="711256120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Road 16.wav</ShortName>
 					<CachePath>Plugins/SoundSeed Grain/Road 16_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="718036835" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 10_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="722190233" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 7_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="736948043" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 2_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="745830494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 9_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="746671563" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 10_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="751996796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 13_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="770144271" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sidewalk 8.wav</ShortName>
 					<CachePath>Plugins/SoundSeed Grain/Sidewalk 8_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="770144272" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="788018259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 13_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="863764271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 2_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="881208968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 14.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 14_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="926276141" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 12_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="936089891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 8_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1005319627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 1_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="1005319630" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass 3.wav</ShortName>
 					<CachePath>Plugins/SoundSeed Grain/Grass 3_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="1006456433" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 10_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1006670702" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 15.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 15_D79FB2B7.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="30310155" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="611431665"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="44577374" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="557740984"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="46491380" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="926276141"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="51524302" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="570548265"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="96270515" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="718036835"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="166754825" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="524820297"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="167796622" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="936089891"/>
+						</MediaRefs>
+					</Plugin>
 					<Plugin Id="174499234" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
-							<MediaRef Id="711256120"/>
+							<MediaRef Id="711256119"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="190321877" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="425386455"/>
 						</MediaRefs>
 					</Plugin>
 					<Plugin Id="197919893" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
+							<MediaRef Id="770144272"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="236128996" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
 							<MediaRef Id="770144271"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="267677382" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1006670702"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="268237032" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="722190233"/>
 						</MediaRefs>
 					</Plugin>
 					<Plugin Id="276986352" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
+							<MediaRef Id="1005319627"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="280113001" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="470569834"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="338831169" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="565167621"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="362275289" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="493867684"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="401432112" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="585219055"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="433908533" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="657691887"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="436189373" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="746671563"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="490593844" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="745830494"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="515613982" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="542866157"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="520242636" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="477364437"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="577923879" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="631529383"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="594514039" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="736948043"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="617185961" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="110321177"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="687556598" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="271188208"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="721162830" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="751996796"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="723974894" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="670977711"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="727597250" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1006456433"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="730360170" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
 							<MediaRef Id="1005319630"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="748104291" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="456465931"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="761336159" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="209696362"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="880819335" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="711256120"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="896269136" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="751380"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="927013588" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="863764271"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="931176826" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="123697944"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="947886948" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="480046505"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="970251428" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="881208968"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="980154776" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="191743235"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="1040651829" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="788018259"/>
 						</MediaRefs>
 					</Plugin>
 				</Custom>
@@ -537,7 +879,22 @@
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="51524302"/>
+									<PluginRef Id="166754825"/>
 									<PluginRef Id="174499234"/>
+									<PluginRef Id="267677382"/>
+									<PluginRef Id="268237032"/>
+									<PluginRef Id="280113001"/>
+									<PluginRef Id="594514039"/>
+									<PluginRef Id="617185961"/>
+									<PluginRef Id="687556598"/>
+									<PluginRef Id="721162830"/>
+									<PluginRef Id="727597250"/>
+									<PluginRef Id="748104291"/>
+									<PluginRef Id="761336159"/>
+									<PluginRef Id="880819335"/>
+									<PluginRef Id="931176826"/>
+									<PluginRef Id="970251428"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -545,7 +902,19 @@
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="4248645337"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="46491380"/>
+									<PluginRef Id="167796622"/>
 									<PluginRef Id="276986352"/>
+									<PluginRef Id="338831169"/>
+									<PluginRef Id="401432112"/>
+									<PluginRef Id="433908533"/>
+									<PluginRef Id="436189373"/>
+									<PluginRef Id="520242636"/>
+									<PluginRef Id="577923879"/>
+									<PluginRef Id="723974894"/>
+									<PluginRef Id="730360170"/>
+									<PluginRef Id="927013588"/>
+									<PluginRef Id="1040651829"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -553,7 +922,18 @@
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="3137249879"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="30310155"/>
+									<PluginRef Id="44577374"/>
+									<PluginRef Id="96270515"/>
+									<PluginRef Id="190321877"/>
 									<PluginRef Id="197919893"/>
+									<PluginRef Id="236128996"/>
+									<PluginRef Id="362275289"/>
+									<PluginRef Id="490593844"/>
+									<PluginRef Id="515613982"/>
+									<PluginRef Id="896269136"/>
+									<PluginRef Id="947886948"/>
+									<PluginRef Id="980154776"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -610,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8042CFAE-A9BC-5C6D-B547-3DEEF1F98FAC}</FileHash>
+	<FileHash>{797405D4-CA7E-0D65-7F48-891B6AD0B59D}</FileHash>
 </SoundBanksInfo>
