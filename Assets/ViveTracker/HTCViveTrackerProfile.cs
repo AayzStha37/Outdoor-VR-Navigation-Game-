@@ -56,6 +56,11 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
         public static class TrackerUserPaths
         {
             /// <summary>
+            /// Path for user handHeld
+            /// </summary>
+            public const string handHeld = "/user/vive_tracker_htcx/role/handheld_object";
+
+            /// <summary>
             /// Path for user left foot
             /// </summary>
             public const string leftFoot = "/user/vive_tracker_htcx/role/left_foot";
@@ -138,7 +143,7 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
         /// <summary>
         /// An Input System device based off the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#_htc_vive_controller_profile">HTC Vive Tracker</a>.
         /// </summary>
-        [Preserve, InputControlLayout(displayName = "HTC Vive Tracker (OpenXR)", commonUsages = new[] { "Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard" })]
+        [Preserve, InputControlLayout(displayName = "HTC Vive Tracker (OpenXR)", commonUsages = new[] { "Hand Held", "Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard" })]
         public class XRViveTracker : XRTracker
         {
             /// <summary>
@@ -202,7 +207,8 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
                     InputSystem.InputSystem.SetDeviceUsage(this, "Camera");
                 else if ((deviceDescriptor.characteristics & (InputDeviceCharacteristics)InputDeviceTrackerCharacteristics.TrackerKeyboard) != 0)
                     InputSystem.InputSystem.SetDeviceUsage(this, "Keyboard");
-                
+                else 
+                    InputSystem.InputSystem.SetDeviceUsage(this, "Hand Held");
                 Debug.Log("Device added");
             }
         }
@@ -232,22 +238,24 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
         //
         // Summary:
         //     A set of bit flags describing XR.InputDevice characteristics.
-        //"Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard"
+        //"Hand Held", "Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard"
         [Flags]
         public enum InputDeviceTrackerCharacteristics : uint
         {
-            TrackerLeftFoot = 0x1000u,
-            TrackerRightFoot = 0x2000u,
-            TrackerLeftShoulder = 0x4000u,
-            TrackerRightShoulder = 0x8000u,
-            TrackerLeftElbow = 0x10000u,
-            TrackerRightElbow = 0x20000u,
-            TrackerLeftKnee = 0x40000u,
-            TrackerRightKnee = 0x80000u,
-            TrackerWaist = 0x100000u,
-            TrackerChest = 0x200000u,
-            TrackerCamera = 0x400000u,
-            TrackerKeyboard = 0x800000u
+            
+            TrackerHandHeld =  0x1000u,
+            TrackerLeftFoot = 0x2000u,
+            TrackerRightFoot = 0x4000u,
+            TrackerLeftShoulder = 0x8000u,
+            TrackerRightShoulder = 0x10000u,
+            TrackerLeftElbow = 0x20000u,
+            TrackerRightElbow = 0x40000u,
+            TrackerLeftKnee = 0x80000u,
+            TrackerRightKnee = 0x100000u,
+            TrackerWaist = 0x200000u,
+            TrackerChest = 0x400000u,
+            TrackerCamera = 0x800000u,
+            TrackerKeyboard = 0x1000000u
         }
  
         /// <inheritdoc/>
@@ -262,6 +270,11 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
                 serialNumber = "",
                 deviceInfos = new List<DeviceConfig>()
                 {
+                    new DeviceConfig()
+                    {
+                        characteristics = (InputDeviceCharacteristics.HeldInHand) | (InputDeviceCharacteristics.TrackedDevice),
+                        userPath = TrackerUserPaths.handHeld
+                    },
                     new DeviceConfig()
                     {
                         characteristics = (InputDeviceCharacteristics.TrackedDevice) | (InputDeviceCharacteristics)InputDeviceTrackerCharacteristics.TrackerLeftFoot,

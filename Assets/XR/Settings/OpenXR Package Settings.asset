@@ -198,6 +198,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &1714898485252165198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: ViveTrackerProfile Standalone
+  m_EditorClassIdentifier: Assembly-CSharp:UnityEngine.XR.OpenXR.Features.Interactions:ViveTrackerProfile
+  m_enabled: 1
+  nameUi: Vive Tracker Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.vivetrackerprofile
+  openxrExtensionStrings: XR_HTCX_vive_tracker_interaction
+  company: HTC
+  priority: 0
+  required: 0
 --- !u!114 &2625139083627899604
 MonoBehaviour:
   m_ObjectHideFlags: 0
