@@ -46,7 +46,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{B76D547B-D38A-2732-DC9B-6DCFF713D4DE}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{FA32E9EE-A70A-5A3A-8312-815695466BFC}">
 			<ShortName>Start_Scene_Traffic</ShortName>
 			<Path>Start_Scene_Traffic.bnk</Path>
 			<Media>
@@ -494,7 +494,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{01608DAD-6F8A-1D27-B1AC-3D766170A570}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{DF261C73-88AA-EB0C-D4D7-AABC1A0E7AD3}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -990,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{76CE34A8-A8C3-A534-329B-526B06C6EF80}</FileHash>
+	<FileHash>{1F4B189B-F9D1-02A6-ED08-2A5CF5907FCC}</FileHash>
 </SoundBanksInfo>

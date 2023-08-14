@@ -6,17 +6,21 @@ using UnityEngine;
 public class VehicleSpawnner : MonoBehaviour
 {
     public List<GameObject> spawnItems;
-    public  float frequency;
+    public  float spawnInterval;
     public float initalSpeed;
-    float lastSpawnedTime = 1.0f;
-    public bool isSpawn = true;
+    float timeSinceLastSpawn = 0.0f;
+    private bool isSpawn = true;
     private bool haultedVehicles = false;
 
     [Obsolete]
     void Update()
     {
-        if(Time.time > lastSpawnedTime * frequency && isSpawn){
-           SpawnVehicle(spawnItems[UnityEngine.Random.Range(0,spawnItems.Count)]);
+        timeSinceLastSpawn += Time.deltaTime;
+
+        if (timeSinceLastSpawn >= spawnInterval && isSpawn)
+        {
+            SpawnVehicle(spawnItems[UnityEngine.Random.Range(0,spawnItems.Count)]);
+            timeSinceLastSpawn = 0.0f; // Reset the timer
         }else if (!isSpawn){
             haultedVehicles = true;
             //TODO refactor block
@@ -43,7 +47,6 @@ public class VehicleSpawnner : MonoBehaviour
        newSpawnObj.name +=  "_"+uniquieIDGenerator();
        newSpawnObj.GetComponent<Rigidbody>().velocity = transform.forward*-1*initalSpeed;
        newSpawnObj.transform.parent = transform; 
-       lastSpawnedTime = Time.time;
     }
 
     private string uniquieIDGenerator()

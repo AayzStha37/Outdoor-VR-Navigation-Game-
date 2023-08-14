@@ -46,7 +46,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{7D10CDC1-6732-B3FA-F53B-E63CA7BED32E}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{FA32E9EE-A70A-5A3A-8312-815695466BFC}">
 			<ShortName>Start_Scene_Traffic</ShortName>
 			<Path>Start_Scene_Traffic.bnk</Path>
 			<Media>
@@ -990,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64DEEDA8-962B-04E7-9F95-58EFAD94E1C2}</FileHash>
+	<FileHash>{72979F8D-FD03-C13D-FA5C-9F5AB13951E8}</FileHash>
 </SoundBanksInfo>

@@ -13,11 +13,11 @@ public class HapticsProfilePlayer : MonoBehaviour
     private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
-    public static SerialPort arduinoPort = new SerialPort("COM7");
+    public static SerialPort arduinoPort = new SerialPort("COM8");
     private bool hapticsStarted = false;    
     private Queue<string> sendQueue = new Queue<string>();
 
-
+    int count = 0;
     private void Awake()
     {
         _lastPosition = this.transform.position;
@@ -52,8 +52,7 @@ public class HapticsProfilePlayer : MonoBehaviour
     private void OnDestroy() {
         if (arduinoPort != null && arduinoPort.IsOpen)
         {
-            arduinoPort.Close();
-            Debug.Log("Arduino Port closed");
+            CloseArduinoPort();
         }
     }
 
@@ -61,9 +60,16 @@ public class HapticsProfilePlayer : MonoBehaviour
     {
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
+        
+        if(count>5){
+            CloseArduinoPort();
+            openArduinoPortConnection();
+            count = 0;
+        }
         try{
         //Starting the movement
         if(!startsInteraction && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
+            count++;
             startMovement();
         }
         //Ending the movement
@@ -88,7 +94,8 @@ public class HapticsProfilePlayer : MonoBehaviour
         //     //arduinoPort.Write(dft321AccelerationMagnitudeArray.ToString());
         //     hapticsStarted = true;
         // }
-        sendQueue.Enqueue(Constants.StartHapticsFlag);
+        
+        sendQueue.Enqueue(Constants.StartHapticsFlag+"_"+gameObject.tag);
         sendDataToArduino();        
         Debug.Log("Haptics initiation sent to Arduino");
     }
@@ -122,5 +129,9 @@ public class HapticsProfilePlayer : MonoBehaviour
         else{
                 Debug.Log("Arduino Port == null");
         }
+    }
+    private void CloseArduinoPort(){
+        arduinoPort.Close();
+        Debug.Log("Arduino Port closed");
     }
 }

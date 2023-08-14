@@ -14,7 +14,10 @@ public static class Constants
     public const string RTPC_CharacterNavSpeed = "CharacterNavSpeed";
     public const string RTPC_CaneInteractionPitch = "CaneInteractionPitch";
     public const string RTPC_CaneInteractionVolume = "CaneInteractionVolume";
-    public const float stationaryTolerance = 0.005f;
+    public const float stationaryTolerance = 0.01f;
+
+    public const string WaitSound = "waitSound";
+    public const string WalkSound = "walkSound";
 
     public static List<string> colliderTagList = new List<string>{RoadHapticsProfileTag, GrassHapticsProfileTag, SidewalkHapticsProfileTag, GravelHapticsProfileTag};
 
