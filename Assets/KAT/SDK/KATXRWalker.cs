@@ -37,9 +37,9 @@ public class KATXRWalker : MonoBehaviour
          
         var ws = KATNativeSDK.GetWalkStatus();
         var device = LocoSExtraData.GetExtraInfoLoco(ws);
-        //ÓÒ½Åpitch
+        //ï¿½Ò½ï¿½pitch
         //Debug.Log(device.R_Pitch);
-        //×ó½Åpitch
+        //ï¿½ï¿½ï¿½pitch
         Debug.Log(device.L_Pitch);
 
         if (!ws.connected)
@@ -74,7 +74,7 @@ public class KATXRWalker : MonoBehaviour
             return;
         }
 
-        transform.rotation = ws.bodyRotationRaw * Quaternion.Inverse( Quaternion.Euler(new Vector3(0,yawCorrection,0)));
+        transform.rotation = ws.bodyRotationRaw * Quaternion.Inverse(Quaternion.Euler(new Vector3(0,yawCorrection,0)));
 
       
 
@@ -93,8 +93,8 @@ public class KATXRWalker : MonoBehaviour
                 break;
             case ExecuteMethod.RigidBody:
                 {
-                    var r = GetComponent<Rigidbody>();
-                    r.velocity = transform.rotation * ws.moveSpeed;
+                    var r = GetComponent<Rigidbody>();                    
+                    r.velocity = (transform.rotation * ws.moveSpeed);
                 }
                 break;
         } 

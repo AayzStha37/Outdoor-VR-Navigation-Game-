@@ -13,7 +13,7 @@ public class HapticsProfilePlayer : MonoBehaviour
     private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
-    public static SerialPort arduinoPort = new SerialPort("COM8");
+    public static SerialPort arduinoPort = new SerialPort("COM7");
     private bool hapticsStarted = false;    
     private Queue<string> sendQueue = new Queue<string>();
 
