@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Oculus/SampleFramework/Usage/HandsInteractionTrainScene.unity
     guid: a9c41884ef0c347628dfd8a4af4a022e
-  - enabled: 0
-    path: Assets/Scenes/Main VR start scene.unity
-    guid: 3784377c4789c43ff882bad6055ed7e1
   - enabled: 1
+    path: Assets/Scenes/Main navigation start scene.unity
+    guid: 3784377c4789c43ff882bad6055ed7e1
+  - enabled: 0
     path: Assets/KAT/Demo/KATWalkDemo/3.WalkDemo.unity
     guid: 3113c641159ca7641bb8898505d76347
+  - enabled: 1
+    path: Assets/Scenes/Menu start scene.unity
+    guid: 5116dc037d12d6c47a3f4b7c957913e7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ade377da57369483f8d5fdd482d5400e,
       type: 2}
