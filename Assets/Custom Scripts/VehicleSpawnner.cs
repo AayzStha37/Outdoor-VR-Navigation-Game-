@@ -46,7 +46,7 @@ public class VehicleSpawnner : MonoBehaviour
        GameObject newSpawnObj = Instantiate(spawnItem, transform.position, Quaternion.Euler(0,180,0));
        newSpawnObj.name +=  "_"+uniquieIDGenerator();
        newSpawnObj.GetComponent<Rigidbody>().velocity = transform.forward*-1*initalSpeed;
-       newSpawnObj.transform.parent = transform; 
+       newSpawnObj.transform.Rotate(0f, 180f, 0f);
     }
 
     private string uniquieIDGenerator()
