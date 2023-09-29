@@ -11,6 +11,7 @@ TagManager:
   - Gravel
   - Cane
   - DefaultPlane
+  - DefaultInteractionSurfaces
   layers:
   - Default
   - TransparentFX

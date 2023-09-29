@@ -33,7 +33,7 @@ public class FootstepsTrigger : MonoBehaviour
         
         Debug.Log("charatcer moving - "+character.velocity.magnitude);
         //Starting the movement
-        if(!startsInteraction && startsColliding && !Constants.DefaultPlaneTag.Equals(secondaryCollisionGameObj.tag)){
+        if(!startsInteraction && startsColliding && Constants.colliderTagList.Contains(secondaryCollisionGameObj.tag)){
             startMovement();
         }
         //Updating the movement
