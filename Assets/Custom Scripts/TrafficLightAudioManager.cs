@@ -4,23 +4,39 @@ using System.Collections.Generic;
 using UnityEngine;
 public class TrafficLightAudioManager : MonoBehaviour
 {
+    public float variableDelay = 0f;
     private uint waitSoundplayId = 0;
     private uint walkSoundplayId = 0;
     public GameObject frontTrafficLight;
     public GameObject rearTrafficLight;
     private Renderer frontTrafficLightRenderer;
     private Renderer rearTrafficLightRenderer;
-    private float timerValue;
+    private float waitInterval = 10f; // Time interval between e1 events
+    private float walkInterval = 15f;
     public GameObject vehcileBlockGameObj;
     private void Awake() {
         frontTrafficLightRenderer = frontTrafficLight.GetComponentInChildren<MeshRenderer>();
         rearTrafficLightRenderer = rearTrafficLight.GetComponentInChildren<MeshRenderer>();
     }
     private void Start() {
-        playTrafficLightAudio(Constants.WaitSound);
-        timerValue = 7.0f;
-        switchTrafficLight(true);
-        vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(false);
+        StartCoroutine(PlayTrafficEvents());
+    }
+    private IEnumerator PlayTrafficEvents()
+    {
+        yield return new WaitForSeconds(variableDelay);
+
+        while (true)
+        {
+            playTrafficLightAudio(Constants.WaitSound);
+            switchTrafficLightToRed(true);
+            vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(false);
+            yield return new WaitForSeconds(walkInterval);
+
+            playTrafficLightAudio(Constants.WalkSound);
+            switchTrafficLightToRed(false);
+            vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(true);
+            yield return new WaitForSeconds(waitInterval);
+        }
     }
 
      public void playTrafficLightAudio(String TrafficLightSound)
@@ -31,9 +47,6 @@ public class TrafficLightAudioManager : MonoBehaviour
                     walkSoundplayId = 0;
                }
                waitSoundplayId = AkSoundEngine.PostEvent("TrafficLightWaitSoundEvent",gameObject);
-               vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(false);
-               switchTrafficLight(true);
-               StartCoroutine(PlayWalkSoundAfterTimer());
           }
           else if(TrafficLightSound.Equals(Constants.WalkSound)){
                if(waitSoundplayId > 0){
@@ -45,7 +58,7 @@ public class TrafficLightAudioManager : MonoBehaviour
      }
 
      
-    private void switchTrafficLight(bool isRed)
+    private void switchTrafficLightToRed(bool isRed)
     {
         Material[] materials =  frontTrafficLightRenderer.materials;
         if(isRed){
@@ -57,23 +70,5 @@ public class TrafficLightAudioManager : MonoBehaviour
             frontTrafficLightRenderer.materials = materials;
             rearTrafficLightRenderer.materials = materials;
         }
-    }
-
-    public IEnumerator PlayWalkSoundAfterTimer()
-    {
-        while (timerValue > 0)
-        {
-            yield return new WaitForSeconds(1.0f);
-            timerValue--;
-        }
-        exitFunc();
-    }
-
-    private void exitFunc()
-    { 
-        playTrafficLightAudio(Constants.WalkSound);
-        switchTrafficLight(false);
-        vehcileBlockGameObj.GetComponent<RegisterBlockID>().setStopVehicles(true);
-        timerValue = 7.0f;
     }
 }

@@ -11,7 +11,7 @@ public class TrafficLightTriggerManager : MonoBehaviour
         if(other.gameObject.tag.Equals(Constants.WhiteCaneTipTag) && !lockResource){
              timerValue = 8.0f;
             lockResource = true;
-            this.gameObject.GetComponentInParent<TrafficLightAudioManager>().playTrafficLightAudio(Constants.WaitSound);
+            //this.gameObject.GetComponentInParent<TrafficLightAudioManager>().playTrafficLightAudio(Constants.WaitSound);
             StartCoroutine(LockResourceTimer());
         }
     }
