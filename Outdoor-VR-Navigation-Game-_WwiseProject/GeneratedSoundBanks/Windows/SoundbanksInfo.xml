@@ -63,7 +63,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{B3267CE4-91D3-F673-6C62-B97DE1CBD6D9}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{39C61930-00F2-B6DB-7B41-93D776E6F59F}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
@@ -377,7 +377,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="654585276" Name="FootstepsPlayEvent" DurationType="Infinite">
+				<Event Id="654585276" Name="FootstepsPlayEvent" MaxAttenuation="5" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1780308710" Id="2185786256"/>
@@ -494,7 +494,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{DF261C73-88AA-EB0C-D4D7-AABC1A0E7AD3}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{D5BA7553-9E8F-0852-2DFE-E6A37D1FEBE5}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -873,7 +873,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Unknown">
+				<Event Id="2424624112" Name="GroundSweepEvent" MaxAttenuation="5" DurationType="Unknown">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
@@ -955,7 +955,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{E83A3422-EF40-B309-C959-50FCF816FEFD}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{F6823941-2DC6-74D0-DD34-D6AE803FBCD0}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -965,24 +965,24 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" DurationType="Infinite">
+				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="70" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="551432879"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{AEA7C649-E453-C89B-308B-3184494E384C}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{2B4F0E92-0640-5C35-6C3A-104C9D363502}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
 				<File Id="265156255" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wait Audio Clip.wav</ShortName>
-					<CachePath>SFX/Wait Audio Clip_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Wait Audio Clip_C5579977.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" DurationType="Infinite">
+				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" MaxAttenuation="70" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="265156255"/>
 					</MediaRefs>
@@ -990,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1F4B189B-F9D1-02A6-ED08-2A5CF5907FCC}</FileHash>
+	<FileHash>{7CDCD031-DBFF-7EA0-90ED-38BBB08479A1}</FileHash>
 </SoundBanksInfo>

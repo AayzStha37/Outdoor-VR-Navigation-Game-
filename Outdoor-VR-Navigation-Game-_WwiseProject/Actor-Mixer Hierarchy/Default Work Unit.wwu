@@ -4,7 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="Ground_Sweep" ID="{1E892C38-2974-4EA1-9BA1-395729ACC836}" ShortID="475205600">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Cane tip interaction sound Attenuation" ID="{2FE7132F-8A29-4129-9CEC-69DB985DFFCD}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>
@@ -5033,6 +5039,7 @@
 				</Sound>
 				<Sound Name="Traffic Light Wait Sound" ID="{81AC21F2-CFA0-4184-A34A-3CA30AAAB4E2}" ShortID="1023375139">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -5041,6 +5048,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>
@@ -5050,6 +5060,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Wait Audio Clip.wav</AudioFile>
 							<MediaIDList>
@@ -5063,6 +5076,7 @@
 				</Sound>
 				<Sound Name="Traffic Light Walk Sound" ID="{163087C5-332C-4965-8C95-2900FC2F72EA}" ShortID="145795205">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -5071,6 +5085,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>
@@ -11492,7 +11509,13 @@
 					</ChildrenList>
 				</Folder>
 				<SwitchContainer Name="Footsteps_Walk" ID="{0205CC52-28ED-46BE-85F9-53CD670093C7}" ShortID="915820086">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Footsteps sound Attenuation" ID="{56887CFC-EBA1-43C2-9C1D-CE483B23861E}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>

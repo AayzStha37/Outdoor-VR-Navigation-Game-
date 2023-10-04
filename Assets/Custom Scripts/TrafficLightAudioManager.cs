@@ -7,17 +7,10 @@ public class TrafficLightAudioManager : MonoBehaviour
     public float variableDelay = 0f;
     private uint waitSoundplayId = 0;
     private uint walkSoundplayId = 0;
-    public GameObject frontTrafficLight;
-    public GameObject rearTrafficLight;
-    private Renderer frontTrafficLightRenderer;
-    private Renderer rearTrafficLightRenderer;
     private float waitInterval = 10f; // Time interval between e1 events
     private float walkInterval = 15f;
     public GameObject vehcileBlockGameObj;
-    private void Awake() {
-        frontTrafficLightRenderer = frontTrafficLight.GetComponentInChildren<MeshRenderer>();
-        rearTrafficLightRenderer = rearTrafficLight.GetComponentInChildren<MeshRenderer>();
-    }
+
     private void Start() {
         StartCoroutine(PlayTrafficEvents());
     }
@@ -59,16 +52,15 @@ public class TrafficLightAudioManager : MonoBehaviour
 
      
     private void switchTrafficLightToRed(bool isRed)
-    {
-        Material[] materials =  frontTrafficLightRenderer.materials;
+    {  
+        Renderer trafficLightRenderer = this.gameObject.GetComponentInChildren<MeshRenderer>();
+        Material[] materials = trafficLightRenderer.materials;
         if(isRed){
             materials[5].color = materials[2].color;
-            frontTrafficLightRenderer.materials = materials;
-            rearTrafficLightRenderer.materials = materials;
+            trafficLightRenderer.materials = materials;
         }else{
             materials[5].color = materials[3].color;
-            frontTrafficLightRenderer.materials = materials;
-            rearTrafficLightRenderer.materials = materials;
+            trafficLightRenderer.materials = materials;
         }
     }
 }

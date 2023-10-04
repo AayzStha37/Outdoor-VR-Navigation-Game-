@@ -33,8 +33,12 @@ public class FootstepsTrigger : MonoBehaviour
         
         Debug.Log("charatcer moving - "+character.velocity.magnitude);
         //Starting the movement
-        if(!startsInteraction && startsColliding && Constants.colliderTagList.Contains(secondaryCollisionGameObj.tag)){
+        if(!startsInteraction && startsColliding){
             startMovement();
+        }
+        //ending the movement
+        else if(startsInteraction && (!startsColliding || CheckIfStationary() || !registeredCollidingGameObject.Equals(secondaryCollisionGameObj) )){
+            endMovement();
         }
         //Updating the movement
         else if(startsInteraction 
@@ -42,12 +46,6 @@ public class FootstepsTrigger : MonoBehaviour
                 && !CheckIfStationary()){
             updateMovement();
         }   
-        //Ending the movement
-        else if(startsInteraction 
-                && (!registeredCollidingGameObject.Equals(secondaryCollisionGameObj) || CheckIfStationary())){
-            endMovement();
-        }
-
         lastPosition = this.transform.position;
     }
 

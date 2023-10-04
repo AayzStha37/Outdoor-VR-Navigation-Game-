@@ -516,8 +516,8 @@ MonoBehaviour:
     m_lastTime: -8585053456853528803
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 0100000002000000050000000600000007000000090000000f000000100000001800000019000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 
