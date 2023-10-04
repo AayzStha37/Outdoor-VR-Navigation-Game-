@@ -63,7 +63,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{B3267CE4-91D3-F673-6C62-B97DE1CBD6D9}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{2CD95CA1-2AAA-F56C-DA6E-772CEC8E2188}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
@@ -494,7 +494,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{DF261C73-88AA-EB0C-D4D7-AABC1A0E7AD3}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{99E74F18-A47C-B33C-E43E-49935D42B412}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -955,7 +955,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{D4BC7D89-6D9F-28B4-4A32-DBB6F484DF0E}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{F6823941-2DC6-74D0-DD34-D6AE803FBCD0}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -965,14 +965,14 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="70" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="551432879"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{0EF95D20-AF08-FDE7-6B05-E69966120EB7}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{2B4F0E92-0640-5C35-6C3A-104C9D363502}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
@@ -982,7 +982,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" MaxAttenuation="70" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="265156255"/>
 					</MediaRefs>
@@ -990,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{24E7A265-FA72-B53F-7374-AB58AC749BBC}</FileHash>
+	<FileHash>{B39A7FEA-EE4A-993B-51EA-E414A8E40366}</FileHash>
 </SoundBanksInfo>

@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	3187816352	TrafficLightWaitSoundEvent			\Default Work Unit\TrafficLightWaitSoundEvent	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	265156255	Traffic Light Wait Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Wait Audio Clip_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traffic Light Wait Sound		317616
+	265156255	Traffic Light Wait Sound	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Wait Audio Clip_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traffic Light Wait Sound		317616
 

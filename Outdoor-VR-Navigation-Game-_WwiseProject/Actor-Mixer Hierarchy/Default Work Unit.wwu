@@ -8,9 +8,6 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Cane tip interaction sound Attenuation" ID="{2FE7132F-8A29-4129-9CEC-69DB985DFFCD}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>
@@ -11513,9 +11510,6 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Footsteps sound Attenuation" ID="{56887CFC-EBA1-43C2-9C1D-CE483B23861E}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 						</Reference>

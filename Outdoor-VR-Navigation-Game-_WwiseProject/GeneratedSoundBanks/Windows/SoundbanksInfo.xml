@@ -63,7 +63,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{39C61930-00F2-B6DB-7B41-93D776E6F59F}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{2CD95CA1-2AAA-F56C-DA6E-772CEC8E2188}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
@@ -377,7 +377,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="654585276" Name="FootstepsPlayEvent" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="654585276" Name="FootstepsPlayEvent" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1780308710" Id="2185786256"/>
@@ -494,7 +494,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{D5BA7553-9E8F-0852-2DFE-E6A37D1FEBE5}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{99E74F18-A47C-B33C-E43E-49935D42B412}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -873,7 +873,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" MaxAttenuation="5" DurationType="Unknown">
+				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Unknown">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
@@ -990,5 +990,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7CDCD031-DBFF-7EA0-90ED-38BBB08479A1}</FileHash>
+	<FileHash>{1E32EB6F-91B8-0BE8-ACE4-46F29CC97E03}</FileHash>
 </SoundBanksInfo>
