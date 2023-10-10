@@ -7,7 +7,7 @@ public class WayPointFollower : MonoBehaviour
 {
     public GameObject[] waypoints; // Array of waypoints to follow
     private int currentWaypoint = 0;
-    public float initalSpeed;
+    private float initalSpeed;
     private Rigidbody rb;
     public bool shouldMove = true;
     public void InitializeWayPointsVal(GameObject[] waypointList, float speed, Rigidbody rigidBody){
