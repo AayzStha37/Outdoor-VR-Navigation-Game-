@@ -35,7 +35,7 @@ public class VehicleSpawnner : MonoBehaviour
             }
             for(int j=i;j<this.transform.GetChildCount();j++){
                 GameObject childObj = this.transform.GetChild(j).gameObject;
-                childObj.GetComponent<WayPointFollower>().shouldMove = false;
+                childObj.GetComponent<VehicleWayPointFollower>().shouldMove = false;
             }
 
         }
@@ -48,12 +48,12 @@ public class VehicleSpawnner : MonoBehaviour
        if(haultedVehicles){
             for(int i=0;i<this.transform.GetChildCount();i++){
                 GameObject childObj = this.transform.GetChild(i).gameObject;
-                childObj.GetComponent<WayPointFollower>().shouldMove = true;
+                childObj.GetComponent<VehicleWayPointFollower>().shouldMove = true;
             }
        }
        GameObject newSpawnObj = Instantiate(spawnItem, transform.position, Quaternion.Euler(0,180,0));
        newSpawnObj.transform.SetParent(this.transform);
-       WayPointFollower scriptComponent = newSpawnObj.AddComponent<WayPointFollower>();
+       VehicleWayPointFollower scriptComponent = newSpawnObj.AddComponent<VehicleWayPointFollower>();
        scriptComponent.InitializeWayPointsVal(waypoints,initalSpeed,newSpawnObj.GetComponent<Rigidbody>());
        newSpawnObj.name +=  "_"+uniquieIDGenerator();
        newSpawnObj.transform.Rotate(0f, 180f, 0f);
