@@ -70,3 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Unity3D generated files
+*.pidb.meta
+
+# Unity3D animation cache
+[0-9]*.anim
+[0-9]*.controller
+[0-9]*.overrideController
+[0-9]*.mask
