@@ -28,16 +28,15 @@ public class TextueControllerSystem : MonoBehaviour
 
     private List<Tuple<string, string>> dualTexturePairsList = new List<Tuple<string, string>>();
     private List<string> singleTextureOccurenceList;
+    private float timer = 0f;
+    private bool isTiming = false;
 
     private int currentIndex = 0;
-    private string currentTag = "";
     public List<TextureMaterialData> textureMaterialDataList = new List<TextureMaterialData>();
     public List<AK.Wwise.Switch> akSwitches = new List<AK.Wwise.Switch>();
 
-    // Start is called before the first frame update
     void Start()
     {  
-        currentTag = gameObject.tag;
         if (gameObject.CompareTag("Task 1.1"))
         {
             dualTexturePairsList.Add(new Tuple<string, string>(TEXTURE_GRASS, TEXTURE_SIDEWALK));        
@@ -53,9 +52,12 @@ public class TextueControllerSystem : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {        
+        storeTaskCompletiontime();
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            logTaskCompetionTime();
+            //Task 1.1 : Both audio and haptics
             if(gameObject.CompareTag("Task 1.1")){
                 currentIndex = (currentIndex + 1) % dualTexturePairsList.Count;
                 Tuple<string, string> currentPair = dualTexturePairsList[currentIndex];
@@ -67,6 +69,7 @@ public class TextueControllerSystem : MonoBehaviour
                 SetSwitchByName(texture_1,checkForSwitchType(currentPair.Item1));
                 SetSwitchByName(texture_2,checkForSwitchType(currentPair.Item2));
             }
+            //Task 1.2 : No haptics and only audio
             else if(gameObject.CompareTag("Task 1.2")){
                 currentIndex = (currentIndex + 1) % singleTextureOccurenceList.Count;
                 GameObject texture = transform.GetChild(0).gameObject;
@@ -74,6 +77,7 @@ public class TextueControllerSystem : MonoBehaviour
 
                 SetSwitchByName(texture,checkForSwitchType(singleTextureOccurenceList[currentIndex]));
             }
+            //Task 1.3 : No audio and only haptics
             else if(gameObject.CompareTag("Task 1.3")){
                 currentIndex = (currentIndex + 1) % singleTextureOccurenceList.Count;
                 GameObject texture = transform.GetChild(0).gameObject;
@@ -82,8 +86,31 @@ public class TextueControllerSystem : MonoBehaviour
         }            
     }
 
+    private void logTaskCompetionTime()
+    {
+        if(!isTiming){
+            isTiming = true;
+            Debug.Log("GAMELOG: New subtask started");
+            Debug.Log("GAMELOG: Timer started.");
+        }else{
+            isTiming = false;
+            Debug.Log("GAMELOG: Timer stopped. Task Completion time: " + timer.ToString("F2") + " seconds");
+            timer = 0f;
+            logTaskCompetionTime();
+        }
+    }
+
+    private void storeTaskCompletiontime()
+    {
+        if (isTiming)
+        {
+            timer += Time.deltaTime;
+        }
+    }
+
     private string checkForSwitchType(string texture_item)
     {
+        //TODO test with audio from cane interartion
         switch(texture_item){
             case TEXTURE_GRASS:
                 return "GroundType_Sweep/Grass";

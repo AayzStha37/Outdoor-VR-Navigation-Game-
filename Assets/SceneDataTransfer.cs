@@ -8,9 +8,10 @@ public class SceneDataTransfer : MonoBehaviour
     // Static variable to store text input across scenes
     public static string transferredText = "";
 
-    public void StoreInputText()
+    public string StoreInputText()
     {
         transferredText = inputField.text;
+        return inputField.text;
     }
 
     public string GetTransferredText()
