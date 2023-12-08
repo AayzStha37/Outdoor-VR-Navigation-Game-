@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID FOOTSTEPSPLAYEVENT = 654585276U;
         static const AkUniqueID GROUNDSWEEPEVENT = 2424624112U;
+        static const AkUniqueID LEVELCOMPLETESOUNDEVENT = 1944751995U;
         static const AkUniqueID STARTSCENETRAFFICSOUNDEVENT = 275942671U;
         static const AkUniqueID TRAFFICLIGHTWAITSOUNDEVENT = 3187816352U;
         static const AkUniqueID TRAFFICLIGHTWALKSOUNDEVENT = 3123712896U;
@@ -62,6 +63,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
+        static const AkUniqueID LEVEL_COMPLETE = 3736098925U;
         static const AkUniqueID START_SCENE_TRAFFIC = 1659826720U;
         static const AkUniqueID TRAFFICLIGHT_WAIT = 3736590696U;
         static const AkUniqueID TRAFFICLIGHT_WALK = 3686257672U;

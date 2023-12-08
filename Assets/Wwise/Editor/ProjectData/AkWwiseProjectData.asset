@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8585053456853538819
+    m_lastTime: -8584996134266044541
     List:
     - name: Character_Footsteps
       guid: 4836bf47169d5747811eaeb23483e5fb
@@ -82,6 +82,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 4836bf47169d5747811eaeb23483e5fb
       Path: SoundBanks\Default Work Unit\Character_Footsteps
+    - name: Level_Complete
+      guid: 87ba0f808a5f384c97f2c6a8e07eb229
+      id: 3736098925
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Level_Complete
+        ObjectType: 7
+        guid: 87ba0f808a5f384c97f2c6a8e07eb229
+      Path: SoundBanks\Default Work Unit\Level_Complete
     - name: Start_Scene_Traffic
       guid: 9a9d2f4ff7f27441bad94dd8f7fc3241
       id: 1659826720
@@ -150,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8585053456861352230
+    m_lastTime: -8584996134454359870
     List:
     - name: FootstepsPlayEvent
       guid: 8fe9296dcca53a4fa801b47877d28c8d
@@ -183,6 +197,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: ee100bccaff0b84e84fcc3f5b6e07122
       Path: Events\Default Work Unit\GroundSweepEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LevelCompleteSoundEvent
+      guid: efc7feb0e9164a48b660791b9a431fc9
+      id: 1944751995
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: LevelCompleteSoundEvent
+        ObjectType: 3
+        guid: efc7feb0e9164a48b660791b9a431fc9
+      Path: Events\Default Work Unit\LevelCompleteSoundEvent
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -516,7 +547,7 @@ MonoBehaviour:
     m_lastTime: -8585053456853528803
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 150000001600000018000000550000005600000057000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f00000010000000150000001600000018000000550000005600000057000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -5071,44 +5071,6 @@
 						<ActiveSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Traffic Light Walk Sound" ID="{163087C5-332C-4965-8C95-2900FC2F72EA}" ShortID="145795205">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Walk Audio Clip" ID="{03BDAA12-5733-45D9-A6BC-06201111BEEE}">
-							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.0341126043913502"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Walk Audio Clip.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="551432879"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Walk Audio Clip" ID="{03BDAA12-5733-45D9-A6BC-06201111BEEE}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Cane interaction surface sounds" ID="{FD50894C-70C4-4359-AE3A-2CCCBE73DCEA}" ShortID="289948193">
 					<ChildrenList>
 						<Folder Name="Grass sounds" ID="{459D0D05-E47B-4001-BE91-E9111A232AD6}" ShortID="370510754">
@@ -13494,6 +13456,73 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Folder Name="Game notification sounds" ID="{E73DA22B-B29C-4313-AE3C-50FC53AC15E6}" ShortID="662738324">
+					<ChildrenList>
+						<Sound Name="Level Complete Sound" ID="{5E305A8C-393E-47A9-852E-451F5A4E5519}" ShortID="107721861">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Level complete sound" ID="{DD9791FC-227E-45B7-9469-21B0214C10E3}">
+									<Language>SFX</Language>
+									<AudioFile>Level complete sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="868015754"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Level complete sound" ID="{DD9791FC-227E-45B7-9469-21B0214C10E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" ShortID="975026088">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}">
+							<Language>SFX</Language>
+							<AudioFile>Walk Audio Clip.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="551432879"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

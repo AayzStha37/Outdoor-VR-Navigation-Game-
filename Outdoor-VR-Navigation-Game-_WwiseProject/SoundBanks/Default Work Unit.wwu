@@ -38,6 +38,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Level_Complete" ID="{800FBA87-5F8A-4C38-97F2-C6A8E07EB229}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LevelCompleteSoundEvent" ID="{B0FEC7EF-16E9-484A-B660-791B9A431FC9}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

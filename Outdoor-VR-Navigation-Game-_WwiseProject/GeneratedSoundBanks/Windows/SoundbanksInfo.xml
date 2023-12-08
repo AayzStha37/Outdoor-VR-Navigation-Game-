@@ -955,19 +955,36 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{F6823941-2DC6-74D0-DD34-D6AE803FBCD0}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{DE3D6584-AF3A-459D-670E-0CE4669A081E}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
 				<File Id="551432879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Walk Audio Clip.wav</ShortName>
-					<CachePath>SFX/Walk Audio Clip_0BA31AE6.wem</CachePath>
+					<CachePath>SFX/Walk Audio Clip_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="70" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="551432879"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{4D352D71-9053-B6E1-9AE6-ABD449633510}">
+			<ShortName>Level_Complete</ShortName>
+			<Path>Level_Complete.bnk</Path>
+			<Media>
+				<File Id="868015754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Level complete sound.wav</ShortName>
+					<CachePath>SFX/Level complete sound_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1944751995" Name="LevelCompleteSoundEvent" DurationType="OneShot" DurationMin="1.7414966" DurationMax="1.7414966">
+					<MediaRefs>
+						<MediaRef Id="868015754"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -990,5 +1007,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1E32EB6F-91B8-0BE8-ACE4-46F29CC97E03}</FileHash>
+	<FileHash>{FC17E370-F060-B23D-EAD6-3407E8038EFA}</FileHash>
 </SoundBanksInfo>

@@ -11,7 +11,7 @@ public class CustomSceneManager : MonoBehaviour
 
     public void LoadTrainingPhaseScene()
     {
-        SceneManager.LoadScene("Main navigation start scene");
+        SceneManager.LoadScene("Trainng Scene");
     }
      public void LoadTaskListUIScene()
     {
@@ -31,14 +31,14 @@ public class CustomSceneManager : MonoBehaviour
         logToFile.setupLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 2 started for participant");
-        SceneManager.LoadScene("Main navigation start scene");
+        SceneManager.LoadScene("Task 2 scene");
     }
     public void LoadTask3Scene()
     {
         logToFile.setupLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 3 started for participant");
-        SceneManager.LoadScene("Main navigation start scene");
+        SceneManager.LoadScene("Task 3 scene");
     }
 
     private void storePartcipantDetail()

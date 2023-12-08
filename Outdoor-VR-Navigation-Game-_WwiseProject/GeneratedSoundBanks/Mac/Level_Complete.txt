@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1944751995	LevelCompleteSoundEvent			\Default Work Unit\LevelCompleteSoundEvent	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	868015754	Level Complete Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Level complete sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game notification sounds\Level Complete Sound		307296
+

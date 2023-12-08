@@ -18,9 +18,9 @@ public class Task1Eventsystem : MonoBehaviour
         dataTransfer = FindObjectOfType<SceneDataTransfer>();
         if (dataTransfer != null)
         {
-            textfield.text = "GAMELOG: Participant ID:" + dataTransfer.GetTransferredText(); // Display the transferred text
+            textfield.text = "Participant ID: "+dataTransfer.GetTransferredText(); // Display the transferred text
         }else
-            textfield.text = "GAMELOG: Participant ID: null";
+            textfield.text = "Participant ID: null";
         InstantiateObject(customPosition);
     }
 

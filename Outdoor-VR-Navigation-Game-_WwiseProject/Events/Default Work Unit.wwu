@@ -38,10 +38,10 @@
 				</Event>
 				<Event Name="TrafficLightWalkSoundEvent" ID="{8313FE65-3974-4661-939C-CAF8D3EF86A5}">
 					<ChildrenList>
-						<Action Name="" ID="{EFE76FB4-5297-48D9-BCA1-9F761099823F}" ShortID="628693639">
+						<Action Name="" ID="{986EB2D7-A27E-442C-977B-9A5C627F1087}" ShortID="570645681">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Traffic Light Walk Sound" ID="{163087C5-332C-4965-8C95-2900FC2F72EA}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+									<ObjectRef Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,6 +53,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Footsteps_Walk" ID="{0205CC52-28ED-46BE-85F9-53CD670093C7}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LevelCompleteSoundEvent" ID="{B0FEC7EF-16E9-484A-B660-791B9A431FC9}">
+					<ChildrenList>
+						<Action Name="" ID="{BB945B78-7713-4D03-9961-4B76559B7F58}" ShortID="350915777">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level Complete Sound" ID="{5E305A8C-393E-47A9-852E-451F5A4E5519}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

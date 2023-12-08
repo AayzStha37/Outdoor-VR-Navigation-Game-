@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Oculus/SampleFramework/Usage/HandsInteractionTrainScene.unity
     guid: a9c41884ef0c347628dfd8a4af4a022e
   - enabled: 1
-    path: Assets/Scenes/Main navigation start scene.unity
+    path: Assets/Scenes/Trainng Scene.unity
     guid: 3784377c4789c43ff882bad6055ed7e1
   - enabled: 0
     path: Assets/KAT/Demo/KATWalkDemo/3.WalkDemo.unity
@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Task list UI.unity
     guid: 02ed9d1c29a3cf341af9a3361f5efe50
+  - enabled: 1
+    path: Assets/Scenes/Task 2 scene.unity
+    guid: 47a312165119a41428bcc531859d88d0
+  - enabled: 1
+    path: Assets/Scenes/Task 3 scne.unity
+    guid: ba1c301f4f72999439f493930fe4179c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ade377da57369483f8d5fdd482d5400e,
       type: 2}

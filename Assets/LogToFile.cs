@@ -19,6 +19,9 @@ public class LogToFile : MonoBehaviour
         }else if(FindObjectOfType<Task1Eventsystem>() != null){
             Task1Eventsystem task1EventSystem = FindObjectOfType<Task1Eventsystem>(); 
             logFileName = logFileName+task1EventSystem.getParticipantId()+".txt";
+        }else if(FindObjectOfType<Task2EventSystem>() != null){
+            Task2EventSystem task2EventSystem = FindObjectOfType<Task2EventSystem>(); 
+            logFileName = logFileName+task2EventSystem.getParticipantId()+".txt";
         }
 
         logFilePath = Path.Combine("C:/Users/Admin/Desktop/Unity logs", logFileName);
