@@ -3,7 +3,6 @@
  using System.Collections;
  using System.IO.Ports;
 using System;
-
 public class SweepSoundPlayer : MonoBehaviour
 {
     [SerializeField]
@@ -23,6 +22,8 @@ public class SweepSoundPlayer : MonoBehaviour
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     private Vector3 lastPosition;
+    private ServerConnection serverConnection;
+
     private void Awake()
     {
         _lastPosition = this.transform.position;
@@ -31,6 +32,7 @@ public class SweepSoundPlayer : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
+        serverConnection = GetComponent<ServerConnection>();
         _isPlaying = false;
     }
 
@@ -43,12 +45,14 @@ public class SweepSoundPlayer : MonoBehaviour
         bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
 
         //Starting the movement
-        if(!startsInteraction && startsColliding && !Constants.DefaultPlaneTag.Equals(secondaryCollisionGameObj.tag)){
+        if(!startsInteraction && startsColliding && Constants.COLLIDER_TAG_LIST.Contains(secondaryCollisionGameObj.tag)){
             startMovement();
+            serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
         }
         //Ending the movement
         else if(startsInteraction && (!startsColliding || CheckIfStationary() || !registeredCollidingGameObject.Equals(secondaryCollisionGameObj) )){
             endMovement();
+            serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
         }
         //Updating the movement
         else if(startsInteraction 

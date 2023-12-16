@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Nodes
   - Road
   - Sidewalk
   - Grass
@@ -15,6 +14,10 @@ TagManager:
   - Task 1.1
   - Task 1.2
   - Task 1.3
+  - Tex_Asphalt
+  - Tex_Grass
+  - Tex_Gravel
+  - Tex_Sidewalk
   layers:
   - Default
   - TransparentFX

@@ -207,7 +207,7 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: a6eaccbb2fcd42a44ae956659d71890a, type: 2}
   - key: Tex_Metal
     material: {fileID: 2100000, guid: 829d8f03a87c1894e9faa0df4c536a08, type: 2}
-  - key: Tex_sidewalk
+  - key: Tex_Sidewalk
     material: {fileID: 2100000, guid: bbfc60a43ae74ad458ee80e12798a23a, type: 2}
   akSwitches:
   - idInternal: 0
