@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,13 @@ public class CollisionDetectionCustomScript : MonoBehaviour
         secondaryCollisionObject = other.gameObject;
         //Add to the collison List
         RegisterTouchedItems(collisionList, col1, col2);
+        CheckForVehicularCollison(other.transform.gameObject.tag);    
+    }
+
+    private void CheckForVehicularCollison(string tag)
+    {
+        if(Constants.MAIN_CHARACTER_BODY.Equals(this.gameObject.name) && Constants.VEHCILE_TAG.Equals(tag))
+            Debug.Log("GAMELOG: Collision with vehicle");
     }
 
     void OnTriggerExit(Collider other)

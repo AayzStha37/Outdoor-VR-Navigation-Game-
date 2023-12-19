@@ -7,7 +7,7 @@ using System;
 
 public class CustomSceneManager : MonoBehaviour
 {
-    private LogToFile logToFile = new LogToFile();
+    private GameLogsStorageHandler logToFile = new GameLogsStorageHandler();
 
     public void LoadTrainingPhaseScene()
     {
@@ -20,7 +20,7 @@ public class CustomSceneManager : MonoBehaviour
     }
     public void LoadTask1Scene()
     {        
-        logToFile.setupLogFile();
+        logToFile.setupGameLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 1 started for participant");
         SceneManager.LoadScene("Task 1 scene");
@@ -28,14 +28,14 @@ public class CustomSceneManager : MonoBehaviour
 
     public void LoadTask2Scene()
     {
-        logToFile.setupLogFile();
+        logToFile.setupGameLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 2 started for participant");
         SceneManager.LoadScene("Task 2 scene");
     }
     public void LoadTask3Scene()
     {
-        logToFile.setupLogFile();
+        logToFile.setupGameLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 3 started for participant");
         SceneManager.LoadScene("Task 3 scene");

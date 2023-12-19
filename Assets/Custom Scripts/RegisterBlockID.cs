@@ -9,7 +9,7 @@ public class RegisterBlockID : MonoBehaviour
     public bool stopVehicles;
     
     private void OnTriggerEnter(Collider other) {
-        other.gameObject.GetComponent<vehicleTagger>().registerVehicle();
+        other.gameObject.GetComponent<VehicleTagger>().registerVehicle();
     }
 
     public List<string> getRegistredVehiclesIDs(){

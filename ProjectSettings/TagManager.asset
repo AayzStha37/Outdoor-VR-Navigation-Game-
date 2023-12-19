@@ -18,6 +18,8 @@ TagManager:
   - Tex_Grass
   - Tex_Gravel
   - Tex_Sidewalk
+  - Main_Character
+  - Vehicle
   layers:
   - Default
   - TransparentFX

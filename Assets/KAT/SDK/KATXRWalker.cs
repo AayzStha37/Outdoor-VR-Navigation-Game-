@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class KATXRWalker : MonoBehaviour
 {
@@ -28,7 +29,8 @@ public class KATXRWalker : MonoBehaviour
 
     void Start()
     {
-        
+        Transform cameraOffsetTransform = xr.transform.Find("Camera Offset");
+        eye = cameraOffsetTransform.Find("Main Camera").gameObject;
     }
 
    

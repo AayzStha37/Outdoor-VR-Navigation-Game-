@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 public static class Constants
     {
@@ -20,7 +21,16 @@ public static class Constants
     public const string WalkSound = "walkSound";
     public const string COLLISION_ON = "ON";
     public const string COLLISION_OFF = "OFF";
+    public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
+    public const string VEHCILE_TAG = "Vehicle";
+    public const string MAIN_CHARACTER_BODY = "Character body";
 
+    //Scene names constant
+    public const string TASK1_SCENE_NAME = "Task 1 scene";
+    
+    public const string TASK2_SCENE_NAME = "Task 2 scene";
+    
+    public const string TASK3_SCENE_NAME = "Task 3 scene";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
 
 }

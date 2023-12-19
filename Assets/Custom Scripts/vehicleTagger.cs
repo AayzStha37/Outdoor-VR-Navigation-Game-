@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class vehicleTagger : MonoBehaviour
+public class VehicleTagger : MonoBehaviour
 {
     public bool vehicleBlockRegitered;
 

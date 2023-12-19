@@ -29,7 +29,7 @@ public class VehicleSpawnner : MonoBehaviour
             //TODO refactor block
             for(i=0;i<this.transform.GetChildCount();i++){
                 GameObject childObj = this.transform.GetChild(i).gameObject;
-                if(childObj.GetComponent<vehicleTagger>().checkIfVehicleBlockRegitered()){
+                if(childObj.GetComponent<VehicleTagger>().checkIfVehicleBlockRegitered()){
                     break;
                 }
             }
