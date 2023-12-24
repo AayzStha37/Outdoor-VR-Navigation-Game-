@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8584996134266044541
+    m_lastTime: -8584981710585546092
     List:
+    - name: Ambient_Sounds
+      guid: b2c06a89ff914247a26db3b2a916fecf
+      id: 2141388522
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Ambient_Sounds
+        ObjectType: 7
+        guid: b2c06a89ff914247a26db3b2a916fecf
+      Path: SoundBanks\Default Work Unit\Ambient_Sounds
     - name: Character_Footsteps
       guid: 4836bf47169d5747811eaeb23483e5fb
       id: 2775932802
@@ -164,8 +178,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8584996134454359870
+    m_lastTime: -8584981711830728165
     List:
+    - name: AmbientSoundEvent
+      guid: de74f45c237940408126f9c210e22557
+      id: 3307224408
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: AmbientSoundEvent
+        ObjectType: 3
+        guid: de74f45c237940408126f9c210e22557
+      Path: Events\Default Work Unit\AmbientSoundEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FootstepsPlayEvent
       guid: 8fe9296dcca53a4fa801b47877d28c8d
       id: 654585276
@@ -350,8 +381,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8585053456853538819
+    m_lastTime: -8584981697080861241
     List:
+    - name: Ambient_Sounds_Switch
+      guid: dc88704a113a424387ce66d417f18dfe
+      id: 1077759249
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 556287a9bcc29046aae78388b5fecfa1
+      - ElementName: Ambient_Sounds_Switch
+        ObjectType: 11
+        guid: dc88704a113a424387ce66d417f18dfe
+      Path: Switches\Default Work Unit\Ambient_Sounds_Switch
+      values:
+      - name: Construction
+        guid: 182621c96b04f448a1e90301ba5e68a6
+        id: 2634775690
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Construction
+          ObjectType: 10
+          guid: 182621c96b04f448a1e90301ba5e68a6
+      - name: Hotdog_Stand
+        guid: 9b43300925baf045bb4471649930451a
+        id: 2409619181
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Hotdog_Stand
+          ObjectType: 10
+          guid: 9b43300925baf045bb4471649930451a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Footsteps_Walk
       guid: ef567332db1f8148a13abb4b75a847f1
       id: 1780308710
@@ -547,7 +628,7 @@ MonoBehaviour:
     m_lastTime: -8585053456853528803
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000150000001600000018000000550000005600000057000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000150000001600000018000000550000005600000057000000990000009a000000180100001901000048010000490100004a010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

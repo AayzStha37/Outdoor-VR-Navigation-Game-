@@ -63,7 +63,18 @@
 						<Action Name="" ID="{BB945B78-7713-4D03-9961-4B76559B7F58}" ShortID="350915777">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Level Complete Sound" ID="{5E305A8C-393E-47A9-852E-451F5A4E5519}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+									<ObjectRef Name="Level complete sound" ID="{55BD11E7-55BB-47E5-90D2-1FFF3DD5430D}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AmbientSoundEvent" ID="{5CF474DE-7923-4040-8126-F9C210E22557}">
+					<ChildrenList>
+						<Action Name="" ID="{E1E7F93F-E17B-4E74-AAF8-4BF1AB2BDED4}" ShortID="1029789724">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambient_Sound" ID="{83E6E2AE-70C0-4930-A17F-503FA90DFA7F}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

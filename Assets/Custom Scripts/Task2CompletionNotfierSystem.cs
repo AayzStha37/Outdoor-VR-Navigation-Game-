@@ -7,31 +7,43 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
 {    
     private float timer = 0f;
     private bool isTiming = false;
-    private bool firstCollision = false;
-    private void Start() {
-        startTimer();
-    }
-    private void stopTimer()
+    private bool colliderLocked = false;
+    private Coroutine timerCoroutine;
+
+    private void Start()
     {
-        Debug.Log("GAMELOG: Timer stopped. Task Completion time: " + timer.ToString("F2") + " seconds");
-        Debug.Log("POSLOG: Task completed");
-        timer = 0f;
-        isTiming = false;
-        StopCoroutine(CustomUpdate());
+        StartTimer();
     }
 
-    private void startTimer()
+    private void StopTimer()
     {
-        Debug.Log("GAMELOG: Timer started.");
+        if (isTiming)
+        {
+            Debug.Log("GAMELOG: Timer stopped. Task Completion time: " + timer.ToString("F2") + " seconds");
+            Debug.Log("POSLOG: Task completed");
+
+            isTiming = false;
+            timer = 0f;
+
+            if (timerCoroutine != null)
+            {
+                StopCoroutine(timerCoroutine);
+                timerCoroutine = null;
+            }
+        }
+    }
+
+    private void StartTimer()
+    {
         if (!isTiming)
         {
+            Debug.Log("GAMELOG: Timer started.");
             isTiming = true;
-            StartCoroutine(CustomUpdate());
+            timerCoroutine = StartCoroutine(CustomUpdate());
         }
-        
     }
 
-    IEnumerator CustomUpdate()
+    private IEnumerator CustomUpdate()
     {
         while (isTiming)
         {
@@ -40,11 +52,12 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
         }
     }
 
-
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name.Contains("Completion collider") && !firstCollision){
-            firstCollision = true;
-            stopTimer();
+        GameObject otherGameObject = other.gameObject;
+        if(otherGameObject.name.Contains(Constants.TASK2_COMPLETION_COLLIDER) && !colliderLocked){
+            colliderLocked = true;
+            StopTimer();
+            otherGameObject.GetComponent<Collider>().enabled = false;
         }
     }
 }

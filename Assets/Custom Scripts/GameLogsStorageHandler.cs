@@ -24,11 +24,17 @@ public class GameLogsStorageHandler : MonoBehaviour
             Task1Eventsystem task1EventSystem = FindObjectOfType<Task1Eventsystem>();
             gameStatsFileName = gameStatsFileName + task1EventSystem.getParticipantId() + ".txt";
         }
-        else if (FindObjectOfType<Task2And3EventSystem>() != null)
+        else if (FindObjectOfType<Task2EventSystem>() != null)
         {
-            Task2And3EventSystem task2And3EventSystem = FindObjectOfType<Task2And3EventSystem>();
-            gameStatsFileName = gameStatsFileName + task2And3EventSystem.getParticipantId() + ".txt";
-            positionDataFileName = positionDataFileName + task2And3EventSystem.getParticipantId() + ".txt";
+            Task2EventSystem task2EventSystem = FindObjectOfType<Task2EventSystem>();
+            gameStatsFileName = gameStatsFileName + task2EventSystem.getParticipantId() + ".txt";
+            positionDataFileName = positionDataFileName + task2EventSystem.getParticipantId() + ".txt";
+        }
+        else if (FindObjectOfType<Task3EventSystem>() != null)
+        {
+            Task3EventSystem task3EventSystem = FindObjectOfType<Task3EventSystem>();
+            gameStatsFileName = gameStatsFileName + task3EventSystem.getParticipantId() + ".txt";
+            positionDataFileName = positionDataFileName + task3EventSystem.getParticipantId() + ".txt";
         }
 
         logFilePath = Path.Combine("C:/Users/Admin/Desktop/Unity logs", gameStatsFileName);

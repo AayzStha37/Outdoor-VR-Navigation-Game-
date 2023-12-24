@@ -2,7 +2,7 @@ using UnityEngine;
 using System.IO;
 
 public class LoggedPositionDataPathRenderer : MonoBehaviour
-{ public string positionDataFileName = "PositionData_123.txt"; // Adjust this with your file name
+{ public string positionDataFileName = "PositionData_11.txt"; // Adjust this with your file name
     public LineRenderer lineRenderer; // Reference to the LineRenderer component
 
     void Start()

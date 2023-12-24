@@ -31,6 +31,11 @@ public static class Constants
     public const string TASK2_SCENE_NAME = "Task 2 scene";
     
     public const string TASK3_SCENE_NAME = "Task 3 scene";
+    public const string TASK3_PATHWAY_1 = "Task 3.1 Pathway";
+    public const string TASK3_PATHWAY_2 = "Task 3.2 Pathway";
+    public const string TASK3_INTERMEDIATE_TARGET = "Intermediate";
+    public const string TASK3_DESTINATION_TARGET = "Destination";
+    public const string TASK2_COMPLETION_COLLIDER = "Completion collider";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
 
 }

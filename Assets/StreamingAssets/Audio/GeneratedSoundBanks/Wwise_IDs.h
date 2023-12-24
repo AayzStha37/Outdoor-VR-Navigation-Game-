@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENTSOUNDEVENT = 3307224408U;
         static const AkUniqueID FOOTSTEPSPLAYEVENT = 654585276U;
         static const AkUniqueID GROUNDSWEEPEVENT = 2424624112U;
         static const AkUniqueID LEVELCOMPLETESOUNDEVENT = 1944751995U;
@@ -23,6 +24,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace AMBIENT_SOUNDS_SWITCH
+        {
+            static const AkUniqueID GROUP = 1077759249U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONSTRUCTION = 2634775690U;
+                static const AkUniqueID HOTDOG_STAND = 2409619181U;
+            } // namespace SWITCH
+        } // namespace AMBIENT_SOUNDS_SWITCH
+
         namespace FOOTSTEPS_WALK
         {
             static const AkUniqueID GROUP = 1780308710U;
@@ -62,6 +74,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID AMBIENT_SOUNDS = 2141388522U;
         static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
         static const AkUniqueID LEVEL_COMPLETE = 3736098925U;
         static const AkUniqueID START_SCENE_TRAFFIC = 1659826720U;

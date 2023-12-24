@@ -20,6 +20,12 @@
 						<Switch Name="Null" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Ambient_Sounds_Switch" ID="{4A7088DC-3A11-4342-87CE-66D417F18DFE}">
+					<ChildrenList>
+						<Switch Name="Construction" ID="{C9212618-046B-48F4-A1E9-0301BA5E68A6}"/>
+						<Switch Name="Hotdog_Stand" ID="{0930439B-BA25-45F0-BB44-71649930451A}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

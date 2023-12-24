@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3307224408	AmbientSoundEvent			\Default Work Unit\AmbientSoundEvent	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1077759249	Ambient_Sounds_Switch			\Default Work Unit\Ambient_Sounds_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	2409619181	Hotdog_Stand	Ambient_Sounds_Switch			
+	2634775690	Construction	Ambient_Sounds_Switch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	106750584	Construction_Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Constrcution_Sound_93D01CC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient_Sound\Construction_Sound		1531024
+	552064090	Hotdog_Human_Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Hotdog_Human_Sound_072384B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient_Sound\Hotdog_Stand_Sounds\Hotdog_Human_Sound		734840
+	939648723	Hotdog_Stand_Ambient_Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Hotdog_Stand_Ambient_Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient_Sound\Hotdog_Stand_Sounds\Hotdog_Stand_Ambient_Sound		2482272
+

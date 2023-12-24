@@ -27,6 +27,12 @@
 				<GameParameter Id="3094130262" Name="CharacterNavSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
+					<Switches>
+						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2634775690" Name="Construction"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1780308710" Name="Footsteps_Walk">
 					<Switches>
 						<Switch Id="784127654" Name="Null"/>
@@ -62,6 +68,51 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+		</SoundBank>
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{7AC57822-A3A1-354C-6F3F-CAF0C4B8FDED}">
+			<ShortName>Ambient_Sounds</ShortName>
+			<Path>Ambient_Sounds.bnk</Path>
+			<Media>
+				<File Id="106750584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Constrcution_Sound.wav</ShortName>
+					<CachePath>SFX/Constrcution_Sound_93D01CC3.wem</CachePath>
+				</File>
+				<File Id="552064090" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hotdog_Human_Sound.wav</ShortName>
+					<CachePath>SFX/Hotdog_Human_Sound_072384B1.wem</CachePath>
+				</File>
+				<File Id="939648723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hotdog_Stand_Ambient_Sound.wav</ShortName>
+					<CachePath>SFX/Hotdog_Stand_Ambient_Sound_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3307224408" Name="AmbientSoundEvent" MaxAttenuation="50" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2634775690"/>
+							<MediaRefs>
+								<MediaRef Id="106750584"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2409619181"/>
+							<MediaRefs>
+								<MediaRef Id="552064090"/>
+								<MediaRef Id="939648723"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
+					<Switches>
+						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2634775690" Name="Construction"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{2CD95CA1-2AAA-F56C-DA6E-772CEC8E2188}">
 			<ShortName>Character_Footsteps</ShortName>
@@ -972,21 +1023,11 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{4D352D71-9053-B6E1-9AE6-ABD449633510}">
+		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{35320243-30A5-E122-509C-9CBFE1AB274A}">
 			<ShortName>Level_Complete</ShortName>
 			<Path>Level_Complete.bnk</Path>
-			<Media>
-				<File Id="868015754" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Level complete sound.wav</ShortName>
-					<CachePath>SFX/Level complete sound_10C4C929.wem</CachePath>
-				</File>
-			</Media>
 			<Events>
-				<Event Id="1944751995" Name="LevelCompleteSoundEvent" DurationType="OneShot" DurationMin="1.7414966" DurationMax="1.7414966">
-					<MediaRefs>
-						<MediaRef Id="868015754"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="1944751995" Name="LevelCompleteSoundEvent" DurationType="OneShot" DurationMin="1.7414966" DurationMax="1.7414966"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{2B4F0E92-0640-5C35-6C3A-104C9D363502}">
@@ -1007,5 +1048,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FC17E370-F060-B23D-EAD6-3407E8038EFA}</FileHash>
+	<FileHash>{B8B5D737-39D3-0FCC-7E16-8340C5D8A139}</FileHash>
 </SoundBanksInfo>

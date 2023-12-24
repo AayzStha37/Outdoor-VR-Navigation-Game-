@@ -45,6 +45,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Ambient_Sounds" ID="{896AC0B2-91FF-4742-A26D-B3B2A916FECF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AmbientSoundEvent" ID="{5CF474DE-7923-4040-8126-F9C210E22557}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

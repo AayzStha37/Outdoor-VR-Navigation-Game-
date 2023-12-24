@@ -14,7 +14,7 @@ public class CollisionDetectionCustomScript : MonoBehaviour
         //Get the two Objects involved in the collision
         GameObject col1 = this.gameObject;
         GameObject col2 = other.gameObject;
-        secondaryCollisionObject = other.gameObject;
+        secondaryCollisionObject = col2;
         //Add to the collison List
         RegisterTouchedItems(collisionList, col1, col2);
         CheckForVehicularCollison(other.transform.gameObject.tag);    
