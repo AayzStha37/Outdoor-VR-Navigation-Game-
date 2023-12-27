@@ -3,14 +3,16 @@ using System.IO;
 using System;
 public class GameLogsStorageHandler : MonoBehaviour
 {
-    private string logFilePath; // Path to the log file
+    private string gameLogFilePath; // Path to the log file
     private string positionDataFilePath; // Path to position data file
+    private string textureLogFilePath; // Path to the log file
     private bool isLogging = false;
 
     public void setupGameLogFile()
     {
         string gameStatsFileName = "GameLog_";
         string positionDataFileName = "PositionData_";
+        string textureRecordingFileName = "TextureData_";
 
         if (FindObjectOfType<SceneDataTransfer>() != null)
         {
@@ -36,9 +38,14 @@ public class GameLogsStorageHandler : MonoBehaviour
             gameStatsFileName = gameStatsFileName + task3EventSystem.getParticipantId() + ".txt";
             positionDataFileName = positionDataFileName + task3EventSystem.getParticipantId() + ".txt";
         }
+        else if (FindObjectOfType<ControllerVelocityHandler>() != null)
+        {
+            textureRecordingFileName = textureRecordingFileName + ".txt";
+            textureLogFilePath = Path.Combine(Constants.LOG_PATH, textureRecordingFileName);
+        }
 
-        logFilePath = Path.Combine("C:/Users/Admin/Desktop/Unity logs", gameStatsFileName);
-        positionDataFilePath = Path.Combine("C:/Users/Admin/Desktop/Unity logs", positionDataFileName);
+        gameLogFilePath = Path.Combine(Constants.LOG_PATH, gameStatsFileName);
+        positionDataFilePath = Path.Combine(Constants.LOG_PATH, positionDataFileName);
 
         isLogging = true;
         Application.logMessageReceived += LogToFileHandler;
@@ -49,7 +56,7 @@ public class GameLogsStorageHandler : MonoBehaviour
         if (type == LogType.Log && logString.StartsWith("GAMELOG"))
         {
             // Write logs starting with "GAMELOG" to the log file
-            using (StreamWriter writer = new StreamWriter(logFilePath, true))
+            using (StreamWriter writer = new StreamWriter(gameLogFilePath, true))
             {
                 writer.WriteLine(logString);
             }
@@ -59,6 +66,15 @@ public class GameLogsStorageHandler : MonoBehaviour
         {
             // Write logs starting with "POSLOG" to the log file
             using (StreamWriter writer = new StreamWriter(positionDataFilePath, true))
+            {
+                writer.WriteLine(logString);
+            }
+        }
+
+        if (type == LogType.Log && logString.StartsWith("TEXLOG"))
+        {
+            // Write logs starting with "TEXLOG" to the log file
+            using (StreamWriter writer = new StreamWriter(textureLogFilePath, true))
             {
                 writer.WriteLine(logString);
             }

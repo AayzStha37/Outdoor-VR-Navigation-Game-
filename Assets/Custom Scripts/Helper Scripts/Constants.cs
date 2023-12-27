@@ -36,6 +36,7 @@ public static class Constants
     public const string TASK3_INTERMEDIATE_TARGET = "Intermediate";
     public const string TASK3_DESTINATION_TARGET = "Destination";
     public const string TASK2_COMPLETION_COLLIDER = "Completion collider";
+    public const string LOG_PATH = @"D:\GEM Lab\GEMLabHCIResearch\Unity Logs";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
 
 }
