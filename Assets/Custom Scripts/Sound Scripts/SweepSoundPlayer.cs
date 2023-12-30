@@ -3,6 +3,7 @@
  using System.Collections;
  using System.IO.Ports;
 using System;
+using UnityEngine.InputSystem;
 public class SweepSoundPlayer : MonoBehaviour
 {
     [SerializeField]
@@ -23,6 +24,7 @@ public class SweepSoundPlayer : MonoBehaviour
     private GameObject registeredCollidingGameObject;
     private Vector3 lastPosition;
     private ServerConnection serverConnection;
+    public InputActionProperty controllerVelocityProperty;
 
     private void Awake()
     {
@@ -47,12 +49,10 @@ public class SweepSoundPlayer : MonoBehaviour
         //Starting the movement
         if(!startsInteraction && startsColliding && Constants.COLLIDER_TAG_LIST.Contains(secondaryCollisionGameObj.tag)){
             startMovement();
-            serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
         }
         //Ending the movement
         else if(startsInteraction && (!startsColliding || CheckIfStationary() || !registeredCollidingGameObject.Equals(secondaryCollisionGameObj) )){
             endMovement();
-            serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
         }
         //Updating the movement
         else if(startsInteraction 
@@ -72,6 +72,7 @@ public class SweepSoundPlayer : MonoBehaviour
     void startMovement(){
         startsInteraction=true;        
         registeredCollidingGameObject = secondaryCollisionGameObj;
+        serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
         Debug.Log("Movement has been initiated");
     }
     void updateMovement()
@@ -80,8 +81,10 @@ public class SweepSoundPlayer : MonoBehaviour
         float velocity = (this.transform.position - _lastPosition).sqrMagnitude;
         _lastPosition = this.transform.position;
         try{
-            if (velocity > velocityThresold 
-            && !_isPlaying)
+        if (velocity > velocityThresold 
+            && !_isPlaying
+            && secondaryCollisionGameObj.transform.parent != null 
+            && !Constants.TASK1_THIRD_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag))
         {
             playingId = AkSoundEngine.PostEvent("GroundSweepEvent",gameObject);
             Debug.Log("Audio play initiated");
@@ -91,6 +94,13 @@ public class SweepSoundPlayer : MonoBehaviour
         if (_isPlaying)
         {
             Debug.Log("Movement and audio play ongoing");
+
+            if(secondaryCollisionGameObj.transform.parent != null &&
+                !Constants.TASK1_SECOND_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag))
+            {
+                serverConnection.SendVelocityDataToServer(controllerVelocityProperty.action.ReadValue<Vector3>());
+            }
+
             velocity *= velocityFactor;
             float desiredVolume = volumeCurve.Evaluate(velocity);
             float caneinteractionVolume = Mathf.Lerp(100f, desiredVolume, dampness * Time.deltaTime);
@@ -112,6 +122,7 @@ public class SweepSoundPlayer : MonoBehaviour
         startsInteraction=false;
         _isPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
+        serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
         Debug.Log("Movement has been terminated");
     }
 }

@@ -20,6 +20,7 @@ TagManager:
   - Tex_Sidewalk
   - Main_Character
   - Vehicle
+  - Tex_Metal
   layers:
   - Default
   - TransparentFX

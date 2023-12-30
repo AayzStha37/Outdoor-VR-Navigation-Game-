@@ -12,7 +12,12 @@ public class ServerConnection : MonoBehaviour
     public void SendDataToServer(string collisionStatus, string textureName)
     {
        string preparedJSONData = PrepareJSONDataToSend(collisionStatus,textureName);
-       StartCoroutine(PostToServer(preparedJSONData)); 
+       StartCoroutine(PostToServer(preparedJSONData, Constants.ENDPOINT_COLLISON_REGISTER)); 
+    }
+    public void SendVelocityDataToServer(Vector3 velocity)
+    {
+       string preparedJSONData = PrepareJSONDataToSend(velocity);
+       StartCoroutine(PostToServer(preparedJSONData, Constants.ENDPOINT_DFT321_PREDCICT)); 
     }
 
     private string PrepareJSONDataToSend(string collisionStatus, string textureName)
@@ -39,9 +44,24 @@ public class ServerConnection : MonoBehaviour
         return jsonDataToSend;
     }
 
-    IEnumerator PostToServer(String jsonDataToSend)
+    private string PrepareJSONDataToSend(Vector3 vectorData)
     {
-        string url = "http://127.0.0.1:5000/predict"; // Replace with your server's IP and port
+        var dataObject = new
+        {
+            x = vectorData.x,
+            y = vectorData.y,
+            z = vectorData.z
+        };
+
+        // Serialize the object to a JSON string
+        string jsonDataToSend = JsonConvert.SerializeObject(dataObject);
+
+        return jsonDataToSend;
+    }
+
+    IEnumerator PostToServer(String jsonDataToSend, string endPoint)
+    {
+        string url = Constants.FLASK_SERVER_URL+endPoint;
 
         UnityWebRequest request = UnityWebRequest.Post(url, jsonDataToSend);
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonDataToSend);

@@ -54,7 +54,7 @@ public class Task2EventSystem : MonoBehaviour
     public void task2ButtonClickAction()
     {
         isVisualsOn = visualsToggleElement.isOn ? true : false;
-        if (instantiatedObjectList.Count > 0)
+        if (instantiatedObjectList.Any())
             DestroyInstantiatedObjects(); // Destroy the previously instantiated object
         performTask(TASK_2);
     }

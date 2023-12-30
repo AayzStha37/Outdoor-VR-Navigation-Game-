@@ -30,7 +30,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="z6TarENzUU2QYZAC7lKEmQ=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="SDa/RxadV0eBHq6yNIPl+7LAaon/kUJHom2zsqkW/s+Hug+Ail84TJfyxqjgfrIpmp0vT/fydEG62U3Y9/wyQfk/2cH18NtIqHfd3PPVUIIxj0rCefuWS4L2MKlqHuMaNBCvN0qknU+gF9jEMbUbYg=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="ssBqif+RQkeibbOyqRb+z0g2v0cWnVdHgR6usjSD5fuHug+Ail84TJfyxqjgfrIpmp0vT/fydEG62U3Y9/wyQfk/2cH18NtIqHfd3PPVUIIxj0rCefuWS4L2MKlqHuMaNBCvN0qknU+gF9jEMbUbYg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
