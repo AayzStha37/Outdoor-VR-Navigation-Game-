@@ -76,7 +76,7 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
             {
                 colliderLocked = true;
                 StopTimer(Constants.TASK3_DESTINATION_TARGET);
-                AkSoundEngine.PostEvent("LevelCompleteSoundEvent", gameObject);
+                AkSoundEngine.PostEvent(Constants.LEVEL_COMPLETE_SOUND_EVENT, gameObject);
             }
         }
     }

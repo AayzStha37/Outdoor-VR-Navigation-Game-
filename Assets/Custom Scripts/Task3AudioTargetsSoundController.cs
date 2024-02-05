@@ -5,7 +5,7 @@ public class Task3AudioTargetsSoundController : MonoBehaviour
     private uint playingId;
     private void Start() {
         AkSoundEngine.RegisterGameObj(gameObject);
-        playingId = AkSoundEngine.PostEvent("AmbientSoundEvent",gameObject);
+        playingId = AkSoundEngine.PostEvent(Constants.AMBIENT_SOUND_EVENT,gameObject);
     }
 
     private void OnTriggerEnter(Collider other) {

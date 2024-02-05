@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b492d3a1eb0983b46bf4c2c7cafec723, type: 3}
+  m_Name: 3D524EA1-C68B-4E46-90EC-D299034F72B2
+  m_EditorClassIdentifier: 
+  objectName: Bus
+  id: 714721605
+  guid: 3D524EA1-C68B-4E46-90EC-D299034F72B2
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: ce73f0aafda9588408cb9f965e52b5db,
+    type: 2}

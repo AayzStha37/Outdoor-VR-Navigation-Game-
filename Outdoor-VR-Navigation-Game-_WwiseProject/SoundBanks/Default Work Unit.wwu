@@ -52,6 +52,27 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Vehicle_Motion_Bank" ID="{BE5C9DB1-FCA4-4821-94EF-5F5BD44C3E91}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VehicleInMotionEvent" ID="{9ED4A838-66DF-4296-B264-4F71E12FC6CB}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Vehicle_Stationary_Bank" ID="{C911665C-7AAE-43F0-8A5A-807C8A4919A7}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VehicleStaionaryEvent" ID="{903CBC02-4163-41F8-960D-ED5CB76B9EB8}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Police_Siren_Bank" ID="{81B4AA15-26CB-4CFA-8289-7C225D4B8115}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayPoliceSirenEvent" ID="{52FE4CA6-7406-4DE1-8E96-5BB5867397DF}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -9,7 +9,34 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D2AB42DE-FF67-0583-6227-4836A767005B}">
+		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{1A94BABE-2600-B7AF-7A46-05B7A8B32B50}">
+			<ShortName>Vehicle_Stationary_Bank</ShortName>
+			<Path>Vehicle_Stationary_Bank.bnk</Path>
+			<Events>
+				<Event Id="3013206709" Name="VehicleStaionaryEvent" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers/>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
+				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="2268314992" Name="Vehicle_Stationary_GameSync">
+					<Switches>
+						<Switch Id="714721605" Name="Bus"/>
+						<Switch Id="983016381" Name="Car"/>
+						<Switch Id="2837639985" Name="Taxi"/>
+						<Switch Id="3112850720" Name="Police_Car"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{66BD469E-F010-6024-1964-9AB282C92829}">
+			<ShortName>Vehicle_Motion_Bank</ShortName>
+			<Path>Vehicle_Motion_Bank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0A9C2012-2188-EFC3-A329-EDF5CD492FAF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -27,13 +54,26 @@
 				<GameParameter Id="3094130262" Name="CharacterNavSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
+					<Switches>
+						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2634775690" Name="Construction"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1515766668" Name="Vehicle_Motion_GameSync">
+					<Switches>
+						<Switch Id="714721605" Name="Bus"/>
+						<Switch Id="983016381" Name="Car"/>
+						<Switch Id="2837639985" Name="Taxi"/>
+						<Switch Id="3112850720" Name="Police_Car"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1780308710" Name="Footsteps_Walk">
 					<Switches>
 						<Switch Id="784127654" Name="Null"/>
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="2185786256" Name="Gravel"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
-						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
@@ -42,6 +82,14 @@
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2268314992" Name="Vehicle_Stationary_GameSync">
+					<Switches>
+						<Switch Id="714721605" Name="Bus"/>
+						<Switch Id="983016381" Name="Car"/>
+						<Switch Id="2837639985" Name="Taxi"/>
+						<Switch Id="3112850720" Name="Police_Car"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -63,25 +111,58 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{2CD95CA1-2AAA-F56C-DA6E-772CEC8E2188}">
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{42ABF4D9-68F7-47BF-A577-E565B0E9A9F4}">
+			<ShortName>Ambient_Sounds</ShortName>
+			<Path>Ambient_Sounds.bnk</Path>
+			<Media>
+				<File Id="106750584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Constrcution_Sound.wav</ShortName>
+					<CachePath>SFX/Constrcution_Sound_93D01CC3.wem</CachePath>
+				</File>
+				<File Id="552064090" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hotdog_Human_Sound.wav</ShortName>
+					<CachePath>SFX/Hotdog_Human_Sound_387DB8FE.wem</CachePath>
+				</File>
+				<File Id="939648723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hotdog_Stand_Ambient_Sound.wav</ShortName>
+					<CachePath>SFX/Hotdog_Stand_Ambient_Sound_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3307224408" Name="AmbientSoundEvent" MaxAttenuation="50" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2634775690"/>
+							<MediaRefs>
+								<MediaRef Id="106750584"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2409619181"/>
+							<MediaRefs>
+								<MediaRef Id="552064090"/>
+								<MediaRef Id="939648723"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
+					<Switches>
+						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2634775690" Name="Construction"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{308D9D87-4CF5-415F-A710-10AA095C3398}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
-				<File Id="10824976" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_06.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_06_10C4C929.wem</CachePath>
-				</File>
 				<File Id="14190697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_07.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_07_10C4C929.wem</CachePath>
-				</File>
-				<File Id="56614424" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_40.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_40_10C4C929.wem</CachePath>
-				</File>
-				<File Id="82671148" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_37.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_37_10C4C929.wem</CachePath>
 				</File>
 				<File Id="87281833" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_06.wav</ShortName>
@@ -95,17 +176,9 @@
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03_10C4C929.wem</CachePath>
 				</File>
-				<File Id="145515281" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_17.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_17_10C4C929.wem</CachePath>
-				</File>
 				<File Id="160305462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_07.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07_10C4C929.wem</CachePath>
-				</File>
-				<File Id="198376441" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_44.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_44_10C4C929.wem</CachePath>
 				</File>
 				<File Id="199774911" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_06.wav</ShortName>
@@ -115,57 +188,13 @@
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_05_10C4C929.wem</CachePath>
 				</File>
-				<File Id="242650867" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_02.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_02_10C4C929.wem</CachePath>
-				</File>
 				<File Id="248600964" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="251381893" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_48.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_48_10C4C929.wem</CachePath>
-				</File>
-				<File Id="266114873" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_05.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_05_10C4C929.wem</CachePath>
-				</File>
-				<File Id="274252917" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_29.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_29_10C4C929.wem</CachePath>
-				</File>
-				<File Id="306830791" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_31.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_31_10C4C929.wem</CachePath>
-				</File>
-				<File Id="317991210" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_46.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_46_10C4C929.wem</CachePath>
-				</File>
-				<File Id="325758408" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_13.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_13_10C4C929.wem</CachePath>
-				</File>
-				<File Id="328632881" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_22.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_22_10C4C929.wem</CachePath>
-				</File>
-				<File Id="411148740" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_01.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="413303950" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_41.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_41_10C4C929.wem</CachePath>
-				</File>
 				<File Id="421792951" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_10.wav</ShortName>
 					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_10_10C4C929.wem</CachePath>
-				</File>
-				<File Id="443094690" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_39.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_39_10C4C929.wem</CachePath>
 				</File>
 				<File Id="444060311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_02.wav</ShortName>
@@ -175,34 +204,6 @@
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_08.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_08_10C4C929.wem</CachePath>
 				</File>
-				<File Id="447301146" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_38.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_38_10C4C929.wem</CachePath>
-				</File>
-				<File Id="449372489" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_35.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_35_10C4C929.wem</CachePath>
-				</File>
-				<File Id="460631040" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_18.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_18_10C4C929.wem</CachePath>
-				</File>
-				<File Id="510375254" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_10.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_10_10C4C929.wem</CachePath>
-				</File>
-				<File Id="519773402" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_27.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_27_10C4C929.wem</CachePath>
-				</File>
-				<File Id="525757185" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_49.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_49_10C4C929.wem</CachePath>
-				</File>
-				<File Id="539698417" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_45.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_45_10C4C929.wem</CachePath>
-				</File>
 				<File Id="558362490" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_02.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_02_10C4C929.wem</CachePath>
@@ -211,93 +212,33 @@
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_08.wav</ShortName>
 					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_08_10C4C929.wem</CachePath>
 				</File>
-				<File Id="562946356" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_24.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_24_10C4C929.wem</CachePath>
-				</File>
-				<File Id="582010615" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_04.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_04_10C4C929.wem</CachePath>
-				</File>
 				<File Id="596940499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="614792718" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_03.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="628769867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="636563606" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_28.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_28_10C4C929.wem</CachePath>
-				</File>
-				<File Id="655519374" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_33.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_33_10C4C929.wem</CachePath>
-				</File>
 				<File Id="661099901" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05_10C4C929.wem</CachePath>
-				</File>
-				<File Id="669771884" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_21.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_21_10C4C929.wem</CachePath>
-				</File>
-				<File Id="683830621" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_12.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_12_10C4C929.wem</CachePath>
-				</File>
-				<File Id="692820196" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_20.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_20_10C4C929.wem</CachePath>
 				</File>
 				<File Id="711827862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_02.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="715592287" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_30.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_30_10C4C929.wem</CachePath>
-				</File>
-				<File Id="742069799" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_23.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_23_10C4C929.wem</CachePath>
-				</File>
 				<File Id="746483821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_06.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_06_10C4C929.wem</CachePath>
-				</File>
-				<File Id="757615067" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_47.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_47_10C4C929.wem</CachePath>
-				</File>
-				<File Id="771200511" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_36.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_36_10C4C929.wem</CachePath>
-				</File>
-				<File Id="795156906" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_34.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_34_10C4C929.wem</CachePath>
 				</File>
 				<File Id="801510063" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_09.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09_10C4C929.wem</CachePath>
 				</File>
-				<File Id="808642748" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_07.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_07_10C4C929.wem</CachePath>
-				</File>
 				<File Id="814362947" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_03.wav</ShortName>
 					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="848887319" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_08.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_08_10C4C929.wem</CachePath>
 				</File>
 				<File Id="854935473" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_04.wav</ShortName>
@@ -311,10 +252,6 @@
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_05_10C4C929.wem</CachePath>
 				</File>
-				<File Id="864555114" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_11.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_11_10C4C929.wem</CachePath>
-				</File>
 				<File Id="882102121" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_08.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08_10C4C929.wem</CachePath>
@@ -327,53 +264,9 @@
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_01.wav</ShortName>
 					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="917262597" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_19.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_19_10C4C929.wem</CachePath>
-				</File>
-				<File Id="944994941" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_32.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_32_10C4C929.wem</CachePath>
-				</File>
-				<File Id="951768206" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_16.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_16_10C4C929.wem</CachePath>
-				</File>
-				<File Id="965483726" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_43.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_43_10C4C929.wem</CachePath>
-				</File>
-				<File Id="972609279" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_14.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_14_10C4C929.wem</CachePath>
-				</File>
-				<File Id="976230147" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_15.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_15_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1014089177" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_26.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_26_10C4C929.wem</CachePath>
-				</File>
 				<File Id="1018946584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1021750610" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_25.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_25_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1041739504" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_09.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_09_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1060379036" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_50.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_50_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1061976566" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps_Grass\Footsteps_Grass_Walk\Footsteps_Walk_Grass_Mono_42.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_42_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -421,61 +314,6 @@
 								<MediaRef Id="746483821"/>
 							</MediaRefs>
 						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1780308710" Id="4248645337"/>
-							<MediaRefs>
-								<MediaRef Id="10824976"/>
-								<MediaRef Id="56614424"/>
-								<MediaRef Id="82671148"/>
-								<MediaRef Id="145515281"/>
-								<MediaRef Id="198376441"/>
-								<MediaRef Id="242650867"/>
-								<MediaRef Id="251381893"/>
-								<MediaRef Id="266114873"/>
-								<MediaRef Id="274252917"/>
-								<MediaRef Id="306830791"/>
-								<MediaRef Id="317991210"/>
-								<MediaRef Id="325758408"/>
-								<MediaRef Id="328632881"/>
-								<MediaRef Id="411148740"/>
-								<MediaRef Id="413303950"/>
-								<MediaRef Id="443094690"/>
-								<MediaRef Id="447301146"/>
-								<MediaRef Id="449372489"/>
-								<MediaRef Id="460631040"/>
-								<MediaRef Id="510375254"/>
-								<MediaRef Id="519773402"/>
-								<MediaRef Id="525757185"/>
-								<MediaRef Id="539698417"/>
-								<MediaRef Id="562946356"/>
-								<MediaRef Id="582010615"/>
-								<MediaRef Id="614792718"/>
-								<MediaRef Id="636563606"/>
-								<MediaRef Id="655519374"/>
-								<MediaRef Id="669771884"/>
-								<MediaRef Id="683830621"/>
-								<MediaRef Id="692820196"/>
-								<MediaRef Id="715592287"/>
-								<MediaRef Id="742069799"/>
-								<MediaRef Id="757615067"/>
-								<MediaRef Id="771200511"/>
-								<MediaRef Id="795156906"/>
-								<MediaRef Id="808642748"/>
-								<MediaRef Id="848887319"/>
-								<MediaRef Id="864555114"/>
-								<MediaRef Id="917262597"/>
-								<MediaRef Id="944994941"/>
-								<MediaRef Id="951768206"/>
-								<MediaRef Id="965483726"/>
-								<MediaRef Id="972609279"/>
-								<MediaRef Id="976230147"/>
-								<MediaRef Id="1014089177"/>
-								<MediaRef Id="1021750610"/>
-								<MediaRef Id="1041739504"/>
-								<MediaRef Id="1060379036"/>
-								<MediaRef Id="1061976566"/>
-							</MediaRefs>
-						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</Events>
@@ -489,453 +327,237 @@
 						<Switch Id="2110808655" Name="Road"/>
 						<Switch Id="2185786256" Name="Gravel"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
-						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{99E74F18-A47C-B33C-E43E-49935D42B412}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{55141B97-53EE-EFB5-69FB-1DFD71711704}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
-				<File Id="751380" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 2.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 2_D79FB2B7.wem</CachePath>
+				<File Id="79822778" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 2.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="110321177" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 12.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 12_D79FB2B7.wem</CachePath>
+				<File Id="93989815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 6.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 6_10C4C929.wem</CachePath>
 				</File>
-				<File Id="123697944" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 8.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 8_D79FB2B7.wem</CachePath>
+				<File Id="126137711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 9.wav</ShortName>
+					<CachePath>SFX/Road/Road 9_10C4C929.wem</CachePath>
 				</File>
-				<File Id="191743235" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 11.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 11_D79FB2B7.wem</CachePath>
+				<File Id="189315032" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 9.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 9_10C4C929.wem</CachePath>
 				</File>
-				<File Id="209696362" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 5.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 5_D79FB2B7.wem</CachePath>
+				<File Id="192352294" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 12.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 12_10C4C929.wem</CachePath>
 				</File>
-				<File Id="271188208" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 9.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 9_D79FB2B7.wem</CachePath>
+				<File Id="226612952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 11.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 11_10C4C929.wem</CachePath>
 				</File>
-				<File Id="425386455" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 12.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 12_D79FB2B7.wem</CachePath>
+				<File Id="230483312" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 16.wav</ShortName>
+					<CachePath>SFX/Road/Road 16_10C4C929.wem</CachePath>
 				</File>
-				<File Id="456465931" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 3.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 3_D79FB2B7.wem</CachePath>
+				<File Id="232748375" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 11.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 11_10C4C929.wem</CachePath>
 				</File>
-				<File Id="470569834" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 4.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 4_D79FB2B7.wem</CachePath>
+				<File Id="240233340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 12.wav</ShortName>
+					<CachePath>SFX/Road/Road 12_10C4C929.wem</CachePath>
 				</File>
-				<File Id="477364437" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 4.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 4_D79FB2B7.wem</CachePath>
+				<File Id="241098373" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 6.wav</ShortName>
+					<CachePath>SFX/Road/Road 6_10C4C929.wem</CachePath>
 				</File>
-				<File Id="480046505" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 4.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 4_D79FB2B7.wem</CachePath>
+				<File Id="288722478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 1.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="493867684" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 7.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 7_D79FB2B7.wem</CachePath>
+				<File Id="311394828" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 6.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 6_10C4C929.wem</CachePath>
 				</File>
-				<File Id="524820297" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 11.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 11_D79FB2B7.wem</CachePath>
+				<File Id="312032016" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 14.wav</ShortName>
+					<CachePath>SFX/Road/Road 14_10C4C929.wem</CachePath>
 				</File>
-				<File Id="542866157" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 6.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 6_D79FB2B7.wem</CachePath>
+				<File Id="313304522" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 11.wav</ShortName>
+					<CachePath>SFX/Road/Road 11_10C4C929.wem</CachePath>
 				</File>
-				<File Id="557740984" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 5.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 5_D79FB2B7.wem</CachePath>
+				<File Id="320668979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 10.wav</ShortName>
+					<CachePath>SFX/Road/Road 10_10C4C929.wem</CachePath>
 				</File>
-				<File Id="565167621" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 7.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 7_D79FB2B7.wem</CachePath>
+				<File Id="360351147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 7.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 7_10C4C929.wem</CachePath>
 				</File>
-				<File Id="570548265" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 6.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 6_D79FB2B7.wem</CachePath>
+				<File Id="372880695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 4.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 4_10C4C929.wem</CachePath>
 				</File>
-				<File Id="585219055" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 5.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 5_D79FB2B7.wem</CachePath>
+				<File Id="408330859" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 12.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 12_10C4C929.wem</CachePath>
 				</File>
-				<File Id="611431665" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 3.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 3_D79FB2B7.wem</CachePath>
+				<File Id="517126904" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 2.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="631529383" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 6.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 6_D79FB2B7.wem</CachePath>
+				<File Id="529768456" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 8.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 8_10C4C929.wem</CachePath>
 				</File>
-				<File Id="657691887" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 11.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 11_D79FB2B7.wem</CachePath>
+				<File Id="532890501" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 5.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 5_10C4C929.wem</CachePath>
 				</File>
-				<File Id="670977711" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 9.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 9_D79FB2B7.wem</CachePath>
+				<File Id="538213202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 1.wav</ShortName>
+					<CachePath>SFX/Road/Road 1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="711256119" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 1.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 1_D79FB2B7.wem</CachePath>
+				<File Id="545016150" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 7.wav</ShortName>
+					<CachePath>SFX/Road/Road 7_10C4C929.wem</CachePath>
 				</File>
-				<File Id="711256120" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 16.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 16_D79FB2B7.wem</CachePath>
+				<File Id="573038476" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 2.wav</ShortName>
+					<CachePath>SFX/Road/Road 2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="718036835" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 10.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 10_D79FB2B7.wem</CachePath>
+				<File Id="579591607" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 15.wav</ShortName>
+					<CachePath>SFX/Road/Road 15_10C4C929.wem</CachePath>
 				</File>
-				<File Id="722190233" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 7.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 7_D79FB2B7.wem</CachePath>
+				<File Id="596640367" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 7.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 7_10C4C929.wem</CachePath>
 				</File>
-				<File Id="736948043" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 2.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 2_D79FB2B7.wem</CachePath>
+				<File Id="605623966" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 4.wav</ShortName>
+					<CachePath>SFX/Road/Road 4_10C4C929.wem</CachePath>
 				</File>
-				<File Id="745830494" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 9.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 9_D79FB2B7.wem</CachePath>
+				<File Id="642765629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 3.wav</ShortName>
+					<CachePath>SFX/Road/Road 3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="746671563" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 10.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 10_D79FB2B7.wem</CachePath>
+				<File Id="667432578" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 1.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="751996796" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 13.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 13_D79FB2B7.wem</CachePath>
+				<File Id="738483585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 8.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 8_10C4C929.wem</CachePath>
 				</File>
-				<File Id="770144271" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 8.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 8_D79FB2B7.wem</CachePath>
+				<File Id="745339300" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 10.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 10_10C4C929.wem</CachePath>
 				</File>
-				<File Id="770144272" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sidewalk 1.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_D79FB2B7.wem</CachePath>
+				<File Id="833424561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 5.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 5_10C4C929.wem</CachePath>
 				</File>
-				<File Id="788018259" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 13.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 13_D79FB2B7.wem</CachePath>
+				<File Id="838181400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 9.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 9_10C4C929.wem</CachePath>
 				</File>
-				<File Id="863764271" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 2.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 2_D79FB2B7.wem</CachePath>
+				<File Id="905107178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 4.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 4_10C4C929.wem</CachePath>
 				</File>
-				<File Id="881208968" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 14.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 14_D79FB2B7.wem</CachePath>
+				<File Id="911820166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 13.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 13_10C4C929.wem</CachePath>
 				</File>
-				<File Id="926276141" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 12.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 12_D79FB2B7.wem</CachePath>
+				<File Id="976947909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 8.wav</ShortName>
+					<CachePath>SFX/Road/Road 8_10C4C929.wem</CachePath>
 				</File>
-				<File Id="936089891" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 8.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 8_D79FB2B7.wem</CachePath>
+				<File Id="980112921" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 5.wav</ShortName>
+					<CachePath>SFX/Road/Road 5_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1005319627" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 1.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 1_D79FB2B7.wem</CachePath>
+				<File Id="1008920592" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road\Road 13.wav</ShortName>
+					<CachePath>SFX/Road/Road 13_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1005319630" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass 3.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 3_D79FB2B7.wem</CachePath>
+				<File Id="1023213284" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk\Sidewalk 3.wav</ShortName>
+					<CachePath>SFX/Sidewalk/Sidewalk 3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1006456433" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 10.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 10_D79FB2B7.wem</CachePath>
+				<File Id="1033545039" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 10.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 10_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1006670702" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Road 15.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 15_D79FB2B7.wem</CachePath>
+				<File Id="1054914417" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Grass 3.wav</ShortName>
+					<CachePath>SFX/Grass/Grass 3_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="30310155" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="611431665"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="44577374" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="557740984"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="46491380" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="926276141"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="51524302" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="570548265"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="96270515" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="718036835"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="166754825" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="524820297"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="167796622" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="936089891"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="174499234" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="711256119"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="190321877" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="425386455"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="197919893" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="770144272"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="236128996" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="770144271"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="267677382" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="1006670702"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="268237032" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="722190233"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="276986352" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="1005319627"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="280113001" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="470569834"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="338831169" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="565167621"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="362275289" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="493867684"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="401432112" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="585219055"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="433908533" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="657691887"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="436189373" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="746671563"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="490593844" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="745830494"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="515613982" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="542866157"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="520242636" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="477364437"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="577923879" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="631529383"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="594514039" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="736948043"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="617185961" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="110321177"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="687556598" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="271188208"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="721162830" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="751996796"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="723974894" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="670977711"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="727597250" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="1006456433"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="730360170" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="1005319630"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="748104291" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="456465931"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="761336159" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="209696362"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="880819335" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="711256120"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="896269136" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="751380"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="927013588" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="863764271"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="931176826" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="123697944"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="947886948" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="480046505"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="970251428" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="881208968"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="980154776" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="191743235"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="1040651829" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
-						<MediaRefs>
-							<MediaRef Id="788018259"/>
-						</MediaRefs>
-					</Plugin>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Unknown">
+				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="51524302"/>
-									<PluginRef Id="166754825"/>
-									<PluginRef Id="174499234"/>
-									<PluginRef Id="267677382"/>
-									<PluginRef Id="268237032"/>
-									<PluginRef Id="280113001"/>
-									<PluginRef Id="594514039"/>
-									<PluginRef Id="617185961"/>
-									<PluginRef Id="687556598"/>
-									<PluginRef Id="721162830"/>
-									<PluginRef Id="727597250"/>
-									<PluginRef Id="748104291"/>
-									<PluginRef Id="761336159"/>
-									<PluginRef Id="880819335"/>
-									<PluginRef Id="931176826"/>
-									<PluginRef Id="970251428"/>
-								</Custom>
-							</PluginRefs>
+							<MediaRefs>
+								<MediaRef Id="126137711"/>
+								<MediaRef Id="230483312"/>
+								<MediaRef Id="240233340"/>
+								<MediaRef Id="241098373"/>
+								<MediaRef Id="312032016"/>
+								<MediaRef Id="313304522"/>
+								<MediaRef Id="320668979"/>
+								<MediaRef Id="538213202"/>
+								<MediaRef Id="545016150"/>
+								<MediaRef Id="573038476"/>
+								<MediaRef Id="579591607"/>
+								<MediaRef Id="605623966"/>
+								<MediaRef Id="642765629"/>
+								<MediaRef Id="976947909"/>
+								<MediaRef Id="980112921"/>
+								<MediaRef Id="1008920592"/>
+							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="4248645337"/>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="46491380"/>
-									<PluginRef Id="167796622"/>
-									<PluginRef Id="276986352"/>
-									<PluginRef Id="338831169"/>
-									<PluginRef Id="401432112"/>
-									<PluginRef Id="433908533"/>
-									<PluginRef Id="436189373"/>
-									<PluginRef Id="520242636"/>
-									<PluginRef Id="577923879"/>
-									<PluginRef Id="723974894"/>
-									<PluginRef Id="730360170"/>
-									<PluginRef Id="927013588"/>
-									<PluginRef Id="1040651829"/>
-								</Custom>
-							</PluginRefs>
+							<MediaRefs>
+								<MediaRef Id="192352294"/>
+								<MediaRef Id="226612952"/>
+								<MediaRef Id="311394828"/>
+								<MediaRef Id="360351147"/>
+								<MediaRef Id="372880695"/>
+								<MediaRef Id="517126904"/>
+								<MediaRef Id="667432578"/>
+								<MediaRef Id="738483585"/>
+								<MediaRef Id="833424561"/>
+								<MediaRef Id="838181400"/>
+								<MediaRef Id="911820166"/>
+								<MediaRef Id="1033545039"/>
+								<MediaRef Id="1054914417"/>
+							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="3137249879"/>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="30310155"/>
-									<PluginRef Id="44577374"/>
-									<PluginRef Id="96270515"/>
-									<PluginRef Id="190321877"/>
-									<PluginRef Id="197919893"/>
-									<PluginRef Id="236128996"/>
-									<PluginRef Id="362275289"/>
-									<PluginRef Id="490593844"/>
-									<PluginRef Id="515613982"/>
-									<PluginRef Id="896269136"/>
-									<PluginRef Id="947886948"/>
-									<PluginRef Id="980154776"/>
-								</Custom>
-							</PluginRefs>
+							<MediaRefs>
+								<MediaRef Id="79822778"/>
+								<MediaRef Id="93989815"/>
+								<MediaRef Id="189315032"/>
+								<MediaRef Id="232748375"/>
+								<MediaRef Id="288722478"/>
+								<MediaRef Id="408330859"/>
+								<MediaRef Id="529768456"/>
+								<MediaRef Id="532890501"/>
+								<MediaRef Id="596640367"/>
+								<MediaRef Id="745339300"/>
+								<MediaRef Id="905107178"/>
+								<MediaRef Id="1023213284"/>
+							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -972,7 +594,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{4D352D71-9053-B6E1-9AE6-ABD449633510}">
+		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{FAB31CE8-A25B-1C75-400F-9D880A95E08E}">
 			<ShortName>Level_Complete</ShortName>
 			<Path>Level_Complete.bnk</Path>
 			<Media>
@@ -1007,5 +629,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ACF5E4DE-D52F-BAE7-C2DE-C8BA1BD14703}</FileHash>
+	<FileHash>{7B2F2F6C-A190-1F70-2886-B5DBDDAC9366}</FileHash>
 </SoundBanksInfo>

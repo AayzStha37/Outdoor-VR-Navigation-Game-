@@ -8,7 +8,7 @@
 						<Action Name="" ID="{519A39FA-7C66-4FA9-B233-3956610DD62F}" ShortID="421543857">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ground_Sweep" ID="{1E892C38-2974-4EA1-9BA1-395729ACC836}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+									<ObjectRef Name="Ground_Sweep" ID="{DA2B9820-E257-4902-8F83-86733091D6C4}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -75,6 +75,39 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambient_Sound" ID="{83E6E2AE-70C0-4930-A17F-503FA90DFA7F}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VehicleInMotionEvent" ID="{9ED4A838-66DF-4296-B264-4F71E12FC6CB}">
+					<ChildrenList>
+						<Action Name="" ID="{BDD8C9CA-A52D-472F-866A-FC8509DF1902}" ShortID="810261224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vehicle_Motion" ID="{82B4D29A-FC43-4260-93EB-98A694F21040}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VehicleStaionaryEvent" ID="{903CBC02-4163-41F8-960D-ED5CB76B9EB8}">
+					<ChildrenList>
+						<Action Name="" ID="{5882EFFB-CD39-47A9-82D4-7391B665FE5C}" ShortID="680063221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vehicle_Sationary" ID="{52A6EC03-8CFA-4503-801A-F5F1A3CD73D0}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayPoliceSirenEvent" ID="{52FE4CA6-7406-4DE1-8E96-5BB5867397DF}">
+					<ChildrenList>
+						<Action Name="" ID="{C75BD38C-6943-496C-A61C-3EB928E31463}" ShortID="397578309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Police_Siren" ID="{1C3EBC9F-E639-4579-95EF-D637B45BB264}" WorkUnitID="{9C4237E6-BBA8-4378-AB5A-3CE83AEB9C4E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

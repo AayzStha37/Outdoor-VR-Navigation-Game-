@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc05e52758f1b44f8b898a0b90ba6b2, type: 3}
+  m_Name: 81B4AA15-26CB-4CFA-8289-7C225D4B8115
+  m_EditorClassIdentifier: 
+  objectName: Police_Siren_Bank
+  id: 2551573942
+  guid: 81B4AA15-26CB-4CFA-8289-7C225D4B8115

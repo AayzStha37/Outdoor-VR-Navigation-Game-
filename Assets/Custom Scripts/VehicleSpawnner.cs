@@ -14,6 +14,11 @@ public class VehicleSpawnner : MonoBehaviour
     private bool haultedVehicles = false;
 
     int currentWayPoint=0; 
+
+    void Start() {
+        timeSinceLastSpawn = spawnInterval;
+    }
+
     [Obsolete]
     void Update()
     {

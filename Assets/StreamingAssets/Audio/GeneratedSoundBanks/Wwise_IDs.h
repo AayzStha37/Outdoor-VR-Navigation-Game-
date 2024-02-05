@@ -17,9 +17,12 @@ namespace AK
         static const AkUniqueID FOOTSTEPSPLAYEVENT = 654585276U;
         static const AkUniqueID GROUNDSWEEPEVENT = 2424624112U;
         static const AkUniqueID LEVELCOMPLETESOUNDEVENT = 1944751995U;
+        static const AkUniqueID PLAYPOLICESIRENEVENT = 882516764U;
         static const AkUniqueID STARTSCENETRAFFICSOUNDEVENT = 275942671U;
         static const AkUniqueID TRAFFICLIGHTWAITSOUNDEVENT = 3187816352U;
         static const AkUniqueID TRAFFICLIGHTWALKSOUNDEVENT = 3123712896U;
+        static const AkUniqueID VEHICLEINMOTIONEVENT = 3804784588U;
+        static const AkUniqueID VEHICLESTAIONARYEVENT = 3013206709U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -41,7 +44,6 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
                 static const AkUniqueID NULL = 784127654U;
                 static const AkUniqueID ROAD = 2110808655U;
@@ -62,6 +64,28 @@ namespace AK
             } // namespace SWITCH
         } // namespace GROUNDTYPE_SWEEP
 
+        namespace VEHICLE_MOTION_GAMESYNC
+        {
+            static const AkUniqueID GROUP = 1515766668U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BUS = 714721605U;
+                static const AkUniqueID CAR = 983016381U;
+            } // namespace SWITCH
+        } // namespace VEHICLE_MOTION_GAMESYNC
+
+        namespace VEHICLE_STATIONARY_GAMESYNC
+        {
+            static const AkUniqueID GROUP = 2268314992U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BUS = 714721605U;
+                static const AkUniqueID CAR = 983016381U;
+            } // namespace SWITCH
+        } // namespace VEHICLE_STATIONARY_GAMESYNC
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -77,9 +101,12 @@ namespace AK
         static const AkUniqueID AMBIENT_SOUNDS = 2141388522U;
         static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
         static const AkUniqueID LEVEL_COMPLETE = 3736098925U;
+        static const AkUniqueID POLICE_SIREN_BANK = 2551573942U;
         static const AkUniqueID START_SCENE_TRAFFIC = 1659826720U;
         static const AkUniqueID TRAFFICLIGHT_WAIT = 3736590696U;
         static const AkUniqueID TRAFFICLIGHT_WALK = 3686257672U;
+        static const AkUniqueID VEHICLE_MOTION_BANK = 663403457U;
+        static const AkUniqueID VEHICLE_STATIONARY_BANK = 564684285U;
         static const AkUniqueID WHITECANE_INTERACTION = 3669902090U;
     } // namespace BANKS
 

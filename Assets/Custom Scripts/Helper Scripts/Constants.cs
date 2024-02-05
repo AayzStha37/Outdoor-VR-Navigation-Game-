@@ -24,11 +24,14 @@ public static class Constants
     public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
     public const string VEHCILE_TAG = "Vehicle";
     public const string MAIN_CHARACTER_BODY = "Character body";
-
+    public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
+    public const string POLICE_VEHICLE_PREFAB_NAME= "Police";
     //Scene names constant
     public const string TASK1_SCENE_NAME = "Task 1 scene";    
     public const string TASK2_SCENE_NAME = "Task 2 scene";    
     public const string TASK3_SCENE_NAME = "Task 3 scene";    
+
+    //Task specific constants
     public const string TASK1_FIRST_TASK_OBJECT_TAG = "Task 1.1";
     public const string TASK1_SECOND_TASK_OBJECT_TAG = "Task 1.2";
     public const string TASK1_THIRD_TASK_OBJECT_TAG = "Task 1.3";
@@ -37,10 +40,23 @@ public static class Constants
     public const string TASK3_INTERMEDIATE_TARGET = "Intermediate";
     public const string TASK3_DESTINATION_TARGET = "Destination";
     public const string TASK2_COMPLETION_COLLIDER = "Completion collider";
+
+    //Server specfic constants
     public const string LOG_PATH = @"D:\GEM Lab\GEMLabHCIResearch\Unity Logs";
     public const string ENDPOINT_COLLISON_REGISTER = "collisonRegister";
     public const string ENDPOINT_DFT321_PREDCICT = "predict";
     public const string FLASK_SERVER_URL = "http://127.0.0.1:5000/";
-    public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
+
+
+    //wwise audio events
+    public const string FOOTSTEPS_PLAY_EVENT= "FootstepsPlayEvent";
+    public const string AMBIENT_SOUND_EVENT= "AmbientSoundEvent";
+    public const string TRAFFIC_LIGHT_WALK_SOUND_EVENT= "TrafficLightWalkSoundEvent";
+    public const string TRAFFIC_LIGHT_WAIT_SOUND_EVENT= "TrafficLightWaitSoundEvent";
+    public const string LEVEL_COMPLETE_SOUND_EVENT= "LevelCompleteSoundEvent";
+    public const string VEHICLE_IN_MOTION_SOUND_EVENT= "VehicleInMotionEvent";
+    public const string VEHICLE_STATIONARY_SOUND_EVENT= "VehicleStaionaryEvent";
+    public const string GROUND_SWEEP_EVENT= "GroundSweepEvent";
+    public const string POLICE_SIREN_EVENT= "PlayPoliceSirenEvent";
 
 }

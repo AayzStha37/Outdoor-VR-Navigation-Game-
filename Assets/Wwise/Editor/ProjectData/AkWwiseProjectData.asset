@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8584981710585546092
+    m_lastTime: -8584947934810194076
     List:
     - name: Ambient_Sounds
       guid: b2c06a89ff914247a26db3b2a916fecf
@@ -110,6 +110,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 87ba0f808a5f384c97f2c6a8e07eb229
       Path: SoundBanks\Default Work Unit\Level_Complete
+    - name: Police_Siren_Bank
+      guid: 15aab481cb26fa4c82897c225d4b8115
+      id: 2551573942
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Police_Siren_Bank
+        ObjectType: 7
+        guid: 15aab481cb26fa4c82897c225d4b8115
+      Path: SoundBanks\Default Work Unit\Police_Siren_Bank
     - name: Start_Scene_Traffic
       guid: 9a9d2f4ff7f27441bad94dd8f7fc3241
       id: 1659826720
@@ -152,6 +166,34 @@ MonoBehaviour:
         ObjectType: 7
         guid: 318f4ac279fb964b82f630a96a1ee31a
       Path: SoundBanks\Default Work Unit\TrafficLight_Walk
+    - name: Vehicle_Motion_Bank
+      guid: b19d5cbea4fc214894ef5f5bd44c3e91
+      id: 663403457
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Vehicle_Motion_Bank
+        ObjectType: 7
+        guid: b19d5cbea4fc214894ef5f5bd44c3e91
+      Path: SoundBanks\Default Work Unit\Vehicle_Motion_Bank
+    - name: Vehicle_Stationary_Bank
+      guid: 5c6611c9ae7af0438a5a807c8a4919a7
+      id: 564684285
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bf4d5a7a92e45c448015e763b7b2fff2
+      - ElementName: Vehicle_Stationary_Bank
+        ObjectType: 7
+        guid: 5c6611c9ae7af0438a5a807c8a4919a7
+      Path: SoundBanks\Default Work Unit\Vehicle_Stationary_Bank
     - name: WhiteCane_Interaction
       guid: 3410af374aa49d4fa017d8c431b51b62
       id: 3669902090
@@ -178,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8584981711830728165
+    m_lastTime: -8584947939342419579
     List:
     - name: AmbientSoundEvent
       guid: de74f45c237940408126f9c210e22557
@@ -248,6 +290,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayPoliceSirenEvent
+      guid: a64cfe520674e14d8e965bb5867397df
+      id: 882516764
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: PlayPoliceSirenEvent
+        ObjectType: 3
+        guid: a64cfe520674e14d8e965bb5867397df
+      Path: Events\Default Work Unit\PlayPoliceSirenEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StartSceneTrafficSoundEvent
       guid: fa9caf23cd150948aa7e113417c09eb0
       id: 275942671
@@ -296,6 +355,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 65fe138374396146939ccaf8d3ef86a5
       Path: Events\Default Work Unit\TrafficLightWalkSoundEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VehicleInMotionEvent
+      guid: 38a8d49edf669642b2644f71e12fc6cb
+      id: 3804784588
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: VehicleInMotionEvent
+        ObjectType: 3
+        guid: 38a8d49edf669642b2644f71e12fc6cb
+      Path: Events\Default Work Unit\VehicleInMotionEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VehicleStaionaryEvent
+      guid: 02bc3c906341f841960ded5cb76b9eb8
+      id: 3013206709
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5202bd696b89f7448d65b3593985c5eb
+      - ElementName: VehicleStaionaryEvent
+        ObjectType: 3
+        guid: 02bc3c906341f841960ded5cb76b9eb8
+      Path: Events\Default Work Unit\VehicleStaionaryEvent
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -381,7 +474,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8584981697080861241
+    m_lastTime: -8584947936482931557
     List:
     - name: Ambient_Sounds_Switch
       guid: dc88704a113a424387ce66d417f18dfe
@@ -448,22 +541,6 @@ MonoBehaviour:
         guid: ef567332db1f8148a13abb4b75a847f1
       Path: Switches\Default Work Unit\Footsteps_Walk
       values:
-      - name: Grass
-        guid: f969f5084e0e074592dd21e4331e997a
-        id: 4248645337
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 556287a9bcc29046aae78388b5fecfa1
-        - ElementName: Footsteps_Walk
-          ObjectType: 11
-          guid: ef567332db1f8148a13abb4b75a847f1
-        - ElementName: Grass
-          ObjectType: 10
-          guid: f969f5084e0e074592dd21e4331e997a
       - name: Gravel
         guid: 061f90355249bb49806ce5f9b19dde99
         id: 2185786256
@@ -613,6 +690,106 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Vehicle_Motion_GameSync
+      guid: 783452fe2eca70438be10b6019445a7e
+      id: 1515766668
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 556287a9bcc29046aae78388b5fecfa1
+      - ElementName: Vehicle_Motion_GameSync
+        ObjectType: 11
+        guid: 783452fe2eca70438be10b6019445a7e
+      Path: Switches\Default Work Unit\Vehicle_Motion_GameSync
+      values:
+      - name: Bus
+        guid: e8ff78d51e880b42b730a2ec74c306e9
+        id: 714721605
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Vehicle_Motion_GameSync
+          ObjectType: 11
+          guid: 783452fe2eca70438be10b6019445a7e
+        - ElementName: Bus
+          ObjectType: 10
+          guid: e8ff78d51e880b42b730a2ec74c306e9
+      - name: Car
+        guid: 6f0c64802fc33a4684c06d71034b2776
+        id: 983016381
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Vehicle_Motion_GameSync
+          ObjectType: 11
+          guid: 783452fe2eca70438be10b6019445a7e
+        - ElementName: Car
+          ObjectType: 10
+          guid: 6f0c64802fc33a4684c06d71034b2776
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Vehicle_Stationary_GameSync
+      guid: 5fc668edbdac83409d39c83163ea14ca
+      id: 2268314992
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 556287a9bcc29046aae78388b5fecfa1
+      - ElementName: Vehicle_Stationary_GameSync
+        ObjectType: 11
+        guid: 5fc668edbdac83409d39c83163ea14ca
+      Path: Switches\Default Work Unit\Vehicle_Stationary_GameSync
+      values:
+      - name: Bus
+        guid: a14e523d8bc6464e90ecd299034f72b2
+        id: 714721605
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Vehicle_Stationary_GameSync
+          ObjectType: 11
+          guid: 5fc668edbdac83409d39c83163ea14ca
+        - ElementName: Bus
+          ObjectType: 10
+          guid: a14e523d8bc6464e90ecd299034f72b2
+      - name: Car
+        guid: b30b30319925284bbc161df9bfe6ae4e
+        id: 983016381
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Vehicle_Stationary_GameSync
+          ObjectType: 11
+          guid: 5fc668edbdac83409d39c83163ea14ca
+        - ElementName: Car
+          ObjectType: 10
+          guid: b30b30319925284bbc161df9bfe6ae4e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -628,7 +805,7 @@ MonoBehaviour:
     m_lastTime: -8585053456853528803
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000150000001600000018000000190000001a0000001b0000001d0000001e000000550000005600000057000000990000009a000000180100001901000048010000490100004a010000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000120000001300000014000000150000001600000018000000190000001a0000001b0000001d0000001e0000002200000023000000550000005600000057000000990000009a000000090100000a010000180100001901000048010000490100004a010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

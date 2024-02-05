@@ -86,7 +86,7 @@ public class SweepSoundPlayer : MonoBehaviour
             && secondaryCollisionGameObj.transform.parent != null 
             && !Constants.TASK1_THIRD_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag))
         {
-            playingId = AkSoundEngine.PostEvent("GroundSweepEvent",gameObject);
+            playingId = AkSoundEngine.PostEvent(Constants.GROUND_SWEEP_EVENT,gameObject);
             Debug.Log("Audio play initiated");
             _isPlaying = true;
         }

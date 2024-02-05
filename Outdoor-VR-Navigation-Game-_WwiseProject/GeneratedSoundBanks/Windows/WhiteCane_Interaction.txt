@@ -14,132 +14,46 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1410364352	CaneInteractionPitch			\Default Work Unit\CaneInteractionPitch	
 	2349282220	CaneInteractionVolume			\Default Work Unit\CaneInteractionVolume	
 
-Modulator Envelope	ID	Name			Wwise Object Path	Notes
-	48604120	Modulator Envelope (Custom)				
-	143924590	Modulator Envelope (Custom)				
-	145002782	Modulator Envelope (Custom)				
-	166382178	Modulator Envelope (Custom)				
-	172228108	Modulator Envelope (Custom)				
-	173895709	Modulator Envelope (Custom)				
-	225225937	Modulator Envelope (Custom)				
-	291414207	Modulator Envelope (Custom)				
-	309756008	Modulator Envelope (Custom)				
-	315956467	Modulator Envelope (Custom)				
-	322582169	Modulator Envelope (Custom)				
-	369150679	Modulator Envelope (Custom)				
-	374495633	Modulator Envelope (Custom)				
-	381096315	Modulator Envelope (Custom)				
-	422331295	Modulator Envelope (Custom)				
-	455218585	Modulator Envelope (Custom)				
-	496341501	Modulator Envelope (Custom)				
-	510219886	Modulator Envelope (Custom)				
-	523403004	Modulator Envelope (Custom)				
-	546045380	Modulator Envelope (Custom)				
-	560897398	Modulator Envelope (Custom)				
-	572558246	Modulator Envelope (Custom)				
-	651270305	Modulator Envelope (Custom)				
-	668091096	Modulator Envelope (Custom)				
-	673899903	Modulator Envelope (Custom)				
-	675183137	Modulator Envelope (Custom)				
-	710565185	Modulator Envelope (Custom)				
-	740082624	Modulator Envelope (Custom)				
-	750323782	Modulator Envelope (Custom)				
-	752936227	Modulator Envelope (Custom)				
-	759588382	Modulator Envelope (Custom)				
-	767026445	Modulator Envelope (Custom)				
-	776009444	Modulator Envelope (Custom)				
-	779749181	Modulator Envelope (Custom)				
-	820830331	Modulator Envelope (Custom)				
-	836706055	Modulator Envelope (Custom)				
-	854335230	Modulator Envelope (Custom)				
-	855630189	Modulator Envelope (Custom)				
-	886177627	Modulator Envelope (Custom)				
-	918460228	Modulator Envelope (Custom)				
-	934384908	Modulator Envelope (Custom)				
-
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	30310155	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_02\Soundseed Grain	
-	44577374	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_04\Soundseed Grain	
-	46491380	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_11\Soundseed Grain	
-	51524302	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_05\Soundseed Grain	
-	96270515	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_09\Soundseed Grain	
-	166754825	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_10\Soundseed Grain	
-	167796622	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_07\Soundseed Grain	
-	174499234	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain\Soundseed Grain	
-	190321877	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_11\Soundseed Grain	
-	197919893	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain\Soundseed Grain	
-	236128996	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_07\Soundseed Grain	
-	267677382	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_14\Soundseed Grain	
-	268237032	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_06\Soundseed Grain	
-	276986352	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain\Soundseed Grain	
-	280113001	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_03\Soundseed Grain	
-	338831169	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_06\Soundseed Grain	
-	362275289	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_06\Soundseed Grain	
-	401432112	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_04\Soundseed Grain	
-	433908533	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_10\Soundseed Grain	
-	436189373	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_09\Soundseed Grain	
-	490593844	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_08\Soundseed Grain	
-	515613982	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_05\Soundseed Grain	
-	520242636	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_03\Soundseed Grain	
-	577923879	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_05\Soundseed Grain	
-	594514039	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_01\Soundseed Grain	
-	617185961	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_11\Soundseed Grain	
-	687556598	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_08\Soundseed Grain	
-	721162830	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_12\Soundseed Grain	
-	723974894	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_08\Soundseed Grain	
-	727597250	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_09\Soundseed Grain	
-	730360170	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_02\Soundseed Grain	
-	748104291	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_02\Soundseed Grain	
-	761336159	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_04\Soundseed Grain	
-	880819335	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_15\Soundseed Grain	
-	896269136	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_01\Soundseed Grain	
-	927013588	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_01\Soundseed Grain	
-	931176826	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_07\Soundseed Grain	
-	947886948	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_03\Soundseed Grain	
-	970251428	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_13\Soundseed Grain	
-	980154776	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_10\Soundseed Grain	
-	1040651829	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_12\Soundseed Grain	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	751380	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 2_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_01\Soundseed Grain		199852
-	110321177	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 12_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_11\Soundseed Grain		208608
-	123697944	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 8_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_07\Soundseed Grain		192072
-	191743235	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 11_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_10\Soundseed Grain		148840
-	209696362	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 5_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_04\Soundseed Grain		124080
-	271188208	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 9_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_08\Soundseed Grain		7338456
-	425386455	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 12_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_11\Soundseed Grain		144700
-	456465931	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 3_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_02\Soundseed Grain		152076
-	470569834	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 4_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_03\Soundseed Grain		180076
-	477364437	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 4_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_03\Soundseed Grain		117908
-	480046505	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 4_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_03\Soundseed Grain		172108
-	493867684	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 7_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_06\Soundseed Grain		169764
-	524820297	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 11_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_10\Soundseed Grain		7338456
-	542866157	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 6_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_05\Soundseed Grain		170516
-	557740984	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 5_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_04\Soundseed Grain		169856
-	565167621	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 7_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_06\Soundseed Grain		160752
-	570548265	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 6_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_05\Soundseed Grain		172072
-	585219055	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 5_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_04\Soundseed Grain		182172
-	611431665	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 3_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_02\Soundseed Grain		182852
-	631529383	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 6_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_05\Soundseed Grain		80012
-	657691887	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 11_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_10\Soundseed Grain		161028
-	670977711	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 9_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_08\Soundseed Grain		119732
-	711256119	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 1_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain\Soundseed Grain		168072
-	711256120	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 16_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_15\Soundseed Grain		208612
-	718036835	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 10_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_09\Soundseed Grain		167836
-	722190233	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 7_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_06\Soundseed Grain		140080
-	736948043	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 2_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_01\Soundseed Grain		196072
-	745830494	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 9_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_08\Soundseed Grain		144700
-	746671563	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 10_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_09\Soundseed Grain		157244
-	751996796	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 13_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_12\Soundseed Grain		228792
-	770144271	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 8_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain_07\Soundseed Grain		144700
-	770144272	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 1_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain\Soundseed Grain		157352
-	788018259	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 13_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_12\Soundseed Grain		106124
-	863764271	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 2_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_01\Soundseed Grain		187528
-	881208968	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 14_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_13\Soundseed Grain		289328
-	926276141	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 12_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_11\Soundseed Grain		143992
-	936089891	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 8_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_07\Soundseed Grain		139332
-	1005319627	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 1_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain\Soundseed Grain		139332
-	1005319630	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 3_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass Grain_02\Soundseed Grain		155396
-	1006456433	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 10_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_09\Soundseed Grain		7338456
-	1006670702	Soundseed Grain	C:\Users\canad\OneDrive\Desktop\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 15_D79FB2B7.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road Grain_14\Soundseed Grain		262416
+	79822778	Sidewalk 2	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 2		199852
+	93989815	Sidewalk 6	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 6		170516
+	126137711	Road 9	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 9		7338456
+	189315032	Sidewalk 9	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 9		144700
+	192352294	Grass 12	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 12		143992
+	226612952	Grass 11	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 11		161028
+	230483312	Road 16	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 16		208612
+	232748375	Sidewalk 11	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 11		148840
+	240233340	Road 12	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 12		208608
+	241098373	Road 6	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 6		172072
+	288722478	Sidewalk 1	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 1		157352
+	311394828	Grass 6	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 6		80012
+	312032016	Road 14	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 14		289328
+	313304522	Road 11	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 11		7338456
+	320668979	Road 10	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 10		7338456
+	360351147	Grass 7	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 7		160752
+	372880695	Grass 4	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 4		117908
+	408330859	Sidewalk 12	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 12		144700
+	517126904	Grass 2	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 2		187528
+	529768456	Sidewalk 8	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 8		144700
+	532890501	Sidewalk 5	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 5		169856
+	538213202	Road 1	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 1		168072
+	545016150	Road 7	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 7		140080
+	573038476	Road 2	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 2		196072
+	579591607	Road 15	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 15		262416
+	596640367	Sidewalk 7	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 7		169764
+	605623966	Road 4	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 4		180076
+	642765629	Road 3	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 3		152076
+	667432578	Grass 1	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 1		139332
+	738483585	Grass 8	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 8		139332
+	745339300	Sidewalk 10	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 10		167836
+	833424561	Grass 5	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 5		182172
+	838181400	Grass 9	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 9		119732
+	905107178	Sidewalk 4	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 4		172108
+	911820166	Grass 13	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 13		106124
+	976947909	Road 8	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 8		192072
+	980112921	Road 5	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 5		124080
+	1008920592	Road 13	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Road\Road 13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Road_Sweep_Grain\Road 13		228792
+	1023213284	Sidewalk 3	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Sidewalk\Sidewalk 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk 3		182852
+	1033545039	Grass 10	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 10		157244
+	1054914417	Grass 3	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Grass\Grass 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ground_Sweep\Grass_Sweep_Grain\Grass 3		155396
 

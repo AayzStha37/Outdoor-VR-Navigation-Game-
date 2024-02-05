@@ -64,7 +64,7 @@ public class FootstepsTrigger : MonoBehaviour
         Debug.Log("Character movement being updated");
         try{
             if(!_isPlaying){
-                playingId = AkSoundEngine.PostEvent("FootstepsPlayEvent",gameObject);
+                playingId = AkSoundEngine.PostEvent(Constants.FOOTSTEPS_PLAY_EVENT,gameObject);
                 Debug.Log("Footsteps audio play initiated");          
                 _isPlaying = true;
             }

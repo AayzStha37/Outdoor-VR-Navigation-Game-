@@ -39,14 +39,14 @@ public class TrafficLightAudioManager : MonoBehaviour
                     AkSoundEngine.StopPlayingID(walkSoundplayId);
                     walkSoundplayId = 0;
                }
-               waitSoundplayId = AkSoundEngine.PostEvent("TrafficLightWaitSoundEvent",gameObject);
+               waitSoundplayId = AkSoundEngine.PostEvent(Constants.TRAFFIC_LIGHT_WAIT_SOUND_EVENT,gameObject);
           }
           else if(TrafficLightSound.Equals(Constants.WalkSound)){
                if(waitSoundplayId > 0){
                     AkSoundEngine.StopPlayingID(waitSoundplayId);
                     waitSoundplayId = 0;
                }
-               walkSoundplayId = AkSoundEngine.PostEvent("TrafficLightWalkSoundEvent",gameObject);
+               walkSoundplayId = AkSoundEngine.PostEvent(Constants.TRAFFIC_LIGHT_WALK_SOUND_EVENT,gameObject);
           }
      }
 
