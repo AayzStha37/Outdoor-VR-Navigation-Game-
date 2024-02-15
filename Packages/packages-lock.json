@@ -14,6 +14,13 @@
       },
       "hash": "754fafc1ff70bf3eea71cd04f3b24ecbd21e2d8a"
     },
+    "com.interhaptics.core_sdk": {
+      "version": "https://github.com/Interhaptics/Unity_CoreSDK.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "33dd4843cb390c79c730be57d6b90a1b5ddf8ae2"
+    },
     "com.unity.animation.rigging": {
       "version": "1.1.1",
       "depth": 0,
