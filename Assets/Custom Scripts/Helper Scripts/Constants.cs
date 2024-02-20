@@ -59,4 +59,11 @@ public static class Constants
     public const string GROUND_SWEEP_EVENT= "GroundSweepEvent";
     public const string POLICE_SIREN_EVENT= "PlayPoliceSirenEvent";
 
+    //folder paths
+    public const string HAPTICS_RESOURCE_FOLDER_PATH = @"D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Assets\Resources\Haptics";
+    public const string SIDEWALK_FOLDER_PATH = @"\Sidewalk";
+    public const string GRASS_FOLDER_PATH = @"\Grass";    
+    public const string ROAD_FOLDER_PATH = @"\Road";
+
+
 }

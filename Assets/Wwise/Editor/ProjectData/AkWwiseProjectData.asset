@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: ba2b62a99ef73d4ea350b6ec9658a420
     GuidInternal: 
-    m_lastTime: -8585053456853528803
+    m_lastTime: -8584934926175750228
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6b5e558c6c126d4c85238a2d7fdbb0d3
     GuidInternal: 
-    m_lastTime: -8585053456859079925
+    m_lastTime: -8584934926185191064
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8584947934810194076
+    m_lastTime: -8584934926175760450
     List:
     - name: Ambient_Sounds
       guid: b2c06a89ff914247a26db3b2a916fecf
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8584947939342419579
+    m_lastTime: -8584934910934540824
     List:
     - name: AmbientSoundEvent
       guid: de74f45c237940408126f9c210e22557
@@ -404,7 +404,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2b83277ad0d621499ce01213cf39325c
     GuidInternal: 
-    m_lastTime: -8585053456861352230
+    m_lastTime: -8584934926190287229
     List:
     - name: CaneInteractionPitch
       guid: cc6fe0a1bd92f140a34a76b6ae7b9173
@@ -460,7 +460,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c2fba61a2b18764ea678ee0c95b1cc54
     GuidInternal: 
-    m_lastTime: -8585053456853538819
+    m_lastTime: -8584934926175755345
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -474,7 +474,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8584947936482931557
+    m_lastTime: -8584934926175755345
     List:
     - name: Ambient_Sounds_Switch
       guid: dc88704a113a424387ce66d417f18dfe
@@ -802,10 +802,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4318730d7b3ddf459a10528a899ee2a1
     GuidInternal: 
-    m_lastTime: -8585053456853528803
+    m_lastTime: -8584934926175750228
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000120000001300000014000000150000001600000018000000190000001a0000001b0000001d0000001e0000002200000023000000550000005600000057000000990000009a000000090100000a010000180100001901000048010000490100004a010000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

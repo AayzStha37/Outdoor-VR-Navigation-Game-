@@ -1,9 +1,10 @@
  using UnityEngine;
-
- using System.Collections;
- using System.IO.Ports;
 using System;
 using UnityEngine.InputSystem;
+using Interhaptics.Core;
+using Interhaptics.HapticBodyMapping;
+using Interhaptics;
+
 public class SweepSoundPlayer : MonoBehaviour
 {
     [SerializeField]
@@ -16,15 +17,18 @@ public class SweepSoundPlayer : MonoBehaviour
     private float velocityFactor = 0.1f;
     [SerializeField]
     private float dampness = 10f;
-    private bool _isPlaying = false;
+    private bool isAudioPlaying = false;
+     private bool isHapticPlaying = false;
     private Vector3 _lastPosition;
     private bool startsInteraction = false;
     private uint playingId;
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     private Vector3 lastPosition;
-    private ServerConnection serverConnection;
+    //private ServerConnection serverConnection;
     public InputActionProperty controllerVelocityProperty;
+    private HapticMaterial dynamicHapticMaterial;
+    private RandomHapticMaterialSelector hapticsSelector;
 
     private void Awake()
     {
@@ -34,8 +38,10 @@ public class SweepSoundPlayer : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
-        serverConnection = GetComponent<ServerConnection>();
-        _isPlaying = false;
+        //serverConnection = GetComponent<ServerConnection>();
+        isAudioPlaying = false;
+        isHapticPlaying =false;
+        hapticsSelector = GetComponent<RandomHapticMaterialSelector>();
     }
 
     private void Update()
@@ -72,57 +78,102 @@ public class SweepSoundPlayer : MonoBehaviour
     void startMovement(){
         startsInteraction=true;        
         registeredCollidingGameObject = secondaryCollisionGameObj;
-        serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
+        setHapticMaterial();
+        //serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
         Debug.Log("Movement has been initiated");
     }
+
     void updateMovement()
     {
         Debug.Log("Movement being updated");
-        float velocity = (this.transform.position - _lastPosition).sqrMagnitude;
-        _lastPosition = this.transform.position;
+        float controllerVelocityMag = controllerVelocityProperty.action.ReadValue<Vector3>().magnitude;
+        Debug.Log("Controller Velcoity : " + controllerVelocityMag);
+        //(this.transform.position - _lastPosition).sqrMagnitude;
+        //_lastPosition = this.transform.position;
         try{
-        if (velocity > velocityThresold 
-            && !_isPlaying
-            && secondaryCollisionGameObj.transform.parent != null 
-            && !Constants.TASK1_THIRD_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag))
+        if (controllerVelocityMag > velocityThresold 
+            && secondaryCollisionGameObj.transform.parent != null )
         {
-            playingId = AkSoundEngine.PostEvent(Constants.GROUND_SWEEP_EVENT,gameObject);
-            Debug.Log("Audio play initiated");
-            _isPlaying = true;
+            //Play audio
+            if(!isAudioPlaying)
+                playAudio();
+            //Play haptics   
+            if(!isHapticPlaying)     
+                playHaptics();    
         }
-        
-        if (_isPlaying)
+            
+        if (isAudioPlaying || isHapticPlaying)
         {
             Debug.Log("Movement and audio play ongoing");
 
-            if(secondaryCollisionGameObj.transform.parent != null &&
-                !Constants.TASK1_SECOND_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag))
-            {
-                serverConnection.SendVelocityDataToServer(controllerVelocityProperty.action.ReadValue<Vector3>());
-            }
-
-            velocity *= velocityFactor;
-            float desiredVolume = volumeCurve.Evaluate(velocity);
+            controllerVelocityMag *= velocityFactor;
+            float desiredVolume = volumeCurve.Evaluate(controllerVelocityMag);
             float caneinteractionVolume = Mathf.Lerp(100f, desiredVolume, dampness * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionVolume,caneinteractionVolume);
-            Debug.Log("RTPC Volume : " + caneinteractionVolume);
 
-            float desiredPitch = pitchCurve.Evaluate(velocity);
+            float desiredPitch = pitchCurve.Evaluate(controllerVelocityMag);
             float caneinteractionPitch = Mathf.Lerp(150f, desiredPitch, dampness * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionPitch,caneinteractionPitch);         
-            Debug.Log("RTPC Pitch : " + caneinteractionPitch);
+
+            if(isAudioPlaying)
+                caneSweepAudioControl(caneinteractionVolume,caneinteractionPitch);
+            if(isHapticPlaying)
+                caneHapticFeedbackControl(caneinteractionVolume);
         }
         }catch(System.Exception e){
-            Debug.Log("Exception while playing audio :" + e);
+            Debug.LogError("Exception while playing audio :" + e);
         }
 
+    }
+
+    private void caneSweepAudioControl(float caneinteractionVolume, float caneinteractionPitch)
+    {
+        AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionVolume,caneinteractionVolume);
+        Debug.Log("RTPC Volume : " + caneinteractionVolume);
+        AkSoundEngine.SetRTPCValue(Constants.RTPC_CaneInteractionPitch,caneinteractionPitch);         
+        Debug.Log("RTPC Pitch : " + caneinteractionPitch);
+    }
+
+    private void playHaptics()
+    {
+        if(!Constants.TASK1_SECOND_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag)){
+            caneHapticFeedbackControl(0);
+            isHapticPlaying = true;
+        }
+    }
+
+    private void playAudio()
+    {
+        if(!Constants.TASK1_THIRD_TASK_OBJECT_TAG.Equals(secondaryCollisionGameObj.transform.parent.tag)){
+            playingId = AkSoundEngine.PostEvent(Constants.GROUND_SWEEP_EVENT,gameObject);
+            Debug.Log("Audio play initiated");
+            isAudioPlaying = true;
+        }
+    }
+
+    private void setHapticMaterial()
+    {           
+        HapticMaterial hapticMaterial = hapticsSelector.GetRandomHapticFile(secondaryCollisionGameObj.tag);
+        if(null!=hapticMaterial){
+            dynamicHapticMaterial = hapticMaterial;
+            Debug.Log("Chosen Haptic Material : "+dynamicHapticMaterial);
+        }else{
+            Debug.LogError("Invalid haptic material/Material List Empty");
+        }
+    }
+
+    private void caneHapticFeedbackControl(double customIntensityVal)
+    {
+        HAR.SetGlobalIntensity(customIntensityVal == 0 ? 0.5 : customIntensityVal);
+        HAR.StopCurrentHapticEffect();
+        Debug.Log("Haptics Intensity: "+HAR.GetGlobalIntensity()/100);
+        HAR.PlayHapticEffect(dynamicHapticMaterial,HAR.GetGlobalIntensity()/100,10,LateralFlag.Right);
     }
 
     void endMovement(){
         startsInteraction=false;
-        _isPlaying = false;
+        isAudioPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
-        serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
+        //serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
+        HAR.StopCurrentHapticEffect();
         Debug.Log("Movement has been terminated");
     }
 }
