@@ -3,3 +3,4 @@
 *.csproj filter=lfs diff=lfs merge=lfs -text
 Assets/Wwise filter=lfs diff=lfs merge=lfs -text
 Assets/Pedestrians filter=lfs diff=lfs merge=lfs -text
+Outdoor-VR-Navigation-Game-_WwiseProject/GeneratedSoundBanks/Windows/Ambient_Sounds.bnk filter=lfs diff=lfs merge=lfs -text
