@@ -21,6 +21,8 @@ TagManager:
   - Main_Character
   - Vehicle
   - Tex_Metal
+  - Pedestrain_conversation
+  - Loop_sound
   layers:
   - Default
   - TransparentFX

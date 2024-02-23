@@ -23,6 +23,14 @@
 					<ChildrenList>
 						<Switch Name="Construction" ID="{C9212618-046B-48F4-A1E9-0301BA5E68A6}"/>
 						<Switch Name="Hotdog_Stand" ID="{0930439B-BA25-45F0-BB44-71649930451A}"/>
+						<Switch Name="Hotdog_Convo_Phone" ID="{AE4F8C12-448D-483E-B72B-626DD52DAD74}"/>
+						<Switch Name="Construction_site_convo" ID="{E4423686-81C8-42B6-BD12-114F835F59FD}"/>
+						<Switch Name="Bus_stop_convo" ID="{825A245E-5888-416C-B6FE-29F7BACE6DA8}"/>
+						<Switch Name="Park_entrance_convo" ID="{638F4B12-D131-4821-8025-3C5E64A65590}"/>
+						<Switch Name="Children_palying" ID="{9F92C62F-3121-4222-8A5C-43B7BCEB341B}"/>
+						<Switch Name="Crowd_ambient_noise" ID="{F41DB1D6-6D01-4DAA-9DA9-491CAC140EF5}"/>
+						<Switch Name="Crowd_cheering_dancing" ID="{A664B18B-C305-4FF0-A4AE-CCD72C9D91AB}"/>
+						<Switch Name="Hosptial_ambulance" ID="{B27992CF-FDFD-42FF-8163-EFFCFF68B642}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Vehicle_Motion_GameSync" ID="{FE523478-CA2E-4370-8BE1-0B6019445A7E}">

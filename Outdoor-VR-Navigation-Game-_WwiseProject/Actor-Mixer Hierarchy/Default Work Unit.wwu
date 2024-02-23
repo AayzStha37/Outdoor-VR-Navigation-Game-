@@ -952,6 +952,7 @@
 						<SwitchContainer Name="Ambient_Sound" ID="{83E6E2AE-70C0-4930-A17F-503FA90DFA7F}" ShortID="624524674">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -968,7 +969,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Construction_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}" ShortID="219041025">
+								<Sound Name="Construction_Site_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}" ShortID="219041025">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1064,30 +1065,531 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<Sound Name="Constrcution site conversation" ID="{B9EC5D59-B7CB-4138-9461-DA9ABB9165C2}" ShortID="290949204">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{B7A05E3D-2C70-4672-93EF-CAD3DAA0E8C5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Constrcution site conversation" ID="{B7A05E3D-2C70-4672-93EF-CAD3DAA0E8C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Hotdog stand applause phone conversation" ID="{995FC6A5-2171-4CA0-9293-3958F624844A}" ShortID="809940884">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{111CC69F-0C29-417C-8F55-1EB78944AC12}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Hot dog applause conversation" ID="{8682FBD5-A072-4931-8CBF-59332C6A1D53}">
+											<Language>SFX</Language>
+											<AudioFile>Hot dog applause conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407205469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Hot dog applause conversation" ID="{8682FBD5-A072-4931-8CBF-59332C6A1D53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bust stop conversation" ID="{E58CCA6C-1DC3-4C7F-8903-3FFE1E92ED78}" ShortID="222085164">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{2A0F62D7-2B7E-4AFA-AEED-254F07C66B6C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Bus stop conversation" ID="{55D67251-AB8A-4266-AE2F-3E5DFDB64349}">
+											<Language>SFX</Language>
+											<AudioFile>Bus stop conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="31391304"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bus stop conversation" ID="{55D67251-AB8A-4266-AE2F-3E5DFDB64349}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Small_crowd_talking_Sounds" ID="{5A520C27-CFB1-4F28-B62D-C703BB873F15}" ShortID="12297214">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Small Crowd Talking Ambience sound 1" ID="{EAE93258-6B1F-439E-B3AE-0748AD04527A}" ShortID="154409028">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Small Crowd Talking Ambience sound 1" ID="{19973C32-AE8D-449B-AA6D-D0A4BFBFE997}">
+													<Language>SFX</Language>
+													<AudioFile>Small Crowd Talking Ambience sound 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="259112865"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Small Crowd Talking Ambience sound 1" ID="{19973C32-AE8D-449B-AA6D-D0A4BFBFE997}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Small Crowd Talking Ambience sound 2" ID="{ABA09358-A4FB-48E7-B85B-D5C8204CF6D1}" ShortID="25054887">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Small Crowd Talking Ambience sound 2" ID="{1089FA66-160D-465D-935A-1D69943A2173}">
+													<Language>SFX</Language>
+													<AudioFile>Small Crowd Talking Ambience sound 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="159878254"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Small Crowd Talking Ambience sound 2" ID="{1089FA66-160D-465D-935A-1D69943A2173}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Children_Playing_Sounds" ID="{D7141700-3DA5-4AB0-A43E-3D86E6E00756}" ShortID="23800813">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Children Playing Sound Effect 1" ID="{44E4FE02-84C3-465F-B317-8A9A55FBF152}" ShortID="349925227">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Children Playing Sound Effect 1" ID="{37F98D5A-0153-4CBD-AC40-0D47C591F9C5}">
+													<Language>SFX</Language>
+													<AudioFile>Children Playing Sound Effect 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="3289206"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Children Playing Sound Effect 1" ID="{37F98D5A-0153-4CBD-AC40-0D47C591F9C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Children Playing Sound Effect 2" ID="{86D69A92-A2D8-4634-82CB-076D2A5E9609}" ShortID="1034618652">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Children Playing Sound Effect 2" ID="{0AA45D72-C53E-4714-8B3D-E5EFBA171A0C}">
+													<Language>SFX</Language>
+													<AudioFile>Children Playing Sound Effect 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1834701"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Children Playing Sound Effect 2" ID="{0AA45D72-C53E-4714-8B3D-E5EFBA171A0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Children Playing Sound Effect 3" ID="{8F99E8A6-451D-4025-AA23-EDEA3616447B}" ShortID="691502758">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Children Playing Sound Effect 3" ID="{4A60B806-B5A7-469D-AFFC-E6981CD4EB10}">
+													<Language>SFX</Language>
+													<AudioFile>Children Playing Sound Effect 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846016884"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Children Playing Sound Effect 3" ID="{4A60B806-B5A7-469D-AFFC-E6981CD4EB10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Small crowd dancing and cheering" ID="{5FB3D44C-2B2A-4F84-A166-2A1F9EBAAC2B}" ShortID="150375298">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Small crowd cheering sound" ID="{A63A1BB5-3219-4692-84AE-960120B614CD}" ShortID="919458992">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Ambient sound attenuation" ID="{52E877FB-BCEB-41C2-8FC9-5EE88D58C7BE}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Small crowd cheering sound" ID="{881F88B6-1DE2-4AAF-83FA-071539F80423}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="6.67596167068979"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.75020349645235"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Small crowd cheering sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="212434798"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{360641BE-0AA1-4CB1-956E-384074927F5A}"/>
+												<Position Name="" ID="{B52DD7C6-F858-4F48-8590-8C95CCE8602A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Small crowd cheering sound" ID="{881F88B6-1DE2-4AAF-83FA-071539F80423}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Hip Hop Beat Sound Effect" ID="{BE800595-7214-4175-94F9-413345157068}" ShortID="516359969">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Hip Hop Beat Sound Effect" ID="{78F4178C-6B98-4D6A-AF9C-B563CE3BDAD8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.234072123473044"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.468144246946092"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.07673176797601"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.9376782971253"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Hip Hop Beat Sound Effect.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="722142175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Hip Hop Beat Sound Effect" ID="{78F4178C-6B98-4D6A-AF9C-B563CE3BDAD8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="Park conversation" ID="{10C7DAB6-B2E9-4BF7-9011-85CB8D917E31}" ShortID="736314817">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Park conversation" ID="{54A1268E-838B-4A37-A099-245B0CC206F5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="10.462064516129"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.24548387096774"/>
+												<Property Name="TrimEnd" Type="Real64" Value="74.479935483871"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Park conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="3934327"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Park conversation" ID="{54A1268E-838B-4A37-A099-245B0CC206F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambulance Sound Effect" ID="{25646528-5F37-44A0-A4A7-980DF0D88DF3}" ShortID="644799738">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambulance Sound Effect" ID="{F62B1AC0-49FB-4D40-8FFF-704B18012094}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="7.7231067222588"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.7231067222588"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambulance Sound Effect.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="544192436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambulance Sound Effect" ID="{F62B1AC0-49FB-4D40-8FFF-704B18012094}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
+								<Panner Name="" ID="{9B8A8B2D-BA6D-4EAB-B75B-59252E00D21F}"/>
 								<Position Name="" ID="{60D1DF2A-CC22-41DF-8C2C-845A22DF7E2F}"/>
 							</PositioningInfo>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Construction_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}"/>
+										<ItemRef Name="Children_Playing_Sounds" ID="{D7141700-3DA5-4AB0-A43E-3D86E6E00756}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Small_crowd_talking_Sounds" ID="{5A520C27-CFB1-4F28-B62D-C703BB873F15}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ambulance Sound Effect" ID="{25646528-5F37-44A0-A4A7-980DF0D88DF3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Small crowd dancing and cheering" ID="{5FB3D44C-2B2A-4F84-A166-2A1F9EBAAC2B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Constrcution site conversation" ID="{B9EC5D59-B7CB-4138-9461-DA9ABB9165C2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Construction_Site_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Bust stop conversation" ID="{E58CCA6C-1DC3-4C7F-8903-3FFE1E92ED78}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Hotdog_Stand_Sounds" ID="{CFB11377-F738-44C6-B3AB-431423BEF20B}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Hotdog stand applause phone conversation" ID="{995FC6A5-2171-4CA0-9293-3958F624844A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Park conversation" ID="{10C7DAB6-B2E9-4BF7-9011-85CB8D917E31}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
+										<SwitchRef Name="Park_entrance_convo" ID="{638F4B12-D131-4821-8025-3C5E64A65590}"/>
+										<ItemList>
+											<ItemRef Name="Park conversation" ID="{10C7DAB6-B2E9-4BF7-9011-85CB8D917E31}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hotdog_Convo_Phone" ID="{AE4F8C12-448D-483E-B72B-626DD52DAD74}"/>
+										<ItemList>
+											<ItemRef Name="Hotdog stand applause phone conversation" ID="{995FC6A5-2171-4CA0-9293-3958F624844A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Construction" ID="{C9212618-046B-48F4-A1E9-0301BA5E68A6}"/>
 										<ItemList>
-											<ItemRef Name="Construction_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}"/>
+											<ItemRef Name="Construction_Site_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Children_palying" ID="{9F92C62F-3121-4222-8A5C-43B7BCEB341B}"/>
+										<ItemList>
+											<ItemRef Name="Children_Playing_Sounds" ID="{D7141700-3DA5-4AB0-A43E-3D86E6E00756}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Bus_stop_convo" ID="{825A245E-5888-416C-B6FE-29F7BACE6DA8}"/>
+										<ItemList>
+											<ItemRef Name="Bust stop conversation" ID="{E58CCA6C-1DC3-4C7F-8903-3FFE1E92ED78}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Construction_site_convo" ID="{E4423686-81C8-42B6-BD12-114F835F59FD}"/>
+										<ItemList>
+											<ItemRef Name="Constrcution site conversation" ID="{B9EC5D59-B7CB-4138-9461-DA9ABB9165C2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Crowd_cheering_dancing" ID="{A664B18B-C305-4FF0-A4AE-CCD72C9D91AB}"/>
+										<ItemList>
+											<ItemRef Name="Small crowd dancing and cheering" ID="{5FB3D44C-2B2A-4F84-A166-2A1F9EBAAC2B}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Hotdog_Stand" ID="{0930439B-BA25-45F0-BB44-71649930451A}"/>
 										<ItemList>
 											<ItemRef Name="Hotdog_Stand_Sounds" ID="{CFB11377-F738-44C6-B3AB-431423BEF20B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hosptial_ambulance" ID="{B27992CF-FDFD-42FF-8163-EFFCFF68B642}"/>
+										<ItemList>
+											<ItemRef Name="Ambulance Sound Effect" ID="{25646528-5F37-44A0-A4A7-980DF0D88DF3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Crowd_ambient_noise" ID="{F41DB1D6-6D01-4DAA-9DA9-491CAC140EF5}"/>
+										<ItemList>
+											<ItemRef Name="Small_crowd_talking_Sounds" ID="{5A520C27-CFB1-4F28-B62D-C703BB873F15}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -9955,111 +10457,6 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
-						<Sound Name="Initial Traffic Sound" ID="{444D04FD-4C65-48EA-A202-736FED330EB2}" ShortID="857124270">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Traffic Noise Sound Effect" ID="{A0699F4C-D308-4A87-AB7E-90466BB67022}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.76307924879353"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Traffic Noise Sound Effect.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="407448612"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Traffic Noise Sound Effect" ID="{A0699F4C-D308-4A87-AB7E-90466BB67022}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Traffic Light Wait Sound" ID="{81AC21F2-CFA0-4184-A34A-3CA30AAAB4E2}" ShortID="1023375139">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Wait Audio Clip.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="265156255"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" ShortID="975026088">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}">
-									<Language>SFX</Language>
-									<AudioFile>Walk Audio Clip.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="551432879"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Folder Name=" Cane interaction surface sounds" ID="{E4E565D6-04B9-4FDE-B536-3CCF3F979E90}" ShortID="351685377">
 							<ChildrenList>
 								<Folder Name="[RAW] " ID="{FD50894C-70C4-4359-AE3A-2CCCBE73DCEA}" ShortID="289948193">
@@ -10994,6 +11391,481 @@
 										<Folder Name="Sidewalk sounds" ID="{0D6F339E-A0EF-4355-A027-314422C63843}" ShortID="633951118"/>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ambient Sounds" ID="{7B025F92-432A-4BD0-8C7B-6DA0B4B78E5C}" ShortID="367486827">
+							<ChildrenList>
+								<Sound Name="Bust stop conversation" ID="{A0ECB312-0A09-4FE7-9E40-F2D1B9F520EB}" ShortID="684316668">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{8936BB2D-56D2-4D19-8BC4-25B0570ACFCD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Bus stop conversation" ID="{1FE92B4D-84C8-4440-8F0E-026D98FBAEAA}">
+											<Language>SFX</Language>
+											<AudioFile>Bus stop conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="31391304"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bus stop conversation" ID="{1FE92B4D-84C8-4440-8F0E-026D98FBAEAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Constrcution site conversation" ID="{A7C26B44-A122-4163-B401-4309345C7E8F}" ShortID="810763438">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{D440DF05-C2C5-4F28-9E38-8215C95C867C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Constrcution site conversation" ID="{D440DF05-C2C5-4F28-9E38-8215C95C867C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Construction_Sound" ID="{DA64CB09-68CC-45BD-9348-232BF2594A6E}" ShortID="282065072">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution_Sound" ID="{94758ABA-15DF-42BC-9973-68F6D09DC8D6}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.67872021066491"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution_Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="106750584"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Constrcution_Sound" ID="{94758ABA-15DF-42BC-9973-68F6D09DC8D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Hotdog stand applause phone conversation" ID="{F9C7D1AF-42D9-47B2-9093-0009232D063B}" ShortID="179243877">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Constrcution site conversation" ID="{BC1570E3-11FE-408F-9DB2-52EC2DE2957E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="11.999885430001"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.3999770860002"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.59998472400014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Constrcution site conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="294159623"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Hot dog applause conversation" ID="{E8921AF4-EE48-4997-8639-DAB67203E090}">
+											<Language>SFX</Language>
+											<AudioFile>Hot dog applause conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407205469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Hot dog applause conversation" ID="{E8921AF4-EE48-4997-8639-DAB67203E090}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small crowd cheering sound" ID="{5E1768F7-A277-40F7-9330-C6541D8C0D66}" ShortID="603050498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small crowd cheering sound" ID="{C895579B-F98F-4EE0-BCEE-C0BD984ACD2A}">
+											<Language>SFX</Language>
+											<AudioFile>Small crowd cheering sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="519367155"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small crowd cheering sound" ID="{C895579B-F98F-4EE0-BCEE-C0BD984ACD2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Children Playing Sound Effect 1" ID="{07F095BE-5A54-433C-BF63-733D82C01B14}" ShortID="474392966">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Children Playing Sound Effect 1" ID="{99DE890F-614A-4978-AEEC-42186BE708E2}">
+											<Language>SFX</Language>
+											<AudioFile>Children Playing Sound Effect 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="3289206"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Children Playing Sound Effect 1" ID="{99DE890F-614A-4978-AEEC-42186BE708E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Children Playing Sound Effect 2" ID="{150A076A-692C-42C5-A1F2-C69F4D1883C8}" ShortID="725784255">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Children Playing Sound Effect 2" ID="{1AB184C3-A687-43EB-A174-6B4CA0A9556D}">
+											<Language>SFX</Language>
+											<AudioFile>Children Playing Sound Effect 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1834701"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Children Playing Sound Effect 2" ID="{1AB184C3-A687-43EB-A174-6B4CA0A9556D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Children Playing Sound Effect 3" ID="{6D10377E-6E9A-4307-98CC-5884CECC2FEB}" ShortID="348698460">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Children Playing Sound Effect 3" ID="{5478050C-3DE0-4C69-8924-CB77BEA73A77}">
+											<Language>SFX</Language>
+											<AudioFile>Children Playing Sound Effect 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="846016884"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Children Playing Sound Effect 3" ID="{5478050C-3DE0-4C69-8924-CB77BEA73A77}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Hotdog_Human_Sound" ID="{C8681C59-77B9-4B20-A7D6-270462B8AB7D}" ShortID="1070526894">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Hotdog_Human_Sound" ID="{362AE049-2305-4B14-A9C2-34F300FA525F}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.1652104454685"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Hotdog_Human_Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="552064090"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Hotdog_Human_Sound" ID="{362AE049-2305-4B14-A9C2-34F300FA525F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Hotdog_Stand_Ambient_Sound" ID="{8FDE6D9C-733A-47ED-A335-9BA2B27AF51A}" ShortID="383641962">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Hotdog_Stand_Ambient_Sound" ID="{09F872D6-E202-4991-989A-0DB78F6EFF3C}">
+											<Language>SFX</Language>
+											<AudioFile>Hotdog_Stand_Ambient_Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="939648723"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Hotdog_Stand_Ambient_Sound" ID="{09F872D6-E202-4991-989A-0DB78F6EFF3C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small Crowd Talking Ambience sound 1" ID="{B40C1D0A-B769-48EF-BF53-58CA6C245BF9}" ShortID="413424124">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small Crowd Talking Ambience sound 1" ID="{4A01215A-C912-402F-B6E2-087475475A3C}">
+											<Language>SFX</Language>
+											<AudioFile>Small Crowd Talking Ambience sound 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="259112865"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small Crowd Talking Ambience sound 1" ID="{4A01215A-C912-402F-B6E2-087475475A3C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Small Crowd Talking Ambience sound 2" ID="{22FE637E-A680-4295-B7D1-B584BEAD1E49}" ShortID="186706333">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Small Crowd Talking Ambience sound 2" ID="{E69DB72F-37CD-45C4-9550-F8DC93137C4D}">
+											<Language>SFX</Language>
+											<AudioFile>Small Crowd Talking Ambience sound 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="159878254"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Small Crowd Talking Ambience sound 2" ID="{E69DB72F-37CD-45C4-9550-F8DC93137C4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" ShortID="975026088">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}">
+											<Language>SFX</Language>
+											<AudioFile>Walk Audio Clip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="551432879"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Walk Audio Clip" ID="{F915691F-2F35-4160-9067-F5A36C691449}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Initial Traffic Sound" ID="{444D04FD-4C65-48EA-A202-736FED330EB2}" ShortID="857124270">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-26</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Traffic Noise Sound Effect" ID="{A0699F4C-D308-4A87-AB7E-90466BB67022}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.76307924879353"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Traffic Noise Sound Effect.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407448612"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Traffic Noise Sound Effect" ID="{A0699F4C-D308-4A87-AB7E-90466BB67022}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Traffic Light Wait Sound" ID="{81AC21F2-CFA0-4184-A34A-3CA30AAAB4E2}" ShortID="1023375139">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Traffic Light Sound Attenuation" ID="{0E746C6E-F87A-4206-ABF5-33DF6E7F9896}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wait Audio Clip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="265156255"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Park conversation" ID="{90AF6D5B-4256-45C8-A568-3848C2CF3244}" ShortID="39206012">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Park conversation" ID="{F46DCF91-50F6-4BEF-8C1D-58244960D77B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="10.462064516129"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.24548387096774"/>
+												<Property Name="TrimEnd" Type="Real64" Value="74.479935483871"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Park conversation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="3934327"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Park conversation" ID="{F46DCF91-50F6-4BEF-8C1D-58244960D77B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

@@ -45,12 +45,13 @@ public class PedestrainSpawner : MonoBehaviour
 
     private void spawnPedestrian(GameObject pedestrianModel)
     {
-        GameObject spawnedPedestrian = Instantiate(pedestrianModel,transform.position,Quaternion.Euler(0,-90f,0));
-        spawnedPedestrian.transform.GetComponent<Animator>().runtimeAnimatorController = pedestrianAnimation;
-        spawnedPedestrian.transform.SetParent(this.transform);     
-        PedestrianWayPointFollower scriptComponent = spawnedPedestrian.AddComponent<PedestrianWayPointFollower>();
-        WPArray wayPointArray  =  waypointsList[random.Next(0,waypointsList.Count)];
-        scriptComponent.InitializeWayPointsVal(wayPointArray.Waypoints,initalSpeed,spawnedPedestrian.GetComponent<Rigidbody>());
-        spawnedPedestrian.AddComponent<PedestrianWayPointFollower>();   
+    //     GameObject spawnedPedestrian = Instantiate(pedestrianModel,transform.position,Quaternion.Euler(0,-90f,0));
+    //     spawnedPedestrian.transform.GetComponent<Animator>().runtimeAnimatorController = pedestrianAnimation;
+    //     spawnedPedestrian.transform.SetParent(this.transform);     
+    //     PedestrianWayPointFollower scriptComponent = spawnedPedestrian.AddComponent<PedestrianWayPointFollower>();
+    //     WPArray wayPointArray  =  waypointsList[random.Next(0,waypointsList.Count)];
+    //     scriptComponent.InitializeWayPointsVal(wayPointArray.Waypoints,initalSpeed,spawnedPedestrian.GetComponent<Rigidbody>());
+    //     spawnedPedestrian.AddComponent<PedestrianWayPointFollower>();   
+    
     }
 }

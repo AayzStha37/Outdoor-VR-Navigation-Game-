@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8584934910934540824
+    m_lastTime: -8584929640013900778
     List:
     - name: AmbientSoundEvent
       guid: de74f45c237940408126f9c210e22557
@@ -474,7 +474,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8584934926175755345
+    m_lastTime: -8584929615214009617
     List:
     - name: Ambient_Sounds_Switch
       guid: dc88704a113a424387ce66d417f18dfe
@@ -491,6 +491,38 @@ MonoBehaviour:
         guid: dc88704a113a424387ce66d417f18dfe
       Path: Switches\Default Work Unit\Ambient_Sounds_Switch
       values:
+      - name: Bus_stop_convo
+        guid: 5e245a8288586c41b6fe29f7bace6da8
+        id: 3633441448
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Bus_stop_convo
+          ObjectType: 10
+          guid: 5e245a8288586c41b6fe29f7bace6da8
+      - name: Children_palying
+        guid: 2fc6929f213122428a5c43b7bceb341b
+        id: 2364011221
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Children_palying
+          ObjectType: 10
+          guid: 2fc6929f213122428a5c43b7bceb341b
       - name: Construction
         guid: 182621c96b04f448a1e90301ba5e68a6
         id: 2634775690
@@ -507,6 +539,86 @@ MonoBehaviour:
         - ElementName: Construction
           ObjectType: 10
           guid: 182621c96b04f448a1e90301ba5e68a6
+      - name: Construction_site_convo
+        guid: 863642e4c881b642bd12114f835f59fd
+        id: 2070892264
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Construction_site_convo
+          ObjectType: 10
+          guid: 863642e4c881b642bd12114f835f59fd
+      - name: Crowd_ambient_noise
+        guid: d6b11df4016daa4d9da9491cac140ef5
+        id: 1073138942
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Crowd_ambient_noise
+          ObjectType: 10
+          guid: d6b11df4016daa4d9da9491cac140ef5
+      - name: Crowd_cheering_dancing
+        guid: 8bb164a605c3f04fa4aeccd72c9d91ab
+        id: 2449584239
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Crowd_cheering_dancing
+          ObjectType: 10
+          guid: 8bb164a605c3f04fa4aeccd72c9d91ab
+      - name: Hosptial_ambulance
+        guid: cf9279b2fdfdff428163effcff68b642
+        id: 492490026
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Hosptial_ambulance
+          ObjectType: 10
+          guid: cf9279b2fdfdff428163effcff68b642
+      - name: Hotdog_Convo_Phone
+        guid: 128c4fae8d443e48b72b626dd52dad74
+        id: 1349895145
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Hotdog_Convo_Phone
+          ObjectType: 10
+          guid: 128c4fae8d443e48b72b626dd52dad74
       - name: Hotdog_Stand
         guid: 9b43300925baf045bb4471649930451a
         id: 2409619181
@@ -523,6 +635,22 @@ MonoBehaviour:
         - ElementName: Hotdog_Stand
           ObjectType: 10
           guid: 9b43300925baf045bb4471649930451a
+      - name: Park_entrance_convo
+        guid: 124b8f6331d1214880253c5e64a65590
+        id: 2591134982
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 556287a9bcc29046aae78388b5fecfa1
+        - ElementName: Ambient_Sounds_Switch
+          ObjectType: 11
+          guid: dc88704a113a424387ce66d417f18dfe
+        - ElementName: Park_entrance_convo
+          ObjectType: 10
+          guid: 124b8f6331d1214880253c5e64a65590
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -805,7 +933,7 @@ MonoBehaviour:
     m_lastTime: -8584934926175750228
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 13000000140000001f0000002000000021000000e4000000e5000000e60000002701000028010000290100002e0100002f01000030010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

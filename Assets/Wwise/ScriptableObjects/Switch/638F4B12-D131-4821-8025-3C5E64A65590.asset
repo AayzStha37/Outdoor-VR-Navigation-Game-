@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b492d3a1eb0983b46bf4c2c7cafec723, type: 3}
+  m_Name: 638F4B12-D131-4821-8025-3C5E64A65590
+  m_EditorClassIdentifier: 
+  objectName: Park_entrance_convo
+  id: 2591134982
+  guid: 638F4B12-D131-4821-8025-3C5E64A65590
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+    type: 2}

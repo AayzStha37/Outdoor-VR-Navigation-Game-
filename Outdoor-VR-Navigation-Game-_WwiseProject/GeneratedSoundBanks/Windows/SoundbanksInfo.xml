@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{B962666C-CACD-F8E8-EDD4-A92CDBAAF91F}">
+		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{8FCF2191-7F8B-79B6-FE9F-1C83DF763DD0}">
 			<ShortName>Vehicle_Stationary_Bank</ShortName>
 			<Path>Vehicle_Stationary_Bank.bnk</Path>
 			<Media>
@@ -88,7 +88,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{A4F7FC6C-6449-AD5B-BF2F-7DE90138D361}">
+		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{4F6AC0B5-5C4C-0210-4658-47F892CAEC76}">
 			<ShortName>Vehicle_Motion_Bank</ShortName>
 			<Path>Vehicle_Motion_Bank.bnk</Path>
 			<Media>
@@ -152,7 +152,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{66C5F367-E700-9A41-78FE-29158978CAD6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F65D5BD1-6E02-8CFA-2FC1-1FD9CD2D6465}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -172,8 +172,16 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
 					<Switches>
+						<Switch Id="492490026" Name="Hosptial_ambulance"/>
+						<Switch Id="1073138942" Name="Crowd_ambient_noise"/>
+						<Switch Id="1349895145" Name="Hotdog_Convo_Phone"/>
+						<Switch Id="2070892264" Name="Construction_site_convo"/>
+						<Switch Id="2364011221" Name="Children_palying"/>
 						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2449584239" Name="Crowd_cheering_dancing"/>
+						<Switch Id="2591134982" Name="Park_entrance_convo"/>
 						<Switch Id="2634775690" Name="Construction"/>
+						<Switch Id="3633441448" Name="Bus_stop_convo"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1515766668" Name="Vehicle_Motion_GameSync">
@@ -206,7 +214,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{FA32E9EE-A70A-5A3A-8312-815695466BFC}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{F7E64701-B8A2-E490-6B9E-51087600F033}">
 			<ShortName>Start_Scene_Traffic</ShortName>
 			<Path>Start_Scene_Traffic.bnk</Path>
 			<Media>
@@ -223,17 +231,65 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{9E89928D-436F-CB18-92F9-57002615377C}">
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{BFDD781B-7883-6BD1-C076-0B2B56DADD6A}">
 			<ShortName>Ambient_Sounds</ShortName>
 			<Path>Ambient_Sounds.bnk</Path>
 			<Media>
+				<File Id="1834701" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Children Playing Sound Effect 2.wav</ShortName>
+					<CachePath>SFX/Children Playing Sound Effect 2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="3289206" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Children Playing Sound Effect 1.wav</ShortName>
+					<CachePath>SFX/Children Playing Sound Effect 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="3934327" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Park conversation.wav</ShortName>
+					<CachePath>SFX/Park conversation_F55DFC35.wem</CachePath>
+				</File>
+				<File Id="31391304" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bus stop conversation.wav</ShortName>
+					<CachePath>SFX/Bus stop conversation_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="106750584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Constrcution_Sound.wav</ShortName>
 					<CachePath>SFX/Constrcution_Sound_93D01CC3.wem</CachePath>
 				</File>
+				<File Id="159878254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Crowd Talking Ambience sound 2.wav</ShortName>
+					<CachePath>SFX/Small Crowd Talking Ambience sound 2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="212434798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small crowd cheering sound.wav</ShortName>
+					<CachePath>SFX/Small crowd cheering sound_D7D319C1.wem</CachePath>
+				</File>
+				<File Id="259112865" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Crowd Talking Ambience sound 1.wav</ShortName>
+					<CachePath>SFX/Small Crowd Talking Ambience sound 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="294159623" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Constrcution site conversation.wav</ShortName>
+					<CachePath>SFX/Constrcution site conversation_D79A7FA3.wem</CachePath>
+				</File>
+				<File Id="407205469" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hot dog applause conversation.wav</ShortName>
+					<CachePath>SFX/Hot dog applause conversation_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="544192436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambulance Sound Effect.wav</ShortName>
+					<CachePath>SFX/Ambulance Sound Effect_9C601487.wem</CachePath>
+				</File>
 				<File Id="552064090" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hotdog_Human_Sound.wav</ShortName>
 					<CachePath>SFX/Hotdog_Human_Sound_387DB8FE.wem</CachePath>
+				</File>
+				<File Id="722142175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hip Hop Beat Sound Effect.wav</ShortName>
+					<CachePath>SFX/Hip Hop Beat Sound Effect_DB39AF00.wem</CachePath>
+				</File>
+				<File Id="846016884" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Children Playing Sound Effect 3.wav</ShortName>
+					<CachePath>SFX/Children Playing Sound Effect 3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="939648723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hotdog_Stand_Ambient_Sound.wav</ShortName>
@@ -241,12 +297,51 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3307224408" Name="AmbientSoundEvent" MaxAttenuation="25" DurationType="Infinite">
+				<Event Id="3307224408" Name="AmbientSoundEvent" MaxAttenuation="25" DurationType="Mixed" DurationMin="8.345102" DurationMax="Infinite">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2591134982"/>
+							<MediaRefs>
+								<MediaRef Id="3934327"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="1349895145"/>
+							<MediaRefs>
+								<MediaRef Id="407205469"/>
+							</MediaRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2634775690"/>
 							<MediaRefs>
 								<MediaRef Id="106750584"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2364011221"/>
+							<MediaRefs>
+								<MediaRef Id="1834701"/>
+								<MediaRef Id="3289206"/>
+								<MediaRef Id="846016884"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="3633441448"/>
+							<MediaRefs>
+								<MediaRef Id="31391304"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2070892264"/>
+							<MediaRefs>
+								<MediaRef Id="294159623"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2449584239"/>
+							<MediaRefs>
+								<MediaRef Id="212434798"/>
+								<MediaRef Id="722142175"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -256,19 +351,40 @@
 								<MediaRef Id="939648723"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="492490026"/>
+							<MediaRefs>
+								<MediaRef Id="544192436"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="1073138942"/>
+							<MediaRefs>
+								<MediaRef Id="159878254"/>
+								<MediaRef Id="259112865"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="1077759249" Name="Ambient_Sounds_Switch">
 					<Switches>
+						<Switch Id="492490026" Name="Hosptial_ambulance"/>
+						<Switch Id="1073138942" Name="Crowd_ambient_noise"/>
+						<Switch Id="1349895145" Name="Hotdog_Convo_Phone"/>
+						<Switch Id="2070892264" Name="Construction_site_convo"/>
+						<Switch Id="2364011221" Name="Children_palying"/>
 						<Switch Id="2409619181" Name="Hotdog_Stand"/>
+						<Switch Id="2449584239" Name="Crowd_cheering_dancing"/>
+						<Switch Id="2591134982" Name="Park_entrance_convo"/>
 						<Switch Id="2634775690" Name="Construction"/>
+						<Switch Id="3633441448" Name="Bus_stop_convo"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{38580F0E-A647-7ABB-7AD6-3114360A420E}">
+		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{EFDACFC4-EA13-5AC7-2978-5EA7D813B9A9}">
 			<ShortName>Police_Siren_Bank</ShortName>
 			<Path>Police_Siren_Bank.bnk</Path>
 			<Media>
@@ -285,7 +401,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{308D9D87-4CF5-415F-A710-10AA095C3398}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{59C156F0-1BA9-B87C-39A5-A312EE45C3A9}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
@@ -460,21 +576,21 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{656B0556-1742-02C0-A60A-C5F04F1F3D5E}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{E7083BF1-99CF-C777-E4B4-F1241F5E2226}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
 				<File Id="335065082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Road 16.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 16_9B514EB6.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Road 16_408A62D1.wem</CachePath>
 				</File>
 				<File Id="503471685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sidewalk 1.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_9B514EB6.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_408A62D1.wem</CachePath>
 				</File>
 				<File Id="503471686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass 11.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 11_9B514EB6.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Grass 11_408A62D1.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -541,7 +657,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{F5690CB6-963E-F1B4-5913-89B4AD19A1C7}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{65188C3C-76B6-1427-D04E-0EA6047DFEA8}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -558,7 +674,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{FAB31CE8-A25B-1C75-400F-9D880A95E08E}">
+		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{3756BC92-B3EC-DDF2-2747-2367C9AF4CE8}">
 			<ShortName>Level_Complete</ShortName>
 			<Path>Level_Complete.bnk</Path>
 			<Media>
@@ -575,7 +691,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{345F38D7-63E9-F098-9F3D-3E2B15BFECCF}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{1A271CA6-3076-00F4-B870-C7C1282FA958}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
@@ -593,5 +709,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C93F41D-CEFA-B63E-7C09-A3F5D8C7E997}</FileHash>
+	<FileHash>{C525608C-5202-4597-546C-2F218948EC15}</FileHash>
 </SoundBanksInfo>

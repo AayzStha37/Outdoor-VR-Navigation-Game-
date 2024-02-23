@@ -33,8 +33,16 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID BUS_STOP_CONVO = 3633441448U;
+                static const AkUniqueID CHILDREN_PALYING = 2364011221U;
                 static const AkUniqueID CONSTRUCTION = 2634775690U;
+                static const AkUniqueID CONSTRUCTION_SITE_CONVO = 2070892264U;
+                static const AkUniqueID CROWD_AMBIENT_NOISE = 1073138942U;
+                static const AkUniqueID CROWD_CHEERING_DANCING = 2449584239U;
+                static const AkUniqueID HOSPTIAL_AMBULANCE = 492490026U;
+                static const AkUniqueID HOTDOG_CONVO_PHONE = 1349895145U;
                 static const AkUniqueID HOTDOG_STAND = 2409619181U;
+                static const AkUniqueID PARK_ENTRANCE_CONVO = 2591134982U;
             } // namespace SWITCH
         } // namespace AMBIENT_SOUNDS_SWITCH
 

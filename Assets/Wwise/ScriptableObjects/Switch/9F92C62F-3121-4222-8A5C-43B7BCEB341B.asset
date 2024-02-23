@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b492d3a1eb0983b46bf4c2c7cafec723, type: 3}
+  m_Name: 9F92C62F-3121-4222-8A5C-43B7BCEB341B
+  m_EditorClassIdentifier: 
+  objectName: Children_palying
+  id: 2364011221
+  guid: 9F92C62F-3121-4222-8A5C-43B7BCEB341B
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+    type: 2}

@@ -65,5 +65,8 @@ public static class Constants
     public const string GRASS_FOLDER_PATH = @"\Grass";    
     public const string ROAD_FOLDER_PATH = @"\Road";
 
+     public const string PEDESTRIAN_CONVERSATION_TAG = "Pedestrain_conversation";
+     public const string LOOP_SOUND_TAG = "Loop_Sound";
+
 
 }

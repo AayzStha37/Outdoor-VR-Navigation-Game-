@@ -5,25 +5,25 @@ using UnityEngine;
 
 public class PedestrianWayPointFollower : MonoBehaviour
 {
-    public List<GameObject> waypoints; // Array of waypoints to follow
-    private int currentWaypoint = 0;
-    private float initalSpeed;
-    private Rigidbody rb;
-    public void InitializeWayPointsVal(List<GameObject> waypointList, float speed, Rigidbody rigidBody){
-            this.waypoints = waypointList;  
-            this.initalSpeed = speed;
-            this.rb = rigidBody;
+    // public List<GameObject> waypoints; // Array of waypoints to follow
+    // private int currentWaypoint = 0;
+    // private float initalSpeed;
+    // private Rigidbody rb;
+    // public void InitializeWayPointsVal(List<GameObject> waypointList, float speed, Rigidbody rigidBody){
+    //         this.waypoints = waypointList;  
+    //         this.initalSpeed = speed;
+    //         this.rb = rigidBody;
 
-    }
+    // }
 
-    void Update()
-    {  
-        // Check if the object is close enough to the current waypoint
-        if (Vector3.Distance(this.transform.position, waypoints[currentWaypoint].transform.position) < 0.2f)
-            currentWaypoint++;
-        if(currentWaypoint>=waypoints.Count)
-            Destroy(this.gameObject);
-        this.transform.LookAt(waypoints[currentWaypoint].transform);
-        this.transform.Translate(0,0,initalSpeed*Time.deltaTime);
-    }
+    // void Update()
+    // {  
+    //     // Check if the object is close enough to the current waypoint
+    //     if (Vector3.Distance(this.transform.position, waypoints[currentWaypoint].transform.position) < 0.2f)
+    //         currentWaypoint++;
+    //     if(currentWaypoint>=waypoints.Count)
+    //         Destroy(this.gameObject);
+    //     this.transform.LookAt(waypoints[currentWaypoint].transform);
+    //     this.transform.Translate(0,0,initalSpeed*Time.deltaTime);
+    // }
 }
