@@ -113,6 +113,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Traffic_Light_Walk_Sound" ID="{9D32B11A-2718-4966-8714-1250F93468AB}">
+					<ChildrenList>
+						<Action Name="" ID="{E049D988-B800-401D-B10F-AA526D5E4C05}" ShortID="854646386">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" WorkUnitID="{35503A5D-3B8F-409B-834B-9FA4289EBF94}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

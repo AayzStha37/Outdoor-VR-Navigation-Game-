@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="110">
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1696353894" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1708645364" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1708700547" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\States\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Queries\Factory Queries.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1708022261" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Presets\Factory Reflect.wwu" DateLow="1696353900" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Outdoor-VR-Navigation-Game-_WwiseProject.wproj" DateLow="1708617847" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Outdoor-VR-Navigation-Game-_WwiseProject.Admin.wsettings" DateLow="1708646526" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Outdoor-VR-Navigation-Game-_WwiseProject.wproj" DateLow="1708700547" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Outdoor-VR-Navigation-Game-_WwiseProject.Admin.wsettings" DateLow="1708806755" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708804980" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1708022261" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Events\Default Work Unit.wwu" DateLow="1708642884" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Effects\Factory Reflect.wwu" DateLow="1696353900" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Effects\Factory Effects.wwu" DateLow="1708022260" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
@@ -27,5 +30,5 @@
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1708022260" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708645377" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1708805445" DateHigh="0"/>
 </ValidationCache>

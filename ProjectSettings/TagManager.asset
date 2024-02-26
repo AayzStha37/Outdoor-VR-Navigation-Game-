@@ -23,6 +23,7 @@ TagManager:
   - Tex_Metal
   - Pedestrain_conversation
   - Loop_sound
+  - Dummy_vehicle
   layers:
   - Default
   - TransparentFX

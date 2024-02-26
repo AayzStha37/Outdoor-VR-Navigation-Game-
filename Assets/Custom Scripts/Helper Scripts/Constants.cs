@@ -23,6 +23,7 @@ public static class Constants
     public const string COLLISION_OFF = "OFF";
     public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
     public const string VEHCILE_TAG = "Vehicle";
+    public const string VEHCILE_DUMMY_TAG = "Dummy_vehicle";
     public const string MAIN_CHARACTER_BODY = "Character body";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
     public const string POLICE_VEHICLE_PREFAB_NAME= "Police";

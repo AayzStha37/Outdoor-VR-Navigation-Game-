@@ -152,10 +152,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F65D5BD1-6E02-8CFA-2FC1-1FD9CD2D6465}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{93F6D3AB-E568-69FF-FB20-9060E849216C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="1842579981" Name="Reflect_Simplified" LibName="Wwise Reflect" LibId="11206659"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -164,6 +167,15 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="3974446485" Name="Reflect_auxillary_bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1842579981"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1410364352" Name="CaneInteractionPitch"/>
 				<GameParameter Id="2349282220" Name="CaneInteractionVolume"/>
@@ -213,6 +225,120 @@
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
 		</SoundBank>
 		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{F7E64701-B8A2-E490-6B9E-51087600F033}">
 			<ShortName>Start_Scene_Traffic</ShortName>
@@ -231,7 +357,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{BFDD781B-7883-6BD1-C076-0B2B56DADD6A}">
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{F9FA8797-7705-9FC0-BF64-5253B2277A6D}">
 			<ShortName>Ambient_Sounds</ShortName>
 			<Path>Ambient_Sounds.bnk</Path>
 			<Media>
@@ -255,10 +381,6 @@
 					<ShortName>Constrcution_Sound.wav</ShortName>
 					<CachePath>SFX/Constrcution_Sound_93D01CC3.wem</CachePath>
 				</File>
-				<File Id="159878254" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Small Crowd Talking Ambience sound 2.wav</ShortName>
-					<CachePath>SFX/Small Crowd Talking Ambience sound 2_10C4C929.wem</CachePath>
-				</File>
 				<File Id="212434798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small crowd cheering sound.wav</ShortName>
 					<CachePath>SFX/Small crowd cheering sound_D7D319C1.wem</CachePath>
@@ -270,6 +392,10 @@
 				<File Id="294159623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Constrcution site conversation.wav</ShortName>
 					<CachePath>SFX/Constrcution site conversation_D79A7FA3.wem</CachePath>
+				</File>
+				<File Id="312281592" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Small Crowd Talking Ambience sound 2.wav</ShortName>
+					<CachePath>SFX/Small Crowd Talking Ambience sound 2_ADC31D1C.wem</CachePath>
 				</File>
 				<File Id="407205469" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hot dog applause conversation.wav</ShortName>
@@ -298,6 +424,9 @@
 			</Media>
 			<Events>
 				<Event Id="3307224408" Name="AmbientSoundEvent" MaxAttenuation="25" DurationType="Mixed" DurationMin="8.345102" DurationMax="Infinite">
+					<AuxBusRefs>
+						<AuxBusRef Id="3974446485" Name="Reflect_auxillary_bus"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="2591134982"/>
@@ -360,8 +489,8 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1077759249" Id="1073138942"/>
 							<MediaRefs>
-								<MediaRef Id="159878254"/>
 								<MediaRef Id="259112865"/>
+								<MediaRef Id="312281592"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -576,7 +705,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{E7083BF1-99CF-C777-E4B4-F1241F5E2226}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{3CC7E56E-3368-16CE-87D8-FC14A0E307FB}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -613,7 +742,10 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="2424624112" Name="GroundSweepEvent" DurationType="Infinite">
+				<Event Id="2424624112" Name="GroundSweepEvent" MaxAttenuation="2" DurationType="Infinite">
+					<AuxBusRefs>
+						<AuxBusRef Id="3974446485" Name="Reflect_auxillary_bus"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
@@ -657,7 +789,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{65188C3C-76B6-1427-D04E-0EA6047DFEA8}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{97E1839C-12E5-33D0-241D-4E9220C02219}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -671,6 +803,9 @@
 					<MediaRefs>
 						<MediaRef Id="551432879"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3974446485" Name="Reflect_auxillary_bus"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -709,5 +844,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C525608C-5202-4597-546C-2F218948EC15}</FileHash>
+	<FileHash>{52EA83DA-71D7-FEEE-0540-089C787E8E95}</FileHash>
 </SoundBanksInfo>

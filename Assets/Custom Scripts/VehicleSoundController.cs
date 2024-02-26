@@ -6,7 +6,7 @@ public class VehicleSoundController : MonoBehaviour
     {
         private uint vehicleMotionSound = 0;
         private uint vehicleStationarySound = 0;
-        private enum VehicleState{moving,stationary}
+        private enum VehicleState{moving,stationary,undefined}
         VehicleState currentState;
         VehicleState previousState;
         private VehicleWayPointFollower wayPointFollower;
@@ -15,17 +15,28 @@ public class VehicleSoundController : MonoBehaviour
         {
             wayPointFollower = GetComponent<VehicleWayPointFollower>();
             checkForPoliceVehicle();
-            currentState = checkVehicleState();
+            currentState = getCurentVehicleState();
             playAudio(currentState);
         }
 
-        void Update()
+    private VehicleState getCurentVehicleState()
+    {
+        if(gameObject.tag.Equals(Constants.VEHCILE_TAG))
+            return checkVehicleState();
+        else if (gameObject.tag.Equals(Constants.VEHCILE_DUMMY_TAG))
+            return VehicleState.stationary;
+        
+        return VehicleState.undefined;
+    }
+
+    void Update()
         {
-            previousState = currentState;
+            previousState = currentState;            
+            currentState = getCurentVehicleState();
 
-            currentState = checkVehicleState();
-
-            if(compareVehicleState())
+            if(currentState.Equals(VehicleState.undefined)){
+                Debug.LogError("Vehicle gameobject is in undefine state");
+            }else if(compareVehicleState())
                 playAudio(currentState);               
         }
 

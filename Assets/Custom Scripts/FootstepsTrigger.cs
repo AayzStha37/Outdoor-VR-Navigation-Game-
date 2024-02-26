@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class FootstepsTrigger : MonoBehaviour
 {
-    public Rigidbody character;   
+    private Rigidbody character;   
     private bool _isPlaying = false;
     private bool startsInteraction = false;
     private uint playingId;
@@ -19,7 +21,8 @@ public class FootstepsTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         AkSoundEngine.RegisterGameObj(gameObject);
+        character = gameObject.GetComponent<Rigidbody>();
+        AkSoundEngine.RegisterGameObj(gameObject);
         _isPlaying = false;
     }
 

@@ -14,7 +14,6 @@ public class VehicleWayPointFollower : MonoBehaviour
             this.waypoints = waypointList;  
             this.initalSpeed = speed;
             this.rb = rigidBody;
-
     }
 
     void Update()
@@ -22,14 +21,17 @@ public class VehicleWayPointFollower : MonoBehaviour
         // Check if there are waypoints to follow
         if (waypoints.Length == 0)
             rb.velocity = transform.forward*initalSpeed;
-        else if(shouldMove){        
+        else if(shouldMove){
             // Check if the object is close enough to the current waypoint
             if (Vector3.Distance(this.transform.position, waypoints[currentWaypoint].transform.position) < 0.2f)
                 currentWaypoint++;
-            if(currentWaypoint>=waypoints.Length)
+            if(currentWaypoint<waypoints.Length){
+                this.transform.LookAt(waypoints[currentWaypoint].transform);
+                this.transform.Translate(0,0,initalSpeed*Time.deltaTime);
+            }
+            else{
                 Destroy(this.gameObject);
-            this.transform.LookAt(waypoints[currentWaypoint].transform);
-            this.transform.Translate(0,0,initalSpeed*Time.deltaTime);
+            }    
         }
     }
 }

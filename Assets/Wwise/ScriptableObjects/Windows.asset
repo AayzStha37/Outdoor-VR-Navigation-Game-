@@ -64,6 +64,8 @@ MonoBehaviour:
   - AdvancedSettings.m_DebugOutOfRangeLimit
   - AdvancedSettings.m_MemoryAllocationSizeLimit
   - AdvancedSettings.m_MemoryDebugLevel
+  - UserSettings.m_SpatialAudioSettings.m_MaxDiffractionOrder
+  - UserSettings.m_SpatialAudioSettings.m_DiffractionOnReflectionsOrder
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
@@ -86,7 +88,7 @@ MonoBehaviour:
       m_MaxSoundPropagationDepth: 8
       m_MovementThreshold: 0.1
       m_NumberOfPrimaryRays: 100
-      m_MaxReflectionOrder: 1
+      m_MaxReflectionOrder: 4
       m_MaxDiffractionOrder: 4
       m_DiffractionOnReflectionsOrder: 2
       m_MaxPathLength: 10000

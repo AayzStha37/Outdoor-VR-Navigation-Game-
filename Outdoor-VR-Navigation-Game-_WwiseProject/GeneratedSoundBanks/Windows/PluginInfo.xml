@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Platform="Windows" BasePlatform="Windows">
 	<PluginLibs>
+		<PluginLib LibName="Wwise Reflect" LibId="11206659" Type="Effect" DLL="AkReflect" StaticLib="AkReflectFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 		<PluginLib LibName="SoundSeed Grain" LibId="11993090" Type="Source" DLL="AkSoundSeedGrain" StaticLib="AkSoundSeedGrainSource"/>
 	</PluginLibs>
-	<FileHash>{ECB85C8B-1245-8EA4-B025-3AEE60FCF9DD}</FileHash>
+	<FileHash>{F5EF45E8-B944-CF52-ED85-AD5ED5BF93F8}</FileHash>
 </PluginInfo>

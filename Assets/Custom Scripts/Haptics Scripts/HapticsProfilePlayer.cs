@@ -27,8 +27,8 @@ public class HapticsProfilePlayer : MonoBehaviour
     {
         AkSoundEngine.RegisterGameObj(gameObject);
         _isPlaying = false;
-        initArduinoSerialPort();
-        openArduinoPortConnection();
+        // initArduinoSerialPort();
+        // openArduinoPortConnection();
     }
 
     private void initArduinoSerialPort()
@@ -58,31 +58,31 @@ public class HapticsProfilePlayer : MonoBehaviour
 
     private void Update()
     {
-        secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
-        bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
+        // secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
+        // bool startsColliding = CollisionDetectionCustomScript.IsTouching(this.transform.gameObject,secondaryCollisionGameObj);
         
-        if(count>5){
-            CloseArduinoPort();
-            openArduinoPortConnection();
-            count = 0;
-        }
-        try{
-        //Starting the movement
-        if(!startsInteraction && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
-            count++;
-            startMovement();
-        }
-        //Ending the movement
-        else if(startsInteraction && !startsColliding){
-            endMovement();
-        }
-        //Updating the movement
-        // else if(startsInteraction && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
-        //     updateMovement();
+        // if(count>5){
+        //     CloseArduinoPort();
+        //     openArduinoPortConnection();
+        //     count = 0;
         // }
-        }catch(System.Exception e){
-            Debug.LogError("Exception while sending data to Arduino - "+e.GetBaseException());
-        }
+        // try{
+        // //Starting the movement
+        // if(!startsInteraction && startsColliding && Constants.WhiteCaneTipTag.Equals(secondaryCollisionGameObj.tag)){
+        //     count++;
+        //     startMovement();
+        // }
+        // //Ending the movement
+        // else if(startsInteraction && !startsColliding){
+        //     endMovement();
+        // }
+        // //Updating the movement
+        // // else if(startsInteraction && registeredCollidingGameObject.Equals(secondaryCollisionGameObj)){
+        // //     updateMovement();
+        // // }
+        // }catch(System.Exception e){
+        //     Debug.LogError("Exception while sending data to Arduino - "+e.GetBaseException());
+        // }
     }
 
     void startMovement(){

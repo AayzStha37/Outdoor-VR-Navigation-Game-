@@ -953,6 +953,7 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -964,6 +965,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
 								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect_auxillary_bus" ID="{07FB9610-E7DA-4D83-92A7-ACEAB9DD6EA7}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Ambient_Sounds_Switch" ID="{4A7088DC-3A11-4342-87CE-66D417F18DFE}" WorkUnitID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}"/>
 								</Reference>
@@ -972,6 +976,11 @@
 								<Sound Name="Construction_Site_Sound" ID="{BAF8CE64-A9DD-41C1-9025-8EA3AD93E011}" ShortID="219041025">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1242,10 +1251,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Small Crowd Talking Ambience sound 2" ID="{1089FA66-160D-465D-935A-1D69943A2173}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="6.49993943383805"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.49993943383805"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Small Crowd Talking Ambience sound 2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="159878254"/>
+														<MediaID ID="312281592"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3580,14 +3594,23 @@
 						</SwitchContainer>
 						<SwitchContainer Name="Ground_Sweep" ID="{DA2B9820-E257-4902-8F83-86733091D6C4}" ShortID="914880825">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Cane tip interaction sound Attenuation" ID="{2FE7132F-8A29-4129-9CEC-69DB985DFFCD}" WorkUnitID="{56B1D59C-B8C9-4CCC-A105-AABE6D251351}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect_auxillary_bus" ID="{07FB9610-E7DA-4D83-92A7-ACEAB9DD6EA7}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="GroundType_Sweep" ID="{FA79D3C7-336E-4411-814F-F4A12FE1A8D8}" WorkUnitID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}"/>
@@ -4370,6 +4393,14 @@
 									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{F6124948-2A22-42EC-9C96-346E9065BF1A}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="2.4980018054066E-14"/>
+										<Property Name="PanY" Type="Real64" Value="51.9774011299435"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -11736,7 +11767,9 @@
 								<Sound Name="Traffic Light Walk Sound" ID="{D3736A8E-EF20-422C-A547-2F0604C3B886}" ShortID="975026088">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-10</Value>
@@ -11752,6 +11785,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Reflect_auxillary_bus" ID="{07FB9610-E7DA-4D83-92A7-ACEAB9DD6EA7}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
