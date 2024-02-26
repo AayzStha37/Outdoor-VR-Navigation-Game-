@@ -80,3 +80,6 @@ crashlytics-build.properties
 [0-9]*.controller
 [0-9]*.overrideController
 [0-9]*.mask
+
+#wwise porfilling sessions
+*.prof
