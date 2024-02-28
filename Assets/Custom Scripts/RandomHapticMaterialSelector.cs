@@ -10,6 +10,9 @@ public class RandomHapticMaterialSelector : MonoBehaviour
     public List<HapticMaterial> grassHapticMaterials;
     public List<HapticMaterial> sidewalkHapticMaterials;
     public List<HapticMaterial> roadHapticMaterials;
+    public List<HapticMaterial> metalHapticMaterials;
+    public List<HapticMaterial> gravelHapticMaterials;
+    
     private void Start() {
         
     }
@@ -23,7 +26,9 @@ public class RandomHapticMaterialSelector : MonoBehaviour
             case Constants.TEXTURE_SIDEWALK:
                 return PickRandomHapticFile(sidewalkHapticMaterials);
             case Constants.TEXTURE_METAL:
+                return PickRandomHapticFile(metalHapticMaterials);
             case Constants.TEXTURE_GRAVEL:
+                return PickRandomHapticFile(gravelHapticMaterials);
             default:
                 return null;
         }

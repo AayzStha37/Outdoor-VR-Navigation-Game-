@@ -5,8 +5,9 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	1983642705	GroundType_Sweep			\Default Work Unit\GroundType_Sweep	
 
 Switch	ID	Name	Switch Group			Notes
-	784127654	Null	GroundType_Sweep			
 	2110808655	Road	GroundType_Sweep			
+	2185786256	Gravel	GroundType_Sweep			
+	2473969246	Metal	GroundType_Sweep			
 	3137249879	Sidewalk	GroundType_Sweep			
 	4248645337	Grass	GroundType_Sweep			
 

@@ -212,8 +212,9 @@
 				</SwitchGroup>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
-						<Switch Id="784127654" Name="Null"/>
 						<Switch Id="2110808655" Name="Road"/>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
@@ -705,7 +706,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{3CC7E56E-3368-16CE-87D8-FC14A0E307FB}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{40613588-A05F-CB9C-88F8-E7ECA018CF6A}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -781,8 +782,9 @@
 			<SwitchGroups>
 				<SwitchGroup Id="1983642705" Name="GroundType_Sweep">
 					<Switches>
-						<Switch Id="784127654" Name="Null"/>
 						<Switch Id="2110808655" Name="Road"/>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="3137249879" Name="Sidewalk"/>
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
@@ -844,5 +846,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{52EA83DA-71D7-FEEE-0540-089C787E8E95}</FileHash>
+	<FileHash>{64892F74-E214-6638-2218-8179068D29A5}</FileHash>
 </SoundBanksInfo>

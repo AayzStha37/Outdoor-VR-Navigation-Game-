@@ -285,7 +285,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176d120093465934fa0e363449035041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassHapticMaterials: []
+  grassHapticMaterials:
+  - {fileID: -6750239444755058063, guid: 470cf535e37cfd241bc648a48b59d8ff, type: 3}
+  - {fileID: -6750239444755058063, guid: b05db1dc300a4404a919df76fdb52168, type: 3}
+  - {fileID: -6750239444755058063, guid: 2c12eb719bf43b3409fa93a5ba17013b, type: 3}
+  - {fileID: -6750239444755058063, guid: 8b7997a798890a94382a3d0953b5b366, type: 3}
+  - {fileID: -6750239444755058063, guid: 31241367aeb0d26478acd2d86586af88, type: 3}
+  - {fileID: -6750239444755058063, guid: 57194a5a2032a31498408bb834ce469e, type: 3}
+  - {fileID: -6750239444755058063, guid: 2bd12091514d03745a5a6730c9e50431, type: 3}
+  - {fileID: -6750239444755058063, guid: 8365d33d64743f44a9a25606f95d3767, type: 3}
+  - {fileID: -6750239444755058063, guid: 1e2cb40901520314d97bd996571a0333, type: 3}
+  - {fileID: -6750239444755058063, guid: 9d051c5ffce33fe44a1ad74259e8dbc1, type: 3}
+  - {fileID: -6750239444755058063, guid: 08ed3713fa417bf488c3e74a67f94cef, type: 3}
+  - {fileID: -6750239444755058063, guid: ae366dd235834a6438a9eef2b6e04873, type: 3}
   sidewalkHapticMaterials:
   - {fileID: -6750239444755058063, guid: 730d6dbd89a3b1145a692cb3ca8eae88, type: 3}
   - {fileID: -6750239444755058063, guid: 2e689cd1435056b44b3aa46c63d142d7, type: 3}
@@ -299,7 +311,41 @@ MonoBehaviour:
   - {fileID: -6750239444755058063, guid: 2c98ddfe24f65a94d8dc9d9e2e1dd8ba, type: 3}
   - {fileID: -6750239444755058063, guid: eb6b14477a11c0f48b91d11beeaecb0c, type: 3}
   - {fileID: -6750239444755058063, guid: 75a590bce3b5c6648b4b639781c2b901, type: 3}
-  roadHapticMaterials: []
+  roadHapticMaterials:
+  - {fileID: -6750239444755058063, guid: 74c709a4993eb244f86d457d9e11b7f1, type: 3}
+  - {fileID: -6750239444755058063, guid: 1971ab134262fa640af6efe2ed44356e, type: 3}
+  - {fileID: -6750239444755058063, guid: 7eb88d727868e134cbfa19193d9b3552, type: 3}
+  - {fileID: -6750239444755058063, guid: d73caadf21876734a84a6a0d385e6e26, type: 3}
+  - {fileID: -6750239444755058063, guid: 29dafd39c4aee064fb2f635fb6762105, type: 3}
+  - {fileID: -6750239444755058063, guid: 80aadb294b55e78488598012ca425b03, type: 3}
+  - {fileID: -6750239444755058063, guid: 88d7d7121fb2ab14dacf6e447d70c5ef, type: 3}
+  - {fileID: -6750239444755058063, guid: 14dae4a509f28e04488f5e993af0df78, type: 3}
+  - {fileID: -6750239444755058063, guid: f197f7df7d30dc94b86da1c7f99119ea, type: 3}
+  - {fileID: -6750239444755058063, guid: d2ca698565c97da45800ae63d0195cb5, type: 3}
+  - {fileID: -6750239444755058063, guid: e7dc9a5b69f462848961ba8da5418148, type: 3}
+  - {fileID: -6750239444755058063, guid: 90073bd56e6b30c46b2bd7a15bb03424, type: 3}
+  - {fileID: -6750239444755058063, guid: 7a612004dae206d419cf066d3cbfbfcf, type: 3}
+  metalHapticMaterials:
+  - {fileID: -6750239444755058063, guid: f511070bc97647b4a9ba5e5bb30ffc95, type: 3}
+  - {fileID: -6750239444755058063, guid: 197016f75056ce04bbfc18474bbca58a, type: 3}
+  - {fileID: -6750239444755058063, guid: 2e419b70d770d0041947cac2d2e480a8, type: 3}
+  - {fileID: -6750239444755058063, guid: e4993f4deff925046b6e49a2bb84f325, type: 3}
+  - {fileID: -6750239444755058063, guid: 676511b3ad421b24c8ddcf77fe0efa1f, type: 3}
+  - {fileID: -6750239444755058063, guid: 1041b5ec97ada8b42852536df85108c4, type: 3}
+  - {fileID: -6750239444755058063, guid: 8479c61f27dc869439cf495cf73e9bb4, type: 3}
+  - {fileID: -6750239444755058063, guid: 63ff85f3e8a71f94d85941237e986db1, type: 3}
+  - {fileID: -6750239444755058063, guid: 58f48c4c417511e49affd6d636b4157e, type: 3}
+  - {fileID: -6750239444755058063, guid: 2afddbfaf9ab3fa47ba97f00095b529e, type: 3}
+  - {fileID: -6750239444755058063, guid: bffb44b5d79805847a7b2332140cd778, type: 3}
+  gravelHapticMaterials:
+  - {fileID: -6750239444755058063, guid: a25d77005dc57ee49a4bd31c5679b1d1, type: 3}
+  - {fileID: -6750239444755058063, guid: bcf57a76db76bf14aa34ded935507884, type: 3}
+  - {fileID: -6750239444755058063, guid: 63f32618296fde049905b7816322231e, type: 3}
+  - {fileID: -6750239444755058063, guid: 1999d46d6e877a34194ca8bc7dc17cb7, type: 3}
+  - {fileID: -6750239444755058063, guid: c0607cdf03a49ba40ac12b89d8b51808, type: 3}
+  - {fileID: -6750239444755058063, guid: 0231cf12c22ed084ab0e56ba97a448bb, type: 3}
+  - {fileID: -6750239444755058063, guid: d88995d993062844d931f55aac14372f, type: 3}
+  - {fileID: -6750239444755058063, guid: 017b230e1d346ec45ba08bb3fa83f2d9, type: 3}
 --- !u!1 &4164171059381456842
 GameObject:
   m_ObjectHideFlags: 0
