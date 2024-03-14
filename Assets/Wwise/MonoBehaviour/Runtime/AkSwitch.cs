@@ -13,12 +13,13 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEngine.AddComponentMenu("Wwise/AkSwitch")]
+[UnityEngine.ExecuteInEditMode]
 [UnityEngine.DefaultExecutionOrder(-10)]
-/// @brief This will call <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_a9364c865ed62f4666f357822ae409855.html" target="_blank">AkSoundEngine.SetSwitch()</a> whenever the selected Unity event is triggered. For example, this component could be set on a Unity collider to trigger when an object enters it. 
+/// @brief This will call <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_a9c9d57ba7b3af2b896e26297a7657264.html" target="_blank">AkSoundEngine.SetSwitch()</a> whenever the selected Unity event is triggered. For example, this component could be set on a Unity collider to trigger when an object enters it. 
 /// \sa 
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__switch.html" target="_blank">Integration Details - Switches</a> (Note: This is described in the Wwise SDK documentation.)
 public class AkSwitch : AkDragDropTriggerHandler
@@ -29,6 +30,19 @@ public class AkSwitch : AkDragDropTriggerHandler
 	public AK.Wwise.Switch data = new AK.Wwise.Switch();
 	protected override AK.Wwise.BaseType WwiseType { get { return data; } }
 
+	protected override void Awake()
+	{
+		base.Awake();
+#if UNITY_EDITOR
+		var reference = AkWwiseTypes.DragAndDropObjectReference;
+		if (reference)
+		{
+			UnityEngine.GUIUtility.hotControl = 0;
+			data.ObjectReference = reference;
+		}
+#endif
+	}
+	
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
 	{
 		data.SetValue(useOtherObject && in_gameObject != null ? in_gameObject : gameObject);

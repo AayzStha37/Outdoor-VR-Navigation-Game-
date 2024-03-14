@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEditor.CanEditMultipleObjects]
@@ -148,24 +148,7 @@ public class AkEventInspector : AkBaseInspector
 		{
 			if (targets.Length == 1)
 			{
-				var akEvent = (AkEvent) target;
-				var eventPlaying = AkEditorEventPlayer.IsEventPlaying(akEvent);
-				if (eventPlaying)
-				{
-					if (UnityEngine.GUILayout.Button("Stop"))
-					{
-						UnityEngine.GUIUtility.hotControl = 0;
-						AkEditorEventPlayer.StopEvent(akEvent);
-					}
-				}
-				else
-				{
-					if (UnityEngine.GUILayout.Button("Play"))
-					{
-						UnityEngine.GUIUtility.hotControl = 0;
-						AkEditorEventPlayer.PlayEvent(akEvent);
-					}
-				}
+				PlayOrStopEvent();
 			}
 			else
 			{
@@ -227,6 +210,38 @@ public class AkEventInspector : AkBaseInspector
 		}
 	}
 
+	public void PlayEvent()
+	{
+		AkEditorEventPlayer.PlayEvent((AkEvent)target);
+	}
+
+	public void StopEvent()
+	{
+		AkEditorEventPlayer.StopEvent((AkEvent)target);
+	}
+
+	private void PlayOrStopEvent()
+	{
+		var akEvent = (AkEvent)target;
+		var eventPlaying = AkEditorEventPlayer.IsEventPlaying(akEvent);
+		if (eventPlaying)
+		{
+			if (UnityEngine.GUILayout.Button("Stop"))
+			{
+				UnityEngine.GUIUtility.hotControl = 0;
+				StopEvent();
+			}
+		}
+		else
+		{
+			if (UnityEngine.GUILayout.Button("Play"))
+			{
+				UnityEngine.GUIUtility.hotControl = 0;
+				PlayEvent();
+			}
+		}
+	}
+
 	private static class AkEditorEventPlayer
 	{
 		private static readonly System.Collections.Generic.List<AkEvent> akEvents = new System.Collections.Generic.List<AkEvent>();
@@ -249,6 +264,16 @@ public class AkEventInspector : AkBaseInspector
 
 		public static void PlayEvent(AkEvent akEvent)
 		{
+			if (!AkSoundEngine.IsInitialized())
+			{
+				UnityEngine.Debug.LogWarning("Sound Engine is not initialized. No sound will be heard.");
+				return;
+			}
+			if (!AkSoundEngineController.Instance.EditorListenerIsInitialized() && !UnityEditor.EditorApplication.isPlaying)
+			{
+				UnityEngine.Debug.LogWarning("Editor Listener isn't initialized. No sound will be heard.");
+				return;
+			}
 			if (akEvents.Contains(akEvent))
 			{
 				return;

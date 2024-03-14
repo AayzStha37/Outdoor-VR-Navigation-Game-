@@ -25,7 +25,6 @@ public class SweepSoundPlayer : MonoBehaviour
     private GameObject secondaryCollisionGameObj;
     private GameObject registeredCollidingGameObject;
     private Vector3 lastPosition;
-    //private ServerConnection serverConnection;
     public InputActionProperty controllerVelocityProperty;
     private HapticMaterial dynamicHapticMaterial;
     private RandomHapticMaterialSelector hapticsSelector;
@@ -38,7 +37,6 @@ public class SweepSoundPlayer : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
-        //serverConnection = GetComponent<ServerConnection>();
         isAudioPlaying = false;
         isHapticPlaying =false;
         hapticsSelector = GetComponent<RandomHapticMaterialSelector>();
@@ -46,7 +44,6 @@ public class SweepSoundPlayer : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("****Data from accelerometer =" + arduinoPort.ReadLine());
         secondaryCollisionGameObj = this.transform.gameObject.GetComponent<CollisionDetectionCustomScript>()._secondaryCollsionObject();
         Debug.Log("Secndary Collision object: "+ secondaryCollisionGameObj);
 
@@ -79,7 +76,6 @@ public class SweepSoundPlayer : MonoBehaviour
         startsInteraction=true;        
         registeredCollidingGameObject = secondaryCollisionGameObj;
         setHapticMaterial();
-        //serverConnection.SendDataToServer(Constants.COLLISION_ON, secondaryCollisionGameObj.tag);
         Debug.Log("Movement has been initiated");
     }
 
@@ -172,7 +168,6 @@ public class SweepSoundPlayer : MonoBehaviour
         startsInteraction=false;
         isAudioPlaying = false;
         AkSoundEngine.StopPlayingID(playingId);
-        //serverConnection.SendDataToServer(Constants.COLLISION_OFF, "");
         HAR.StopCurrentHapticEffect();
         Debug.Log("Movement has been terminated");
     }

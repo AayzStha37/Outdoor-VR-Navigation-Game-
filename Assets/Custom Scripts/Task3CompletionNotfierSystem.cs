@@ -12,11 +12,6 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
     private bool colliderLocked = false;
     private Coroutine timerCoroutine;
 
-    private void Start()
-    {
-        StartTimer();
-    }
-
     public void StopTimer(string logText)
     {
         isTiming = false; // Set flag to stop the timer

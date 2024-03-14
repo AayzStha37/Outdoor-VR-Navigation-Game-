@@ -12,10 +12,13 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
-﻿#if UNITY_EDITOR
+#if UNITY_EDITOR
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using UnityEditor;
 public class WwiseSetupWizard
 {
 	public static void RunModify()
@@ -235,6 +238,15 @@ public class WwiseSetupWizard
 
 	private static void MigratePrefabs()
 	{
+		// The only migration operation done in this method is to call MigrateObject on MonoBehaviours attached to prefabs.
+		// MigrateObject only runs if a migration is required for the "WwiseTypes_v2018_1_6" migration step.
+		// Add an early return here to avoid lots of potentially slow code if we are in a case where MigrateObject would
+		// do nothing.
+		if (!AkUtilities.IsMigrationRequired(AkUtilities.MigrationStep.WwiseTypes_v2018_1_6))
+		{
+			return;
+		}
+
 		var guids = UnityEditor.AssetDatabase.FindAssets("t:Prefab", new[] { "Assets" });
 		for (var i = 0; i < guids.Length; i++)
 		{
@@ -251,8 +263,15 @@ public class WwiseSetupWizard
 			}
 
 			var objects = prefabObject.GetComponents<UnityEngine.MonoBehaviour>();
-
-#if UNITY_2018_3_OR_NEWER
+			// The rather convoluted way of iterating through all objects here has a very specific reason.
+			// The call to MigrateObject ends up calling SerializedObject.ApplyModifiedPropertiesWithoutUndo.
+			// This function call will invalidate all references that are held by the code that is running
+			// (the objects array here).
+			// In order to iterate properly on all MonoBehaviours available, we get their instance IDs,
+			// which do not change when Applying modified properties. Then, for each iteration of the 
+			// migration loop, we need to get a valid array of MonoBehaviours again, because it might
+			// have been invalidated by the call to MigrateObject. We then migrate the objects that
+			// need migration by making sure their InstanceID is in the list of unmigrated MonoBehaviours.
 			var instanceIds = new System.Collections.Generic.List<int>();
 			foreach (var obj in objects)
 			{
@@ -267,20 +286,12 @@ public class WwiseSetupWizard
 			for (; instanceIds.Count > 0; instanceIds.RemoveAt(0))
 			{
 				var id = instanceIds[0];
-				objects = prefabObject.GetComponents<UnityEngine.MonoBehaviour>();
-				foreach (var obj in objects)
+				var obj = UnityEditor.EditorUtility.InstanceIDToObject(id);
+				if (obj && obj.GetInstanceID() == id)
 				{
-					if (obj && obj.GetInstanceID() == id)
-					{
-						MigrateObject(obj);
-						break;
-					}
+					MigrateObject(obj);
 				}
 			}
-#else
-			foreach (var obj in objects)
-				MigrateObject(obj);
-#endif
 		}
 	}
 
@@ -361,9 +372,25 @@ public class WwiseSetupWizard
 
 			MigrateCurrentScene(wwiseComponentTypes);
 
+			// From this point on, the only migration operation done in this loop is to call MigrateObject on MonoBehaviours.
+			// MigrateObject only runs if a migration is required for the "WwiseTypes_v2018_1_6" migration step. Simply
+			// continue the loop here to avoid lots of potentially slow code if we are in a case where MigrateObject would
+			// do nothing.
+			if (!AkUtilities.IsMigrationRequired(AkUtilities.MigrationStep.WwiseTypes_v2018_1_6))
+			{
+				continue;
+			}
 			var objects = UnityEngine.Resources.FindObjectsOfTypeAll<UnityEngine.MonoBehaviour>();
 
-#if UNITY_2018_3_OR_NEWER
+			// The rather convoluted way of iterating through all objects here has a very specific reason.
+			// The call to MigrateObject ends up calling SerializedObject.ApplyModifiedPropertiesWithoutUndo.
+			// This function call will invalidate all references that are held by the code that is running
+			// (the objects array here).
+			// In order to iterate properly on all MonoBehaviours available, we get their instance IDs,
+			// which do not change when Applying modified properties. Then, for each iteration of the 
+			// migration loop, we need to get a valid array of MonoBehaviours again, because it might
+			// have been invalidated by the call to MigrateObject. We then migrate the objects that
+			// need migration by making sure their InstanceID is in the list of unmigrated MonoBehaviours.
 			var instanceIds = new System.Collections.Generic.List<int>();
 			foreach (var obj in objects)
 			{
@@ -378,43 +405,12 @@ public class WwiseSetupWizard
 			for (; instanceIds.Count > 0; instanceIds.RemoveAt(0))
 			{
 				var id = instanceIds[0];
-				objects = UnityEngine.Resources.FindObjectsOfTypeAll<UnityEngine.MonoBehaviour>();
-				foreach (var obj in objects)
+				var obj = UnityEditor.EditorUtility.InstanceIDToObject(id);
+				if (obj && obj.GetInstanceID() == id)
 				{
-					if (obj && obj.GetInstanceID() == id)
-					{
-						MigrateObject(obj);
-						break;
-					}
+					MigrateObject(obj);
 				}
 			}
-#else
-			foreach (var obj in objects)
-			{
-				var isPrefabInstance = false;
-				if (obj != null)
-				{
-#if UNITY_2018_2
-					isPrefabInstance = UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource(obj) != null;
-#else
-					isPrefabInstance = UnityEditor.PrefabUtility.GetPrefabParent(obj) != null;
-#endif
-
-					if (!isPrefabInstance)
-					{
-						var isSceneObject = !UnityEditor.EditorUtility.IsPersistent(obj);
-						var isEditableAndSavable = (obj.hideFlags & (UnityEngine.HideFlags.NotEditable | UnityEngine.HideFlags.DontSave)) == 0;
-						if (!isSceneObject || !isEditableAndSavable)
-							continue;
-					}
-				}
-
-				MigrateObject(obj);
-
-				if (isPrefabInstance)
-					UnityEditor.PrefabUtility.RecordPrefabInstancePropertyModifications(obj);
-			}
-#endif
 
 			if (UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene))
 				if (!UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene))
@@ -426,6 +422,8 @@ public class WwiseSetupWizard
 
 	public static void PerformMigration(int migrateStart)
 	{
+		AkUtilities.BeginMigration(migrateStart);
+
 		UpdateProgressBar(0);
 
 		UnityEngine.Debug.Log("WwiseUnity: Migrating from Unity Integration Version " + migrateStart + " to " + AkUtilities.MigrationStopIndex);
@@ -437,7 +435,7 @@ public class WwiseSetupWizard
 		// Get the name of the currently opened scene.
 		var activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
 		var loadedScenePath = activeScene.path;
-		
+
 		if (!string.IsNullOrEmpty(loadedScenePath))
 			AkUtilities.FixSlashes(ref loadedScenePath, '\\', '/', false);
 
@@ -446,31 +444,47 @@ public class WwiseSetupWizard
 		// obtain a list of ScriptableObjects before any migration is performed
 		ScriptableObjectGuids = UnityEditor.AssetDatabase.FindAssets("t:ScriptableObject", new[] { "Assets" });
 
-		AkUtilities.BeginMigration(migrateStart);
-
 		if (AkUtilities.IsMigrationRequired(AkUtilities.MigrationStep.NewScriptableObjectFolder_v2019_2_0))
 		{
 			var oldScriptableObjectPath = System.IO.Path.Combine(System.IO.Path.Combine("Assets", "Wwise"), "Resources");
 			AkUtilities.MoveFolder(oldScriptableObjectPath, AkWwiseEditorSettings.WwiseScriptableObjectRelativePath);
 		}
 
+		if (!UnityEditor.AssetDatabase.IsValidFolder(AkWwiseEditorSettings.WwiseScriptableObjectRelativePath))
+		{
+			UnityEngine.Debug.LogFormat("WwiseUnity: Creating ScriptableObjects folder at <{0}>", AkWwiseEditorSettings.WwiseScriptableObjectRelativePath);
+			AkUtilities.CreateFolder(AkWwiseEditorSettings.WwiseScriptableObjectRelativePath);
+		}
+
 		AkWwiseProjectInfo.GetData().Migrate();
 		AkWwiseWWUBuilder.UpdateWwiseObjectReferenceData();
 
+		UnityEngine.Debug.LogFormat("WwiseUnity: Migrating Prefabs...");
 		MigratePrefabs();
+		UnityEngine.Debug.LogFormat("WwiseUnity: Done migrating Prefabs");
+		
+		UnityEngine.Debug.LogFormat("WwiseUnity: Migrating Scenes...");
 		MigrateScenes();
+		UnityEngine.Debug.LogFormat("WwiseUnity: Done migrating Scenes");
+		
+		UnityEngine.Debug.LogFormat("WwiseUnity: Migrating ScriptableObjects...");
 		MigrateScriptableObjects();
+		UnityEngine.Debug.LogFormat("WwiseUnity: Done migrating ScriptableObjects");
 
 		UnityEditor.EditorUtility.UnloadUnusedAssetsImmediate();
-
+		
 		UnityEditor.SceneManagement.EditorSceneManager.NewScene(UnityEditor.SceneManagement.NewSceneSetup.DefaultGameObjects);
 		AkUtilities.EndMigration();
-
+		
 		UpdateProgressBar(TotalNumberOfSections);
 
 		// Reopen the scene that was opened before the migration process started.
 		if (!string.IsNullOrEmpty(loadedScenePath))
+		{
 			UnityEditor.SceneManagement.EditorSceneManager.OpenScene(loadedScenePath);
+		}
+
+		SetAddressablesDefines();
 
 		UnityEngine.Debug.Log("WwiseUnity: Removing lock for launcher.");
 
@@ -497,6 +511,8 @@ public class WwiseSetupWizard
 		AkPluginActivator.DeactivateAllPlugins();
 		AkPluginActivator.Update();
 		AkPluginActivator.ActivatePluginsForEditor();
+		
+		SetAddressablesDefines();
 	}
 
 	// Perform all necessary steps to use the Wwise Unity integration.
@@ -541,6 +557,38 @@ public class WwiseSetupWizard
 
 		// 11. Activate XboxOne network sockets.
 		AkXboxOneUtils.EnableXboxOneNetworkSockets();
+		
+		// 12. Add addressables version define
+		SetAddressablesDefines();
+	}
+
+	private static HashSet<BuildTargetGroup> AvailableBuildTargetGroups = new HashSet<BuildTargetGroup>();
+
+	public static void AddBuildTargetGroup(BuildTargetGroup NewGroup)
+	{
+		AvailableBuildTargetGroups.Add(NewGroup);
+	}
+	private static void SetAddressablesDefines()
+	{
+		string wwiseVersion = AkSoundEngine.WwiseVersion;
+		string shortWwiseVersion = wwiseVersion.Substring(0, 4);
+		int wwiseVersionAsInteger = int.Parse(shortWwiseVersion);
+		string wwiseAddressablePost2023 = "WWISE_ADDRESSABLES_POST_2023";
+
+		if (wwiseVersionAsInteger >= 2023)
+		{
+			foreach (var TargetGroup in AvailableBuildTargetGroups)
+			{
+				string defines = PlayerSettings.GetScriptingDefineSymbolsForGroup(TargetGroup);
+				Match match = Regex.Match(defines, wwiseAddressablePost2023);
+				if (!match.Success)
+				{
+					defines += ";" + wwiseAddressablePost2023;
+				}
+
+				PlayerSettings.SetScriptingDefineSymbolsForGroup(TargetGroup, defines);
+			}
+		}
 	}
 
 	// Create a Wwise Global object containing the initializer and terminator scripts. Set the SoundBank path of the initializer script.

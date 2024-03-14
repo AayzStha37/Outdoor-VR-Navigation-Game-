@@ -18,7 +18,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [System.Obsolete(AkSoundEngine.Deprecation_2019_2_0)]
@@ -105,10 +105,15 @@ public class AkEventPlayableInspector : UnityEditor.Editor
 	[UnityEditor.InitializeOnLoadMethod]
 	public static void SetupSoundbankSetting()
 	{
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
 		AkUtilities.EnableBoolSoundbankSettingInWproj("SoundBankGenerateEstimatedDuration", AkWwiseEditorSettings.WwiseProjectAbsolutePath);
 		
 		UnityEditor.EditorApplication.delayCall += UpdateAllClips;
-		AkWwiseFileWatcher.Instance.XMLUpdated += UpdateAllClips;
+		AkWwiseSoundbanksInfoXMLFileWatcher.Instance.XMLUpdated += UpdateAllClips;
 	}
 
 	private static void UpdateAllClips()

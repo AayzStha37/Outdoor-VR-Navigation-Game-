@@ -24,7 +24,7 @@ public static class Constants
     public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
     public const string VEHCILE_TAG = "Vehicle";
     public const string VEHCILE_DUMMY_TAG = "Dummy_vehicle";
-    public const string MAIN_CHARACTER_BODY = "Character body";
+    public const string MAIN_CHARACTER_BODY = "Main Character First Person Body";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
     public const string POLICE_VEHICLE_PREFAB_NAME= "Police";
     //Scene names constant
@@ -42,8 +42,9 @@ public static class Constants
     public const string TASK3_DESTINATION_TARGET = "Destination";
     public const string TASK2_COMPLETION_COLLIDER = "Completion collider";
 
+    //Main device specific constant
+    public const string LOG_PATH = @"C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Game Logs";
     //Server specfic constants
-    public const string LOG_PATH = @"D:\GEM Lab\GEMLabHCIResearch\Unity Logs";
     public const string ENDPOINT_COLLISON_REGISTER = "collisonRegister";
     public const string ENDPOINT_DFT321_PREDCICT = "predict";
     public const string FLASK_SERVER_URL = "http://127.0.0.1:5000/";

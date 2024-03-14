@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 8400663528484044029}
   - component: {fileID: 3295492504228591888}
   m_Layer: 0
-  m_Name: Constrcution site
+  m_Name: Intermediate_Constrcution site
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 8187433430480755678}
   - component: {fileID: 2155209329310645611}
   m_Layer: 0
-  m_Name: Hotdog stand praising cop
+  m_Name: Queue_Hotdog stand praising cop
   m_TagString: Pedestrain_conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 8053754075651275275}
   - component: {fileID: 1546880713916040431}
   m_Layer: 0
-  m_Name: Bus stand
+  m_Name: Intermediate_Bus stand
   m_TagString: Pedestrain_conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 5379625744546547108}
   - component: {fileID: 5564564948784279664}
   m_Layer: 0
-  m_Name: Construction topic talking group
+  m_Name: Queue_Construction topic talking group
   m_TagString: Pedestrain_conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

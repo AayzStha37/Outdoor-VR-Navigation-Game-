@@ -8,9 +8,7 @@ public class MiniSExtraData
 	[StructLayout(LayoutKind.Sequential, Pack = 1)]
 	public struct extraInfo
 	{
-		//左脚着地
 		public bool		isLeftGround;
-		//右脚着地
 		public bool		isRightGround;
 		public bool		isLeftStatic;
 		public bool		isRightStatic;
@@ -23,7 +21,6 @@ public class MiniSExtraData
 		public Vector3	skatingSpeed;
 		public Vector3	lFootSpeed;
 		public Vector3	rFootSpeed;
-		//为什么这里的震动模块是int类型的呢？
 		public int		VibrateAction;
 	};
 

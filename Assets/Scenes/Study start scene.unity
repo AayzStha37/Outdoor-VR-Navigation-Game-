@@ -1979,11 +1979,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812414222}
-  - component: {fileID: 1812414227}
   - component: {fileID: 1812414226}
   - component: {fileID: 1812414225}
   - component: {fileID: 1812414224}
   - component: {fileID: 1812414223}
+  - component: {fileID: 1812414227}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged

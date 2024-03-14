@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.IO;
 
 [UnityEditor.InitializeOnLoad]
-public class AkPluginActivator
+public class AkPluginActivator : UnityEditor.AssetPostprocessor
 {
 	public const string ALL_PLATFORMS = "All";
 	public const string CONFIG_DEBUG = "Debug";
@@ -55,6 +55,7 @@ public class AkPluginActivator
 			PluginID.AkParametricEQ,
 			PluginID.AkPeakLimiter,
 			PluginID.AkRoomVerb,
+			PluginID.AkReflect,
 #if !UNITY_2018_3_OR_NEWER
 			PluginID.VitaReverb,
 			PluginID.VitaCompressor,
@@ -87,6 +88,7 @@ public class AkPluginActivator
 			{ PluginID.AkAudioInput, "AkAudioInputSource" },
 			{ PluginID.AkCompressor, "AkCompressorFX" },
 			{ PluginID.AkRouterMixer, "AkRouterMixerFX" },
+			{ PluginID.AkChannelRouter, "AkChannelRouterFX" },
 			{ PluginID.AkConvolutionReverb, "AkConvolutionReverbFX" },
 			{ PluginID.AkDelay, "AkDelayFX" },
 			{ PluginID.AkExpander, "AkExpanderFX" },
@@ -98,7 +100,6 @@ public class AkPluginActivator
 			{ PluginID.AkMeter, "AkMeterFX" },
 			{ PluginID.AkMotionSink, "AkMotionSink" },
 			{ PluginID.AkMotionSource, "AkMotionSourceSource" },
-			{ PluginID.AkMotionGeneratorSource, "AkMotionGeneratorSource" },
 			{ PluginID.AkParametricEQ, "AkParametricEQFX" },
 			{ PluginID.AkPeakLimiter, "AkPeakLimiterFX" },
 			{ PluginID.AkPitchShifter, "AkPitchShifterFX" },
@@ -141,9 +142,18 @@ public class AkPluginActivator
 	public delegate void FilterOutPlatformDelegate(UnityEditor.BuildTarget target, UnityEditor.PluginImporter pluginImporter, string pluginPlatform);
 	public static FilterOutPlatformDelegate FilterOutPlatformIfNeeded = FilterOutPlatformIfNeeded_Default;
 
-	static AkPluginActivator()
+
+	static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths, bool didDomainReload)
 	{
-		ActivatePluginsForEditor();
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
+		if (didDomainReload)
+		{
+			ActivatePluginsForEditor();	
+		}
 	}
 
 	// Use reflection because projects that were created in Unity 4 won't have the CurrentPluginConfig field
@@ -391,8 +401,6 @@ public class AkPluginActivator
 				case "tvOS":
 				case "PS4":
 				case "PS5":
-				case "XboxOne":
-				case "Stadia":
 				case "XboxSeriesX":
 				case "XboxOneGC":
 					pluginConfig = splitPath[1];
@@ -435,30 +443,6 @@ public class AkPluginActivator
 				case "Mac":
 					pluginConfig = splitPath[1];
 					SetStandalonePlatformData(pluginImporter, pluginPlatform, pluginArch);
-					break;
-
-				case "WSA":
-					pluginArch = splitPath[1];
-					pluginConfig = splitPath[2];
-
-					pluginImporter.SetPlatformData(UnityEditor.BuildTarget.WSAPlayer, "SDK", "AnySDK");
-
-					if (pluginArch == "WSA_UWP_Win32")
-					{
-						pluginImporter.SetPlatformData(UnityEditor.BuildTarget.WSAPlayer, "CPU", "X86");
-					}
-					else if (pluginArch == "WSA_UWP_x64")
-					{
-						pluginImporter.SetPlatformData(UnityEditor.BuildTarget.WSAPlayer, "CPU", "X64");
-					}
-					else if (pluginArch == "WSA_UWP_ARM")
-					{
-						pluginImporter.SetPlatformData(UnityEditor.BuildTarget.WSAPlayer, "CPU", "ARM");
-					}
-					else if (pluginArch == "WSA_UWP_ARM64")
-					{
-						pluginImporter.SetPlatformData(UnityEditor.BuildTarget.WSAPlayer, "CPU", "ARM64");
-					}
 					break;
 
 				case "Windows":
@@ -515,14 +499,7 @@ public class AkPluginActivator
 			}
 
 			bool isCompatibleWithPlatform = bActivate && Activate;
-			if (!bActivate && target == UnityEditor.BuildTarget.WSAPlayer)
-			{
-				AssetChanged = true;
-			}
-			else
-			{
-				AssetChanged |= pluginImporter.GetCompatibleWithPlatform(target) != isCompatibleWithPlatform;
-			}
+			AssetChanged |= pluginImporter.GetCompatibleWithPlatform(target) != isCompatibleWithPlatform;
 
 			pluginImporter.SetCompatibleWithPlatform(target, isCompatibleWithPlatform);
 
@@ -889,12 +866,15 @@ public class AkPluginActivator
 					{
 						dll = node.GetAttribute("DLL", "");
 					}
+					
+					var staticLibName = node.GetAttribute("StaticLib", "");
 
 					AkPluginInfo newPluginInfo = new AkPluginInfo();
 					newPluginInfo.PluginID = rawPluginID;
 					newPluginInfo.DllName = dll;
+					newPluginInfo.StaticLibName = staticLibName;
 
-					if (!PluginIDToStaticLibName.TryGetValue(pluginID, out newPluginInfo.StaticLibName))
+					if (string.IsNullOrEmpty(newPluginInfo.StaticLibName) && !PluginIDToStaticLibName.TryGetValue(pluginID, out newPluginInfo.StaticLibName))
 					{
 						newPluginInfo.StaticLibName = dll;
 					}
@@ -1039,6 +1019,7 @@ public class AkPluginActivator
 		Ak3DAudioBedMixer = 0x00BE0003, // Wwise 3D Audio Bed Mixer
 		AkCompressor = 0x006C0003, //Wwise Compressor
 		AkRouterMixer = 0x00AC0006, //Wwise RouterMixer
+		AkChannelRouter = 0x00BF0003, // Wwise Channel Router
 		AkDelay = 0x006A0003, //Delay
 		AkExpander = 0x006D0003, //Wwise Expander
 		AkGain = 0x008B0003, //Gain
@@ -1073,7 +1054,6 @@ public class AkPluginActivator
 		AkHarmonizer = 0x8A0003,
 		AkMotionSink = 0x1FB0007,
 		AkMotionSource = 0x1990002,
-		AkMotionGeneratorSource = 0x1950002,
 		AkPitchShifter = 0x880003,
 		AkRecorder = 0x840003,
 		AkReflect = 0xAB0003,

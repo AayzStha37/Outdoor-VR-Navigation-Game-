@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2164580029783208124}
   - component: {fileID: 2164580029783208125}
   - component: {fileID: 5905550089540075213}
+  - component: {fileID: 5952577969667770354}
   m_Layer: 0
   m_Name: WwiseGlobal_T2_T3
   m_TagString: Untagged
@@ -239,3 +240,29 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &5952577969667770354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164580029783208119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37298354ae841a64e9fbaffaaea76b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 504a0e34d3f6f6241bfe6269189a3ec9,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0

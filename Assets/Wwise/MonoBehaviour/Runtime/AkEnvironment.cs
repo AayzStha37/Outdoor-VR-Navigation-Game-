@@ -13,12 +13,12 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEngine.AddComponentMenu("Wwise/AkEnvironment")]
-[UnityEngine.RequireComponent(typeof(UnityEngine.Collider))]
 [UnityEngine.ExecuteInEditMode]
+[UnityEngine.RequireComponent(typeof(UnityEngine.Collider))]
 /// @brief Use this component to define a reverb zone. This needs to be added to a collider object to work properly. See \ref unity_use_AkEnvironment_AkEnvironmentPortal.
 /// @details This component can be attached to any collider. You can specify a roll-off to fade-in/out of the reverb.  
 /// The reverb parameters will be defined in the Wwise project, by the sound designer.  All AkGameObj that are 
@@ -26,7 +26,7 @@ Copyright (c) 2022 Audiokinetic Inc.
 /// \sa
 /// - \ref unity_use_AkEnvironment_AkEnvironmentPortal
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=integrating__elements__environments.html" target="_blank">Integrating Environments and Game-defined Auxiliary Sends</a> (Note: This is described in the Wwise SDK documentation.)
-/// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_a18f56e8e0e881c4efb9080545efbb233.html#a18f56e8e0e881c4efb9080545efbb233" target="_blank">AK::SoundEngine::SetGameObjectAuxSendValues</a> (Note: This is described in the Wwise SDK documentation.)
+/// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_af960fca0239e219b9d08c2659fe9e5d4.html" target="_blank">AK::SoundEngine::SetGameObjectAuxSendValues</a> (Note: This is described in the Wwise SDK documentation.)
 public class AkEnvironment : UnityEngine.MonoBehaviour
 #if UNITY_EDITOR
 	, AK.Wwise.IMigratable

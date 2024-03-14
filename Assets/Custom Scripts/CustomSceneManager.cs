@@ -15,7 +15,6 @@ public class CustomSceneManager : MonoBehaviour
     }
      public void LoadTaskListUIScene()
     {
-        
         SceneManager.LoadScene("Task list UI");
     }
     public void LoadTask1Scene()
@@ -28,16 +27,16 @@ public class CustomSceneManager : MonoBehaviour
 
     public void LoadTask2Scene()
     {
-        logToFile.setupGameLogFile();
         storePartcipantDetail();
-        Debug.Log("GAMELOG: Task 2 started for participant");
+        Debug.Log("GAMELOG: Task 2 started for participant");        
+        Debug.Log("POSLOG: Task 2 started for participant");
         SceneManager.LoadScene("Task 2 scene");
     }
     public void LoadTask3Scene()
     {
-        logToFile.setupGameLogFile();
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 3 started for participant");
+        Debug.Log("POSLOG: Task 3 started for participant");
         SceneManager.LoadScene("Task 3 scene");
     }
 
@@ -50,8 +49,6 @@ public class CustomSceneManager : MonoBehaviour
             Debug.Log("GAMELOG: Participant number : "+ textfieldvalue + " logging started"); 
         }else 
              Debug.Log("GAMELOG: ERROR - Failed to store participant info");
-        
-
     }
     
 }

@@ -10,11 +10,6 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
     private bool colliderLocked = false;
     private Coroutine timerCoroutine;
 
-    private void Start()
-    {
-        StartTimer();
-    }
-
     private void StopTimer()
     {
         if (isTiming)
@@ -33,7 +28,7 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
         }
     }
 
-    private void StartTimer()
+    public void StartTimer()
     {
         if (!isTiming)
         {

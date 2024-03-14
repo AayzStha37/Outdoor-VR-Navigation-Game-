@@ -1,0 +1,5 @@
+GAMELOG: Participant number : 1 logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: Participant number :  logging started
+GAMELOG: Task 2 started for participant

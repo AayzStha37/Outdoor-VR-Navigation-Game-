@@ -426,11 +426,11 @@ GameObject:
   - component: {fileID: 4870167790249810}
   - component: {fileID: -5639375488289477569}
   - component: {fileID: -5541685486457125430}
-  - component: {fileID: 1351080641510931701}
   - component: {fileID: -8691611556323564179}
   - component: {fileID: 5877101274581391105}
   - component: {fileID: -6527470791978493639}
   - component: {fileID: -4195343921956232497}
+  - component: {fileID: 6000118481999926298}
   m_Layer: 0
   m_Name: Car_3
   m_TagString: Vehicle
@@ -487,19 +487,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1351080641510931701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646981259178978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b9f04f4600fff4c8c8de99109a82bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vehicleBlockRegitered: 0
 --- !u!114 &-8691611556323564179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,3 +571,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f5f0f1ab173d24fa3cc5b1cb7e9103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6000118481999926298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b9f04f4600fff4c8c8de99109a82bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleBlockRegitered: 0

@@ -16,17 +16,218 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2349282220	CaneInteractionVolume			\Default Work Unit\CaneInteractionVolume	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	32650977	Modulator Envelope (Custom)				
+	53094527	Modulator Envelope (Custom)				
+	68488031	Modulator Envelope (Custom)				
+	68957009	Modulator Envelope (Custom)				
+	84956124	Modulator Envelope (Custom)				
+	109519811	Modulator Envelope (Custom)				
+	118247971	Modulator Envelope (Custom)				
+	126478402	Modulator Envelope (Custom)				
+	190808287	Modulator Envelope (Custom)				
+	193549193	Modulator Envelope (Custom)				
+	206706999	Modulator Envelope (Custom)				
+	207266566	Modulator Envelope (Custom)				
+	208175106	Modulator Envelope (Custom)				
+	210417373	Modulator Envelope (Custom)				
+	213068179	Modulator Envelope (Custom)				
+	214952013	Modulator Envelope (Custom)				
+	227926285	Modulator Envelope (Custom)				
+	244751726	Modulator Envelope (Custom)				
+	249476298	Modulator Envelope (Custom)				
+	251928091	Modulator Envelope (Custom)				
+	267014206	Modulator Envelope (Custom)				
+	276259948	Modulator Envelope (Custom)				
+	358273084	Modulator Envelope (Custom)				
+	368038739	Modulator Envelope (Custom)				
+	369100713	Modulator Envelope (Custom)				
 	420482421	Modulator Envelope (Custom)				
+	433249596	Modulator Envelope (Custom)				
+	447002745	Modulator Envelope (Custom)				
+	463106824	Modulator Envelope (Custom)				
+	476712797	Modulator Envelope (Custom)				
+	486005570	Modulator Envelope (Custom)				
+	494680206	Modulator Envelope (Custom)				
+	495027544	Modulator Envelope (Custom)				
+	550365513	Modulator Envelope (Custom)				
+	553487978	Modulator Envelope (Custom)				
+	589783857	Modulator Envelope (Custom)				
+	598031396	Modulator Envelope (Custom)				
+	602501647	Modulator Envelope (Custom)				
+	619077100	Modulator Envelope (Custom)				
+	632591385	Modulator Envelope (Custom)				
+	633646983	Modulator Envelope (Custom)				
+	638298997	Modulator Envelope (Custom)				
+	643594769	Modulator Envelope (Custom)				
+	666844128	Modulator Envelope (Custom)				
 	686657462	Modulator Envelope (Custom)				
+	717020398	Modulator Envelope (Custom)				
+	722062802	Modulator Envelope (Custom)				
+	727294967	Modulator Envelope (Custom)				
+	747998286	Modulator Envelope (Custom)				
+	772473420	Modulator Envelope (Custom)				
+	798595721	Modulator Envelope (Custom)				
+	805225241	Modulator Envelope (Custom)				
+	817558642	Modulator Envelope (Custom)				
+	818243347	Modulator Envelope (Custom)				
+	820899694	Modulator Envelope (Custom)				
+	826140504	Modulator Envelope (Custom)				
+	832676578	Modulator Envelope (Custom)				
+	833364828	Modulator Envelope (Custom)				
+	862234625	Modulator Envelope (Custom)				
+	870727480	Modulator Envelope (Custom)				
+	896193004	Modulator Envelope (Custom)				
+	916397013	Modulator Envelope (Custom)				
+	926927304	Modulator Envelope (Custom)				
 	941274958	Modulator Envelope (Custom)				
+	961908747	Modulator Envelope (Custom)				
+	974693861	Modulator Envelope (Custom)				
+	1001349009	Modulator Envelope (Custom)				
+	1046389081	Modulator Envelope (Custom)				
+	1059337204	Modulator Envelope (Custom)				
+	1067253820	Modulator Envelope (Custom)				
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	247200451	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\New Sound SFX\Soundseed Grain	
-	589587159	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\New Sound SFX\Soundseed Grain	
-	742510908	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\New Sound SFX_01\Soundseed Grain	
+	27361456	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_04\Soundseed Grain	
+	66939672	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_07\Soundseed Grain	
+	78391228	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_02\Soundseed Grain	
+	122519051	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_06\Soundseed Grain	
+	123544866	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_07\Soundseed Grain	
+	126428570	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_04\Soundseed Grain	
+	126682513	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_11\Soundseed Grain	
+	142994140	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_02\Soundseed Grain	
+	159384774	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_08\Soundseed Grain	
+	169776113	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_10\Soundseed Grain	
+	177316285	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_08\Soundseed Grain	
+	181194819	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_08\Soundseed Grain	
+	190066402	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_14\Soundseed Grain	
+	197225979	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_10\Soundseed Grain	
+	198105915	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_03\Soundseed Grain	
+	225497406	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_12\Soundseed Grain	
+	227884076	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_06\Soundseed Grain	
+	247200451	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_00\Soundseed Grain	
+	253862552	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_14\Soundseed Grain	
+	286097880	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_06\Soundseed Grain	
+	304915646	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_05\Soundseed Grain	
+	320874913	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_09\Soundseed Grain	
+	327270332	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_01\Soundseed Grain	
+	333033442	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_02\Soundseed Grain	
+	344321514	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_08\Soundseed Grain	
+	356565717	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_05\Soundseed Grain	
+	403947966	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_04\Soundseed Grain	
+	405079977	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_09\Soundseed Grain	
+	408833928	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_03\Soundseed Grain	
+	443537443	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_05\Soundseed Grain	
+	459265214	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_12\Soundseed Grain	
+	471499938	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_12\Soundseed Grain	
+	474179910	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_06\Soundseed Grain	
+	474196532	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_13\Soundseed Grain	
+	481781501	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_03\Soundseed Grain	
+	523784947	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_07\Soundseed Grain	
+	523839656	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_11\Soundseed Grain	
+	526601020	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_08\Soundseed Grain	
+	530246830	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_03\Soundseed Grain	
+	550690922	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_11\Soundseed Grain	
+	553362343	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_01\Soundseed Grain	
+	558985339	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_04\Soundseed Grain	
+	578697753	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_02\Soundseed Grain	
+	589587159	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_00\Soundseed Grain	
+	591338526	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_03\Soundseed Grain	
+	601911384	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_07\Soundseed Grain	
+	661104335	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_09\Soundseed Grain	
+	667405022	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_01\Soundseed Grain	
+	681294925	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_07\Soundseed Grain	
+	692518685	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_11\Soundseed Grain	
+	715102469	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_10\Soundseed Grain	
+	724113382	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_10\Soundseed Grain	
+	742510908	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_00\Soundseed Grain	
+	746663027	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_15\Soundseed Grain	
+	753970204	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_04\Soundseed Grain	
+	769750694	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_12\Soundseed Grain	
+	770133205	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_00\Soundseed Grain	
+	806895716	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_00\Soundseed Grain	
+	814532962	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_05\Soundseed Grain	
+	844386102	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_11\Soundseed Grain	
+	859014046	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_13\Soundseed Grain	
+	878193169	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_01\Soundseed Grain	
+	911738497	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_01\Soundseed Grain	
+	918451890	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_09\Soundseed Grain	
+	918962245	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_09\Soundseed Grain	
+	920013792	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_06\Soundseed Grain	
+	925755628	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_02\Soundseed Grain	
+	937114618	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_13\Soundseed Grain	
+	953886345	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_10\Soundseed Grain	
+	1073529639	Soundseed Grain	SoundSeed Grain		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_05\Soundseed Grain	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	335065082	Soundseed Grain	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 16_408A62D1.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\New Sound SFX\Soundseed Grain		128000
-	503471685	Soundseed Grain	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 1_408A62D1.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\New Sound SFX_01\Soundseed Grain		128000
-	503471686	Soundseed Grain	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 11_408A62D1.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\New Sound SFX\Soundseed Grain		128000
+	42239799	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 11_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_10\Soundseed Grain		128000
+	43232654	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 8_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_07\Soundseed Grain		81760
+	55401970	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 7_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_06\Soundseed Grain		128000
+	80676480	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 12_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_11\Soundseed Grain		128000
+	105526346	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 7_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_06\Soundseed Grain		128000
+	117617890	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 15_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_14\Soundseed Grain		128000
+	132654015	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 8_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_07\Soundseed Grain		128000
+	133382533	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 2_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_01\Soundseed Grain		128000
+	219627681	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 9_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_08\Soundseed Grain		128000
+	232154950	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 1_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_00\Soundseed Grain		128000
+	233392074	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 14_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_13\Soundseed Grain		128000
+	238349740	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 4_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_03\Soundseed Grain		107896
+	256156303	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 5_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_04\Soundseed Grain		128000
+	258072607	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 10_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_09\Soundseed Grain		128000
+	294210370	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 15_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_14\Soundseed Grain		128000
+	330818389	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 4_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_03\Soundseed Grain		128000
+	335065082	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 16_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_15\Soundseed Grain		128000
+	366102528	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 7_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_06\Soundseed Grain		128000
+	373927430	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 7_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_06\Soundseed Grain		128000
+	380844285	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 7_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_06\Soundseed Grain		128000
+	386936143	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 9_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_08\Soundseed Grain		128000
+	393695372	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 13_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_12\Soundseed Grain		96112
+	396207088	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 11_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_10\Soundseed Grain		128000
+	396627325	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 13_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_12\Soundseed Grain		128000
+	417285692	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 4_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_03\Soundseed Grain		128000
+	428446079	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 6_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_05\Soundseed Grain		128000
+	458223184	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 14_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_13\Soundseed Grain		128000
+	461500007	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 1_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_00\Soundseed Grain		128000
+	463718278	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 9_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_08\Soundseed Grain		109720
+	471716080	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 12_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_11\Soundseed Grain		128000
+	477529138	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 11_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_10\Soundseed Grain		128000
+	481984587	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 13_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_12\Soundseed Grain		128000
+	501130506	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 5_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_04\Soundseed Grain		128000
+	503471685	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 1_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_00\Soundseed Grain		128000
+	503471686	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 11_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_10\Soundseed Grain		128000
+	503471687	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 1_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_00\Soundseed Grain		128000
+	516526876	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 3_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_02\Soundseed Grain		128000
+	529328721	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 6_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_05\Soundseed Grain		128000
+	539480296	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 5_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_04\Soundseed Grain		114068
+	549354165	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 10_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_09\Soundseed Grain		128000
+	551106279	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 3_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_02\Soundseed Grain		128000
+	562942436	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 12_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_11\Soundseed Grain		128000
+	563457132	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 2_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_01\Soundseed Grain		128000
+	602758869	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 10_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_09\Soundseed Grain		128000
+	607967630	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 8_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_07\Soundseed Grain		128000
+	612081283	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 8_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_07\Soundseed Grain		128000
+	647775324	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 11_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_10\Soundseed Grain		122920
+	652579874	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 6_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_05\Soundseed Grain		128000
+	672014907	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 12_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_11\Soundseed Grain		128000
+	716069482	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 4_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_03\Soundseed Grain		128000
+	716981129	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 2_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_01\Soundseed Grain		128000
+	812392570	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 3_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_02\Soundseed Grain		128000
+	824658549	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 2_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_01\Soundseed Grain		128000
+	824856779	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 10_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_09\Soundseed Grain		128000
+	848719464	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 6_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_05\Soundseed Grain		70000
+	913170285	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 8_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_07\Soundseed Grain		128000
+	922642194	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 14_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_13\Soundseed Grain		128000
+	928432829	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 1_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_00\Soundseed Grain		128000
+	944661583	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 9_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_08\Soundseed Grain		128000
+	953510091	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 5_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_04\Soundseed Grain		128000
+	954998817	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 4_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_03\Soundseed Grain		128000
+	972162525	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Sidewalk 5_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Sidewalk_Sweep_Grain\Sidewalk Grain SFX_04\Soundseed Grain		128000
+	978867402	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Grass 12_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Grass_Sweep_Grain\Grass Grain SFX_11\Soundseed Grain		128000
+	992453056	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 3_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_02\Soundseed Grain		128000
+	1001715279	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 13_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_12\Soundseed Grain		128000
+	1014843114	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 9_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_08\Soundseed Grain		128000
+	1021698847	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Gravel 2_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Gravel_Sweep_Grain\Gravel Grain SFX_01\Soundseed Grain		128000
+	1022358401	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 6_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_05\Soundseed Grain		128000
+	1040311226	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Road 3_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Road_Sweep_Grain\Road Grain SFX_02\Soundseed Grain		128000
+	1043806714	Soundseed Grain	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\Plugins\SoundSeed Grain\Metal 10_A3098B22.wem	SoundSeed Grain (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Ground_Sweep\Metal_Sweep_Grain\Metal Grain SFX_09\Soundseed Grain		128000
 

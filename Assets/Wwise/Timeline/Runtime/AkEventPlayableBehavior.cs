@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /// @brief Defines the behavior of a \ref AkEventPlayable within a \ref AkEventTrack.
@@ -55,6 +55,11 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 	[UnityEditor.InitializeOnLoadMethod]
 	private static void DetermineCanPostEvents()
 	{
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
 		UnityEditor.Compilation.CompilationPipeline.assemblyCompilationFinished += (string text, UnityEditor.Compilation.CompilerMessage[] messages) =>
 		{
 			if (!UnityEditor.EditorApplication.isPlaying)

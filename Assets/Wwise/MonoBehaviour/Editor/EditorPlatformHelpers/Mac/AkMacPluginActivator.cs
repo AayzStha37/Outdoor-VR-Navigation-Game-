@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 ﻿#if UNITY_EDITOR
@@ -21,6 +21,11 @@ public class AkMacPluginActivator
 {
 	static AkMacPluginActivator()
 	{
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
 		AkPluginActivator.RegisterBuildTarget(UnityEditor.BuildTarget.StandaloneOSX, new AkPluginActivator.PlatformConfiguration
 		{
 			WwisePlatformName = "Mac",
@@ -31,6 +36,8 @@ public class AkMacPluginActivator
 		{
 			WwisePlatformName = "Mac"
 		});
+		
+		WwiseSetupWizard.AddBuildTargetGroup(UnityEditor.BuildTargetGroup.Standalone);
 	}
 }
 #endif

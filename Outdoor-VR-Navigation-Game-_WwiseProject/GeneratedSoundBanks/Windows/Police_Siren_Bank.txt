@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	882516764	PlayPoliceSirenEvent			\Default Work Unit\PlayPoliceSirenEvent	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	745296131	Police_Siren	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Poli_Siren_BDFB1627.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Sounds\Vehicle Sounds\Vechicle in motion sounds\Police_Siren		728068
+	745296131	Police_Siren	C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Windows\SFX\Poli_Siren_5D4F04A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Sounds\Vehicle Sounds\Vechicle in motion sounds\Police_Siren		728068
 

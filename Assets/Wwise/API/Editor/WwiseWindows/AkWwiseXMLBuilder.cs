@@ -13,17 +13,22 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEditor.InitializeOnLoad]
-public class AkWwiseXMLBuilder
+public class AkWwiseXMLBuilder : UnityEditor.AssetPostprocessor
 {
 	private static readonly System.DateTime s_LastParsed = System.DateTime.MinValue;
 
-	static AkWwiseXMLBuilder()
+	static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths, bool didDomainReload)
 	{
-		AkWwiseFileWatcher.Instance.PopulateXML += Populate;
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
+		AkWwiseSoundbanksInfoXMLFileWatcher.Instance.PopulateXML += Populate;
 		UnityEditor.EditorApplication.playModeStateChanged += PlayModeChanged;
 	}
 
@@ -32,7 +37,7 @@ public class AkWwiseXMLBuilder
 		if (mode == UnityEditor.PlayModeStateChange.EnteredEditMode)
 		{
 			AkWwiseProjectInfo.Populate();
-			AkWwiseFileWatcher.Instance.StartWatchers();
+			AkWwiseSoundbanksInfoXMLFileWatcher.Instance.StartWatcher();
 		}
 	}
 
@@ -104,7 +109,7 @@ public class AkWwiseXMLBuilder
 	private static bool SerialiseSoundBank(System.Xml.XmlNode node)
 	{
 		var bChanged = false;
-		var includedEvents = node.SelectNodes("IncludedEvents");
+		var includedEvents = node.SelectNodes("Events");
 		for (var i = 0; i < includedEvents.Count; i++)
 		{
 			var events = includedEvents[i].SelectNodes("Event");

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<RootPaths>
 		<ProjectRoot>../..</ProjectRoot>
 		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
@@ -9,45 +9,45 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{8FCF2191-7F8B-79B6-FE9F-1C83DF763DD0}">
+		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{6E70EDF9-9948-85B6-D559-75727943F409}">
 			<ShortName>Vehicle_Stationary_Bank</ShortName>
 			<Path>Vehicle_Stationary_Bank.bnk</Path>
 			<Media>
 				<File Id="171332187" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Stationary_5.wav</ShortName>
-					<CachePath>SFX/Car_Stationary_5_6E5DCD2A.wem</CachePath>
+					<CachePath>SFX/Car_Stationary_5_1DBDF63D.wem</CachePath>
 				</File>
 				<File Id="171916165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Stationary_3.wav</ShortName>
-					<CachePath>SFX/Car_Stationary_3_F5939943.wem</CachePath>
+					<CachePath>SFX/Car_Stationary_3_FBE67CEC.wem</CachePath>
 				</File>
 				<File Id="329457926" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Stationary_3.wav</ShortName>
-					<CachePath>SFX/Bus_Stationary_3_CE33D2A9.wem</CachePath>
+					<CachePath>SFX/Bus_Stationary_3_71CB0E02.wem</CachePath>
 				</File>
 				<File Id="534012982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Stationary_1.wav</ShortName>
-					<CachePath>SFX/Car_Stationary_1_9C5DA4AD.wem</CachePath>
+					<CachePath>SFX/Car_Stationary_1_D1E100A6.wem</CachePath>
 				</File>
 				<File Id="619102524" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Stationary_4.wav</ShortName>
-					<CachePath>SFX/Car_Stationary_4_55E3A7BE.wem</CachePath>
+					<CachePath>SFX/Car_Stationary_4_C1D93A3D.wem</CachePath>
 				</File>
 				<File Id="702114970" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Stationary_4.wav</ShortName>
-					<CachePath>SFX/Bus_Stationary_4_E580D815.wem</CachePath>
+					<CachePath>SFX/Bus_Stationary_4_DD7EA55E.wem</CachePath>
 				</File>
 				<File Id="740135968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Stationary_2.wav</ShortName>
-					<CachePath>SFX/Car_Stationary_2_F700FB86.wem</CachePath>
+					<CachePath>SFX/Car_Stationary_2_09B2E7F9.wem</CachePath>
 				</File>
 				<File Id="744971500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Stationary_1.wav</ShortName>
-					<CachePath>SFX/Bus_Stationary_1_57B3EFD8.wem</CachePath>
+					<CachePath>SFX/Bus_Stationary_1_2EA29DE3.wem</CachePath>
 				</File>
 				<File Id="1022256533" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Stationary_2.wav</ShortName>
-					<CachePath>SFX/Bus_Stationary_2_085F4032.wem</CachePath>
+					<CachePath>SFX/Bus_Stationary_2_8FABE479.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -88,33 +88,33 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{4F6AC0B5-5C4C-0210-4658-47F892CAEC76}">
+		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{E05B325F-9018-D7D6-C147-04D509C8815B}">
 			<ShortName>Vehicle_Motion_Bank</ShortName>
 			<Path>Vehicle_Motion_Bank.bnk</Path>
 			<Media>
 				<File Id="77565316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Motion_3.wav</ShortName>
-					<CachePath>SFX/Car_Motion_3_1426AC20.wem</CachePath>
+					<CachePath>SFX/Car_Motion_3_4BC46DD3.wem</CachePath>
 				</File>
 				<File Id="140064437" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Motion_1.wav</ShortName>
-					<CachePath>SFX/Car_Motion_1_50CE7A80.wem</CachePath>
+					<CachePath>SFX/Car_Motion_1_07181D8F.wem</CachePath>
 				</File>
 				<File Id="596341828" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Motion_2.wav</ShortName>
-					<CachePath>SFX/Bus_Motion_2_F0839748.wem</CachePath>
+					<CachePath>SFX/Bus_Motion_2_C3CCC503.wem</CachePath>
 				</File>
 				<File Id="652022945" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus_Motion_1.wav</ShortName>
-					<CachePath>SFX/Bus_Motion_1_782818F8.wem</CachePath>
+					<CachePath>SFX/Bus_Motion_1_E3C6CFCB.wem</CachePath>
 				</File>
 				<File Id="728700630" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Motion_2.wav</ShortName>
-					<CachePath>SFX/Car_Motion_2_62B738A7.wem</CachePath>
+					<CachePath>SFX/Car_Motion_2_C53F9CE0.wem</CachePath>
 				</File>
 				<File Id="1004133952" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Car_Motion_4.wav</ShortName>
-					<CachePath>SFX/Car_Motion_4_5DB5B483.wem</CachePath>
+					<CachePath>SFX/Car_Motion_4_3CFB877C.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -152,7 +152,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{93F6D3AB-E568-69FF-FB20-9060E849216C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3AD64BDE-0689-1ADC-82ED-2E556034F485}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -233,6 +233,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="513139656" Name="Mountain">
@@ -241,6 +242,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="841620460" Name="Concrete">
@@ -249,6 +251,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="1755085759" Name="Wood_Deep">
@@ -257,6 +260,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="1873957695" Name="Anechoic">
@@ -265,6 +269,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="1970351858" Name="Fabric">
@@ -273,6 +278,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="2058049674" Name="Wood">
@@ -281,6 +287,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="2412606308" Name="Carpet">
@@ -289,6 +296,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="2637588553" Name="Tile">
@@ -297,6 +305,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="2928161104" Name="Curtains">
@@ -305,6 +314,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
@@ -313,6 +323,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="3670307564" Name="Drywall">
@@ -321,6 +332,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
@@ -329,6 +341,7 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 				<AcousticTexture Id="4262522749" Name="Wood_Bright">
@@ -337,17 +350,18 @@
 						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
 						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
 						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
 					</Properties>
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{F7E64701-B8A2-E490-6B9E-51087600F033}">
+		<SoundBank Id="1659826720" Type="User" Language="SFX" Hash="{724666B4-FF91-1A82-B156-08323CC3A246}">
 			<ShortName>Start_Scene_Traffic</ShortName>
 			<Path>Start_Scene_Traffic.bnk</Path>
 			<Media>
 				<File Id="407448612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Traffic Noise Sound Effect.wav</ShortName>
-					<CachePath>SFX/Traffic Noise Sound Effect_ACE95052.wem</CachePath>
+					<CachePath>SFX/Traffic Noise Sound Effect_34A4E269.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -358,69 +372,69 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{F9FA8797-7705-9FC0-BF64-5253B2277A6D}">
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{3DB06A0C-C0A2-35B7-F4AF-7D608B83A9B4}">
 			<ShortName>Ambient_Sounds</ShortName>
 			<Path>Ambient_Sounds.bnk</Path>
 			<Media>
 				<File Id="1834701" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Children Playing Sound Effect 2.wav</ShortName>
-					<CachePath>SFX/Children Playing Sound Effect 2_10C4C929.wem</CachePath>
+					<CachePath>SFX/Children Playing Sound Effect 2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="3289206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Children Playing Sound Effect 1.wav</ShortName>
-					<CachePath>SFX/Children Playing Sound Effect 1_10C4C929.wem</CachePath>
+					<CachePath>SFX/Children Playing Sound Effect 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="3934327" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Park conversation.wav</ShortName>
-					<CachePath>SFX/Park conversation_F55DFC35.wem</CachePath>
+					<CachePath>SFX/Park conversation_9F2020EE.wem</CachePath>
 				</File>
 				<File Id="31391304" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bus stop conversation.wav</ShortName>
-					<CachePath>SFX/Bus stop conversation_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Bus stop conversation_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="106750584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Constrcution_Sound.wav</ShortName>
-					<CachePath>SFX/Constrcution_Sound_93D01CC3.wem</CachePath>
+					<CachePath>SFX/Constrcution_Sound_200F435C.wem</CachePath>
 				</File>
 				<File Id="212434798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small crowd cheering sound.wav</ShortName>
-					<CachePath>SFX/Small crowd cheering sound_D7D319C1.wem</CachePath>
+					<CachePath>SFX/Small crowd cheering sound_FC58847E.wem</CachePath>
 				</File>
 				<File Id="259112865" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Crowd Talking Ambience sound 1.wav</ShortName>
-					<CachePath>SFX/Small Crowd Talking Ambience sound 1_10C4C929.wem</CachePath>
+					<CachePath>SFX/Small Crowd Talking Ambience sound 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="294159623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Constrcution site conversation.wav</ShortName>
-					<CachePath>SFX/Constrcution site conversation_D79A7FA3.wem</CachePath>
+					<CachePath>SFX/Constrcution site conversation_6F228F70.wem</CachePath>
 				</File>
 				<File Id="312281592" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Small Crowd Talking Ambience sound 2.wav</ShortName>
-					<CachePath>SFX/Small Crowd Talking Ambience sound 2_ADC31D1C.wem</CachePath>
+					<CachePath>SFX/Small Crowd Talking Ambience sound 2_F1CFAC17.wem</CachePath>
 				</File>
 				<File Id="407205469" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hot dog applause conversation.wav</ShortName>
-					<CachePath>SFX/Hot dog applause conversation_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Hot dog applause conversation_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="544192436" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ambulance Sound Effect.wav</ShortName>
-					<CachePath>SFX/Ambulance Sound Effect_9C601487.wem</CachePath>
+					<CachePath>SFX/Ambulance Sound Effect_01893108.wem</CachePath>
 				</File>
 				<File Id="552064090" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hotdog_Human_Sound.wav</ShortName>
-					<CachePath>SFX/Hotdog_Human_Sound_387DB8FE.wem</CachePath>
+					<CachePath>SFX/Hotdog_Human_Sound_F1B0E141.wem</CachePath>
 				</File>
 				<File Id="722142175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hip Hop Beat Sound Effect.wav</ShortName>
-					<CachePath>SFX/Hip Hop Beat Sound Effect_DB39AF00.wem</CachePath>
+					<CachePath>SFX/Hip Hop Beat Sound Effect_873FEB73.wem</CachePath>
 				</File>
 				<File Id="846016884" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Children Playing Sound Effect 3.wav</ShortName>
-					<CachePath>SFX/Children Playing Sound Effect 3_10C4C929.wem</CachePath>
+					<CachePath>SFX/Children Playing Sound Effect 3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="939648723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hotdog_Stand_Ambient_Sound.wav</ShortName>
-					<CachePath>SFX/Hotdog_Stand_Ambient_Sound_10C4C929.wem</CachePath>
+					<CachePath>SFX/Hotdog_Stand_Ambient_Sound_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -514,13 +528,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{EFDACFC4-EA13-5AC7-2978-5EA7D813B9A9}">
+		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{E41AD913-DB65-5178-6243-84BFEC687560}">
 			<ShortName>Police_Siren_Bank</ShortName>
 			<Path>Police_Siren_Bank.bnk</Path>
 			<Media>
 				<File Id="745296131" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Poli_Siren.wav</ShortName>
-					<CachePath>SFX/Poli_Siren_BDFB1627.wem</CachePath>
+					<CachePath>SFX/Poli_Siren_5D4F04A8.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -531,117 +545,117 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{59C156F0-1BA9-B87C-39A5-A312EE45C3A9}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{68B17F21-549C-89F2-90C3-41D704C78450}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
 				<File Id="14190697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_07.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_07_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_07_818F3B66.wem</CachePath>
 				</File>
 				<File Id="87281833" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_06.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_06_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_06_818F3B66.wem</CachePath>
 				</File>
 				<File Id="94548813" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_07.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_07_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_07_818F3B66.wem</CachePath>
 				</File>
 				<File Id="110845775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_03.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03_818F3B66.wem</CachePath>
 				</File>
 				<File Id="160305462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_07.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07_818F3B66.wem</CachePath>
 				</File>
 				<File Id="199774911" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_06.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_06_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_06_818F3B66.wem</CachePath>
 				</File>
 				<File Id="220298108" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_05.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_05_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="248600964" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_04.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_04_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="421792951" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_10.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_10_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_10_818F3B66.wem</CachePath>
 				</File>
 				<File Id="444060311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_02.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="444212366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_08.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_08_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_08_818F3B66.wem</CachePath>
 				</File>
 				<File Id="558362490" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_02.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="561428686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_08.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_08_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_08_818F3B66.wem</CachePath>
 				</File>
 				<File Id="596940499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_01.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="628769867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_01.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="661099901" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_05.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="711827862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_02.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="746483821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile\Footsteps_Tile_Walk\Footsteps_Tile_Walk_06.wav</ShortName>
-					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_06_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_06_818F3B66.wem</CachePath>
 				</File>
 				<File Id="801510063" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_09.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09_818F3B66.wem</CachePath>
 				</File>
 				<File Id="814362947" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_03.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_03_818F3B66.wem</CachePath>
 				</File>
 				<File Id="854935473" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_04.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_04_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="859609072" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_03.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_03_818F3B66.wem</CachePath>
 				</File>
 				<File Id="861237956" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_05.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_05_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="882102121" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_08.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08_818F3B66.wem</CachePath>
 				</File>
 				<File Id="888349803" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_09.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_09_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_09_818F3B66.wem</CachePath>
 				</File>
 				<File Id="907862754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Gravel\Footsteps_Gravel_Walk\Footsteps_Gravel_Walk_01.wav</ShortName>
-					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Gravel/Footsteps_Gravel_Walk/Footsteps_Gravel_Walk_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1018946584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Rock\Footsteps_Rock_Walk\Footsteps_Rock_Walk_04.wav</ShortName>
-					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -706,38 +720,641 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{40613588-A05F-CB9C-88F8-E7ECA018CF6A}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{4F129195-53E0-1BE1-C39D-591D9A45ACA1}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
+				<File Id="42239799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 11_A3098B22.wem</CachePath>
+				</File>
+				<File Id="43232654" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 8_A3098B22.wem</CachePath>
+				</File>
+				<File Id="55401970" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 7_A3098B22.wem</CachePath>
+				</File>
+				<File Id="80676480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 12_A3098B22.wem</CachePath>
+				</File>
+				<File Id="105526346" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 7_A3098B22.wem</CachePath>
+				</File>
+				<File Id="117617890" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 15.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 15_A3098B22.wem</CachePath>
+				</File>
+				<File Id="132654015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 8_A3098B22.wem</CachePath>
+				</File>
+				<File Id="133382533" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 2_A3098B22.wem</CachePath>
+				</File>
+				<File Id="219627681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 9_A3098B22.wem</CachePath>
+				</File>
+				<File Id="232154950" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 1_A3098B22.wem</CachePath>
+				</File>
+				<File Id="233392074" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 14.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 14_A3098B22.wem</CachePath>
+				</File>
+				<File Id="238349740" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 4_A3098B22.wem</CachePath>
+				</File>
+				<File Id="256156303" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 5_A3098B22.wem</CachePath>
+				</File>
+				<File Id="258072607" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 10_A3098B22.wem</CachePath>
+				</File>
+				<File Id="294210370" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 15.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 15_A3098B22.wem</CachePath>
+				</File>
+				<File Id="330818389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 4_A3098B22.wem</CachePath>
+				</File>
 				<File Id="335065082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Road 16.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Road 16_408A62D1.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Road 16_A3098B22.wem</CachePath>
+				</File>
+				<File Id="366102528" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 7_A3098B22.wem</CachePath>
+				</File>
+				<File Id="373927430" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 7_A3098B22.wem</CachePath>
+				</File>
+				<File Id="380844285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 7.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 7_A3098B22.wem</CachePath>
+				</File>
+				<File Id="386936143" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 9_A3098B22.wem</CachePath>
+				</File>
+				<File Id="393695372" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 13_A3098B22.wem</CachePath>
+				</File>
+				<File Id="396207088" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 11_A3098B22.wem</CachePath>
+				</File>
+				<File Id="396627325" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 13_A3098B22.wem</CachePath>
+				</File>
+				<File Id="417285692" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 4_A3098B22.wem</CachePath>
+				</File>
+				<File Id="428446079" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 6_A3098B22.wem</CachePath>
+				</File>
+				<File Id="458223184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 14.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 14_A3098B22.wem</CachePath>
+				</File>
+				<File Id="461500007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 1_A3098B22.wem</CachePath>
+				</File>
+				<File Id="463718278" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 9_A3098B22.wem</CachePath>
+				</File>
+				<File Id="471716080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 12_A3098B22.wem</CachePath>
+				</File>
+				<File Id="477529138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 11_A3098B22.wem</CachePath>
+				</File>
+				<File Id="481984587" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 13_A3098B22.wem</CachePath>
+				</File>
+				<File Id="501130506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 5_A3098B22.wem</CachePath>
 				</File>
 				<File Id="503471685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sidewalk 1.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_408A62D1.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 1_A3098B22.wem</CachePath>
 				</File>
 				<File Id="503471686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass 11.wav</ShortName>
-					<CachePath>Plugins/SoundSeed Grain/Grass 11_408A62D1.wem</CachePath>
+					<CachePath>Plugins/SoundSeed Grain/Grass 11_A3098B22.wem</CachePath>
+				</File>
+				<File Id="503471687" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 1_A3098B22.wem</CachePath>
+				</File>
+				<File Id="516526876" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 3_A3098B22.wem</CachePath>
+				</File>
+				<File Id="529328721" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 6_A3098B22.wem</CachePath>
+				</File>
+				<File Id="539480296" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 5_A3098B22.wem</CachePath>
+				</File>
+				<File Id="549354165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 10_A3098B22.wem</CachePath>
+				</File>
+				<File Id="551106279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 3_A3098B22.wem</CachePath>
+				</File>
+				<File Id="562942436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 12_A3098B22.wem</CachePath>
+				</File>
+				<File Id="563457132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 2_A3098B22.wem</CachePath>
+				</File>
+				<File Id="602758869" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 10_A3098B22.wem</CachePath>
+				</File>
+				<File Id="607967630" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 8_A3098B22.wem</CachePath>
+				</File>
+				<File Id="612081283" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 8_A3098B22.wem</CachePath>
+				</File>
+				<File Id="647775324" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 11.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 11_A3098B22.wem</CachePath>
+				</File>
+				<File Id="652579874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 6_A3098B22.wem</CachePath>
+				</File>
+				<File Id="672014907" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 12_A3098B22.wem</CachePath>
+				</File>
+				<File Id="716069482" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 4_A3098B22.wem</CachePath>
+				</File>
+				<File Id="716981129" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 2_A3098B22.wem</CachePath>
+				</File>
+				<File Id="812392570" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 3_A3098B22.wem</CachePath>
+				</File>
+				<File Id="824658549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 2_A3098B22.wem</CachePath>
+				</File>
+				<File Id="824856779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 10_A3098B22.wem</CachePath>
+				</File>
+				<File Id="848719464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 6_A3098B22.wem</CachePath>
+				</File>
+				<File Id="913170285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 8.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 8_A3098B22.wem</CachePath>
+				</File>
+				<File Id="922642194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 14.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 14_A3098B22.wem</CachePath>
+				</File>
+				<File Id="928432829" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 1.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 1_A3098B22.wem</CachePath>
+				</File>
+				<File Id="944661583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 9_A3098B22.wem</CachePath>
+				</File>
+				<File Id="953510091" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 5_A3098B22.wem</CachePath>
+				</File>
+				<File Id="954998817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 4.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 4_A3098B22.wem</CachePath>
+				</File>
+				<File Id="972162525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sidewalk 5.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Sidewalk 5_A3098B22.wem</CachePath>
+				</File>
+				<File Id="978867402" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass 12.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Grass 12_A3098B22.wem</CachePath>
+				</File>
+				<File Id="992453056" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 3_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1001715279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 13.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 13_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1014843114" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 9.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 9_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1021698847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gravel 2.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Gravel 2_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1022358401" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 6.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 6_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1040311226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Road 3.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Road 3_A3098B22.wem</CachePath>
+				</File>
+				<File Id="1043806714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Metal 10.wav</ShortName>
+					<CachePath>Plugins/SoundSeed Grain/Metal 10_A3098B22.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="27361456" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="539480296"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="66939672" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="913170285"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="78391228" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="812392570"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="122519051" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="366102528"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="123544866" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="132654015"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="126428570" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="972162525"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="126682513" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="978867402"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="142994140" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="551106279"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="159384774" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="463718278"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="169776113" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="503471686"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="177316285" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1014843114"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="181194819" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="386936143"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="190066402" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="117617890"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="197225979" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="396207088"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="198105915" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="238349740"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="225497406" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="481984587"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="227884076" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="55401970"/>
+						</MediaRefs>
+					</Plugin>
 					<Plugin Id="247200451" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
-							<MediaRef Id="335065082"/>
+							<MediaRef Id="232154950"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="253862552" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="294210370"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="286097880" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="373927430"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="304915646" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="652579874"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="320874913" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="824856779"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="327270332" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="133382533"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="333033442" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="516526876"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="344321514" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="944661583"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="356565717" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1022358401"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="403947966" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="953510091"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="405079977" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="549354165"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="408833928" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="954998817"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="443537443" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="428446079"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="459265214" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="396627325"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="471499938" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1001715279"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="474179910" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="380844285"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="474196532" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="233392074"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="481781501" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="417285692"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="523784947" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="607967630"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="523839656" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="562942436"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="526601020" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="219627681"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="530246830" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="330818389"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="550690922" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="471716080"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="553362343" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="824658549"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="558985339" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="501130506"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="578697753" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1040311226"/>
 						</MediaRefs>
 					</Plugin>
 					<Plugin Id="589587159" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
-							<MediaRef Id="503471686"/>
+							<MediaRef Id="503471687"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="591338526" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="716069482"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="601911384" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="612081283"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="661104335" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="258072607"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="667405022" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="563457132"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="681294925" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="43232654"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="692518685" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="672014907"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="715102469" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="477529138"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="724113382" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="42239799"/>
 						</MediaRefs>
 					</Plugin>
 					<Plugin Id="742510908" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
 						<MediaRefs>
 							<MediaRef Id="503471685"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="746663027" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="335065082"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="753970204" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="256156303"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="769750694" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="393695372"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="770133205" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="928432829"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="806895716" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="461500007"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="814532962" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="848719464"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="844386102" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="80676480"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="859014046" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="922642194"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="878193169" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1021698847"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="911738497" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="716981129"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="918451890" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="602758869"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="918962245" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="1043806714"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="920013792" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="105526346"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="925755628" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="992453056"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="937114618" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="458223184"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="953886345" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="647775324"/>
+						</MediaRefs>
+					</Plugin>
+					<Plugin Id="1073529639" Name="Soundseed Grain" LibName="SoundSeed Grain" LibId="11993090">
+						<MediaRefs>
+							<MediaRef Id="529328721"/>
 						</MediaRefs>
 					</Plugin>
 				</Custom>
@@ -749,10 +1366,46 @@
 					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2473969246"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="177316285"/>
+									<PluginRef Id="286097880"/>
+									<PluginRef Id="327270332"/>
+									<PluginRef Id="333033442"/>
+									<PluginRef Id="356565717"/>
+									<PluginRef Id="459265214"/>
+									<PluginRef Id="530246830"/>
+									<PluginRef Id="681294925"/>
+									<PluginRef Id="692518685"/>
+									<PluginRef Id="753970204"/>
+									<PluginRef Id="806895716"/>
+									<PluginRef Id="859014046"/>
+									<PluginRef Id="918962245"/>
+									<PluginRef Id="953886345"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2110808655"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="27361456"/>
+									<PluginRef Id="122519051"/>
+									<PluginRef Id="123544866"/>
+									<PluginRef Id="181194819"/>
 									<PluginRef Id="247200451"/>
+									<PluginRef Id="253862552"/>
+									<PluginRef Id="443537443"/>
+									<PluginRef Id="471499938"/>
+									<PluginRef Id="474196532"/>
+									<PluginRef Id="481781501"/>
+									<PluginRef Id="553362343"/>
+									<PluginRef Id="578697753"/>
+									<PluginRef Id="661104335"/>
+									<PluginRef Id="724113382"/>
+									<PluginRef Id="746663027"/>
+									<PluginRef Id="844386102"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -760,7 +1413,41 @@
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="4248645337"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="126682513"/>
+									<PluginRef Id="142994140"/>
+									<PluginRef Id="159384774"/>
+									<PluginRef Id="169776113"/>
+									<PluginRef Id="198105915"/>
+									<PluginRef Id="227884076"/>
+									<PluginRef Id="403947966"/>
 									<PluginRef Id="589587159"/>
+									<PluginRef Id="601911384"/>
+									<PluginRef Id="667405022"/>
+									<PluginRef Id="769750694"/>
+									<PluginRef Id="814532962"/>
+									<PluginRef Id="918451890"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="2185786256"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="66939672"/>
+									<PluginRef Id="190066402"/>
+									<PluginRef Id="197225979"/>
+									<PluginRef Id="225497406"/>
+									<PluginRef Id="304915646"/>
+									<PluginRef Id="320874913"/>
+									<PluginRef Id="408833928"/>
+									<PluginRef Id="474179910"/>
+									<PluginRef Id="523839656"/>
+									<PluginRef Id="526601020"/>
+									<PluginRef Id="558985339"/>
+									<PluginRef Id="770133205"/>
+									<PluginRef Id="878193169"/>
+									<PluginRef Id="925755628"/>
+									<PluginRef Id="937114618"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -768,7 +1455,18 @@
 							<SwitchValue GroupType="Switch" GroupId="1983642705" Id="3137249879"/>
 							<PluginRefs>
 								<Custom>
+									<PluginRef Id="78391228"/>
+									<PluginRef Id="126428570"/>
+									<PluginRef Id="344321514"/>
+									<PluginRef Id="405079977"/>
+									<PluginRef Id="523784947"/>
+									<PluginRef Id="550690922"/>
+									<PluginRef Id="591338526"/>
+									<PluginRef Id="715102469"/>
 									<PluginRef Id="742510908"/>
+									<PluginRef Id="911738497"/>
+									<PluginRef Id="920013792"/>
+									<PluginRef Id="1073529639"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -791,13 +1489,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{97E1839C-12E5-33D0-241D-4E9220C02219}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{E3FA7CAD-151D-C39F-41B8-0C3DBC7240CC}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
 				<File Id="551432879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Walk Audio Clip.wav</ShortName>
-					<CachePath>SFX/Walk Audio Clip_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Walk Audio Clip_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -811,13 +1509,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{3756BC92-B3EC-DDF2-2747-2367C9AF4CE8}">
+		<SoundBank Id="3736098925" Type="User" Language="SFX" Hash="{D0246CB1-30C9-3B50-959E-4295AEE985D3}">
 			<ShortName>Level_Complete</ShortName>
 			<Path>Level_Complete.bnk</Path>
 			<Media>
 				<File Id="868015754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Level complete sound.wav</ShortName>
-					<CachePath>SFX/Level complete sound_10C4C929.wem</CachePath>
+					<CachePath>SFX/Level complete sound_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -828,13 +1526,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{1A271CA6-3076-00F4-B870-C7C1282FA958}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{0F6A89C6-A2C2-A77F-F40C-C06B258AFE70}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
 				<File Id="265156255" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wait Audio Clip.wav</ShortName>
-					<CachePath>SFX/Wait Audio Clip_C5579977.wem</CachePath>
+					<CachePath>SFX/Wait Audio Clip_11A93380.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -846,5 +1544,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64892F74-E214-6638-2218-8179068D29A5}</FileHash>
+	<FileHash>{930C3932-AAF1-FCE2-240F-5CF0700A77A7}</FileHash>
 </SoundBanksInfo>

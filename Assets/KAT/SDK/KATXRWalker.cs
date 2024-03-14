@@ -97,7 +97,6 @@ public class KATXRWalker : MonoBehaviour
                 {
                     var r = GetComponent<Rigidbody>();                    
                     r.velocity = transform.rotation * ws.moveSpeed;
-                    //TODO: change this work around after bug fix
                 }
                 break;
         } 

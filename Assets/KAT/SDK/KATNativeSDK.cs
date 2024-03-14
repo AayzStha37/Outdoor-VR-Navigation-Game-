@@ -11,13 +11,14 @@ using UnityEngine;
 /// </summary>
 public class KATNativeSDK
 {
-    /// <summary>
-    /// Description of KAT Devices
-    /// </summary>
-    [StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
+	/// <summary>
+	/// Description of KAT Devices
+	/// </summary>
+	/// 
+	[StructLayout(LayoutKind.Sequential, Pack = 1, CharSet = CharSet.Ansi)]
 	public struct DeviceDescription
 	{
-        //Device Name
+		//Device Name
 		[MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)]
 		public string device;
 
@@ -42,8 +43,8 @@ public class KATNativeSDK
 	[StructLayout(LayoutKind.Sequential, Pack = 1)]
 	public struct DeviceData
 	{
-        //Is Calibration Button Pressed?
-        [MarshalAs(UnmanagedType.I1)]
+		//Is Calibration Button Pressed?
+		[MarshalAs(UnmanagedType.I1)]
 		public bool btnPressed;
 		[MarshalAs(UnmanagedType.I1)]
 		//Is Battery Charging?
@@ -87,11 +88,11 @@ public class KATNativeSDK
 
 	//Get Device Count
 	[DllImport("KATNativeSDK.dll")]
-    public static extern int DeviceCount();
+	public static extern int DeviceCount();
 
 	//Get Device Description
 	[DllImport("KATNativeSDK.dll")]
-    public static extern DeviceDescription GetDevicesDesc(uint index);
+	public static extern DeviceDescription GetDevicesDesc(uint index);
 
 	//Get Calibration Time
 	[DllImport("KATNativeSDK.dll")]
