@@ -65,6 +65,9 @@ public class AkDeviceSettings : global::System.IDisposable {
   public uint uGranularity { set { AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_uGranularity_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_uGranularity_get(swigCPtr); } 
   }
 
+  public uint uSchedulerTypeFlags { set { AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_uSchedulerTypeFlags_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_uSchedulerTypeFlags_get(swigCPtr); } 
+  }
+
   public AkThreadProperties threadProperties { set { AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_threadProperties_set(swigCPtr, AkThreadProperties.getCPtr(value)); } 
     get {
       global::System.IntPtr cPtr = AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_threadProperties_get(swigCPtr);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Outdoor-VR-Navigation-Game-_WwiseProject" GUID="{7EDE5245-C82D-4663-8044-AF6F6D7B875B}" Generator="2023.1.1.8417"/>
+	<Project Name="Outdoor-VR-Navigation-Game-_WwiseProject" GUID="{7EDE5245-C82D-4663-8044-AF6F6D7B875B}" Generator="2022.1.11.8414"/>
 	<CacheRoot>../../../../Outdoor-VR-Navigation-Game-_WwiseProject/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{F37B015B-CAB2-4BE0-8F85-D6D685A36389}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Outdoor-VR-Navigation-Game-_WwiseProject/GeneratedSoundBanks/Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{B3323792-7AA5-44D7-B3A8-680A55E91C0E}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{E6C98F59-B449-74C8-A7A2-EA1411772F30}</FileHash>
+	<FileHash>{F319CFEB-316F-16DA-8103-7A8E34128D57}</FileHash>
 </ProjectInfo>

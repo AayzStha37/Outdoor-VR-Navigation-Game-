@@ -57,6 +57,7 @@ MonoBehaviour:
   - AdvancedSettings.m_MaximumHardwareTimeoutMs
   - AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor
   - AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowDegrees
+  - AdvancedSettings.m_SuspendAudioDuringFocusLoss
   - AdvancedSettings.m_RenderDuringFocusLoss
   - AdvancedSettings.m_UseAsyncOpen
   - AdvancedSettings.m_SoundBankPersistentDataPath
@@ -64,6 +65,7 @@ MonoBehaviour:
   - AdvancedSettings.m_DebugOutOfRangeLimit
   - AdvancedSettings.m_MemoryAllocationSizeLimit
   - AdvancedSettings.m_MemoryDebugLevel
+  - AdvancedSettings.m_MemorySpanCount
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
@@ -86,7 +88,7 @@ MonoBehaviour:
       m_MaxSoundPropagationDepth: 8
       m_MovementThreshold: 0.1
       m_NumberOfPrimaryRays: 100
-      m_MaxReflectionOrder: 4
+      m_MaxReflectionOrder: 1
       m_MaxDiffractionOrder: 4
       m_DiffractionOnReflectionsOrder: 2
       m_MaxPathLength: 10000
@@ -106,11 +108,13 @@ MonoBehaviour:
     m_MaximumHardwareTimeoutMs: 1000
     m_DebugOutOfRangeCheckEnabled: 0
     m_DebugOutOfRangeLimit: 16
+    m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseAsyncOpen: 0
     m_MemoryAllocationSizeLimit: 0
     m_MemoryDebugLevel: 0
+    m_MemorySpanCount: 2
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

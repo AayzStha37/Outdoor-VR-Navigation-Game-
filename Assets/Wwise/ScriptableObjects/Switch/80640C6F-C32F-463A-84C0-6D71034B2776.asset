@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Car
   id: 983016381
   guid: 80640C6F-C32F-463A-84C0-6D71034B2776
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 9032f4d85ba090143bde9aee416db9ac,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 633f6c457955cc243948d38e368af3de,
     type: 2}

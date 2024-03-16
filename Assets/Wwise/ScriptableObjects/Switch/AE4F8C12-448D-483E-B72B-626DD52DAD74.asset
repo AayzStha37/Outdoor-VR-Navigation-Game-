@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Hotdog_Convo_Phone
   id: 1349895145
   guid: AE4F8C12-448D-483E-B72B-626DD52DAD74
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 51177f75f5f6e1847b914c542cd9b9d2,
     type: 2}

@@ -101,6 +101,9 @@ public class AkInitializationSettings : global::System.IDisposable {
     } 
   }
 
+  public bool useAsyncOpen { set { AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_useAsyncOpen_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_useAsyncOpen_get(swigCPtr); } 
+  }
+
   public uint uMemAllocationSizeLimit { set { AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemAllocationSizeLimit_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemAllocationSizeLimit_get(swigCPtr); } 
   }
 

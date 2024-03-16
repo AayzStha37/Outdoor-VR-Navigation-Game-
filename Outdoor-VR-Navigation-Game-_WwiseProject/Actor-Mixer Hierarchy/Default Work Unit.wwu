@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{35503A5D-3B8F-409B-834B-9FA4289EBF94}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{35503A5D-3B8F-409B-834B-9FA4289EBF94}" SchemaVersion="110">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{35503A5D-3B8F-409B-834B-9FA4289EBF94}" PersistMode="Standalone">
 			<ChildrenList>
@@ -1616,9 +1616,6 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Null" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}" WorkUnitID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
@@ -3575,6 +3572,12 @@
 										<SwitchRef Name="Gravel" ID="{35901F06-4952-49BB-806C-E5F9B19DDE99}"/>
 										<ItemList>
 											<ItemRef Name="Gravel_walk" ID="{6DD8D8E3-33AC-4088-B4D2-EE8D935B6D9C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
+										<ItemList>
+											<ItemRef Name="Grass_walk" ID="{1B301DCB-72EC-4E91-B439-749D17BE6A4C}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

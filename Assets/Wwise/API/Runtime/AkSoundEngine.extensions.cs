@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2022 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
@@ -24,31 +24,16 @@ public partial class AkSoundEngine
 
 	private const string AkGameObjTypeString = "AkGameObj, AK.Wwise.Unity.MonoBehaviour";
 
-	private class AutoObject
-	{
-		private readonly UnityEngine.GameObject gameObject;
-
-		public AutoObject(UnityEngine.GameObject go)
-		{
-			gameObject = go;
-			RegisterGameObj(gameObject, gameObject != null ? "AkAutoObject for " + gameObject.name : "AkAutoObject");
-		}
-
-		~AutoObject()
-		{
-			UnregisterGameObj(gameObject);
-		}
-	}
-
 	private static void AutoRegister(UnityEngine.GameObject gameObject, ulong id)
 	{
-		Type AkGameObjectType = Type.GetType(AkGameObjTypeString);
-
-		if (gameObject == null || !gameObject.activeInHierarchy)
+		if (!gameObject)
 		{
-			new AutoObject(gameObject);
+			return;
 		}
-		else if (gameObject.GetComponent(AkGameObjectType) == null)
+		
+		Type AkGameObjectType = Type.GetType(AkGameObjTypeString);
+		
+		if (gameObject.GetComponent(AkGameObjectType) == null)
 		{
 			gameObject.AddComponent(AkGameObjectType);
 		}
@@ -65,7 +50,9 @@ public partial class AkSoundEngine
 #endif
 
 		if (!IsInRegisteredList(id) && IsInitialized())
+		{
 			AutoRegister(gameObject, id);
+		}
 	}
 
 	private static readonly System.Collections.Generic.HashSet<ulong> RegisteredGameObjects =

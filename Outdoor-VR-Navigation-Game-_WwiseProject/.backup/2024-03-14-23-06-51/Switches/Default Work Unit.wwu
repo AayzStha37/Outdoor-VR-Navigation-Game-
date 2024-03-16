@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="GroundType_Sweep" ID="{FA79D3C7-336E-4411-814F-F4A12FE1A8D8}">
+					<ChildrenList>
+						<Switch Name="Sidewalk" ID="{284291DE-A176-4D55-B9AD-37BB7AFA7C91}"/>
+						<Switch Name="Road" ID="{3CF344C4-C244-4F18-956D-923B28EE77AB}"/>
+						<Switch Name="Grass" ID="{8961CDC5-BEE9-40F8-B502-4426156A4240}"/>
+						<Switch Name="Gravel" ID="{B6A2C5D9-7EF0-46B8-B400-7075BBC11817}"/>
+						<Switch Name="Metal" ID="{72EFABAB-6102-4CB1-87D1-8AFEB5B5F562}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Footsteps_Walk" ID="{327356EF-1FDB-4881-A13A-BB4B75A847F1}">
+					<ChildrenList>
+						<Switch Name="Road" ID="{22AF46D5-00B9-447F-B8D0-3E5D493CBB55}"/>
+						<Switch Name="Sidewalk" ID="{B7006FDB-05E6-4A1C-A971-E13D725868B4}"/>
+						<Switch Name="Gravel" ID="{35901F06-4952-49BB-806C-E5F9B19DDE99}"/>
+						<Switch Name="Null" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Ambient_Sounds_Switch" ID="{4A7088DC-3A11-4342-87CE-66D417F18DFE}">
+					<ChildrenList>
+						<Switch Name="Construction" ID="{C9212618-046B-48F4-A1E9-0301BA5E68A6}"/>
+						<Switch Name="Hotdog_Stand" ID="{0930439B-BA25-45F0-BB44-71649930451A}"/>
+						<Switch Name="Hotdog_Convo_Phone" ID="{AE4F8C12-448D-483E-B72B-626DD52DAD74}"/>
+						<Switch Name="Construction_site_convo" ID="{E4423686-81C8-42B6-BD12-114F835F59FD}"/>
+						<Switch Name="Bus_stop_convo" ID="{825A245E-5888-416C-B6FE-29F7BACE6DA8}"/>
+						<Switch Name="Park_entrance_convo" ID="{638F4B12-D131-4821-8025-3C5E64A65590}"/>
+						<Switch Name="Children_palying" ID="{9F92C62F-3121-4222-8A5C-43B7BCEB341B}"/>
+						<Switch Name="Crowd_ambient_noise" ID="{F41DB1D6-6D01-4DAA-9DA9-491CAC140EF5}"/>
+						<Switch Name="Crowd_cheering_dancing" ID="{A664B18B-C305-4FF0-A4AE-CCD72C9D91AB}"/>
+						<Switch Name="Hosptial_ambulance" ID="{B27992CF-FDFD-42FF-8163-EFFCFF68B642}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Vehicle_Motion_GameSync" ID="{FE523478-CA2E-4370-8BE1-0B6019445A7E}">
+					<ChildrenList>
+						<Switch Name="Bus" ID="{D578FFE8-881E-420B-B730-A2EC74C306E9}"/>
+						<Switch Name="Car" ID="{80640C6F-C32F-463A-84C0-6D71034B2776}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Vehicle_Stationary_GameSync" ID="{ED68C65F-ACBD-4083-9D39-C83163EA14CA}">
+					<ChildrenList>
+						<Switch Name="Bus" ID="{3D524EA1-C68B-4E46-90EC-D299034F72B2}"/>
+						<Switch Name="Car" ID="{31300BB3-2599-4B28-BC16-1DF9BFE6AE4E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

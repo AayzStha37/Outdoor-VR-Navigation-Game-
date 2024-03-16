@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Crowd_cheering_dancing
   id: 2449584239
   guid: A664B18B-C305-4FF0-A4AE-CCD72C9D91AB
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 51177f75f5f6e1847b914c542cd9b9d2,
     type: 2}

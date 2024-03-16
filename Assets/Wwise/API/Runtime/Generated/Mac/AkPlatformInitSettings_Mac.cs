@@ -88,14 +88,5 @@ public class AkPlatformInitSettings : global::System.IDisposable {
   public ushort uNumRefillsInVoice { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uNumRefillsInVoice_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uNumRefillsInVoice_get(swigCPtr); } 
   }
 
-  public AkAudioAPI eAudioAPI { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_eAudioAPI_set(swigCPtr, (int)value); }  get { return (AkAudioAPI)AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_eAudioAPI_get(swigCPtr); } 
-  }
-
-  public uint uNumSpatialAudioPointSources { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uNumSpatialAudioPointSources_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uNumSpatialAudioPointSources_get(swigCPtr); } 
-  }
-
-  public bool bVerboseSystemOutput { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_bVerboseSystemOutput_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_bVerboseSystemOutput_get(swigCPtr); } 
-  }
-
 }
 #endif // #if (UNITY_STANDALONE_OSX && !UNITY_EDITOR) || UNITY_EDITOR_OSX

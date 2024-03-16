@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}" SchemaVersion="110">
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}" PersistMode="Standalone">
 			<ChildrenList>
@@ -17,7 +17,7 @@
 						<Switch Name="Road" ID="{22AF46D5-00B9-447F-B8D0-3E5D493CBB55}"/>
 						<Switch Name="Sidewalk" ID="{B7006FDB-05E6-4A1C-A971-E13D725868B4}"/>
 						<Switch Name="Gravel" ID="{35901F06-4952-49BB-806C-E5F9B19DDE99}"/>
-						<Switch Name="Null" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
+						<Switch Name="Grass" ID="{FA393E13-B130-4882-841F-FE8B420F82CB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Ambient_Sounds_Switch" ID="{4A7088DC-3A11-4342-87CE-66D417F18DFE}">

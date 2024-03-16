@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 1449626845553845626}
   - component: {fileID: 4732609342147874117}
   - component: {fileID: 1625449481302397043}
+  - component: {fileID: 3983895492260960627}
   m_Layer: 0
   m_Name: Sidewak metallic indicator
   m_TagString: Untagged
@@ -826,6 +827,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6680145, y: 0.098549366, z: 1.0202942}
   m_Center: {x: -0.19582367, y: 0.017020464, z: -0.34951782}
+--- !u!114 &3983895492260960627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874646234683239422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dff5a4148e5bd84a9edb1467a5e0741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e375d56fd024d0247a27f8ce69cbaf0b,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1043389212793387911
 GameObject:
   m_ObjectHideFlags: 0

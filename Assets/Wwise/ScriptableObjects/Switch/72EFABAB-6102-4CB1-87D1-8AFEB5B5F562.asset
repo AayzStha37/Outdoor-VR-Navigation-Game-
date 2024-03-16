@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Metal
   id: 2473969246
   guid: 72EFABAB-6102-4CB1-87D1-8AFEB5B5F562
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: b35264690dae1af4593c77538fa1268f,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 4b4ab84032a59e14a91ef943e1ebc8d0,
     type: 2}

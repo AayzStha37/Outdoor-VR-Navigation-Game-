@@ -17,7 +17,6 @@ Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEngine.AddComponentMenu("Wwise/AkWwiseTrigger")]
-[UnityEngine.ExecuteInEditMode]
 /// @brief This will call \c AkSoundEngine.PostTrigger() whenever the selected Unity event is triggered. For example this component could be set on a Unity collider to trigger when an object enters it.
 /// \sa 
 /// - <a href="https://www.audiokinetic.com/en/library/edge/?source=Help&id=working_with_triggers_overview" target="_blank">Working with Triggers > Overview</a> (Note: This is described in the Wwise SDK documentation.)
@@ -29,19 +28,6 @@ public class AkWwiseTrigger : AkDragDropTriggerHandler
 	public AK.Wwise.Trigger data = new AK.Wwise.Trigger();
 	protected override AK.Wwise.BaseType WwiseType { get { return data; } }
 
-	protected override void Awake()
-	{
-		base.Awake();
-#if UNITY_EDITOR
-		var reference = AkWwiseTypes.DragAndDropObjectReference;
-		if (reference)
-		{
-			UnityEngine.GUIUtility.hotControl = 0;
-			data.ObjectReference = reference;
-		}
-#endif
-	}
-	
 	protected override void Start()
 	{
 #if UNITY_EDITOR

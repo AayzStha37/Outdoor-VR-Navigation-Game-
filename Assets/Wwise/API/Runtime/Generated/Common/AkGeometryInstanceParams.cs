@@ -64,8 +64,5 @@ public class AkGeometryInstanceParams : global::System.IDisposable {
   public UnityEngine.Vector3 Scale { set { AkSoundEnginePINVOKE.CSharp_AkGeometryInstanceParams_Scale_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkGeometryInstanceParams_Scale_get(swigCPtr); } 
   }
 
-  public bool UseForReflectionAndDiffraction { set { AkSoundEnginePINVOKE.CSharp_AkGeometryInstanceParams_UseForReflectionAndDiffraction_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkGeometryInstanceParams_UseForReflectionAndDiffraction_get(swigCPtr); } 
-  }
-
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

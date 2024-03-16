@@ -45,48 +45,35 @@ namespace AK.Wwise
 		public void Load(bool decodeBank = false, bool saveDecodedBank = false)
 		{
 			if (IsValid())
-			{
-				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, decodeBank, saveDecodedBank, loadAsync: false);
-			}
+				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, decodeBank, saveDecodedBank);
 		}
 
 		public void LoadAsync(AkCallbackManager.BankCallback callback = null)
-		{	
-			if(IsValid())
-			{
-				AkAddressableBankManager.Instance.LoadBank(WwiseObjectReference.AddressableBank, loadAsync: true);
-			}
+		{
+			throw new System.Exception("Wwise Addressables : Use Load() when loading banks with the Wwise Addressables package");
 		}
 		public void Unload()
 		{
 			if (IsValid())
-			{
 				AkAddressableBankManager.Instance.UnloadBank(WwiseObjectReference.AddressableBank);
-			}
 		}
 #else
 		public void Load(bool decodeBank = false, bool saveDecodedBank = false)
 		{
 			if (IsValid())
-			{
 				AkBankManager.LoadBank(Name, decodeBank, saveDecodedBank);
-			}
 		}
 
 		public void LoadAsync(AkCallbackManager.BankCallback callback = null)
 		{
 			if (IsValid())
-			{
 				AkBankManager.LoadBankAsync(Name, callback);
-			}
 		}
 
 		public void Unload()
 		{
 			if (IsValid())
-			{
 				AkBankManager.UnloadBank(Name);
-			}
 		}
 #endif
 	}

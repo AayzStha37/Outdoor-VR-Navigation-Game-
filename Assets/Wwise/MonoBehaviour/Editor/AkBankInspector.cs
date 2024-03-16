@@ -22,55 +22,42 @@ public class AkBankInspector : AkBaseInspector
 {
 	private readonly AkUnityEventHandlerInspector m_LoadBankEventHandlerInspector = new AkUnityEventHandlerInspector();
 	private readonly AkUnityEventHandlerInspector m_UnloadBankEventHandlerInspector = new AkUnityEventHandlerInspector();
-	private UnityEditor.SerializedProperty loadAsync;
 
+#if !(AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES)
+	private UnityEditor.SerializedProperty loadAsync;
 	private UnityEditor.SerializedProperty decode;
 	private UnityEditor.SerializedProperty saveDecoded;
-
-	private UnityEditor.SerializedProperty overrideLoadAsync;
+#endif
 
 	private void OnEnable()
 	{
 		m_LoadBankEventHandlerInspector.Init(serializedObject, "triggerList", "Load On: ", false);
 		m_UnloadBankEventHandlerInspector.Init(serializedObject, "unloadTriggerList", "Unload On: ", false);
 
+#if !(AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES)
+		loadAsync = serializedObject.FindProperty("loadAsynchronous");
 		decode = serializedObject.FindProperty("decodeBank");
 		saveDecoded = serializedObject.FindProperty("saveDecodedBank");
-
-		loadAsync = serializedObject.FindProperty("loadAsynchronous");
-		overrideLoadAsync = serializedObject.FindProperty("overrideLoadSetting");
+#endif
 	}
 
 	public override void OnChildInspectorGUI()
 	{
 		m_LoadBankEventHandlerInspector.OnGUI();
 		m_UnloadBankEventHandlerInspector.OnGUI();
-
-		using (new UnityEditor.EditorGUILayout.VerticalScope("box"))
-		{
-			UnityEditor.EditorGUILayout.PropertyField(overrideLoadAsync, new UnityEngine.GUIContent("Override Load Setting:"));
-			if (overrideLoadAsync.boolValue)
-			{
-				UnityEditor.EditorGUILayout.PropertyField(loadAsync, new UnityEngine.GUIContent("Load Bank Asynchronously:"));
-			}
-		}
-
 #if !(AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES)
 		using (new UnityEditor.EditorGUILayout.VerticalScope("box"))
 		{
+			UnityEditor.EditorGUILayout.PropertyField(loadAsync, new UnityEngine.GUIContent("Asynchronous:"));
 			UnityEditor.EditorGUILayout.PropertyField(decode, new UnityEngine.GUIContent("Decode compressed data:"));
 
 			if (!decode.boolValue)
-			{
 				return;
-			}
 
 			var oldSaveDecodedValue = saveDecoded.boolValue;
 			UnityEditor.EditorGUILayout.PropertyField(saveDecoded, new UnityEngine.GUIContent("Save decoded bank:"));
 			if (!oldSaveDecodedValue || saveDecoded.boolValue)
-			{
 				return;
-			}
 
 			var bank = target as AkBank;
 			var decodedBankPath = System.IO.Path.Combine(AkBasePathGetter.Get().DecodedBankFullPath, bank.data.Name + ".bnk");

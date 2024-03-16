@@ -17,8 +17,8 @@ Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEngine.AddComponentMenu("Wwise/AkEnvironment")]
-[UnityEngine.ExecuteInEditMode]
 [UnityEngine.RequireComponent(typeof(UnityEngine.Collider))]
+[UnityEngine.ExecuteInEditMode]
 /// @brief Use this component to define a reverb zone. This needs to be added to a collider object to work properly. See \ref unity_use_AkEnvironment_AkEnvironmentPortal.
 /// @details This component can be attached to any collider. You can specify a roll-off to fade-in/out of the reverb.  
 /// The reverb parameters will be defined in the Wwise project, by the sound designer.  All AkGameObj that are 
@@ -61,6 +61,7 @@ public class AkEnvironment : UnityEngine.MonoBehaviour
 		{
 			UnityEngine.GUIUtility.hotControl = 0;
 			data.ObjectReference = reference;
+			AkWwiseTypes.DragAndDropObjectReference = null;
 		}
 #endif
 

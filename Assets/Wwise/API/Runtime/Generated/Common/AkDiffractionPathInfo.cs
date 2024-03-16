@@ -76,9 +76,6 @@ public class AkDiffractionPathInfo : global::System.IDisposable {
   public float obstructionValue { set { AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_obstructionValue_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_obstructionValue_get(swigCPtr); } 
   }
 
-  public float occlusionValue { set { AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_occlusionValue_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_occlusionValue_get(swigCPtr); } 
-  }
-
   public static int GetSizeOf() { return AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_GetSizeOf(); }
 
   public UnityEngine.Vector3 GetNodes(uint idx) { return AkSoundEnginePINVOKE.CSharp_AkDiffractionPathInfo_GetNodes(swigCPtr, idx); }

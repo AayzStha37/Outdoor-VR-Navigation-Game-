@@ -1496,32 +1496,32 @@
         },
         {
             "name": "Controller velocity",
-            "id": "f6cd5c14-0d5a-4491-afb1-5204e13c7763",
+            "id": "3d7b9f1c-858d-457f-941a-de602c8e2e54",
             "actions": [
                 {
                     "name": "Right Controller Velocity",
-                    "type": "Button",
-                    "id": "468ad924-be8c-42da-b658-f0daf8c8abde",
-                    "expectedControlType": "Button",
+                    "type": "Value",
+                    "id": "7d8a832f-0702-4864-9026-28576fa042ca",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Left Controller Velocity",
-                    "type": "Button",
-                    "id": "f6acb3c0-add4-4056-904e-180a2e0279cc",
-                    "expectedControlType": "Button",
+                    "type": "Value",
+                    "id": "3b5107b0-84b7-4154-919f-95546b407725",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "6a729d99-50a5-4aeb-aa30-7166d399bfad",
-                    "path": "<OculusTouchController>{LeftHand}/devicePose/velocity",
+                    "id": "71d89e6e-745b-487a-8140-af8e38db9a84",
+                    "path": "<OculusTouchController>{RightHand}/devicePose/velocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "Continuous Move",
@@ -1531,7 +1531,7 @@
                 },
                 {
                     "name": "",
-                    "id": "5f41f2e6-6cd6-4ec6-8455-ed017e5fc3df",
+                    "id": "c4c5f755-1191-4ab3-9be7-27e44986e6f6",
                     "path": "<OculusTouchController>{LeftHand}/devicePose/velocity",
                     "interactions": "",
                     "processors": "",

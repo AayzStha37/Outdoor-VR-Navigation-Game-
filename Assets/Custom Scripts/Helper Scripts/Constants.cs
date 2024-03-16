@@ -24,7 +24,7 @@ public static class Constants
     public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
     public const string VEHCILE_TAG = "Vehicle";
     public const string VEHCILE_DUMMY_TAG = "Dummy_vehicle";
-    public const string MAIN_CHARACTER_BODY = "Main Character First Person Body";
+    public const string MAIN_CHARACTER_BODY = "Main Character First Person";
     public static List<string> COLLIDER_TAG_LIST = new List<string>{TEXTURE_GRASS, TEXTURE_ASPHALT, TEXTURE_GRAVEL, TEXTURE_SIDEWALK, TEXTURE_METAL};
     public const string POLICE_VEHICLE_PREFAB_NAME= "Police";
     //Scene names constant

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7A5A4DBF-E492-445C-8015-E763B7B2FFF2}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{7A5A4DBF-E492-445C-8015-E763B7B2FFF2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="WhiteCane_Interaction" ID="{37AF1034-A44A-4F9D-A017-D8C431B51B62}">
+					<ObjectInclusionList>
+						<ObjectRef Name="GroundSweepEvent" ID="{CC0B10EE-F0AF-4EB8-84FC-C3F5B6E07122}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Start_Scene_Traffic" ID="{4F2F9D9A-F2F7-4174-BAD9-4DD8F7FC3241}">
+					<ObjectInclusionList>
+						<ObjectRef Name="StartSceneTrafficSoundEvent" ID="{23AF9CFA-15CD-4809-AA7E-113417C09EB0}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="TrafficLight_Walk" ID="{C24A8F31-FB79-4B96-82F6-30A96A1EE31A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="TrafficLightWalkSoundEvent" ID="{8313FE65-3974-4661-939C-CAF8D3EF86A5}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="TrafficLight_Wait" ID="{C1D93FF9-F0F5-48DB-A877-DDDCF3D55082}">
+					<ObjectInclusionList>
+						<ObjectRef Name="TrafficLightWaitSoundEvent" ID="{80FC292A-7B0C-4EB3-B004-450A3F983D81}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Character_Footsteps" ID="{47BF3648-9D16-4757-811E-AEB23483E5FB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="FootstepsPlayEvent" ID="{6D29E98F-A5CC-4F3A-A801-B47877D28C8D}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Level_Complete" ID="{800FBA87-5F8A-4C38-97F2-C6A8E07EB229}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LevelCompleteSoundEvent" ID="{B0FEC7EF-16E9-484A-B660-791B9A431FC9}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambient_Sounds" ID="{896AC0B2-91FF-4742-A26D-B3B2A916FECF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AmbientSoundEvent" ID="{5CF474DE-7923-4040-8126-F9C210E22557}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Vehicle_Motion_Bank" ID="{BE5C9DB1-FCA4-4821-94EF-5F5BD44C3E91}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VehicleInMotionEvent" ID="{9ED4A838-66DF-4296-B264-4F71E12FC6CB}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Vehicle_Stationary_Bank" ID="{C911665C-7AAE-43F0-8A5A-807C8A4919A7}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VehicleStaionaryEvent" ID="{903CBC02-4163-41F8-960D-ED5CB76B9EB8}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Police_Siren_Bank" ID="{81B4AA15-26CB-4CFA-8289-7C225D4B8115}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayPoliceSirenEvent" ID="{52FE4CA6-7406-4DE1-8E96-5BB5867397DF}" WorkUnitID="{69BD0252-896B-44F7-8D65-B3593985C5EB}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Children_palying
   id: 2364011221
   guid: 9F92C62F-3121-4222-8A5C-43B7BCEB341B
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 51177f75f5f6e1847b914c542cd9b9d2,
     type: 2}

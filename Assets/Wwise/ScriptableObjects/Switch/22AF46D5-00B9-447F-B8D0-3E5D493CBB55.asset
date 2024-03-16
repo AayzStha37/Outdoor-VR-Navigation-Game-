@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Road
   id: 2110808655
   guid: 22AF46D5-00B9-447F-B8D0-3E5D493CBB55
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: ae4d4fdaf05d2d94885fdfb79033ee0e,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: cc8b520cad9210f49b9c5009e4af1abd,
     type: 2}

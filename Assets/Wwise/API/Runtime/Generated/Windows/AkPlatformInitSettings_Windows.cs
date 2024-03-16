@@ -94,8 +94,5 @@ public class AkPlatformInitSettings : global::System.IDisposable {
   public uint uMaxSystemAudioObjects { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uMaxSystemAudioObjects_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_uMaxSystemAudioObjects_get(swigCPtr); } 
   }
 
-  public bool bEnableDirectInputSupport { set { AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_bEnableDirectInputSupport_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkPlatformInitSettings_bEnableDirectInputSupport_get(swigCPtr); } 
-  }
-
 }
 #endif // #if (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || UNITY_EDITOR_WIN

@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 2164580029783208124}
   - component: {fileID: 2164580029783208125}
   - component: {fileID: 5905550089540075213}
-  - component: {fileID: 5952577969667770354}
   m_Layer: 0
   m_Name: WwiseGlobal_T2_T3
   m_TagString: Untagged
@@ -57,7 +56,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 21aa90dd31da9704bb0b3ab7ab2702dd,
+    WwiseObjectReference: {fileID: 11400000, guid: 74c21ac6b515c474081e1d2dbbe3b202,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -82,7 +81,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8ae29f1d9a6a2724eb207efa63c4ed2a,
+    WwiseObjectReference: {fileID: 11400000, guid: 76c45bd4ad1581f489a49da7e5a057c6,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -107,7 +106,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 778a5f92925cde5459a98a9688b661bd,
+    WwiseObjectReference: {fileID: 11400000, guid: 27c5e8a3f1a6314469a081f06bb00b3d,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -132,7 +131,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e13390e649a20aa47acd4416df891866,
+    WwiseObjectReference: {fileID: 11400000, guid: 614175ffce0c83649bc6cbfe4b2ecc09,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -157,7 +156,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 61224aa0a59030247b5eb91c5162b78b,
+    WwiseObjectReference: {fileID: 11400000, guid: 97dd644c9449f214ead3223712efe4fb,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -182,7 +181,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1f1f1ad42bac12742a7262e9b359afa9,
+    WwiseObjectReference: {fileID: 11400000, guid: dc70271a6ccc066419b2b5347e689062,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -207,7 +206,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 29538093e0ce49347a52a93d3f5b86d0,
+    WwiseObjectReference: {fileID: 11400000, guid: c1931963f6fc17e42b1f67c6153a7fe6,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -232,7 +231,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88d97592611aa5240bc2f1676d360002,
+    WwiseObjectReference: {fileID: 11400000, guid: 76d2ef39921acac47a45546d6c8a8ec9,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -240,29 +239,3 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &5952577969667770354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2164580029783208119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37298354ae841a64e9fbaffaaea76b9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 504a0e34d3f6f6241bfe6269189a3ec9,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0

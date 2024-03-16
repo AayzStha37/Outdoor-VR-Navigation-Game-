@@ -35,6 +35,19 @@ public abstract class AkTriggerBase : UnityEngine.MonoBehaviour
 
 		var baseType = typeof(AkTriggerBase);
 
+#if UNITY_WSA && !UNITY_EDITOR
+		var baseTypeInfo = System.Reflection.IntrospectionExtensions.GetTypeInfo(baseType);
+		var typeInfos = baseTypeInfo.Assembly.DefinedTypes;
+
+		foreach (var typeInfo in typeInfos)
+		{
+			if (typeInfo.IsClass && (typeInfo.IsSubclassOf(baseType) || baseTypeInfo.IsAssignableFrom(typeInfo) && baseType != typeInfo.AsType()))
+			{
+				var typeName = typeInfo.Name;
+				derivedTypes.Add(AkUtilities.ShortIDGenerator.Compute(typeName), typeName);
+			}
+		}
+#else
 		var types = baseType.Assembly.GetTypes();
 
 		for (var i = 0; i < types.Length; i++)
@@ -46,6 +59,7 @@ public abstract class AkTriggerBase : UnityEngine.MonoBehaviour
 				derivedTypes.Add(AkUtilities.ShortIDGenerator.Compute(typeName), typeName);
 			}
 		}
+#endif
 
 		//Add the Awake, Start and Destroy triggers and build the displayed list.
 		derivedTypes.Add(AkUtilities.ShortIDGenerator.Compute("Awake"), "Awake");

@@ -222,23 +222,6 @@ public enum AkMonitorErrorCode {
   ErrorCode_IODeviceInitFailed,
   ErrorCode_SwitchListEmpty,
   ErrorCode_NoSwitchSelected,
-  ErrorCode_FilePermissionError,
-  ErrorCode_SetEffectOnRendered,
-  ErrorCode_GeometryNotWatertight,
-  ErrorCode_CannotInitialize3DAudio,
-  ErrorCode_CannotInitializeInputCallbacks,
-  ErrorCode_CannotConnectAVAudioEngineSource,
-  ErrorCode_ChannelConfigRequestDenied,
-  ErrorCode_MediaUpdatedFromWwise,
-  ErrorCode_MediaErrorFromWwise,
-  ErrorCode_OutputAlreadyExists,
-  ErrorCode_UnknownStateGroup,
-  ErrorCode_MediaErrorWwiseMRUFull,
-  ErrorCode_AudioOut2ContextCreateError,
-  ErrorCode_AudioOut2UserCreateError,
-  ErrorCode_FeedbackOnAudioObjectsBus,
-  ErrorCode_AssetSwapEnabled,
-  ErrorCode_SpatialAudio_SiblingPortal,
   Num_ErrorCodes
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

@@ -423,7 +423,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7cc0736e9dab9564595c036bbd322475,
+    WwiseObjectReference: {fileID: 11400000, guid: ea6e0a785e6867d4d99e9974530caabc,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0ace0d65df6427f4ca29e13bde9a479e,
+    WwiseObjectReference: {fileID: 11400000, guid: 825a77e0edc87854eb61927dbc218415,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0

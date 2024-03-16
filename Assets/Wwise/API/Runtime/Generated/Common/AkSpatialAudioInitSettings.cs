@@ -68,9 +68,6 @@ public class AkSpatialAudioInitSettings : global::System.IDisposable {
   public uint uMaxDiffractionOrder { set { AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uMaxDiffractionOrder_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uMaxDiffractionOrder_get(swigCPtr); } 
   }
 
-  public uint uMaxEmitterRoomAuxSends { set { AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uMaxEmitterRoomAuxSends_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uMaxEmitterRoomAuxSends_get(swigCPtr); } 
-  }
-
   public uint uDiffractionOnReflectionsOrder { set { AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uDiffractionOnReflectionsOrder_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkSpatialAudioInitSettings_uDiffractionOnReflectionsOrder_get(swigCPtr); } 
   }
 

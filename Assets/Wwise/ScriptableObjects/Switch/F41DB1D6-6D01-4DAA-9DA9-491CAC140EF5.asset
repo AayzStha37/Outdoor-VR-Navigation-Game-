@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Crowd_ambient_noise
   id: 1073138942
   guid: F41DB1D6-6D01-4DAA-9DA9-491CAC140EF5
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3ee37479f5223be4390e00d4bcf57c38,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 51177f75f5f6e1847b914c542cd9b9d2,
     type: 2}

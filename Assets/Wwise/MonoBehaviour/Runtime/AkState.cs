@@ -17,7 +17,6 @@ Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEngine.AddComponentMenu("Wwise/AkState")]
-[UnityEngine.ExecuteInEditMode]
 [UnityEngine.DefaultExecutionOrder(-20)]
 /// @brief This will call \c AkSoundEngine.SetState() whenever the selected Unity event is triggered. For example this component could be set on a Unity collider to trigger when an object enters it.
 /// \sa 
@@ -29,19 +28,6 @@ public class AkState : AkDragDropTriggerHandler
 {
 	public AK.Wwise.State data = new AK.Wwise.State();
 	protected override AK.Wwise.BaseType WwiseType { get { return data; } }
-	
-	protected override void Awake()
-	{
-		base.Awake();
-#if UNITY_EDITOR
-		var reference = AkWwiseTypes.DragAndDropObjectReference;
-		if (reference)
-		{
-			UnityEngine.GUIUtility.hotControl = 0;
-			data.ObjectReference = reference;
-		}
-#endif
-	}
 
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
 	{

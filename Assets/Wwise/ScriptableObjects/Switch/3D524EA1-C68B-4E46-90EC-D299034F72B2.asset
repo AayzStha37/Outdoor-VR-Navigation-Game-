@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Bus
   id: 714721605
   guid: 3D524EA1-C68B-4E46-90EC-D299034F72B2
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: ce73f0aafda9588408cb9f965e52b5db,
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 379e85d89b9a3e94ea3185b7b1e3efaa,
     type: 2}

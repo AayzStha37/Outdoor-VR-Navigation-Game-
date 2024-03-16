@@ -19,6 +19,7 @@ Copyright (c) 2024 Audiokinetic Inc.
 /// @brief Use this component to define an area that straddles two different AkEnvironment's zones and allow mixing between both zones. \ref unity_use_AkEnvironment_AkEnvironmentPortal
 [UnityEngine.AddComponentMenu("Wwise/AkEnvironmentPortal")]
 [UnityEngine.RequireComponent(typeof(UnityEngine.BoxCollider))]
+[UnityEngine.ExecuteInEditMode]
 public class AkEnvironmentPortal : UnityEngine.MonoBehaviour
 {
 	public const int MAX_ENVIRONMENTS_PER_PORTAL = 2;

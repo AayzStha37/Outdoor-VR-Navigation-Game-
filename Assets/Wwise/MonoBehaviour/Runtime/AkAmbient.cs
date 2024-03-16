@@ -64,21 +64,18 @@ public class AkAmbient : AkEvent
 				return;
 			}
 #endif
-		if (multiPositionTypeLabel == MultiPositionTypeLabel.MultiPosition_Mode)
+        if (multiPositionTypeLabel == MultiPositionTypeLabel.MultiPosition_Mode)
 		{
-			var gameObj = gameObject.GetComponents<AkGameObj>();
-			for (var i = 1; i < gameObj.Length; i++)
-			{
+            var gameObj = gameObject.GetComponents<AkGameObj>();
+			for (var i = 0; i < gameObj.Length; i++)
 				gameObj[i].enabled = false;
-			}
+
 			AkMultiPosEvent eventPosList;
 
 			if (multiPosEventTree.TryGetValue(data.Id, out eventPosList))
 			{
 				if (!eventPosList.list.Contains(this))
-				{
 					eventPosList.list.Add(this);
-				}
 			}
 			else
 			{
@@ -89,7 +86,8 @@ public class AkAmbient : AkEvent
 
 			var positionArray = BuildMultiDirectionArray(eventPosList);
 			//Set multiple positions
-			AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort) positionArray.Count, MultiPositionType);
+			AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort) positionArray.Count,
+				MultiPositionType);
 		}
 		base.OnEnable();
 	}
@@ -102,9 +100,7 @@ public class AkAmbient : AkEvent
 		{
 			var gameObj = gameObject.GetComponents<AkGameObj>();
 			for (var i = 0; i < gameObj.Length; i++)
-			{
 				gameObj[i].enabled = true;
-			}
 		}
 		else if (multiPositionTypeLabel == MultiPositionTypeLabel.Large_Mode)
 		{
@@ -114,6 +110,10 @@ public class AkAmbient : AkEvent
 				return;
 			}
 #endif
+			var gameObj = gameObject.GetComponents<AkGameObj>();
+			for (var i = 0; i < gameObj.Length; i++)
+				gameObj[i].enabled = false;
+
 			var positionArray = BuildAkPositionArray();
 			AkSoundEngine.SetMultiplePositions(gameObject, positionArray, (ushort)positionArray.Count, MultiPositionType);
 		}
@@ -132,15 +132,14 @@ public class AkAmbient : AkEvent
 			var eventPosList = multiPosEventTree[data.Id];
 
 			if (eventPosList.list.Count == 1)
-			{
 				multiPosEventTree.Remove(data.Id);
-			}
 			else
 			{
 				eventPosList.list.Remove(this);
 
 				var positionArray = BuildMultiDirectionArray(eventPosList);
-				AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort) positionArray.Count, MultiPositionType);
+				AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort) positionArray.Count,
+					MultiPositionType);
 			}
 		}
 	}
@@ -155,22 +154,16 @@ public class AkAmbient : AkEvent
 		{
 			var multiPositionSoundEmitter = multiPosEventTree[data.Id];
 			if (multiPositionSoundEmitter.eventIsPlaying)
-			{
 				return;
-			}
 
 			multiPositionSoundEmitter.eventIsPlaying = true;
 
 			soundEmitterObject = multiPositionSoundEmitter.list[0].gameObject;
 
 			if (enableActionOnEvent)
-			{
 				data.ExecuteAction(soundEmitterObject, actionOnEventType, (int)transitionDuration * 1000, curveInterpolation);
-			}
 			else
-			{
 				playingId = data.Post(soundEmitterObject, (uint)AkCallbackType.AK_EndOfEvent, multiPositionSoundEmitter.FinishedPlaying);
-			}
 		}
 	}
 

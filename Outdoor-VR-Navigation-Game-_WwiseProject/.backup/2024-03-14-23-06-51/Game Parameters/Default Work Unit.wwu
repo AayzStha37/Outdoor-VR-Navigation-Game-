@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7A27832B-D6D0-4921-9CE0-1213CF39325C}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{7A27832B-D6D0-4921-9CE0-1213CF39325C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CaneInteractionVolume" ID="{EB01578A-EBD7-4EDE-90AA-66838B0FC7D0}"/>
+				<GameParameter Name="CaneInteractionPitch" ID="{A1E06FCC-92BD-40F1-A34A-76B6AE7B9173}"/>
+				<GameParameter Name="CharacterNavSpeed" ID="{4646A315-2412-426A-9AEF-1C4FDB6617D2}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

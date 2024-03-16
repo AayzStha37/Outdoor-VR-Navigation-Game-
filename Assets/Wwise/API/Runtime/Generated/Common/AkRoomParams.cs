@@ -74,8 +74,5 @@ public class AkRoomParams : global::System.IDisposable {
   public bool RoomGameObj_KeepRegistered { set { AkSoundEnginePINVOKE.CSharp_AkRoomParams_RoomGameObj_KeepRegistered_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkRoomParams_RoomGameObj_KeepRegistered_get(swigCPtr); } 
   }
 
-  public uint RoomPriority { set { AkSoundEnginePINVOKE.CSharp_AkRoomParams_RoomPriority_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkRoomParams_RoomPriority_get(swigCPtr); } 
-  }
-
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

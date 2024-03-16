@@ -138,13 +138,8 @@ public class AkPlaylistArray : global::System.IDisposable {
     return ret;
   }
 
-  public AkIterator Insert(AkIterator in_rIter) {
-    AkIterator ret = new AkIterator(AkSoundEnginePINVOKE.CSharp_AkPlaylistArray_Insert__SWIG_0(swigCPtr, AkIterator.getCPtr(in_rIter)), true);
-    return ret;
-  }
-
   public AkPlaylistItem Insert(uint in_uIndex) {
-    global::System.IntPtr cPtr = AkSoundEnginePINVOKE.CSharp_AkPlaylistArray_Insert__SWIG_1(swigCPtr, in_uIndex);
+    global::System.IntPtr cPtr = AkSoundEnginePINVOKE.CSharp_AkPlaylistArray_Insert(swigCPtr, in_uIndex);
     AkPlaylistItem ret = (cPtr == global::System.IntPtr.Zero) ? null : new AkPlaylistItem(cPtr, false);
     return ret;
   }

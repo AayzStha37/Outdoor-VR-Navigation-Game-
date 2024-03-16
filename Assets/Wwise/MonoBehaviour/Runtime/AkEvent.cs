@@ -33,7 +33,6 @@ public class AkEventCallbackMsg
 }
 
 [UnityEngine.AddComponentMenu("Wwise/AkEvent")]
-[UnityEngine.ExecuteInEditMode]
 [UnityEngine.RequireComponent(typeof(AkGameObj))]
 /// @brief Helper class that knows a Wwise Event and when to trigger it in Unity. As of 2017.2.0, the AkEvent inspector has buttons for play/stop, play multiple, stop multiple, and stop all.
 /// Play/Stop will play or stop the event such that it can be previewed both in edit mode and play mode. When multiple objects are selected, Play Multiple and Stop Multiple will play or stop the associated AkEvent for each object.
@@ -84,19 +83,6 @@ public class AkEvent : AkDragDropTriggerHandler
 	public float transitionDuration = 0.0f;
 
 	private AkEventCallbackMsg EventCallbackMsg = null;
-	
-	protected override void Awake()
-	{
-		base.Awake();
-#if UNITY_EDITOR
-		var reference = AkWwiseTypes.DragAndDropObjectReference;
-		if (reference)
-		{
-			UnityEngine.GUIUtility.hotControl = 0;
-			data.ObjectReference = reference;
-		}
-#endif
-	}
 
 	protected override void Start()
 	{
@@ -106,9 +92,7 @@ public class AkEvent : AkDragDropTriggerHandler
 #endif
 
 		if (useCallbacks)
-		{
 			EventCallbackMsg = new AkEventCallbackMsg { sender = gameObject };
-		}
 
 		soundEmitterObject = gameObject;
 
@@ -121,9 +105,7 @@ public class AkEvent : AkDragDropTriggerHandler
 		EventCallbackMsg.info = in_info;
 
 		for (var i = 0; i < Callbacks.Count; ++i)
-		{
 			Callbacks[i].CallFunction(EventCallbackMsg);
-		}
 	}
 
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)

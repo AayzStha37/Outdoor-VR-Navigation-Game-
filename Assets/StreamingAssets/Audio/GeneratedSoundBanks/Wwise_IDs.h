@@ -52,8 +52,8 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
-                static const AkUniqueID NULL = 784127654U;
                 static const AkUniqueID ROAD = 2110808655U;
                 static const AkUniqueID SIDEWALK = 3137249879U;
             } // namespace SWITCH

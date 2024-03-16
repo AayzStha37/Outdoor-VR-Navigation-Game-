@@ -27,7 +27,7 @@ public enum AKRESULT {
   AK_InvalidStateGroup = 20,
   AK_ChildAlreadyHasAParent = 21,
   AK_InvalidLanguage = 22,
-  AK_CannotAddItselfAsAChild = 23,
+  AK_CannotAddItseflAsAChild = 23,
   AK_InvalidParameter = 31,
   AK_ElementAlreadyInList = 35,
   AK_PathNotFound = 36,
@@ -83,11 +83,6 @@ public enum AKRESULT {
   AK_AlreadyInitialized = 101,
   AK_NotInitialized = 102,
   AK_FilePermissionError = 103,
-  AK_UnknownFileError = 104,
-  AK_TooManyConcurrentOperations = 105,
-  AK_InvalidFileSize = 106,
-  AK_Deferred = 107,
-  AK_FilePathTooLong = 108,
-  AK_InvalidState = 109
+  AK_UnknownFileError = 104
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

@@ -27,6 +27,10 @@ Copyright (c) 2024 Audiokinetic Inc.
 /// - AK::SpatialAudio
 public partial class AkSoundEngine
 {
+#if UNITY_EDITOR
+	public static bool EditorIsSoundEngineLoaded { get; set; }
+#endif
+
 	#region String Marshalling
 
 	/// <summary>
@@ -121,24 +125,10 @@ public partial class AkSoundEngine
 	/// <returns></returns>
 	public static AKRESULT UnregisterGameObj(UnityEngine.GameObject gameObject)
 	{
-		if(gameObject == null)
-		{
-			return AKRESULT.AK_Success;
-		}
 		var id = GetAkGameObjectID(gameObject);
 		var res = (AKRESULT) AkSoundEnginePINVOKE.CSharp_UnregisterGameObjInternal(id);
 		PostUnregisterGameObjUserHook(res, gameObject, id);
 		return res;
-	}
-
-	/// <summary>
-	///     Unregisters all Game Objects.
-	/// </summary>
-	/// <returns></returns>
-	public static void UnregisterAllGameObjects()
-	{
-		AkSoundEngine.UnregisterAllGameObj();
-		ClearRegisteredGameObjects();
 	}
 	#endregion
 
@@ -211,12 +201,6 @@ public partial class AkSoundEngine
 	/// <param name="id">The ulong returned from GameObjectHash that represents this GameObject in Wwise.</param>
 	static partial void PostUnregisterGameObjUserHook(AKRESULT result, UnityEngine.GameObject gameObject, ulong id);
 
-	/// <summary>
-	///     Unregisters all Game Objects.
-	/// </summary>
-	/// <returns></returns>
-	static partial void ClearRegisteredGameObjects();
-
 	#endregion
 
 	#region Deprecation Strings
@@ -226,7 +210,6 @@ public partial class AkSoundEngine
 	public const string Deprecation_2019_2_2 = "This functionality is deprecated as of Wwise v2019.2.2 and will be removed in a future release.";
 	public const string Deprecation_2021_1_0 = "This functionality is deprecated as of Wwise v2021.1.0 and will be removed in a future release.";
 	public const string Deprecation_2022_1_0 = "This functionality is deprecated as of Wwise v2022.1.0 and will be removed in a future release.";
-	public const string Deprecation_2023_1_0 = "This functionality is deprecated as of Wwise v2023.1.0 and will be removed in a future release.";
 	#endregion
 
 	#region GameObject wrappers
