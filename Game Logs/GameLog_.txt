@@ -1,2 +1,38 @@
 GAMELOG: Participant number :  logging started
 GAMELOG: Task 2 started for participant
+GAMELOG: Participant number :  logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: Participant number : 11 logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.89 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.15 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.14 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.15 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: T1.2 started
+GAMELOG: Timer stopped. Task Completion time: 1.59 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.17 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.18 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.15 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 0.17 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Task1Eventsystem : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Task1Eventsystem : MonoBehaviour
     Vector3 customPosition = new Vector3(-190.070007f,-6.01000023f,105.050003f);
     public TMP_Text textfield;
     private SceneDataTransfer dataTransfer;
+    private int buttonClickCount = 0;
+    public Button nextButtonGameObject;
     private void Start()
     {
         Debug.Log("GAMELOG: "+getTaskname(currentIndex)+" started");
@@ -30,17 +33,17 @@ public class Task1Eventsystem : MonoBehaviour
     }
 
     public void NextTaskButtonClickAction()
-    {
-        
-        if (instantiatedObject != null)
-        {
-            Destroy(instantiatedObject); // Destroy the previously instantiated object
-        }
+    {   
+        if(++buttonClickCount==2)      
+            nextButtonGameObject.interactable = false;    
 
+        if (instantiatedObject != null)
+                Destroy(instantiatedObject); // Destroy the previously instantiated object
+            
         // Increment the index to cycle through the prefab list
         currentIndex = (currentIndex + 1) % prefabsToInstantiate.Count;
         Debug.Log("GAMELOG: "+getTaskname(currentIndex)+" started");
-        InstantiateObject(customPosition); 
+        InstantiateObject(customPosition);    
     }
 
     private void InstantiateObject(Vector3 position)

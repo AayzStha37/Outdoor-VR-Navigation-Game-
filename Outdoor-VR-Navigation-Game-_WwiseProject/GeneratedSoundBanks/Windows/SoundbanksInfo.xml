@@ -961,7 +961,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{A6E8C61F-C849-7178-7B0F-8B91BBAE68AE}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{24CC253F-8D18-9EC0-4125-EB03D8BEB132}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -1785,5 +1785,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{36E52E36-A56D-BD31-9F9C-1E8CB78EAB29}</FileHash>
+	<FileHash>{82580BAE-BA1C-07C9-2320-A6198A43EDBB}</FileHash>
 </SoundBanksInfo>

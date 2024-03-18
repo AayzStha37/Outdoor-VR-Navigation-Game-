@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /**
-This function is currently not in use and is replace by Task1SurfaceRendererSystem.cs
+This function is currently not in use and is replaced by Task1SurfaceRendererSystem.cs
 **/
 
 [System.Serializable]
@@ -54,10 +54,11 @@ public class Task1TextueControllerSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {        
-        storeTaskCompletiontime();
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            logTaskCompetionTime();
+        storeTaskCompletiontime();        
+    }
+
+    public void NextSubTaskButtonClicked(){
+        logTaskCompetionTime();
             //Task 1.1 : Both audio and haptics
             if(gameObject.CompareTag("Task 1.1")){
                 currentIndex = (currentIndex + 1) % dualTexturePairsList.Count;
@@ -94,7 +95,6 @@ public class Task1TextueControllerSystem : MonoBehaviour
 
                 texture.GetComponentInChildren<MeshRenderer>().material = getMaterialData(singleTextureOccurenceList[currentIndex]);
             }
-        }            
     }
 
     private void logTaskCompetionTime()

@@ -20,6 +20,7 @@ public class Task1SurfaceRendererSystem : MonoBehaviour
     private  Vector3 secondTaskSurfacePosition = new Vector3(0.627984107f,-0.0399999619f,-2.45160246f);
     private  Vector3 secondTaskSurfaceScale = new Vector3(185.28389f,502.727997f,100.000008f);
     private  Vector3 surfaceRotation = new Vector3(270f,0f,0f);
+    private int spcaeBarPressCount = 0;
 
     private List<GameObject> instantiatedGameObjectList = new List<GameObject>();
     void Start()
@@ -32,11 +33,18 @@ public class Task1SurfaceRendererSystem : MonoBehaviour
         storeTaskCompletiontime();
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            spcaeBarPressCount++;
             LogTaskCompetionTime();
             DestroyInstantiatedObjects();
-            RenderTaskBasedSurfaces();
+            RenderTaskBasedSurfaces(spcaeBarPressCount);
         }            
     }
+
+    public void NextSubTaskButtonClicked(){
+        LogTaskCompetionTime();
+            
+    }
+
     
     private void InitTextureList()
     {
@@ -53,13 +61,13 @@ public class Task1SurfaceRendererSystem : MonoBehaviour
         }
     }
 
-    private void RenderTaskBasedSurfaces()
+    private void RenderTaskBasedSurfaces(int spcaeBarPressCount)
     {
-        if (gameObject.CompareTag(Constants.TASK1_FIRST_TASK_OBJECT_TAG)) 
+        if (gameObject.CompareTag(Constants.TASK1_FIRST_TASK_OBJECT_TAG) && spcaeBarPressCount<=5) 
             //Task 1.1 : Both audio and haptics
             GenerateSurfacePair(dualTexturePairsList, currentIndex, firstTaskFirstSurfacePosition, firstTaskSecondSurfacePosition, firstTaskSurfaceScale);
 
-        else if (gameObject.CompareTag(Constants.TASK1_SECOND_TASK_OBJECT_TAG) || gameObject.CompareTag(Constants.TASK1_THIRD_TASK_OBJECT_TAG)) 
+        else if ((gameObject.CompareTag(Constants.TASK1_SECOND_TASK_OBJECT_TAG) || gameObject.CompareTag(Constants.TASK1_THIRD_TASK_OBJECT_TAG)) && spcaeBarPressCount<=4) 
             //Task 1.2 : No haptics and only audio
             //Task 1.3 : No audio and only haptics
             GenerateSingleSurface(singleTextureOccurenceList, currentIndex, secondTaskSurfacePosition, secondTaskSurfaceScale);
