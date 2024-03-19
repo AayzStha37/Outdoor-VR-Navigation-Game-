@@ -1,7 +1,0 @@
-GAMELOG: Participant number : 678 logging started
-GAMELOG: Task 1 started for participant
-GAMELOG: T1.1 started
-GAMELOG: Participant number : 678 logging started
-GAMELOG: Task 2 started for participant
-GAMELOG: Participant number : 678 logging started
-GAMELOG: Task 3 started for participant

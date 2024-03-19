@@ -12,6 +12,5 @@ public class RetreiveAndShowPartcipantDetail : MonoBehaviour
         dataTransfer = FindObjectOfType<SceneDataTransfer>();
         if (dataTransfer != null)
             participantIdInputField.text = dataTransfer.GetTransferredText(); // Display the transferred text
-        
     }
 }

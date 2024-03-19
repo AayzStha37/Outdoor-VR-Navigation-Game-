@@ -10,7 +10,6 @@ public class CustomSceneManager : MonoBehaviour
 {
     private GameLogsStorageHandler logToFile = new GameLogsStorageHandler();
     private string textfieldvalue = null;
-    public TMP_InputField participantIdInputField;
 
     public void LoadTrainingPhaseScene()
     {

@@ -1,3 +1,0 @@
-GAMELOG: Participant number : 2 logging started
-GAMELOG: Task 1 started for participant
-GAMELOG: T1.1 started
