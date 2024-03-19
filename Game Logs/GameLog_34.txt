@@ -1,0 +1,5 @@
+GAMELOG: Participant number : 34 logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: New subtask started
+GAMELOG: Timer started.

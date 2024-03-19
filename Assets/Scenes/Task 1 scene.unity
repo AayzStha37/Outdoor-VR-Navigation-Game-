@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 438365742}
   - component: {fileID: 438365741}
   m_Layer: 5
-  m_Name: Participant ID
+  m_Name: Participant ID text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

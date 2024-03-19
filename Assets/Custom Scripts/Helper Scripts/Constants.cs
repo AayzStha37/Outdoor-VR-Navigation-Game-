@@ -21,7 +21,6 @@ public static class Constants
     public const string WalkSound = "walkSound";
     public const string COLLISION_ON = "ON";
     public const string COLLISION_OFF = "OFF";
-    public const string XR_ORIGIN_MAIN_CHARACTER = "XR origin (Main character)";
     public const string VEHCILE_TAG = "Vehicle";
     public const string VEHCILE_DUMMY_TAG = "Dummy_vehicle";
     public const string MAIN_CHARACTER_BODY = "Main Character First Person";

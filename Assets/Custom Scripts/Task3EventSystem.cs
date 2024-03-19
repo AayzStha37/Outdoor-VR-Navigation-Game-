@@ -75,7 +75,7 @@ public class Task3EventSystem : MonoBehaviour
     {
         GameObject instantiatedObject;
         foreach(GameObject gameObject in prefabsToInstantiate){
-            if(Constants.XR_ORIGIN_MAIN_CHARACTER.Equals(gameObject.name)){
+            if(Constants.MAIN_CHARACTER_BODY.Equals(gameObject.name)){
                 instantiatedObject = Instantiate(gameObject, tuple.Item1, Quaternion.Euler(tuple.Item2));
                 instantiatedObject.AddComponent<Task3CompletionNotfierSystem>();
             }

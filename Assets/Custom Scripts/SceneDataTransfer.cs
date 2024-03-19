@@ -10,8 +10,8 @@ public class SceneDataTransfer : MonoBehaviour
 
     public string StoreInputText()
     {
-        transferredText = inputField.text;
-        return inputField.text;
+       transferredText = inputField.text;
+       return inputField.text;
     }
 
     public string GetTransferredText()

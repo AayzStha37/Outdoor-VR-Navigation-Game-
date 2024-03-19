@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
 
 public class CustomSceneManager : MonoBehaviour
 {
     private GameLogsStorageHandler logToFile = new GameLogsStorageHandler();
+    private string textfieldvalue = null;
+    public TMP_InputField participantIdInputField;
 
     public void LoadTrainingPhaseScene()
     {
         SceneManager.LoadScene("Trainng Scene");
     }
-     public void LoadTaskListUIScene()
+    public void LoadTaskListUIScene()
     {
         SceneManager.LoadScene("Task list UI");
     }
@@ -45,7 +48,7 @@ public class CustomSceneManager : MonoBehaviour
         SceneDataTransfer dataTransfer = FindObjectOfType<SceneDataTransfer>();
         if (dataTransfer != null)
         {
-            string textfieldvalue = dataTransfer.StoreInputText();
+            textfieldvalue = dataTransfer.StoreInputText();
             Debug.Log("GAMELOG: Participant number : "+ textfieldvalue + " logging started"); 
         }else 
              Debug.Log("GAMELOG: ERROR - Failed to store participant info");
