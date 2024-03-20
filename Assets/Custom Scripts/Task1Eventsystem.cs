@@ -10,7 +10,10 @@ public class Task1Eventsystem : MonoBehaviour
     public List<GameObject> prefabsToInstantiate; // List of prefabs to cycle through
     private int currentIndex = 0; // Index to track the current prefab
     private GameObject instantiatedObject; // Reference to the instantiated object
-    Vector3 customPosition = new Vector3(-190.070007f,-6.01000023f,105.050003f);
+    Vector3 customTexturePlaceHolderPosition = new Vector3(-190.070007f,-6.01000023f,105.050003f);
+    Vector3 mainCharacterCustomRotation = new Vector3(0.000169729596f,273.068634f,-5.73561301e-05f);
+    Vector3 mainCharacterCustomPosition = new Vector3(-188.649673f,-4.91631269f,103.509521f);
+    public GameObject mainCharacterGameobjectToAdjust;
     public TMP_Text textfield;
     private SceneDataTransfer dataTransfer;
     private int buttonClickCount = 0;
@@ -18,13 +21,20 @@ public class Task1Eventsystem : MonoBehaviour
     private void Start()
     {
         Debug.Log("GAMELOG: "+getTaskname(currentIndex)+" started");
+        if(mainCharacterGameobjectToAdjust==null)
+            Debug.LogError("The main character gameobject reference is null!");
+        else{
+            mainCharacterGameobjectToAdjust.transform.rotation = Quaternion.Euler(mainCharacterCustomRotation);
+            mainCharacterGameobjectToAdjust.transform.position = mainCharacterCustomPosition;
+        }
+
         dataTransfer = FindObjectOfType<SceneDataTransfer>();
         if (dataTransfer != null)
         {
             textfield.text = "Participant ID: "+dataTransfer.GetTransferredText(); // Display the transferred text
         }else
             textfield.text = "Participant ID: null";
-        InstantiateObject(customPosition);
+        InstantiateObject(customTexturePlaceHolderPosition);
     }
 
     public string getParticipantId()
@@ -43,7 +53,7 @@ public class Task1Eventsystem : MonoBehaviour
         // Increment the index to cycle through the prefab list
         currentIndex = (currentIndex + 1) % prefabsToInstantiate.Count;
         Debug.Log("GAMELOG: "+getTaskname(currentIndex)+" started");
-        InstantiateObject(customPosition);    
+        InstantiateObject(customTexturePlaceHolderPosition);    
     }
 
     private void InstantiateObject(Vector3 position)

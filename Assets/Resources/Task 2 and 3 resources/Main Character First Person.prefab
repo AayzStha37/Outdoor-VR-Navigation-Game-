@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5735881982998594013}
   - component: {fileID: 5735881982998594014}
   - component: {fileID: 5735881982998594015}
-  - component: {fileID: 5735881982998594000}
   - component: {fileID: 5735881982998594001}
   - component: {fileID: 5735881982998594002}
   - component: {fileID: 5735881982998594003}
@@ -19,6 +18,8 @@ GameObject:
   - component: {fileID: 5735881982998594005}
   - component: {fileID: 5735881982998594006}
   - component: {fileID: 5735881982998594007}
+  - component: {fileID: 9186593910921083488}
+  - component: {fileID: 9013335984607633618}
   m_Layer: 0
   m_Name: Main Character First Person
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5735881982998593960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -201.4, y: -5.9, z: 106.93}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 5735881982998593960}
   m_CameraFloorOffsetObject: {fileID: 5735881983393086733}
   m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 0.74
 --- !u!114 &5735881982998594015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,19 +74,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!65 &5735881982998594000
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5735881982998593960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.1274462, z: 1}
-  m_Center: {x: 0, y: 0.91, z: 0}
 --- !u!54 &5735881982998594001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,6 +186,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5d8947e9e1a10459bec3a006b32bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9186593910921083488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735881982998593960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad11e3a685b009a468c1e1f1a6bd055c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverEpsilon: 0.98
+--- !u!136 &9013335984607633618
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735881982998593960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &5735881983393086733
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5735881983393086733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -815,7 +830,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Cane
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3080076208579077890, guid: 0c56c8817143ded4ab019ef7514b1c96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c56c8817143ded4ab019ef7514b1c96, type: 3}
 --- !u!4 &6437785106408784887 stripped
 Transform:
