@@ -19,6 +19,10 @@ public class CustomSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("Task list UI");
     }
+    public void LoadTStudyStartScene()
+    {
+        SceneManager.LoadScene("Study start scene");
+    }
     public void LoadTask1Scene()
     {        
         logToFile.setupGameLogFile();
