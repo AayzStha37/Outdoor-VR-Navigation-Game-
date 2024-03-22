@@ -19284,6 +19284,13 @@
 						<Folder Name="Game notification sounds" ID="{E73DA22B-B29C-4313-AE3C-50FC53AC15E6}" ShortID="662738324">
 							<ChildrenList>
 								<Sound Name="Level complete sound" ID="{55BD11E7-55BB-47E5-90D2-1FFF3DD5430D}" ShortID="494258009">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>
@@ -21487,7 +21494,7 @@
 										<Property Name="LoopCount" Type="int32" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -21866,6 +21873,9 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
 										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Reflect_auxillary_bus" ID="{07FB9610-E7DA-4D83-92A7-ACEAB9DD6EA7}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Wait Audio Clip" ID="{214E519A-4299-4DD4-A058-533948B794CD}">
@@ -21884,6 +21894,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Park conversation" ID="{90AF6D5B-4256-45C8-A568-3848C2CF3244}" ShortID="39206012">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C962BBF9-CB1D-48DB-82D9-5C9AFCF974B6}"/>

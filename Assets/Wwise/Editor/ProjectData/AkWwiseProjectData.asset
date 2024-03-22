@@ -637,7 +637,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2a29fc800c7bb34eb004450a3f983d81
       Path: Events\Default Work Unit\TrafficLightWaitSoundEvent
-      maxAttenuation: 70
+      maxAttenuation: 8
       maxDuration: -1
       minDuration: -1
     - name: TrafficLightWalkSoundEvent
@@ -654,7 +654,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 65fe138374396146939ccaf8d3ef86a5
       Path: Events\Default Work Unit\TrafficLightWalkSoundEvent
-      maxAttenuation: 70
+      maxAttenuation: 8
       maxDuration: -1
       minDuration: -1
     - name: VehicleInMotionEvent
@@ -1248,8 +1248,8 @@ MonoBehaviour:
     m_lastTime: -8584910063454314779
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 140000001500000016000000200000002100000022000000230000002400000025000000
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 1400000015000000160000002000000021000000220000002300000024000000250000002f0000003000000031000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

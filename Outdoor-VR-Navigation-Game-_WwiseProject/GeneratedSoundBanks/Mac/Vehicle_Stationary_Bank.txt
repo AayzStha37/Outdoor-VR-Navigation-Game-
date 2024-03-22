@@ -7,10 +7,19 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	714721605	Bus	Vehicle_Stationary_GameSync			
 	983016381	Car	Vehicle_Stationary_GameSync			
-	2837639985	Taxi	Vehicle_Stationary_GameSync			
-	3112850720	Police_Car	Vehicle_Stationary_GameSync			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1410364352	CaneInteractionPitch			\Default Work Unit\CaneInteractionPitch	
 	2349282220	CaneInteractionVolume			\Default Work Unit\CaneInteractionVolume	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	171332187	Car_Stationary_5	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Car_Stationary_5_6E5DCD2A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Car_Sationary\Car_Stationary_5		820460
+	171916165	Car_Stationary_3	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Car_Stationary_3_F5939943.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Car_Sationary\Car_Stationary_3		675416
+	329457926	Bus_Stationary_3	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Bus_Stationary_3_CE33D2A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Bus_Sationary\Bus_Stationary_3		3116984
+	534012982	Car_Stationary_1	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Car_Stationary_1_9C5DA4AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Car_Sationary\Car_Stationary_1		914008
+	619102524	Car_Stationary_4	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Car_Stationary_4_55E3A7BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Car_Sationary\Car_Stationary_4		634504
+	702114970	Bus_Stationary_4	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Bus_Stationary_4_E580D815.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Bus_Sationary\Bus_Stationary_4		1294584
+	740135968	Car_Stationary_2	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Car_Stationary_2_F700FB86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Car_Sationary\Car_Stationary_2		842628
+	744971500	Bus_Stationary_1	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Bus_Stationary_1_57B3EFD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Bus_Sationary\Bus_Stationary_1		3430892
+	1022256533	Bus_Stationary_2	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Bus_Stationary_2_085F4032.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Switches\Vehicle Switches\Vehicle_Sationary\Bus_Sationary\Bus_Stationary_2		247588
 

@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	3123712896	TrafficLightWalkSoundEvent			\Default Work Unit\TrafficLightWalkSoundEvent	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	551432879	Traffic Light Walk Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Walk Audio Clip_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traffic Light Walk Sound		246812
+	551432879	Traffic Light Walk Sound	D:\GEM Lab\GONVI\Outdoor-VR-Navigation-Game-\Outdoor-VR-Navigation-Game-_WwiseProject\.cache\Mac\SFX\Walk Audio Clip_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Sounds\Ambient Sounds\Traffic Light Walk Sound		246812
 

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Platform="Mac" BasePlatform="Mac">
 	<PluginLibs>
+		<PluginLib LibName="Wwise Reflect" LibId="11206659" Type="Effect" DLL="AkReflect" StaticLib="AkReflectFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="SoundSeed Grain" LibId="11993090" Type="Source" DLL="AkSoundSeedGrain" StaticLib="AkSoundSeedGrainSource"/>
 	</PluginLibs>
-	<FileHash>{2DF3E370-A572-513D-8013-5B6E63623995}</FileHash>
+	<FileHash>{086307F7-8DB3-C371-89C8-639DB8452849}</FileHash>
 </PluginInfo>
