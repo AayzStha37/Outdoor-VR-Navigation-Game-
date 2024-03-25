@@ -12,8 +12,8 @@ public class Task3EventSystem : MonoBehaviour
     //TASK 3: Posiiton and Rotation Values of the character 
     private Vector3 firstTask3CustomPosition = new Vector3(-215.770004f,-5.86f,38.8800011f);
     private Vector3 firstTask3CustomRotation = new Vector3(0f,177.499084f,0f);
-    private Vector3 secondTask3CustomPosition = new Vector3(-31.9699993f,-5.89997101f,-10.3400002f);
-    private Vector3 secondTask3CustomRotation = new Vector3(0,197.875702f,0);
+    private Vector3 secondTask3CustomPosition = new Vector3(-261.399994f,-4.86755228f,57.1389961f);
+    private Vector3 secondTask3CustomRotation = new Vector3(-1.20392951e-05f,265.726044f,3.55642624e-05f);
 
     public List<GameObject> prefabsToInstantiate; // List of prefabs to cycle through
     private List<GameObject> instantiatedObjectList; // Reference to the instantiated object

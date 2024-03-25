@@ -150,7 +150,6 @@ public class SweepSoundPlayer : MonoBehaviour
         HapticMaterial hapticMaterial = hapticsSelector.GetRandomHapticFile(secondaryCollisionGameObj.tag);
         if(null!=hapticMaterial){
             dynamicHapticMaterial = hapticMaterial;
-            Debug.Log("Chosen Haptic Material : "+dynamicHapticMaterial);
         }else{
             Debug.LogError("Invalid haptic material/Material List Empty");
         }
