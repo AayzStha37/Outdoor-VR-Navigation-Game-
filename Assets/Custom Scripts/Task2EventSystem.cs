@@ -11,8 +11,9 @@ public class Task2EventSystem : MonoBehaviour
     //TASK 2: Posiiton and Rotation Values of the character 
     private Vector3 firstTask2CustomPosition = new Vector3(-200.5f,-5.89997101f,52.1100006f);
     private Vector3 firstTask2CustomRotation = new Vector3(0f,197.875702f,0f);
-    private Vector3 secondTask2CustomPosition = new Vector3(-389.399994f,-5.89997101f,62.3899994f);
-    private Vector3 secondTask2CustomRotation = new Vector3(0f,175.300003f,0f);
+    private Vector3 secondTask2CustomPosition = new Vector3(-358.519958f,-4.86755228f,56.8200493f);
+    private Vector3 secondTask2CustomRotation = new Vector3(3.71701208e-05f,175.300308f,9.36971774e-05f);
+    
 
     public GameObject mainCharacterGameobjectToMove; 
     private List<Tuple<Vector3, Vector3>> characterSpawnPositionAndRotationList = new List<Tuple<Vector3, Vector3>>();

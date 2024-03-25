@@ -518,7 +518,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: de74f45c237940408126f9c210e22557
       Path: Events\Default Work Unit\AmbientSoundEvent
-      maxAttenuation: 25
+      maxAttenuation: 18
       maxDuration: Infinity
       minDuration: 8.345102
     - name: FootstepsPlayEvent
@@ -637,7 +637,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2a29fc800c7bb34eb004450a3f983d81
       Path: Events\Default Work Unit\TrafficLightWaitSoundEvent
-      maxAttenuation: 12
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TrafficLightWalkSoundEvent
@@ -654,7 +654,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 65fe138374396146939ccaf8d3ef86a5
       Path: Events\Default Work Unit\TrafficLightWalkSoundEvent
-      maxAttenuation: 12
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: VehicleInMotionEvent
@@ -1248,7 +1248,7 @@ MonoBehaviour:
     m_lastTime: -8584910063454314779
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
