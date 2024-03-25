@@ -19,7 +19,6 @@ MonoBehaviour:
   - UserSettings.m_EngineLogging
   - UserSettings.m_MaximumNumberOfPositioningPaths
   - UserSettings.m_MemoryCutoffThreshold
-  - UserSettings.m_CommandQueueSize
   - UserSettings.m_SamplesPerFrame
   - UserSettings.m_MainOutputSettings.m_AudioDeviceShareset
   - UserSettings.m_MainOutputSettings.m_DeviceID
@@ -66,12 +65,13 @@ MonoBehaviour:
   - AdvancedSettings.m_MemoryAllocationSizeLimit
   - AdvancedSettings.m_MemoryDebugLevel
   - AdvancedSettings.m_MemorySpanCount
+  - UserSettings.m_CommandQueueSize
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
     m_MaximumNumberOfPositioningPaths: 255
-    m_CommandQueueSize: 262144
+    m_CommandQueueSize: 4294967295
     m_SamplesPerFrame: 512
     m_MainOutputSettings:
       m_AudioDeviceShareset: 

@@ -72,11 +72,11 @@ public class FootstepsTrigger : MonoBehaviour
                 _isPlaying = true;
             }
             //TODO fix this block of code
-            if(_isPlaying){     
-                float characterNavSpeed = character.velocity.magnitude;
-                AkSoundEngine.SetRTPCValue(Constants.RTPC_CharacterNavSpeed,characterNavSpeed);         
-                Debug.Log("RTPC footsteps Volume : " + characterNavSpeed);
-            }
+            // if(_isPlaying){     
+            //     float characterNavSpeed = character.velocity.magnitude;
+            //     AkSoundEngine.SetRTPCValue(Constants.RTPC_CharacterNavSpeed,characterNavSpeed);         
+            //     Debug.Log("RTPC footsteps Volume : " + characterNavSpeed);
+            // }
         }catch(System.Exception e){
             Debug.Log("Exception while playing footsteps audio :" + e);
         }

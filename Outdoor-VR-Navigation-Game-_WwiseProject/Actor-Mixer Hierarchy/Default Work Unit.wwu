@@ -14,7 +14,7 @@
 										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -27,6 +27,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Reflect_auxillary_bus" ID="{07FB9610-E7DA-4D83-92A7-ACEAB9DD6EA7}" WorkUnitID="{8C555E6B-126C-4C6D-8523-8A2D7FDBB0D3}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Vehicle_Motion_GameSync" ID="{FE523478-CA2E-4370-8BE1-0B6019445A7E}" WorkUnitID="{A9876255-C2BC-4690-AAE7-8388B5FECFA1}"/>
@@ -432,7 +435,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3603,7 +3606,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>10</Value>
+										<Value>8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3632,6 +3635,11 @@
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.7"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3675,7 +3683,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 1" ID="{9BCCF632-BFD2-48CA-A363-C94FD03963A1}">
@@ -3812,7 +3820,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 2" ID="{160A1FF1-9F50-47A3-85AC-0F8FF35D5DAF}">
@@ -3931,7 +3939,7 @@
 											<ChildrenList>
 												<SourcePlugin Name="Soundseed Grain" ID="{717CA893-F49C-4F08-82EF-9E846E5D7F43}" ShortID="78391228" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
-														<Property Name="Attack" Type="Real32" Value="42"/>
+														<Property Name="Attack" Type="Real32" Value="34"/>
 														<Property Name="AzimuthMod1Depth" Type="Real32" Value="40"/>
 														<Property Name="Duration" Type="Real32" Value="55"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
@@ -3949,7 +3957,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 3" ID="{9689A6C1-5D00-406D-A404-D850581A79FF}">
@@ -4086,7 +4094,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 4" ID="{D44AE388-3312-4B6A-953E-41148E0F7E0A}">
@@ -4360,7 +4368,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 6" ID="{F2FE96A3-3426-4830-A9AD-4BD01EFC19C8}">
@@ -4497,7 +4505,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 7" ID="{C474EBBC-844C-4E54-8ACE-D70061188B7D}">
@@ -4634,7 +4642,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 8" ID="{54FEC4A8-48BA-4CC2-A880-382428083BE9}">
@@ -4771,7 +4779,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 9" ID="{9261C36C-0F5F-4923-A974-67EA6BEEE127}">
@@ -4908,7 +4916,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 10" ID="{FA4D6B99-0717-4C33-A830-63023DD14482}">
@@ -5045,7 +5053,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 11" ID="{A659CBC2-2FCC-474F-A8A2-46D825254694}">
@@ -5182,7 +5190,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="500"/>
+														<Property Name="Transpose" Type="Real32" Value="50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Sidewalk 12" ID="{65E746F4-740F-41E7-B0AE-64C3F266ADD6}">
@@ -9541,7 +9549,7 @@
 											<ChildrenList>
 												<SourcePlugin Name="Soundseed Grain" ID="{90F6E947-4480-4367-A6FE-0B0C1DACC2D2}" ShortID="770133205" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
 													<PropertyList>
-														<Property Name="Attack" Type="Real32" Value="42"/>
+														<Property Name="Attack" Type="Real32" Value="30.09013"/>
 														<Property Name="AzimuthMod1Depth" Type="Real32" Value="40"/>
 														<Property Name="Duration" Type="Real32" Value="65"/>
 														<Property Name="DurationLink" Type="int32" Value="1"/>
@@ -9559,7 +9567,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 1" ID="{F643F303-E2F3-4BD6-8B72-08368B792023}">
@@ -9696,7 +9704,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 2" ID="{42A7597F-A323-48AB-A53E-B0523411D135}">
@@ -9833,7 +9841,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 3" ID="{086CBA77-8F10-4674-A5E2-6ED84B78D044}">
@@ -9970,7 +9978,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 4" ID="{2CED49E7-8DD1-498E-A0AD-2A98CE8F9081}">
@@ -10107,7 +10115,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 5" ID="{C88C3FE8-EF3A-4EBF-820B-BEA5BF6BF85F}">
@@ -10244,7 +10252,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 6" ID="{3CE5290B-71DF-434B-B3AC-0F4FB10738BC}">
@@ -10381,7 +10389,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 7" ID="{D1CD7383-A6DD-4A72-AAC8-A83ABB587810}">
@@ -10518,7 +10526,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 8" ID="{61713E2F-C493-44E0-BE91-F102E7982066}">
@@ -10655,7 +10663,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 9" ID="{0413A127-B787-40BB-AD27-3F7EFA214223}">
@@ -10792,7 +10800,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 10" ID="{A58309A3-BBBA-42B0-B5C8-1EEF5B425684}">
@@ -10929,7 +10937,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 11" ID="{D9CF8990-0176-459D-ACE9-FB2CE355D0DF}">
@@ -11066,7 +11074,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 12" ID="{3F58998D-EF68-4DB6-8B6C-BA28B22A735A}">
@@ -11340,7 +11348,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 14" ID="{256DB66D-639C-44F9-80CC-B13D47FE71B9}">
@@ -11477,7 +11485,7 @@
 														<Property Name="PositioningSelect" Type="int32" Value="1"/>
 														<Property Name="SelectFreqTimeGrain" Type="int32" Value="1"/>
 														<Property Name="Speed" Type="Real32" Value="0.3"/>
-														<Property Name="Transpose" Type="Real32" Value="-400"/>
+														<Property Name="Transpose" Type="Real32" Value="-50"/>
 													</PropertyList>
 													<ChildrenList>
 														<AudioFileSource Name="Gravel 15" ID="{E7C6B363-65D1-4E99-859C-C4914A931671}">
@@ -19517,7 +19525,7 @@
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-15</Value>
+														<Value>-25</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

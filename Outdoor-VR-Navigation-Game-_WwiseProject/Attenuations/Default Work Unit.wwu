@@ -17,7 +17,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="8"/>
+						<Property Name="RadiusMax" Type="Real64" Value="12"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -33,7 +33,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>8</XPos>
+											<XPos>12</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -60,7 +60,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>8</XPos>
+											<XPos>12</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -466,7 +466,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="25"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -482,7 +482,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -509,7 +509,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>15</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>

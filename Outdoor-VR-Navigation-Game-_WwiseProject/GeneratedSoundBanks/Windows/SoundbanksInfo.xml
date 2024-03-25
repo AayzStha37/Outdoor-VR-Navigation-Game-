@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{8FCF2191-7F8B-79B6-FE9F-1C83DF763DD0}">
+		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{4327A16E-C85E-CCDA-9845-A225388A9AE5}">
 			<ShortName>Vehicle_Stationary_Bank</ShortName>
 			<Path>Vehicle_Stationary_Bank.bnk</Path>
 			<Media>
@@ -51,7 +51,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3013206709" Name="VehicleStaionaryEvent" MaxAttenuation="25" DurationType="Infinite">
+				<Event Id="3013206709" Name="VehicleStaionaryEvent" MaxAttenuation="15" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2268314992" Id="714721605"/>
@@ -88,7 +88,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{4F6AC0B5-5C4C-0210-4658-47F892CAEC76}">
+		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{50ACEC07-2D64-67DC-3204-607A4694E56C}">
 			<ShortName>Vehicle_Motion_Bank</ShortName>
 			<Path>Vehicle_Motion_Bank.bnk</Path>
 			<Media>
@@ -118,7 +118,10 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3804784588" Name="VehicleInMotionEvent" MaxAttenuation="25" DurationType="Infinite">
+				<Event Id="3804784588" Name="VehicleInMotionEvent" MaxAttenuation="15" DurationType="Infinite">
+					<AuxBusRefs>
+						<AuxBusRef Id="3974446485" Name="Reflect_auxillary_bus"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1515766668" Id="983016381"/>
@@ -514,7 +517,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{EFDACFC4-EA13-5AC7-2978-5EA7D813B9A9}">
+		<SoundBank Id="2551573942" Type="User" Language="SFX" Hash="{80EF863E-4E66-DEC1-8B07-2EEE68371A3C}">
 			<ShortName>Police_Siren_Bank</ShortName>
 			<Path>Police_Siren_Bank.bnk</Path>
 			<Media>
@@ -524,7 +527,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="882516764" Name="PlayPoliceSirenEvent" MaxAttenuation="25" DurationType="Infinite">
+				<Event Id="882516764" Name="PlayPoliceSirenEvent" MaxAttenuation="15" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="745296131"/>
 					</MediaRefs>
@@ -961,7 +964,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{24CC253F-8D18-9EC0-4125-EB03D8BEB132}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{D469559D-0C6E-FD76-887E-9C8FEA3B1310}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -1730,7 +1733,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{05D8E5FA-280A-8849-02D1-EB3E1B6B12E7}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{A475A35B-62AE-F407-E83C-BE5CF6E5AE33}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -1740,7 +1743,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="8" DurationType="Infinite">
+				<Event Id="3123712896" Name="TrafficLightWalkSoundEvent" MaxAttenuation="12" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="551432879"/>
 					</MediaRefs>
@@ -1767,7 +1770,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{3DE26CA2-3957-A6F9-1047-CA965C0D74B8}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{331E5ADE-463C-5596-4687-A975105F329B}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
@@ -1777,7 +1780,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" MaxAttenuation="8" DurationType="Infinite">
+				<Event Id="3187816352" Name="TrafficLightWaitSoundEvent" MaxAttenuation="12" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="265156255"/>
 					</MediaRefs>
@@ -1788,5 +1791,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4130B011-F7B1-B2C4-50A8-B513660E9441}</FileHash>
+	<FileHash>{FBDD0D63-9170-E6FA-00CE-E0F02E80FC4D}</FileHash>
 </SoundBanksInfo>

@@ -136,19 +136,19 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.14996338
-      value: 1.503582
+      time: 1
+      value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   velocityThresold: 0.000001
   velocityFactor: 350
-  dampness: 10
+  dampness: 5
   controllerVelocityProperty:
     m_UseReference: 1
     m_Action:
