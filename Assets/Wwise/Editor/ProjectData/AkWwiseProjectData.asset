@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: ba2b62a99ef73d4ea350b6ec9658a420
     GuidInternal: 
-    m_lastTime: -8584910063454314779
+    m_lastTime: -8584910884851853544
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584910063454314779
+    m_lastTime: -8584910884851843312
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6b5e558c6c126d4c85238a2d7fdbb0d3
     GuidInternal: 
-    m_lastTime: -8584910063454390769
+    m_lastTime: -8584910884851914589
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -348,7 +348,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bf4d5a7a92e45c448015e763b7b2fff2
     GuidInternal: 
-    m_lastTime: -8584910063454324982
+    m_lastTime: -8584910884851863695
     List:
     - name: Ambient_Sounds
       guid: b2c06a89ff914247a26db3b2a916fecf
@@ -502,7 +502,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5202bd696b89f7448d65b3593985c5eb
     GuidInternal: 
-    m_lastTime: -8584910063463389778
+    m_lastTime: -8584910884860034858
     List:
     - name: AmbientSoundEvent
       guid: de74f45c237940408126f9c210e22557
@@ -535,7 +535,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8fe9296dcca53a4fa801b47877d28c8d
       Path: Events\Default Work Unit\FootstepsPlayEvent
-      maxAttenuation: 0
+      maxAttenuation: 2
       maxDuration: -1
       minDuration: -1
     - name: GroundSweepEvent
@@ -703,7 +703,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2b83277ad0d621499ce01213cf39325c
     GuidInternal: 
-    m_lastTime: -8584910063463379764
+    m_lastTime: -8584910884860034858
     List:
     - name: CaneInteractionPitch
       guid: cc6fe0a1bd92f140a34a76b6ae7b9173
@@ -759,7 +759,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c2fba61a2b18764ea678ee0c95b1cc54
     GuidInternal: 
-    m_lastTime: -8584910063454319865
+    m_lastTime: -8584910884851853544
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -773,7 +773,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 556287a9bcc29046aae78388b5fecfa1
     GuidInternal: 
-    m_lastTime: -8584910030665292495
+    m_lastTime: -8584908367366296719
     List:
     - name: Ambient_Sounds_Switch
       guid: dc88704a113a424387ce66d417f18dfe
@@ -1245,11 +1245,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 4318730d7b3ddf459a10528a899ee2a1
     GuidInternal: 
-    m_lastTime: -8584910063454314779
+    m_lastTime: -8584910884851853544
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

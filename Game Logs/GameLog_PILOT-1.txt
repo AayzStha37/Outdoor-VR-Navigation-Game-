@@ -1,0 +1,139 @@
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 85.93 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 78.25 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 54.66 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 37.44 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 27.91 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: T1.2 started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 1 started for participant
+GAMELOG: Task 1 started for participant
+GAMELOG: T1.1 started
+GAMELOG: T1.1 started
+GAMELOG: T1.2 started
+GAMELOG: T1.2 started
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 38.77 seconds
+GAMELOG: Timer stopped. Task Completion time: 38.77 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 17.16 seconds
+GAMELOG: Timer stopped. Task Completion time: 17.16 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 15.08 seconds
+GAMELOG: Timer stopped. Task Completion time: 15.08 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 8.71 seconds
+GAMELOG: Timer stopped. Task Completion time: 8.71 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: T1.3 started
+GAMELOG: T1.3 started
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 11.66 seconds
+GAMELOG: Timer stopped. Task Completion time: 11.66 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 10.47 seconds
+GAMELOG: Timer stopped. Task Completion time: 10.47 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 7.44 seconds
+GAMELOG: Timer stopped. Task Completion time: 7.44 seconds
+GAMELOG: New subtask started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 2 started for participant
+GAMELOG: Task 2 started for participant
+GAMELOG: Task 2.1 started with visuals: True
+GAMELOG: Task 2.1 started with visuals: True
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Task 2.2 started with visuals: True
+GAMELOG: Task 2.2 started with visuals: True
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Timer started.
+GAMELOG: Timer started.
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Participant number : PILOT-1 logging started
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Task 3.1 started with visuals: True
+GAMELOG: Timer started.
+GAMELOG: Timer started.

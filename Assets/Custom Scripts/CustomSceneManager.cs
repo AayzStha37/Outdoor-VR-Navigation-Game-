@@ -8,12 +8,11 @@ using TMPro;
 
 public class CustomSceneManager : MonoBehaviour
 {
-    private GameLogsStorageHandler logToFile = new GameLogsStorageHandler();
     private string textfieldvalue = null;
 
     public void LoadTrainingPhaseScene()
     {
-        SceneManager.LoadScene("Trainng Scene");
+        SceneManager.LoadScene("Training Scene");
     }
     public void LoadTaskListUIScene()
     {
@@ -24,8 +23,9 @@ public class CustomSceneManager : MonoBehaviour
         SceneManager.LoadScene("Study start scene");
     }
     public void LoadTask1Scene()
-    {        
-        logToFile.setupGameLogFile();
+    {   
+        // GameLogsStorageHandler logToFile = new GameLogsStorageHandler();
+        // logToFile.setupGameLogFile(); 
         storePartcipantDetail();
         Debug.Log("GAMELOG: Task 1 started for participant");
         SceneManager.LoadScene("Task 1 scene");

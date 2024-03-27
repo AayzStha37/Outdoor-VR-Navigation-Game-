@@ -7,10 +7,11 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
 {    
     private float timer = 0f;
     private bool isTiming = false;
-    private bool colliderLocked = false;
+    private bool firstTaskColliderLocked = false;
+    private bool secondTaskColliderLocked = false;
     private Coroutine timerCoroutine;
 
-    private void StopTimer()
+    public void StopTimer()
     {
         if (isTiming)
         {
@@ -49,8 +50,13 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         GameObject otherGameObject = other.gameObject;
-        if(otherGameObject.name.Contains(Constants.TASK2_COMPLETION_COLLIDER) && !colliderLocked){
-            colliderLocked = true;
+        if(otherGameObject.name.Equals(Constants.TASK2_COMPLETION_COLLIDER_1) && !firstTaskColliderLocked){
+            firstTaskColliderLocked = true;
+            StopTimer();
+            otherGameObject.GetComponent<Collider>().enabled = false;
+        }
+        else if(otherGameObject.name.Equals(Constants.TASK2_COMPLETION_COLLIDER_2) && !secondTaskColliderLocked){
+            secondTaskColliderLocked = true;
             StopTimer();
             otherGameObject.GetComponent<Collider>().enabled = false;
         }

@@ -42,10 +42,13 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
         {
             Debug.Log($"GAMELOG: Timer stopped. TTR {logText} Target: " + timer.ToString("F2") + " seconds");
         }
-        else
+        else if (logText.Contains(Constants.TASK3_DESTINATION_TARGET))
         {
             Debug.Log($"GAMELOG: Timer stopped. TTR {logText} Target: " + timer.ToString("F2") + " seconds");
             Debug.Log("POSLOG: Task completed");
+        }else{
+            Debug.Log($"GAMELOG: Timer FORCE stopped. Timer log: " + timer.ToString("F2") + " seconds");
+            Debug.Log("POSLOG: Task FORCE completed");
         }
     }
 

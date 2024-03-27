@@ -7,24 +7,18 @@ public class GameLogsStorageHandler : MonoBehaviour
     private string positionDataFilePath; // Path to position data file
     private string textureLogFilePath; // Path to the log file
     private bool isLogging = false;
-
     public void setupGameLogFile()
     {
         string gameStatsFileName = "GameLog_";
         string positionDataFileName = "PositionData_";
         string textureRecordingFileName = "TextureData_";
 
-        if (FindObjectOfType<SceneDataTransfer>() != null)
-        {
-            SceneDataTransfer dataTransfer = FindObjectOfType<SceneDataTransfer>();
-            gameStatsFileName = gameStatsFileName + dataTransfer.StoreInputText() + ".txt";
-            positionDataFileName = positionDataFileName + dataTransfer.StoreInputText() + ".txt";
-            
-        }
-        else if (FindObjectOfType<Task1Eventsystem>() != null)
+        
+        if (FindObjectOfType<Task1Eventsystem>() != null)
         {
             Task1Eventsystem task1EventSystem = FindObjectOfType<Task1Eventsystem>();
             gameStatsFileName = gameStatsFileName + task1EventSystem.getParticipantId() + ".txt";
+            positionDataFileName = positionDataFileName + task1EventSystem.getParticipantId() + ".txt";
         }
         else if (FindObjectOfType<Task2EventSystem>() != null)
         {
@@ -42,6 +36,13 @@ public class GameLogsStorageHandler : MonoBehaviour
         {
             textureRecordingFileName = textureRecordingFileName + ".txt";
             textureLogFilePath = Path.Combine(Constants.LOG_PATH, textureRecordingFileName);
+        }
+        else if (FindObjectOfType<SceneDataTransfer>() != null)
+        {
+            SceneDataTransfer dataTransfer = FindObjectOfType<SceneDataTransfer>();
+            gameStatsFileName = gameStatsFileName + dataTransfer.StoreInputText() + ".txt";
+            positionDataFileName = positionDataFileName + dataTransfer.StoreInputText() + ".txt";
+            
         }
 
         gameLogFilePath = Path.Combine(Constants.LOG_PATH, gameStatsFileName);

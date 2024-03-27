@@ -101,7 +101,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6895997
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8853249142281367622
 Rigidbody:
@@ -1319,7 +1319,6 @@ GameObject:
   - component: {fileID: 8639224354362614462}
   - component: {fileID: 4832026626200704019}
   - component: {fileID: 6151053567185734822}
-  - component: {fileID: 562411527200953899}
   m_Layer: 0
   m_Name: Cane body
   m_TagString: Untagged
@@ -1335,7 +1334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8472904652923743259}
   m_LocalRotation: {x: 0.33255053, y: 0.31497252, z: 0.20615783, w: 0.8646973}
-  m_LocalPosition: {x: 0.065, y: -0.36, z: -0.385}
+  m_LocalPosition: {x: 0.063, y: -0.352, z: -0.377}
   m_LocalScale: {x: 0.015000001, y: 0.50000006, z: 0.015000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1392,17 +1391,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &562411527200953899
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472904652923743259}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 1.7268677
-  m_Direction: 1
-  m_Center: {x: 0.00000004656613, y: 0.029700404, z: -0.00000009313226}

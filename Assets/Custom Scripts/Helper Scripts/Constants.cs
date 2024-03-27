@@ -39,7 +39,8 @@ public static class Constants
     public const string TASK3_PATHWAY_2 = "Task 3.2 Pathway";
     public const string TASK3_INTERMEDIATE_TARGET = "Intermediate";
     public const string TASK3_DESTINATION_TARGET = "Destination";
-    public const string TASK2_COMPLETION_COLLIDER = "Completion collider";
+    public const string TASK2_COMPLETION_COLLIDER_1 = "Task 2.1 Completion collider";
+    public const string TASK2_COMPLETION_COLLIDER_2 = "Task 2.2 Completion collider";
 
     //Main device specific constant
     public const string LOG_PATH = @"C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Game Logs";
