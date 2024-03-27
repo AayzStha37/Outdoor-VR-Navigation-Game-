@@ -20,4 +20,8 @@ public class Task3AudioTargetsSoundController : MonoBehaviour
                 isAlreadyPlayed = true;
         }
     }
+
+    private void OnDestroy(){
+        AkSoundEngine.StopPlayingID(playingId);
+    }
 }

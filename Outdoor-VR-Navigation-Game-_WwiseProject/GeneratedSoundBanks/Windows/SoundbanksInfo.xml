@@ -1592,7 +1592,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{6AC5AAA4-CC72-41F5-2740-1B272CB14C18}">
+		<SoundBank Id="3686257672" Type="User" Language="SFX" Hash="{3D44D84D-826C-F76A-5EE4-B2BAAB6A1A69}">
 			<ShortName>TrafficLight_Walk</ShortName>
 			<Path>TrafficLight_Walk.bnk</Path>
 			<Media>
@@ -1629,7 +1629,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{2861BA25-21BC-41FB-B862-D51F604BE840}">
+		<SoundBank Id="3736590696" Type="User" Language="SFX" Hash="{7B7B881D-B8BA-55D3-B156-1EE6CBE3778F}">
 			<ShortName>TrafficLight_Wait</ShortName>
 			<Path>TrafficLight_Wait.bnk</Path>
 			<Media>
@@ -1650,5 +1650,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3174448B-5748-509B-7161-01B8EB43E29C}</FileHash>
+	<FileHash>{7B884BF3-1EE5-CAF6-C01B-CCE23AEAE6DA}</FileHash>
 </SoundBanksInfo>
