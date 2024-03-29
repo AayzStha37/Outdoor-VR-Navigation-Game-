@@ -31,7 +31,7 @@ public class LoggedPositionDataPathRenderer : MonoBehaviour
             // Parse the lines to extract x and z values (assuming Z-axis as the y-value in Unity)
             foreach (string line in lines)
             {
-                if (line.StartsWith("POSLOG"))
+                if (!line.StartsWith("POSLOG: Task") && !string.IsNullOrWhiteSpace(line))
                 {
                     string[] values = line.Split(',');
                     float x = 0f, y =0f, z = 0f;
