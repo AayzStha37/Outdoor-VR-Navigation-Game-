@@ -2,12 +2,13 @@ using UnityEngine;
 using System.IO;
 
 public class LoggedPositionDataPathRenderer : MonoBehaviour
-{ public string positionDataFileName = "PositionData_11.txt"; // Adjust this with your file name
-    public LineRenderer lineRenderer; // Reference to the LineRenderer component
+{ 
+    public string positionDataFileName = "PositionData_11.txt"; // Adjust this with your file name
+    private LineRenderer lineRenderer; // Reference to the LineRenderer component
 
     void Start()
     {
-        string positionDataFilePath = @"C:\Users\Admin\Desktop\Unity logs\" + positionDataFileName;
+        string positionDataFilePath = @"C:\Users\Aayush Shrestha\Desktop\GONVI\Outdoor-VR-Navigation-Game-\Game Logs\" + positionDataFileName;        
 
         if (File.Exists(positionDataFilePath))
         {
