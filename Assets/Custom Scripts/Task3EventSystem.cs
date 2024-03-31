@@ -94,6 +94,7 @@ public class Task3EventSystem : MonoBehaviour
 
     private void performTask(string taskName)
     {
+        ClearPreviousColliderTargetCache();
         if(TASK_1.Equals(taskName)){   
             InstantiateObjects(characterSpawnPositionAndRotationList[0], taskName);
             TransformPositionAndRotation(characterSpawnPositionAndRotationList[0]); 
@@ -110,5 +111,9 @@ public class Task3EventSystem : MonoBehaviour
             mainCharacterGameobjectToMove.GetComponent<Task3CompletionNotfierSystem>().StartTimer();
             mainCharacterGameobjectToMove.GetComponent<Character2DPositionDataLogger>().SetTrackablePositionLog(true);
         }
+    }
+
+    private void ClearPreviousColliderTargetCache(){
+        mainCharacterGameobjectToMove.transform.GetComponent<Task3CompletionNotfierSystem>().targetReachedNameList.Clear();
     }
 }

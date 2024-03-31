@@ -11,6 +11,7 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
     private bool isTiming = false;
     private bool colliderLocked = false;
     private Coroutine timerCoroutine;
+    public List<string> targetReachedNameList = new List<string>();
 
     public void StopTimer(string logText)
     {
@@ -62,17 +63,20 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        if (!colliderLocked)
+        string otherObjectName = other.gameObject.name;
+        if (!colliderLocked && !CheckIfPreviousTarget(otherObjectName))
         {
             if (other.gameObject.name.Contains(Constants.TASK3_INTERMEDIATE_TARGET))
             {
                 colliderLocked = true;
+                RegisterCollidedTarget(other.gameObject.name);
                 StopTimer(Constants.TASK3_INTERMEDIATE_TARGET);
                 StartTimer();
             }
             else if (other.gameObject.name.Contains(Constants.TASK3_DESTINATION_TARGET))
             {
                 colliderLocked = true;
+                RegisterCollidedTarget(other.gameObject.name);
                 StopTimer(Constants.TASK3_DESTINATION_TARGET);
                 AkSoundEngine.PostEvent(Constants.LEVEL_COMPLETE_SOUND_EVENT, gameObject);
             }
@@ -82,5 +86,12 @@ public class Task3CompletionNotfierSystem : MonoBehaviour
     private  void OnTriggerExit(Collider other) {
         if(other.gameObject.name.Contains(Constants.TASK3_INTERMEDIATE_TARGET))
             colliderLocked = false;
+    }
+
+    private void RegisterCollidedTarget(string targetReachedName){
+        targetReachedNameList.Add(targetReachedName);
+    }
+    private bool CheckIfPreviousTarget(string targetName){
+        return  targetReachedNameList.Contains(targetName);
     }
 }

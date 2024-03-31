@@ -57,7 +57,7 @@ public class Task1SurfaceRendererSystem : MonoBehaviour
             dualTexturePairsList.Add(new Tuple<string, string>(Constants.TEXTURE_METAL, Constants.TEXTURE_GRAVEL));
         }
         else {
-            singleTextureOccurenceList = new List<string> { Constants.TEXTURE_GRASS, Constants.TEXTURE_ASPHALT, Constants.TEXTURE_GRAVEL, Constants.TEXTURE_SIDEWALK};
+            singleTextureOccurenceList = new List<string> { Constants.TEXTURE_GRASS, Constants.TEXTURE_ASPHALT, Constants.TEXTURE_GRAVEL, Constants.TEXTURE_SIDEWALK, Constants.TEXTURE_METAL};
         }
     }
 
@@ -67,7 +67,7 @@ public class Task1SurfaceRendererSystem : MonoBehaviour
             //Task 1.1 : Both audio and haptics
             GenerateSurfacePair(dualTexturePairsList, currentIndex, firstTaskFirstSurfacePosition, firstTaskSecondSurfacePosition, firstTaskSurfaceScale);
 
-        else if ((gameObject.CompareTag(Constants.TASK1_SECOND_TASK_OBJECT_TAG) || gameObject.CompareTag(Constants.TASK1_THIRD_TASK_OBJECT_TAG)) && spcaeBarPressCount<=4) 
+        else if ((gameObject.CompareTag(Constants.TASK1_SECOND_TASK_OBJECT_TAG) || gameObject.CompareTag(Constants.TASK1_THIRD_TASK_OBJECT_TAG)) && spcaeBarPressCount<=5) 
             //Task 1.2 : No haptics and only audio
             //Task 1.3 : No audio and only haptics
             GenerateSingleSurface(singleTextureOccurenceList, currentIndex, secondTaskSurfacePosition, secondTaskSurfaceScale);
