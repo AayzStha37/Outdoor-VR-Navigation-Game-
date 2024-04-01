@@ -177,3 +177,9 @@ GAMELOG: Timer started.
 GAMELOG: Timer stopped. Task Completion time: 1.09 seconds
 GAMELOG: New subtask started
 GAMELOG: Timer started.
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Participant number :  logging started
+GAMELOG: Task 2 started for participant
+GAMELOG: Task 2.1 started with visuals: False
+GAMELOG: Timer started.
