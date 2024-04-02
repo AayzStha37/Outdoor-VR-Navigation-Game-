@@ -83,6 +83,7 @@ public class Task2EventSystem : MonoBehaviour
 
     private void performTask(string taskName)
     {
+        ClearPreviousColliderTargetCache();
         if(TASK_1.Equals(taskName)){   
             TransformPositionAndRotation(characterSpawnPositionAndRotationList[0]); 
             Debug.Log($"GAMELOG: Task 2.1 started with visuals: {isVisualsOn}");
@@ -97,5 +98,9 @@ public class Task2EventSystem : MonoBehaviour
             mainCharacterGameobjectToMove.GetComponent<Task2CompletionNotfierSystem>().StartTimer();
             mainCharacterGameobjectToMove.GetComponent<Character2DPositionDataLogger>().SetTrackablePositionLog(true);
         }                
+    }
+
+    private void ClearPreviousColliderTargetCache(){
+        mainCharacterGameobjectToMove.transform.GetComponent<Task2CompletionNotfierSystem>().SetColliderFlagsToDefaultValue();
     }
 }

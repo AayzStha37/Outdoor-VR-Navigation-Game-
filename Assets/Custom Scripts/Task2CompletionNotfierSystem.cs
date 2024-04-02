@@ -53,12 +53,17 @@ public class Task2CompletionNotfierSystem : MonoBehaviour
         if(otherGameObject.name.Equals(Constants.TASK2_COMPLETION_COLLIDER_1) && !firstTaskColliderLocked){
             firstTaskColliderLocked = true;
             StopTimer();
-            otherGameObject.GetComponent<Collider>().enabled = false;
+           
         }
         else if(otherGameObject.name.Equals(Constants.TASK2_COMPLETION_COLLIDER_2) && !secondTaskColliderLocked){
             secondTaskColliderLocked = true;
             StopTimer();
-            otherGameObject.GetComponent<Collider>().enabled = false;
+            
         }
+    }
+
+    public void SetColliderFlagsToDefaultValue(){
+        firstTaskColliderLocked = false;
+        secondTaskColliderLocked = false;
     }
 }
