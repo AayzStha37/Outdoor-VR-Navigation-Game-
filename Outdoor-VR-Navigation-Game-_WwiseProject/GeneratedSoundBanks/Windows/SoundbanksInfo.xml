@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{565598FE-7CDB-2F5A-73C9-3961FB2963F5}">
+		<SoundBank Id="564684285" Type="User" Language="SFX" Hash="{6C09912E-4BFF-9236-88AE-61399A07B0D2}">
 			<ShortName>Vehicle_Stationary_Bank</ShortName>
 			<Path>Vehicle_Stationary_Bank.bnk</Path>
 			<Media>
@@ -88,7 +88,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{3DCE16B6-3865-A647-1B2D-F6D279E0193C}">
+		<SoundBank Id="663403457" Type="User" Language="SFX" Hash="{11C8E53F-711D-BAF2-4254-AA8465F3C3EF}">
 			<ShortName>Vehicle_Motion_Bank</ShortName>
 			<Path>Vehicle_Motion_Bank.bnk</Path>
 			<Media>
@@ -361,7 +361,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{02E04C9C-B75F-498B-83B3-51C6E9504626}">
+		<SoundBank Id="2141388522" Type="User" Language="SFX" Hash="{DF4FEF67-E61B-E3A5-D4A6-712C831DAC1E}">
 			<ShortName>Ambient_Sounds</ShortName>
 			<Path>Ambient_Sounds.bnk</Path>
 			<Media>
@@ -530,7 +530,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{87DA83F3-6020-DFB4-FABD-6A8491516861}">
+		<SoundBank Id="2775932802" Type="User" Language="SFX" Hash="{AD41C155-5480-3D8C-7196-1CA1929C4F31}">
 			<ShortName>Character_Footsteps</ShortName>
 			<Path>Character_Footsteps.bnk</Path>
 			<Media>
@@ -963,7 +963,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{675DCDDC-133F-5004-E523-9510C2B92FE3}">
+		<SoundBank Id="3669902090" Type="User" Language="SFX" Hash="{88FB3F2F-319A-43FA-099F-532CEA3E0FE2}">
 			<ShortName>WhiteCane_Interaction</ShortName>
 			<Path>WhiteCane_Interaction.bnk</Path>
 			<Media>
@@ -1650,5 +1650,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{541C318C-3CC1-C50A-A960-E5ED1ACE3E33}</FileHash>
+	<FileHash>{E07CE7CA-FD7B-59B1-F1EB-D2ED4EACA726}</FileHash>
 </SoundBanksInfo>
