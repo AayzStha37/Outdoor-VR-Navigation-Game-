@@ -1,0 +1,101 @@
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 32.69 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 55.20 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 27.37 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 30.09 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 13.43 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 31.31 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: T1.2 started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 27.08 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 11.36 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 8.02 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 5.70 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 17.56 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: T1.3 started
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 11.76 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 8.62 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 9.17 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 4.50 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 12.11 seconds
+GAMELOG: New subtask started
+GAMELOG: Timer started.
+GAMELOG: Participant number : 6 logging started
+GAMELOG: Task 2 started for participant
+GAMELOG: Task 2.1 started with visuals: False
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. Task Completion time: 205.52 seconds
+GAMELOG: Task 2.2 started with visuals: False
+GAMELOG: Timer started.
+GAMELOG: Collision with vehicle
+GAMELOG: Task 2.2 started with visuals: False
+GAMELOG: Timer stopped. Task Completion time: 150.69 seconds
+GAMELOG: Task 2.2 started with visuals: False
+GAMELOG: Timer started.
+GAMELOG: Task 2.2 started with visuals: True
+GAMELOG: Timer stopped. Task Completion time: 39.36 seconds
+GAMELOG: Participant number : 6 logging started
+GAMELOG: Task 3 started for participant
+GAMELOG: Task 3.1 started with visuals: False
+GAMELOG: Timer started.
+GAMELOG: Collision with vehicle
+GAMELOG: Collision with vehicle
+GAMELOG: Timer stopped. TTR Intermediate Target: 167.42 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 121.14 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Destination Target: 143.46 seconds
+GAMELOG: Task 3.2 started with visuals: False
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 32.67 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 187.57 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 185.12 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Destination Target: 152.53 seconds
+GAMELOG: Timer FORCE stopped. Timer log: 0.00 seconds
+GAMELOG: Task 3.2 started with visuals: True
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 51.62 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Intermediate Target: 39.18 seconds
+GAMELOG: Timer started.
+GAMELOG: Collision with vehicle
+GAMELOG: Timer stopped. TTR Intermediate Target: 48.92 seconds
+GAMELOG: Timer started.
+GAMELOG: Timer stopped. TTR Destination Target: 25.54 seconds
