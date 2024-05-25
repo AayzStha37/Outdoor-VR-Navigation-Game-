@@ -83,8 +83,6 @@ GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Task 3.2 started with visuals: True
 GAMELOG: Timer started.
 GAMELOG: Timer stopped. TTR Intermediate Target: 80.60 seconds

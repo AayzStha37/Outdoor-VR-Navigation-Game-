@@ -59,12 +59,6 @@ GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Timer stopped. Task Completion time: 76.83 seconds
 GAMELOG: Task 2.2 started with visuals: False
 GAMELOG: Timer started.
@@ -72,11 +66,6 @@ GAMELOG: Task 2.2 started with visuals: False
 GAMELOG: Collision with vehicle
 GAMELOG: Task 2.2 started with visuals: False
 GAMELOG: Task 2.2 started with visuals: False
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
@@ -99,13 +88,8 @@ GAMELOG: Timer started.
 GAMELOG: Timer stopped. TTR Destination Target: 93.53 seconds
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Task 3.2 started with visuals: False
 GAMELOG: Timer started.
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle

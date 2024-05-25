@@ -65,8 +65,6 @@ GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Timer stopped. Task Completion time: 73.43 seconds
 GAMELOG: Task 2.2 started with visuals: True
 GAMELOG: Timer started.

@@ -90,8 +90,6 @@ GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
 GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
-GAMELOG: Collision with vehicle
 GAMELOG: Timer stopped. TTR Intermediate Target: 42.75 seconds
 GAMELOG: Timer started.
 GAMELOG: Timer stopped. TTR Destination Target: 29.75 seconds
